@@ -1,0 +1,2705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-04-05 18:16:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCR_GDSP_1.0.0_4_4_2016</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>fdbcbf466f2692000a09034abb3ee43f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-04-05 18:16:17</sys_created_on>
+<sys_id>90017ce66fa692000a09034abb3ee4aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-04-05 18:16:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value=""/>
+<category>customer</category>
+<comments/>
+<name>content_block_programmatic_c8a7483d6fcd1600bbc002e6eb3ee407</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="content_block_programmatic"&gt;&lt;content_block_programmatic action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;frame/&gt;&lt;logged_on&gt;false&lt;/logged_on&gt;&lt;name&gt;Software Solution GDSP Page&lt;/name&gt;&lt;programmatic_content&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;g:include_script src="jqueryCDN.jsdbx"/&gt;
+&lt;g:include_script src="bootstrapCDN.jsdbx"/&gt;
+&lt;g:include_script src="typeahead.bundle.jsdbx"/&gt;
+&lt;g2:requires name="userPrediction.jsdbx"/&gt;
+&lt;g2:requires name="locationPrediction.jsdbx"/&gt;
+&lt;g2:requires name="cms_catalog_functions.jsdbx"/&gt;
+&lt;g2:requires name="cms_typeahead_functions.jsdbx"/&gt;
+&lt;g:include_script src="jquery.min.jsdbx"/&gt;
+&lt;g:include_script src="jquery.ui.jsdbx"/&gt;
+
+
+&lt;g:evaluate var="jvar_my_sys_id" expression="gs.getUserID()"/&gt;
+&lt;g:evaluate var="jvar_record_sys_id" expression="RP.getParameterValue('sys_id')"/&gt;
+
+&lt;g2:cms_modals/&gt;
+&lt;g2:cms_header/&gt;
+
+&lt;script&gt;
+ function getID() {
+  &lt;g:evaluate var="jvar_session_id" object="true" jelly="true"&gt;
+    var id = '';
+    if (gs.getSession().getClientData('id') != '') {
+        id = gs.getSession().getClientData('id');
+        gs.getSession().clearClientData('id');
+    }
+    id;
+  &lt;/g:evaluate&gt;
+  return '${jvar_session_id}';
+ }
+
+ function isGDSPSubmitter() {
+ &lt;g:evaluate var="jvar_group_submitter" object="true" jelly="true"&gt;
+   var gr = gs.getUser();  
+   gr.isMemberOf('CCR_GDSP_SUBMITTER');
+ &lt;/g:evaluate&gt;
+ &lt;j:if test="${jvar_group_submitter}"&gt;
+   return true;
+ &lt;/j:if&gt;			
+ &lt;j:if test="${!jvar_group_submitter}"&gt;
+   return false;
+ &lt;/j:if&gt;
+}	
+
+ function isGPA() {
+ &lt;g:evaluate var="jvar_group" object="true" jelly="true"&gt;
+   var gr = gs.getUser();  
+   gr.isMemberOf('CCR_GPA');
+ &lt;/g:evaluate&gt;
+  &lt;j:if test="${jvar_group}"&gt;
+   return true;
+ &lt;/j:if&gt;			
+ &lt;j:if test="${!jvar_group}"&gt;
+   return false;
+ &lt;/j:if&gt;
+}			
+ function isSD() {
+ &lt;g:evaluate var="jvar_group_h" object="true" jelly="true"&gt;
+   var gr = gs.getUser();  
+   gr.isMemberOf('CCR_SD_HUMAN');
+ &lt;/g:evaluate&gt;
+ &lt;g:evaluate var="jvar_group_nh" object="true" jelly="true"&gt;
+   var gr = gs.getUser();  
+   gr.isMemberOf('CCR_SD_NON_HUMAN');
+ &lt;/g:evaluate&gt;
+ &lt;j:if test="${jvar_group_h}"&gt;
+   return true;
+ &lt;/j:if&gt;			
+ &lt;j:if test="${!jvar_group_h}"&gt;
+      &lt;j:if test="${jvar_group_nh}"&gt;
+         return true;
+      &lt;/j:if&gt;			
+      &lt;j:if test="${!jvar_group_nh}"&gt;
+          return false;
+       &lt;/j:if&gt;			
+ &lt;/j:if&gt;
+}			
+
+function getUrlParameter(sParam)
+{
+    var sPageURLe = window.location.search.substring(1);
+    var sPageURL = decodeURI(sPageURLe);
+    var sURLVariables = sPageURL.split('&amp;amp;');
+    for (var i = 0; i &amp;lt; sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+    return '';
+} 
+jQuery(document).ready(function($){
+  //you can now use $ as your jQuery object.
+	$("#date").datepicker();
+        if(isGDSPSubmitter()){
+           $('#piId').show();
+        }else{
+           $('#piId').hide();
+        }
+        var id = getUrlParameter('id');
+        var action = getUrlParameter('action');
+        var s_id = getID();
+        if (s_id != '') {
+           id = s_id;
+        }
+        $('#'+id).css("background-color", "yellow");
+
+
+        if(isGPA()){
+           $('#approvalId').html('GPA');
+           $('#otherId').html('GPA');
+        }
+        if(isSD()){
+           $('#approvalId').html('SD');
+           $('#otherId').html('SD');
+        }  
+        $('#piOrder1').val('1');
+        $('#pnOrder1').val('1');
+        $('#udOrder1').val('1');
+        $('#piOrder2').val('1');
+        $('#pnOrder2').val('1');
+        $('#udOrder2').val('1');
+
+});
+
+var names=['investigator','email','phone', 'date', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',              'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'expressionArray', 'methylationArray', 'arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version'];
+
+var textFields = ['investigator','email','phone', 'date', 'projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version']; 
+   
+function loadModal(){
+  resetResubmitValue();
+  $('#errorMessage').hide();
+  $('#ccr_id').val('');
+  $('#saved_id').val('');
+  $('#regularSubmit').show();
+  $('#resubmit').hide();
+  $('#loadedRequests').modal('show');  
+
+}
+function closeModal(){
+  $('#loadedRequests').modal('hide');  
+}
+
+function logout(){
+ var variables = {};
+ $.ajax({
+         url: "/logout.do",
+         type : "GET",
+         data : variables,
+         success : function (data, textStatus, jqXHR){
+ window.location.reload(true);         },
+         error : function (jqXHR, textStatus, errorThrown){
+           alert(textStatus);
+           alert(errorThrown);
+         }
+      });
+}
+
+function loadSingaturePad(){
+    
+ $('#signaturepad').modal('show');
+ document.getElementById('hrss_review_a_job_requisition').contentWindow.document.getElementById('sys_user.form_scroll').style.overflow = 'hidden';
+ document.getElementById('hrss_review_a_job_requisition').contentWindow.document.getElementById('55d475938c251400f12fc0bd76e5c263').click();
+ document.getElementById('hrss_review_a_job_requisition').contentWindow.document.getElementById('sys_user.form_header').style.display='none';
+ 
+ var elements = document.getElementById('hrss_review_a_job_requisition').contentWindow.document.getElementsByClassName('related_links');
+
+  for(var i=0; i &amp;lt; elements.length; i++) {
+    elements[i].style.display = "none";
+ } 
+ var elements = document.getElementById('hrss_review_a_job_requisition').contentWindow.document.getElementsByClassName('form_action_button  action_context');
+  for(var i=0; i &amp;lt; elements.length; i++) {
+    elements[i].style.display = "none";
+ } 
+
+}
+function closeSingaturePad(){
+  $('#signaturepad').modal('hide');  
+}
+ function loadData(data){
+    var namePair = data.split(",");
+    var i = 0;
+    for(i=0; i != namePair.length; i++){
+         var item = namePair[i];
+         if(item == '' || typeof item ==="undefined")
+         {}else{  
+           if(item.indexOf('=') != -1){
+              var small = item.split('=');
+              var value = getValue(small); 
+              $('#'+small[0]+"1").html(value);
+           }
+         }
+     }
+  }
+
+ function loadResubmitData(data){
+    var namePair = data.split(",");
+    var i = 0;
+    for(i=0; i != namePair.length; i++){
+         var item = namePair[i];
+         if(item == '' || typeof item ==="undefined")
+         {}else{  
+           if(item.indexOf('=') != -1){
+              var small = item.split('=');
+              setResubmitValue(small); 
+           }
+         }
+     }
+  }
+
+  function setResubmitValue(value){
+     var name = value[0];
+     var val = value[1];
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           if (val==''||val ==="-undefined-undefined") {
+             $('#'+name).val(''); 
+           }
+           else {
+             $('#'+name).val(getConvertedValue(val, '1'));
+           }
+        }else{
+           $('#'+name).val(val);
+        }
+     }else{
+        if(val == "true"){
+          $('#'+name).prop('checked', true); 
+        }else{
+          $('#'+name).prop('checked', false); 
+        }
+     }
+  }
+
+  function resetResubmitValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i]).val('');
+      }else{
+           $('#'+names[i]).prop('checked', false); 
+      }
+    }
+  }
+
+  function getValue(value){
+     var name = value[0];
+     var val = value[1];
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(val, '1');
+        }else{
+           return val;
+        }
+     }else{
+        if(val == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return val; 
+     }
+  }
+  
+
+function parse(allcomments) {
+
+ var comments = allcomments.split("ENDCOMMENTS");
+ var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+ for(i = 0; i &amp;lt; comments .length; i++){
+     if (comments[i].length &gt; 40) { 
+       if (comments[i][0] == '\n') {
+           var lastI = 0;
+           while (lastI &amp;lt; comments[i].length &amp;amp;&amp;amp; comments[i][lastI] == '\n') 
+                lastI ++;
+           comments[i] = comments[i].substring(lastI,comments[i].length);
+       }
+       var t = comments[i].substring(0,22);
+       var approver = comments[i].substring(24,comments[i].indexOf('(Comments)'));
+       var results = comments[i].substring(comments[i].indexOf('(Comments)') + 12,comments[i].indexOf('(Comments)') + 20);
+       var comm= comments[i].substring(comments[i].indexOf('(Comments)') + 21, comments[i].indexOf('(role)'));
+       var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].length); 
+       commentsblock = commentsblock + "&lt;tr&gt;";
+       commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+       commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+       commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+       commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+       commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+       commentsblock = commentsblock + "&lt;/tr&gt;";
+     }
+ }
+ commentsblock = commentsblock + "&lt;/table&gt;";
+
+return commentsblock;
+}
+
+
+  function loadDisplayModal(number, approvalId){
+      
+      $('#closeButton').show();
+      var variables= {};
+      variables['requestedid'] = number;
+
+      $.ajax({
+         url: "fetchDetail.do",
+         type : "POST",
+         data : variables,
+         success : function (data, textStatus, jqXHR){
+         var var_start_index = data.indexOf('VARSTART');
+         var var_end_index = data.indexOf('VAREND');
+         var request_data = data.substring(var_start_index + 8, var_end_index);
+         var var_comment_start_index = data.indexOf('COMMENTSSTART');
+         var var_comment_end_index = data.indexOf('COMMENTSEND');
+         var comment_str = parse(data.substring(var_comment_start_index + 13, var_comment_end_index));
+         loadData(request_data);
+         $('#ccr_id').val('');
+         $('#saved_id').val('');
+         $('#commentReviewId1').empty();
+         $('#commentReviewId1').append(comment_str);
+         
+         if(comment_str.length &amp;lt; 137){
+               $('#pre_comments_div').hide();
+               $('#comments_div').hide();
+         }else{
+               $('#pre_comments_div').show();
+               $('#comments_div').hide();
+         }
+         $('#commentId1Lable').hide();
+         $('#commentId1').hide();
+         $('#hiddenRequestId').val(approvalId);
+
+
+         $('#closeButton').show();
+         $('#submitButton').hide();
+         var ticketNU = $('#'+number+'_ticket').val();
+         $('#displayRequestId').html(ticketNU);
+         $('#displayRequests').modal('show');
+         },
+         error : function (jqXHR, textStatus, errorThrown){
+           alert(textStatus);
+           alert(errorThrown);
+         }
+      });
+      $('#loadedRequests').modal('hide');
+  }
+
+  function closeDisplayModal(){
+      var value = $('#selectSD').val();
+
+      $('#displayRequests').modal('hide');  
+  }
+
+  function loadApprovalData(data){
+   var namePair = data.split(",");
+    var i = 0;
+    for(i=0; i != namePair.length; i++){
+         var item = namePair[i];
+         if(item == '' || typeof item ==="undefined")
+         {}else{  
+           if(item.indexOf('=') != -1){
+              var small = item.split('=');
+              var value = getValue(small); 
+              $('#'+small[0]+"1").html(value);
+           }
+         }
+     }
+  }
+
+function submitApprove(action){
+   //validate SD when approve the request
+   var sdSelected = $('#selectSD').val();
+   if (isGPA() &amp;amp;&amp;amp; action!='rejected') {
+      if(sdSelected == 'NONE'){
+         $('#sdErrorMessage').html('&lt;font size="2" color="red"&gt;&lt;ul&gt;&lt;li&gt;Please select a Scientific Director&lt;/li&gt;&lt;/ul&gt;&lt;/font&gt;');
+         $('#sdErrorMessage').show();
+         scrollTo('anchor1');
+         return;
+      }else{
+         $('#sdErrorMessage').html('');
+         $('#sdErrorMessage').hide();
+      }
+   }
+
+   var request_id = $('#hiddenRequestId').val();
+   var comments = $('#commentId1').val();
+   var stage = $('#hiddenStage').val();
+   var variables= {};
+   variables['requested_id'] = request_id;
+   variables['requestedItem_id'] = $('#hiddenRequestItemId').val();
+   variables['approval_comment'] = comments;
+   variables['action'] = action;
+   variables['role'] = '';
+   variables['sd_id'] = sdSelected;
+   if (isGPA()) { variables['role'] = 'GPA'; }
+   else {  variables['role'] = 'Scientific Director'; }
+   $.ajax({
+      url: "updateRequest.do",
+      type : "POST",
+      data : variables,
+      success : function (data, textStatus, jqXHR){
+          window.location.reload(true);
+          $('#progressId').modal('hide');
+     },
+      error : function (jqXHR, textStatus, errorThrown){
+          alert(textStatus);
+          alert(errorThrown);
+      }
+   });
+   $('#displayRequests').modal('hide');  
+   $('#progressId').modal('show');
+}
+
+function scrollTo(hash) {
+    location.hash = "#" + hash;
+}
+
+function submitRequest(){
+  if(validation()){
+     //display error message
+     $('#errorMessage').show();
+     scrollTo('anchor');
+  }else{ 
+     $('#errorMessage').hide();
+     var variables= {};
+     variables['requested_for'] = "${jvar_my_sys_id}";
+     variables['opened_by'] = "${jvar_my_sys_id}";
+     variables['contact_type'] = 'Web';
+     variables['investigator'] = $('#investigator').val();
+     variables['project_name'] = $('#projectName').val();
+     &lt;g:evaluate var="jvar_groups" object="true"&gt;
+                var gr = new GlideRecord("sc_cat_item");
+                gr.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+                gr.query();
+		gr;
+     &lt;/g:evaluate&gt;
+     &lt;j:if test="${jvar_groups.next()}"&gt;
+     &lt;j:set var="jvar_cat_item_id" value="${jvar_groups.getValue('sys_id')}" /&gt;
+     &lt;/j:if&gt;
+     variables['cat_item'] = "${jvar_cat_item_id}";
+     variables['short_discription'] = "Genome Data Sharing Plan";
+     var myArray = getVariableArray();
+     variables['variables']=''; 
+
+     myArray.forEach(function(element) {
+        if (variables['variables'] != ''){
+           variables['variables'] += ',';
+        }
+     variables['variables'] += element;
+     });
+     var index = 0;
+     myArray.forEach(function(element) {
+        if(textFields.indexOf(names[index]) &gt; -1 ){ 
+          var value= $('#'+names[index]).val();
+          if(names[index] == 'date'){
+            value = getConvertedValue(value, '0');
+          }
+          variables[element] = value;
+        }else {
+           if($('#'+names[index]).is(':checked')){
+                variables[element] = 'true';
+           }else{
+               variables[element] = 'false';
+           } 
+        }
+        index = index + 1; 
+      });
+
+      $.ajax({
+          url: "submitRequest.do",
+          type : "POST",
+          data : variables,
+          success : function (data, textStatus, jqXHR){
+//             window.location.reload(true);
+             submitDeleteSaveRequest($('#saved_id').val(), false);
+             $('#progressId').modal('hide'); 
+          },
+          error : function (jqXHR, textStatus, errorThrown){
+              alert(textStatus);
+              alert(errorThrown);
+          }
+       });
+
+
+	  $('#loadedRequests').modal('hide');  
+      $('#progressId').modal('show');  
+  }
+}
+
+
+function resubmitRequest(org_id, version, currentId){
+  if(validation()){
+     //display error message
+     $('#errorMessage').show();
+     scrollTo('anchor');
+  }else{ 
+     $('#errorMessage').hide();
+     var variables= {};
+     variables['requested_for'] = "${jvar_my_sys_id}";
+     variables['opened_by'] = "${jvar_my_sys_id}";
+     variables['contact_type'] = org_id +"="+version;
+     variables['investigator'] = $('#investigator').val();
+     variables['project_name'] = $('#projectName').val();
+
+     &lt;g:evaluate var="jvar_groups" object="true"&gt;
+                var gr = new GlideRecord("sc_cat_item");
+                gr.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+                gr.query();
+		gr;
+     &lt;/g:evaluate&gt;
+     &lt;j:if test="${jvar_groups.next()}"&gt;
+     &lt;j:set var="jvar_cat_item_id" value="${jvar_groups.getValue('sys_id')}" /&gt;
+     &lt;/j:if&gt;
+     variables['cat_item'] = "${jvar_cat_item_id}";
+     variables['short_discription'] = "Genome Data Sharing Plan";
+     var myArray = getVariableArray();
+     variables['variables']=''; 
+
+     myArray.forEach(function(element) {
+        if (variables['variables'] != ''){
+           variables['variables'] += ',';
+        }
+     variables['variables'] += element;
+     });
+     var index = 0;
+     myArray.forEach(function(element) {
+        var value = '';
+        if(textFields.indexOf(names[index]) &gt; -1 ){ 
+          if(name[index] == 'orginId'){
+             value=org_id;
+          }else if(name[index] == 'version'){
+             value=version;
+          }else{
+              value= $('#'+names[index]).val();
+          }
+          if(names[index] == 'date'){
+            value = getConvertedValue(value, '0');
+          }
+          variables[element] = value;
+        }else {
+           if($('#'+names[index]).is(':checked')){
+                variables[element] = 'true';
+           }else{
+               variables[element] = 'false';
+           } 
+        }
+        index = index + 1; 
+      });
+
+      $.ajax({
+          url: "submitRequest.do",
+          type : "POST",
+          data : variables,
+          success : function (data, textStatus, jqXHR){
+             window.location.reload(true);
+             $('#progressId').modal('hide'); 
+          },
+          error : function (jqXHR, textStatus, errorThrown){
+              alert(textStatus);
+              alert(errorThrown);
+          }
+       });
+      $('#loadedRequests').modal('hide');  
+  }
+}
+
+function resubmit(){
+  var variables = {};
+  var currentId = $('#ccr_id').val();
+  variables['org_id'] = $('#'+currentId +'_orginId').val();
+  variables['ticket_number'] = $('#'+currentId +'_ticket_num').val();
+  if(currentId == $('#'+currentId +'_orginId').val()){
+        variables['method'] = 'insert';
+  }else{
+        variables['method'] = 'update';
+  }
+  
+
+    $.ajax({
+            url: "ssutil.do",
+            type : "POST",
+            data : variables,
+            success : function (data, textStatus, jqXHR){
+               var var_comment_start_index = data.indexOf('COMMENTSSTART');
+               var var_comment_end_index = data.indexOf('COMMENTSEND');
+               var version_str = data.substring(var_comment_start_index + 13, var_comment_end_index);
+               resubmitRequest($('#'+currentId +'_orginId').val(), version_str, currentId);
+            },
+            error : function (jqXHR, textStatus, errorThrown){
+                alert(textStatus);
+                alert(errorThrown);
+            }
+         });
+         $('#progressId').modal('show'); 
+}
+
+function withdraw(id){
+  var request_data='';
+  var variables = {};
+  
+  if(!confirm("Are you sure you want to withdraw this request?")){
+     return;
+  }
+  variables['requestedid'] = id;
+     $.ajax({
+         url: "fetchDetail.do",
+         type : "POST",
+         data : variables,
+         success : function (data, textStatus, jqXHR){
+         var var_start_index = data.indexOf('VARSTART');
+         var var_end_index = data.indexOf('VAREND');
+         request_data = data.substring(var_start_index + 8, var_end_index);
+         withdrawSaveData(request_data, id);
+        
+     },
+      error : function (jqXHR, textStatus, errorThrown){
+          alert(textStatus);
+          alert(errorThrown);
+      }
+   });
+
+  $('#progressId').modal('show'); 
+}
+
+function withdrawSaveData(request_data, id){
+ 
+  var dataArray = request_data.split(",");
+  var projectValue = ''; 
+  for (var i = 0; i != dataArray.length; i++){
+    if(dataArray[i].indexOf('projectName') &gt;= 0){
+          projectValue=dataArray[i];
+          break;
+    }
+  }
+  var temp = projectValue.split("=");
+
+  var variables= {};
+  variables['requested_for'] = "${jvar_my_sys_id}";
+  variables['value']=request_data; 
+  variables['project_name']=temp[1];
+  variables['saved_id']='';
+
+      $.ajax({
+          url: "gdspSave.do",
+          type : "POST",
+          data : variables,
+          success : function (data, textStatus, jqXHR){
+               withdrawDelete(id);
+          },
+          error : function (jqXHR, textStatus, errorThrown){
+              alert(textStatus);
+              alert(errorThrown);
+          }
+       });
+
+}
+
+function withdrawDelete(id){
+  var variables= {};
+  variables['id'] = id;
+  variables['method'] = 'withdraw';
+    $.ajax({
+            url: "ssutil.do",
+            type : "POST",
+            data : variables,
+            success : function (data, textStatus, jqXHR){
+               window.location.reload(true);
+             $('#progressId').modal('hide'); 
+            },
+            error : function (jqXHR, textStatus, errorThrown){
+                alert(textStatus);
+                alert(errorThrown);
+            }
+         });
+}
+
+function submitSaveRequest(){
+     $('#errorMessage').hide();
+     var variables= {};
+     variables['requested_for'] = "${jvar_my_sys_id}";
+     variables['value']=''; 
+	 variables['project_name']='';
+	 variables['saved_id']=$('#saved_id').val();
+
+     var index = 0;
+        for(index=0; index &amp;lt; names.length; index++) {
+          if (index != 0) variables['value'] += ',';
+          if(textFields.indexOf(names[index]) &gt; -1 ){ 
+             var value= $('#'+names[index]).val();
+			 if (names[index] == 'projectName')
+			   variables['project_name']=value;
+             if (names[index] == 'date') {
+               value = getConvertedValue(value, '0');
+             }
+             variables['value'] +=  names[index] + '=' + value;
+          }else {
+              if($('#'+names[index]).is(':checked')){
+                  variables['value'] +=  names[index] + '=true';
+              }else{
+                  variables['value'] +=  names[index] + '=false';
+              } 
+          }
+        }
+
+      $.ajax({
+          url: "gdspSave.do",
+          type : "POST",
+          data : variables,
+          success : function (data, textStatus, jqXHR){
+             window.location.reload(true);
+             $('#progressId').modal('hide'); 
+          },
+          error : function (jqXHR, textStatus, errorThrown){
+              alert(textStatus);
+              alert(errorThrown);
+          }
+       });
+      $('#loadedRequests').modal('hide');  
+      $('#progressId').modal('show');  
+}
+
+function submitDeleteSaveRequest(number, flag){
+  if (flag) {
+    if(!confirm("Are you sure you want to delete this draft?")){
+      return;
+    }
+  }
+
+     $('#errorMessage').hide();
+     var variables= {};
+	 variables['saved_id']=number;
+     variables['action']='DELETE'; 
+
+
+      $.ajax({
+          url: "gdspSave.do",
+          type : "POST",
+          data : variables,
+          success : function (data, textStatus, jqXHR){
+             window.location.reload(true);
+             $('#progressId').modal('hide'); 
+          },
+          error : function (jqXHR, textStatus, errorThrown){
+              alert(textStatus);
+              alert(errorThrown);
+          }
+       });
+      $('#loadedRequests').modal('hide');  
+      $('#progressId').modal('show');  
+}
+
+
+function getConvertedValue(value, flag){
+   if(flag == '0'){
+      var values = value.split('/');
+      return values[0]+'-'+values[1] + '-' + values[2];
+    }else {
+      var values = value.split('-');
+      return values[0]+'/'+values[1] + '/' + values[2];
+    }
+}
+
+function validation(){
+  var errorMessage = '&lt;font size="2" color="red"&gt; &lt;ul&gt;';
+  var flag = "false";
+
+  if($('#investigator').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;Investigator is a required field. &lt;/li&gt;';
+     flag = 'true';
+   }
+  if($('#email').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;Email is a required field. &lt;/li&gt;';
+     flag = 'true';
+  }
+  if($('#phone').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;Phone is a required field. &lt;/li&gt;';
+     flag = 'true';
+  }
+  if($('#date').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;Date is a required field. &lt;/li&gt;';
+     flag = 'true';
+  }
+  if($('#projectName').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;project Name is a required field. &lt;/li&gt;';
+  } 
+  if($('#simpleSize').val().trim().length == 0){
+     errorMessage = errorMessage + '&lt;li&gt;Plan Enrollment/Sample Size is a required field. &lt;/li&gt;';
+     flag = 'true';
+  } 
+  if(!validateCollectionType()){
+     errorMessage = errorMessage + '&lt;li&gt;Collection Type at least one needs to be checked. &lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateDataSection()){
+     errorMessage = errorMessage + '&lt;li&gt;Data Section at least one needs to be checked.(if the other is chosen, please specify the data item) &lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateArrayGenoSequence()){
+     errorMessage = errorMessage + '&lt;li&gt;Array Data, GenoType, Sequence at least one needs to be checked.&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateAnalysisOther()){
+     errorMessage = errorMessage + '&lt;li&gt;Analysis, Other Analysis at least one needs to be checked.(if the other is chosen, please specify the other analysis)&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateDataForm()){
+     errorMessage = errorMessage + '&lt;li&gt;Data Form at least one needs to be checked.&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateDataRepository()){
+     errorMessage = errorMessage + '&lt;li&gt;Data Repository at least one needs to be checked. (if Clinic Data/Study/Data Collection/Other is chosen, please specify the companion)&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateCompanion()){
+     errorMessage = errorMessage + '&lt;li&gt;Companion Information at least one needs to be checked. (if the other is chosen, please specify the other data repository)&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateDataSubmission()){
+     errorMessage = errorMessage + '&lt;li&gt;Data Submission and Release Timeline at least one needs to be checked. (if the other is chosen, please specify the other data)&lt;/li&gt;';
+     flag = 'true';
+  }
+  if(!validateDataUseLimitation()){
+     errorMessage = errorMessage + '&lt;li&gt;Data Use Limitation at least one needs to be checked.&lt;/li&gt;';
+     flag = 'true';
+  }
+
+   errorMessage = errorMessage + '&lt;/ul&gt;&lt;/font&gt;';
+
+   if(flag == 'true'){
+      $('#errorMessage').html(errorMessage);
+      return true;
+   }else{
+      return false;
+   }
+}
+
+function toggleNoHumanData(){
+    if($('#noHumanData').is(":checked")){
+          $('#noLimitation').attr("checked", false);
+          $('#noLimitation').attr("disabled", "disabled");
+          $('#limitedOnly').attr("checked", false);
+          $('#limitedOnly').attr("disabled", "disabled");
+          $('#limitedPurpose').attr("checked", false);
+          $('#limitedPurpose').attr("disabled", "disabled");
+          $('#relateToDisease').attr("checked", false);
+          $('#relateToDisease').attr("disabled", "disabled");
+    }else{
+          $('#noLimitation').removeAttr("disabled");
+          $('#limitedOnly').removeAttr("disabled");
+          $('#limitedPurpose').removeAttr("disabled");
+          $('#relateToDisease').removeAttr("disabled");
+    }
+}
+
+function validateDataUseLimitation(){
+  if($('#noHumanData').is(":checked") || $('#noLimitation').is(":checked") || $('#limitedOnly').is(":checked") || $('#limitedPurpose').is(":checked") || $('#relateToDisease').is(":checked")){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+function validateDataSubmission(){
+   if($('#dataCheck').is(":checked") || $('#publication').is(":checked") || $('#otherSubmission').is(":checked")){
+      if($('#otherSubmission').is(":checked")){
+          if( $('#psecifiedOtherSubmission').val().trim().length == 0){
+             return false;
+          }
+      }
+      return true;
+   }else{
+      return false;
+   }
+
+}
+
+function validateCompanion(){
+   if($('#phenotype').is(":checked") || $('#exposure').is(":checked") || $('#surveyTool').is(":checked") || $('#clinicalData').is(":checked") || $('#protocol').is(":checked") || $('#instrument').is(":checked") || $('#otherCompanion').is(":checked")){
+      if($('#clinicalData').is(":checked")){
+          if( $('#specifiedClinicalData').val().trim().length == 0){
+             return false;
+          }
+      }
+      if($('#protocol').is(":checked")){
+          if( $('#specifiedProtocol').val().trim().length == 0){
+             return false;
+          }
+      }
+      if($('#instrument').is(":checked")){
+         if( $('#specifiedInstrument').val().trim().length == 0){
+             return false;
+          }
+      }
+      if($('#otherCompanion').is(":checked")){
+         if( $('#specifiedCompanion').val().trim().length == 0){
+             return false;
+          }
+      }
+ 
+      return true;
+   }else{
+      return false;
+   }
+}
+
+function validateDataRepository(){
+   if($('#arrayExpress').is(":checked") || $('#cancerGenomics').is(":checked") || $('#clinVar').is(":checked") || $('#dbGap').is(":checked") || $('#dbSnp').is(":checked") || $('#dbVar').is(":checked") || $('#ena').is(":checked") || $('#geo').is(":checked") || $('#mgi').is(":checked") || $('#genBank').is(":checked") || $('#traceArchive').is(":checked") || $('#wormbase').is(":checked") || $('#sra').is(":checked") || $('#zfin').is(":checked") || $('#OtherRepository').is(":checked") ){
+      if($('#OtherRepository').is(":checked")){
+          if( $('#specifiedRepository').val().trim().length == 0){
+             return false;
+          }
+      }
+      return true;
+   }else{
+      return false;
+   }
+}
+
+function toggleNotApplicable(){
+  if($('#notApplicableDataForm').is(":checked")){
+    $('#individual').attr("checked", false);
+    $('#aggregate').attr("checked", false);
+    $('#individual').attr("disabled", "disabled");
+    $('#aggregate').attr("disabled","disabled");
+  }else{
+    $('#individual').removeAttr("disabled");
+    $('#aggregate').removeAttr("disabled");
+  }
+}
+
+function validateDataForm(){
+  if($('#individual').is(":checked") || $('#aggregate').is(":checked") || $('#notApplicableDataForm').is(":checked")){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+function validateAnalysisOther(){
+   if($('#association').is(":checked") || $('#arrayDerivedExpression').is(":checked") || $('#rnaExpression').is(":checked") || $('#derivedMethylation').is(":checked") || $('#otherAnalysis').is(":checked")){
+      if($('#otherAnalysis').is(":checked")){
+          if( $('#spcifiedOtherAnalysis').val().trim().length == 0){
+             return false;
+          }
+      }
+      return true;
+   }else{
+      return false;
+   }
+}
+
+function validateCollectionType(){
+   if($('#prospective').is(":checked") || $('#restrospective').is(":checked")){
+       return true;
+   }else{
+      return false;
+   }
+}
+
+function validateDataSection(){
+   if($('#human').is(":checked") || $('#nonHuman').is(":checked") || $('#germLine').is(":checked") || $('#somatic').is(":checked") || $('#dnaType').is(":checked") || $('#rnaType').is(":checked") || $('#microbiome').is(":checked") || $('#mitochrondria').is(":checked") || $('#otherType').is(":checked")){
+       if($('#otherType').is(":checked")){
+           if($('#specifyOtherType').val().trim().length == 0){
+              return false;
+           }
+       }
+       return true;
+   }else{
+      return false;
+   }
+}
+
+function validateArrayGenoSequence(){
+ if($('#snpArrayData').is(":checked") || $('#expressionArray').is(":checked") || $('#methylationArray').is(":checked") || $('#arrayDerive').is(":checked") || $('#microarrayData').is(":checked") || $('#sequenceData').is(":checked") || $('#somaticSnv').is(":checked") || $('#arrayCgh').is(":checked") || $('#wholeGenome').is(":checked") || $('#wholeExome').is(":checked") || $('#targetGenome').is(":checked") || $('#targetExome').is(":checked") || $('#wholeTranscriptome').is(":checked") || $('#targetTrabscriptome').is(":checked") || $('#epigenomicMark').is(":checked") || $('#sanger').is(":checked") || $('#rrna').is(":checked") ){
+     return true;
+  }else{
+    return false;
+  }
+}
+
+function fetchDetails(number, approvalId, state, stage){
+  var variables= {};
+  variables['requestedid'] = number;
+
+  $.ajax({
+      url: "fetchDetail.do",
+      type : "POST",
+      data : variables,
+      success : function (data, textStatus, jqXHR){
+        var var_start_index = data.indexOf('VARSTART');
+        var var_end_index = data.indexOf('VAREND');
+        var request_data = data.substring(var_start_index + 8, var_end_index);
+        var var_comment_start_index = data.indexOf('COMMENTSSTART');
+        var var_comment_end_index = data.indexOf('COMMENTSEND');
+        var comment_str = parse(data.substring(var_comment_start_index + 13, var_comment_end_index));
+        loadApprovalData(request_data);
+
+        $('#commentReviewId1').empty();
+        $('#commentReviewId1').append(comment_str);
+ 
+        $('#commentId1').show();
+        $('#commentId1Lable').show();
+
+        if(comment_str .length &amp;lt; 137){
+               $('#pre_comments_div').hide();
+         }else{
+               $('#pre_comments_div').show();
+         }
+        $('#hiddenRequestId').val(approvalId);
+        $('#hiddenRequestItemId').val(number);
+        $('#comments_div').show();
+        if(state == 'approved' || state.indexOf('not_required') &gt;=0){
+           $('#comments_div').hide();
+           $('#submitButton').hide();
+           $('#closeButton').show();
+        }else if(state == 'requested' || state == 'rejected'){
+           if((stage == 'Waiting for GPA Review' || stage == 'SD Rejected - Waiting for GPA Review') &amp;amp;&amp;amp; isGPA()){
+              $('#comments_div').show();
+              $('#sd_div').show();
+              $('#submitButton').show();
+              $('#closeButton').hide();
+           }else if(stage == 'Waiting for SD Review' &amp;amp;&amp;amp; !isSD()){
+              $('#comments_div').show();
+              $('#sd_div').hide();
+              $('#submitButton').show();
+              $('#closeButton').hide();
+           }else if(stage == 'Waiting for SD Review' &amp;amp;&amp;amp; isSD()){
+              $('#comments_div').show();
+              $('#sd_div').hide();
+              $('#submitButton').show();
+              $('#closeButton').hide();
+           }else if(stage == 'SD Approved'){
+                $('#comments_div').hide();
+                $('#sd_div').hide();
+                $('#submitButton').hide();
+                $('#closeButton').show();
+           }else{
+                $('#comments_div').hide();
+                $('#sd_div').hide();
+                $('#submitButton').hide();
+                $('#closeButton').show();
+           }
+        }else{
+           $('#comments_div').show();
+           $('#submitButton').show();
+           $('#closeButton').hide();
+        }
+        var ticketN = $('#'+number+'_ticket').val();
+        $('#displayRequestId').html(ticketN);
+        $('#displayRequests').modal('show');  
+     },
+      error : function (jqXHR, textStatus, errorThrown){
+          alert(textStatus);
+          alert(errorThrown);
+      }
+   });
+  $('#hiddenStage').val(stage);
+  $('#loadedRequests').modal('hide'); 
+  }
+
+function fetchSavedDetails(number, approvalId){
+  var variables= {};
+  variables['requestedid'] = number;
+  $.ajax({
+      url: "gdspFetchSaveDetails.do",
+      type : "POST",
+      data : variables,
+      success : function (data, textStatus, jqXHR){
+        var var_start_index = data.indexOf('VARSTART');
+        var var_end_index = data.indexOf('VAREND');
+        var request_data = data.substring(var_start_index + 8, var_end_index);
+        loadModal();
+        loadResubmitData(request_data);
+        $('#ccr_id').val('');
+        $('#saved_id').val(number);
+        $('#errorMessage').hide();
+        $('#regularSubmit').show();
+        $('#resubmit').hide();
+        $('#loadedRequests').modal('show');  
+        },
+         error : function (jqXHR, textStatus, errorThrown){
+           alert(textStatus);
+           alert(errorThrown);
+         }
+      });
+  }
+
+ function getVariableArray(){
+  //The order of array is based on the order of variables in the question table 
+  &lt;g:evaluate var="jvar_groups" object="true"&gt;
+      var gr = new GlideRecord("question");
+      gr.addQuery("sys_updated_by", "zhoujim@nih.gov");
+      gr.orderBy("order");
+      gr.query();
+      gr;
+  &lt;/g:evaluate&gt;
+  var variables = [];
+  var index = 0;
+
+  &lt;j:while test="${jvar_groups.next()}" &gt;
+      &lt;j:set var="jvar_dataName" value="${jvar_groups.getValue('name')}"/&gt;
+
+      if(compareValue('${jvar_dataName}', names[index])){      
+          variables[index] = "${jvar_groups.getValue('sys_id')}";
+          index = index + 1;     
+      }  
+  &lt;/j:while&gt;
+  
+  return variables;
+}
+
+function compareValue(dataName, name){
+  if(dataName == name){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+function changeTickerNumber(name, action){
+  var org_prefix = 'NCI-RITM';
+  var changed_prefix = 'CCR_GDSP';
+
+  var changedName = '';
+  if(action == 'otc'){
+      changedName = changed_prefix + name.substring(8);
+  }
+  if(action == 'cto'){
+     changeName = org_prefix + name.substring(8);
+  }
+
+  return changedName;
+}
+
+function displayResubmit(currentId, orgId, orgTicketId){
+      var variables= {};
+      variables['requestedid'] = currentId;
+      $.ajax({
+         url: "fetchDetail.do",
+         type : "POST",
+         data : variables,
+         success : function (data, textStatus, jqXHR){
+         var var_start_index = data.indexOf('VARSTART');
+         var var_end_index = data.indexOf('VAREND');
+         var request_data = data.substring(var_start_index + 8, var_end_index);
+         loadModal();
+         loadResubmitData(request_data);
+         
+         $('#ccr_id').val(currentId);
+         $('#errorMessage').hide();
+         $('#regularSubmit').hide();
+         $('#resubmit').show();
+         $('#loadedRequests').modal('show');  
+         },
+         error : function (jqXHR, textStatus, errorThrown){
+           alert(textStatus);
+           alert(errorThrown);
+         }
+      });
+
+}
+
+function sortTable(colName, tableName){
+    var variables = {};
+    var value = '';
+    variables['myId'] = '${jvar_my_sys_id}';
+    variables['catItemId'] = '${jvar_cat_item_id}';
+    variables['colName'] = colName;
+    variables['tableName'] = tableName;
+    var index = '';
+    if(tableName == 'waiting'){
+        index = '1';
+    }else if (tableName == 'approval'){
+        index = '2';
+    }
+    if(colName == 'pi'){
+          value = $('#piOrder' + index).val();
+    }
+    if(colName == 'pn'){
+          value = $('#pnOrder' + index).val();
+    }
+    if(colName == 'ud'){
+          value = $('#udOrder' + index).val();
+    }
+    variables['sortOrder'] = value;
+
+    var piv1 = $('#piOrder1').val();
+    var pnv1 = $('#pnOrder1').val();
+    var udv1 = $('#udOrder1').val();
+    var piv2 = $('#piOrder2').val();
+    var pnv2 = $('#pnOrder2').val();
+    var udv2 = $('#udOrder2').val();
+
+    $.ajax({
+         url: "ssdSort.do",
+         type : "POST",
+         data : variables,
+         success : function (data, textStatus, jqXHR){
+         var var_start_index = data.indexOf('VARSTART');
+         var var_end_index = data.indexOf('VAREND');
+         var request_data = data.substring(var_start_index + 8, var_end_index);
+         if(tableName == 'waiting'){
+            $('#waitId').html('');
+            $('#waitId').html(request_data);
+         }
+         if(tableName == 'approval'){
+            $('#apprId').html('');
+            $('#apprId').html(request_data);
+         } 
+         $('#piOrder1').val(piv1);
+         $('#pnOrder1').val(pnv1);
+         $('#udOrder1').val(udv1);
+         $('#piOrder2').val(piv2);
+         $('#pnOrder2').val(pnv2);
+         $('#udOrder2').val(udv2);
+          if(colName == 'pi' &amp;amp;&amp;amp; value == '1'){
+              $('#piOrder'+index).val('0');
+          }else if(colName == 'pi' &amp;amp;&amp;amp; value == '0'){
+              $('#piOrder' + index).val('1');
+          }else if(colName == 'pn' &amp;amp;&amp;amp; value == '1'){
+              $('#pnOrder' + index).val('0');
+          }else if(colName == 'pn' &amp;amp;&amp;amp; value == '0'){
+              $('#pnOrder' + index).val('1');
+          }else if(colName == 'ud' &amp;amp;&amp;amp; value == '1'){
+              $('#udOrder' + index).val('0');
+          }else if(colName == 'ud' &amp;amp;&amp;amp; value == '0'){
+              $('#udOrder' + index).val('1');
+          }
+          if(isGPA()){
+           $('#approvalId').html('GPA');
+           $('#otherId').html('GPA');
+          }
+          if(isSD()){
+             $('#approvalId').html('SD');
+             $('#otherId').html('SD');
+          }        
+         },
+         error : function (jqXHR, textStatus, errorThrown){
+           alert(textStatus);
+           alert(errorThrown);
+         }
+      });
+}
+
+&lt;/script&gt;
+&lt;br/&gt;
+&lt;div class="container" style="width:70%;"&gt;
+  &lt;div class="row"&gt;
+     &lt;img src="NCI-logo-full.jpg" height="70" Alt="NCI LOGO"/&gt; &lt;span style="float:right"&gt; &lt;input type="button" class="btn btn-default active" value="Logout" onclick="logout()"/&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-12" style="white-space:nowrap; display:inline;"&gt;&lt;h3 class="tools-owner-title"&gt;CCR Tools&lt;/h3&gt;&lt;/div&gt;
+  &lt;div class="col-md-12"&gt;
+      &lt;font size="4"&gt;CCR Genomic Data Sharing Project&lt;/font&gt; &amp;#160; &amp;#160; &lt;a href="https://ccrod.cancer.gov/confluence/x/DIiyBw" target="_BLANK"&gt;&lt;img src="contextual_help.png" width="20px" height="20px" Alt="Help" Title="Help"/&gt;Help&lt;/a&gt; &lt;br/&gt;
+      &lt;div&gt;The Genomic Data Sharing (GDS) Policy applies to all NIH intramural research that generates large-scale human or non-human genomic data as well as the use of these data for subsequent research. Large-scale data include genome-wide association studies (GWAS), single nucleotide polymorphisms (SNP) arrays, and genome sequence, transcriptomic, metagenomic, epigenomic, and gene expression data. For details about what thresholds require data sharing please refer to the &lt;a href="https://ccrod.cancer.gov/confluence/display/CCRGDS/CCR+Genomic+Data+Sharing+Project+Home" target="_BLANK"&gt;&lt;u&gt;CCR GDS Website&lt;/u&gt;&lt;/a&gt;. &lt;br/&gt;
+Investigators are required to develop a Genomic Data Sharing Plan if they are proposing research that will generate large-scale human and non-human genomic data for which the GDS policy applies. For clinical trials, investigator is considered the Principal Investigator or the Lead Associate Investigator. For laboratory based studies, investigator is considered the scientist leading the research.     &lt;br/&gt; 
+     &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;span&gt;&amp;#160; &amp;#160;&amp;#160;&lt;b&gt;A Genomic Data Sharing Plan should be in place PRIOR to starting the research.&lt;/b&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;span id="piId"&gt;&lt;input type="button" class="btn btn-default active" value="Submit a Plan" onclick="loadModal()"/&gt;        
+&lt;!-- &lt;input type="button" value="Add Signature" onclick="loadSingaturePad();"/&gt;--&gt;
+  &lt;/span&gt;
+&lt;br/&gt;
+    &lt;g:evaluate var="jvar_sd_human_item" object="true" jelly="true"&gt;
+         var human_id;
+         var gr_sd_items = new GlideRecord('sys_user_group');
+         gr_sd_items.addQuery('name', 'CCR_SD_HUMAN');
+         gr_sd_items.query();
+         if(gr_sd_items.getRowCount() &gt; 0){
+               gr_sd_items.next();
+               human_id = gr_sd_items.sys_id;
+         }
+         human_id;
+    &lt;/g:evaluate&gt;
+    &lt;g:evaluate var="jvar_sd_nonhuman_item" object="true" jelly="true"&gt;
+        var nonhuman_id;
+         var gr_sd_items = new GlideRecord('sys_user_group');
+         gr_sd_items.addQuery('name', 'CCR_SD_NON_HUMAN');
+         gr_sd_items.query();
+         if(gr_sd_items.getRowCount() &gt; 0){
+               gr_sd_items.next();
+               nonhuman_id = gr_sd_items.sys_id;
+         }       
+        nonhuman_id;  
+    &lt;/g:evaluate&gt;
+
+
+
+
+    &lt;g:evaluate var="jvar_saved_requests" object="true" jelly="true"&gt;
+             var  stateDisplay = '';
+             var gr_saved_items = new GlideRecord('u_gdsp_user_submission');
+             var gd_saved_items = gr_saved_items.addQuery('u_userid', jelly.jvar_my_sys_id);
+             gr_saved_items.orderByDesc('sys_updated_on');
+             gr_saved_items.query();
+
+             var style=''; 
+             if(gr_saved_items.getRowCount() == 0){
+                style="display:none;"
+             }  
+              stateDisplay = '&lt;div style="' +style + '" class="panel panel-success" &gt;';
+              stateDisplay = stateDisplay + '&lt;div class="panel-heading" role="tab" id="heading_savedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;h4 class="panel-title"&gt;';
+              stateDisplay = stateDisplay + '&lt;a role="button" data-toggle="collapse" data-target="#collapsesavedItems" aria-expanded="true" aria-controls="collapsesavedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; Draft GDSPs &lt;span class="badge" id="ritm_count"&gt;'+ gr_saved_items.getRowCount() + '&lt;/span&gt;';
+              stateDisplay = stateDisplay + '&lt;/a&gt;&lt;/h4&gt;&lt;/div&gt;';
+
+              stateDisplay = stateDisplay + '&lt;div id="collapsesavedItems" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_savedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;table class="table table-bordered table-striped table-condensed"&gt;';
+               
+              stateDisplay = stateDisplay + '&lt;tr&gt;&lt;th&gt;Project Name&lt;/th&gt;&lt;th&gt;Created Date&lt;/th&gt;&lt;th&gt;Actions&lt;/th&gt;&lt;/tr&gt;';
+              while (gr_saved_items.next()){
+                      var pName = '';
+                      var createdDate = '';
+                      
+                      selectedOrginId = gr_saved_items.contact_type;
+                      
+                     stateDisplay = stateDisplay + '&lt;tr  id="' + gr_saved_items.sys_id + '" &gt;';
+                      
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_number"&gt;'+ gr_saved_items.u_project_name +'&lt;/td&gt;'
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_cat_item"&gt;' + gr_saved_items.sys_created_on +'&lt;/td&gt;';
+                   stateDisplay = stateDisplay + '&lt;td&gt;&lt;a onclick="fetchSavedDetails(\'' + gr_saved_items.sys_id + '\',\'' + gr_saved_items.sys_id + '\');" class="btn btn-sm btn-default"&gt; Edit&lt;/a&gt;&amp;#160;';
+                   stateDisplay = stateDisplay + '&lt;a onclick="submitDeleteSaveRequest(\'' + gr_saved_items.sys_id + '\', true)" class="btn btn-sm btn-default"&gt;Delete&lt;/a&gt;';
+                   stateDisplay = stateDisplay + '&lt;/td&gt;&lt;/tr&gt;';              
+              }
+
+              stateDisplay = stateDisplay + '&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;';
+              stateDisplay;
+            &lt;/g:evaluate&gt;
+           ${jvar_saved_requests}
+
+    &lt;g:evaluate var="jvar_pso" object="true" jelly="true"&gt;
+             var  stateDisplay = '';
+             var gr = gs.getUser(); 
+             var isPSO = gr.isMemberOf('CCR_PSO');
+             if (isPSO) {
+                var gr_requested_items = new GlideRecord('sc_req_item');
+                var gd_requested_items = gr_requested_items.addQuery('context.stage.name', 'Completed');
+                var gc_requested_items = gr_requested_items.addQuery('cat_item', '${jvar_cat_item_id}');
+                gr_requested_items.addActiveQuery();
+                gr_requested_items.orderByDesc('number');
+                gr_requested_items.query();
+
+                var style=''; 
+                if(gr_requested_items.getRowCount() == 0){
+                  style="display:none;"
+                }  
+                stateDisplay = '&lt;div style="' +style + '" class="panel panel-success" &gt;';
+                stateDisplay = stateDisplay + '&lt;div class="panel-heading" role="tab" id="heading_requestedItems"&gt;';
+                stateDisplay = stateDisplay + '&lt;h4 class="panel-title"&gt;';
+                stateDisplay = stateDisplay + '&lt;a role="button" data-toggle="collapse" data-target="#collapseRequestedItems" aria-expanded="true" aria-controls="collapseRequestedItems"&gt;';
+                stateDisplay = stateDisplay + '&lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; Approved GDSP &lt;span class="badge" id="ritm_count"&gt;'+ gr_requested_items.getRowCount() + '&lt;/span&gt;';
+                stateDisplay = stateDisplay + '&lt;/a&gt;&lt;/h4&gt;&lt;/div&gt;';
+
+                stateDisplay = stateDisplay + '&lt;div id="collapseRequestedItems" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_requestedItems"&gt;';
+                stateDisplay = stateDisplay + '&lt;table class="table table-bordered table-striped table-condensed"&gt;';
+               
+                stateDisplay = stateDisplay + '&lt;tr&gt;&lt;th&gt;GDSP ID&lt;/th&gt;&lt;th&gt;Principle Investigator&lt;/th&gt;&lt;th&gt;Project Name&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Approval&lt;/th&gt;&lt;th&gt;Submitted Date&lt;/th&gt;&lt;th&gt;Actions&lt;/th&gt;&lt;/tr&gt;';
+                while (gr_requested_items.next()){
+                      var orginId = '';
+                      var tickerNum = '';
+                      var org_ticket_num = '';
+                      var version = '';
+                      var hasParent = '';
+                      var selectedOrginId = '';
+                      
+                      selectedOrginId = gr_requested_items.contact_type;
+                      
+                      if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web'){
+                             orginId = gr_requested_items.sys_id;
+                             org_ticket_num = gr_requested_items.number;
+                             hasParent = 'false';
+                      }else{
+                          var orgIds = selectedOrginId.split("=");
+                          var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+                          gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+                          gr_tracking_item.query();
+
+                          if(gr_tracking_item.getRowCount() &gt; 0){
+                             gr_tracking_item.next();
+                             orginId = gr_tracking_item.u_orgid;
+                             org_ticket_num = gr_tracking_item.u_ticket_number;
+                             version = orgIds[1];
+                             hasParent = 'true';
+                           }
+                      }
+                     stateDisplay = stateDisplay + '&lt;tr  id="' + gr_requested_items.sys_id + '" &gt;';
+                      
+                     if(hasParent == 'true'){
+                          ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+                     }else{
+                         ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
+                     }                 
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_number"&gt;'+ ticketNum +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="investigator"&gt;'+ gr_requested_items.u_investigator +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="project"&gt;'+ gr_requested_items.u_project_name +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_cat_item"&gt;' + gr_requested_items.context.stage.name +'&lt;/td&gt;';
+                 var approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"&gt;&lt;/img&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/td&gt;';  
+                 if (gr_requested_items.context.stage.name == 'Waiting for GPA Review')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review"  title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review"  title="Waiting for SD Review"/&gt;&lt;/td&gt;'; }
+                   if (gr_requested_items.context.stage.name == 'Waiting for SD Review') {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                   }
+                   if (gr_requested_items.context.stage.name == 'SD Rejected - Waiting for GPA Review') {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                   }
+                   if (gr_requested_items.context.stage.name == 'Waiting for PI Resubmit')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;'; 
+                   }
+                   if (gr_requested_items.context.stage.name == 'SD Rejected - Waiting for PI Resubmit')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;';
+                   }
+                   stateDisplay = stateDisplay + approval; 
+                   stateDisplay = stateDisplay + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_requested_items.sys_created_on +'&lt;/td&gt;';
+                   stateDisplay = stateDisplay + '&lt;td&gt;&lt;a onclick="loadDisplayModal(\'' + gr_requested_items.sys_id + '\',\'' + gr_requested_items.sys_id + '\');" class="btn btn-sm btn-default"&gt;View&lt;/a&gt;&amp;#160;&amp;#160;';
+                   stateDisplay = stateDisplay + '&lt;a href="report.do?sys_id=' + gr_requested_items.sys_id + '&amp;amp;ticket_num=' + ticketNum + '" class="btn btn-sm btn-default" target="_blank"&gt;Export&lt;/a&gt;';
+                   
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_orginId" value="' + orginId + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_ticket_num" value="' + org_ticket_num + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_ticket" value="' + ticketNum  + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;/td&gt;&lt;/tr&gt;';              
+              }
+
+              stateDisplay = stateDisplay + '&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;';
+              }
+              stateDisplay;
+            &lt;/g:evaluate&gt;
+           ${jvar_pso}		   
+  
+    &lt;g:evaluate var="jvar_state" object="true" jelly="true"&gt;
+             var  stateDisplay = '';
+             var gr_requested_items = new GlideRecord('sc_req_item');
+             var gd_requested_items = gr_requested_items.addQuery('request.requested_for', jelly.jvar_my_sys_id);
+             var gc_requested_items = gr_requested_items.addQuery('cat_item', '${jvar_cat_item_id}');
+             gr_requested_items.addActiveQuery();
+             gr_requested_items.orderByDesc('number');
+             gr_requested_items.query();
+
+             var style=''; 
+             if(gr_requested_items.getRowCount() == 0){
+                style="display:none;"
+             }  
+              stateDisplay = '&lt;div style="' +style + '" class="panel panel-success" &gt;';
+              stateDisplay = stateDisplay + '&lt;div class="panel-heading" role="tab" id="heading_requestedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;h4 class="panel-title"&gt;';
+              stateDisplay = stateDisplay + '&lt;a role="button" data-toggle="collapse" data-target="#collapseRequestedItems" aria-expanded="true" aria-controls="collapseRequestedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; Submitted GDSP &lt;span class="badge" id="ritm_count"&gt;'+ gr_requested_items.getRowCount() + '&lt;/span&gt;';
+              stateDisplay = stateDisplay + '&lt;/a&gt;&lt;/h4&gt;&lt;/div&gt;';
+
+              stateDisplay = stateDisplay + '&lt;div id="collapseRequestedItems" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_requestedItems"&gt;';
+              stateDisplay = stateDisplay + '&lt;table class="table table-bordered table-striped table-condensed"&gt;';
+               
+              stateDisplay = stateDisplay + '&lt;tr&gt;&lt;th&gt;GDSP ID&lt;/th&gt;&lt;th&gt;Principle Investigator&lt;/th&gt;&lt;th&gt;Project Name&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Approval&lt;/th&gt;&lt;th&gt;Submitted Date&lt;/th&gt;&lt;th&gt;Actions&lt;/th&gt;&lt;/tr&gt;';
+              while (gr_requested_items.next()){
+                      var orginId = '';
+                      var tickerNum = '';
+                      var org_ticket_num = '';
+                      var version = '';
+                      var hasParent = '';
+                      var selectedOrginId = '';
+                      
+                      selectedOrginId = gr_requested_items.contact_type;
+                      
+                      if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web'){
+                             orginId = gr_requested_items.sys_id;
+                             org_ticket_num = gr_requested_items.number;
+                             hasParent = 'false';
+                      }else{
+                          var orgIds = selectedOrginId.split("=");
+                          var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+                          gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+                          gr_tracking_item.query();
+
+                          if(gr_tracking_item.getRowCount() &gt; 0){
+                             gr_tracking_item.next();
+                             orginId = gr_tracking_item.u_orgid;
+                             org_ticket_num = gr_tracking_item.u_ticket_number;
+                             version = orgIds[1];
+                             hasParent = 'true';
+                           }
+                      }
+                     stateDisplay = stateDisplay + '&lt;tr  id="' + gr_requested_items.sys_id + '" &gt;';
+                      
+                     if(hasParent == 'true'){
+                          ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+                     }else{
+                         ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
+                     }                 
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_number"&gt;'+ ticketNum +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="investigator"&gt;'+ gr_requested_items.u_investigator +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="project"&gt;'+ gr_requested_items.u_project_name +'&lt;/td&gt;';
+                 stateDisplay = stateDisplay + '&lt;td class="ritm_cat_item"&gt;' + gr_requested_items.context.stage.name +'&lt;/td&gt;';
+                 var approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" title="Request Submitted" Alt="Request Submitted"&gt;&lt;/img&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/td&gt;';  
+                 if (gr_requested_items.context.stage.name == 'Waiting for GPA Review')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA review"  title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;'; }
+                   if (gr_requested_items.context.stage.name == 'Waiting for SD Review') {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                   }
+                   if (gr_requested_items.context.stage.name == 'SD Rejected - Waiting for GPA Review') {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                   }
+                   if (gr_requested_items.context.stage.name == 'Waiting for PI Resubmit')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;'; 
+                   }
+                   if (gr_requested_items.context.stage.name == 'SD Rejected - Waiting for PI Resubmit')  {
+                       approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;';
+                   }
+                   stateDisplay = stateDisplay + approval; 
+                   stateDisplay = stateDisplay + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_requested_items.sys_created_on +'&lt;/td&gt;';
+                   stateDisplay = stateDisplay + '&lt;td&gt;&lt;a onclick="loadDisplayModal(\'' + gr_requested_items.sys_id + '\',\'' + gr_requested_items.sys_id + '\');" class="btn btn-sm btn-default"&gt;View&lt;/a&gt;&amp;#160;&amp;#160;';
+                   stateDisplay = stateDisplay + '&lt;a onclick="displayResubmit(\'' + gr_requested_items.sys_id + '\')" class="btn btn-sm btn-default"&gt;Resubmit&lt;/a&gt;&amp;#160;&amp;#160;';
+                   if(gr_requested_items.context.stage.name != 'Completed'){                     
+                       stateDisplay = stateDisplay + '&lt;a onclick="withdraw(\'' + gr_requested_items.sys_id + '\')" class="btn btn-sm btn-default"&gt;Withdraw&lt;/a&gt;&amp;#160;&amp;#160;';
+                   }
+                   stateDisplay = stateDisplay + '&lt;a href="report.do?sys_id=' + gr_requested_items.sys_id + '&amp;amp;ticket_num=' + ticketNum + '" class="btn btn-sm btn-default" target="_blank"&gt;Export&lt;/a&gt;';
+                   
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_orginId" value="' + orginId + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_ticket_num" value="' + org_ticket_num + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;input type="hidden" id="'+gr_requested_items.sys_id+'_ticket" value="' + ticketNum  + '"/&gt;';
+                   stateDisplay = stateDisplay + '&lt;/td&gt;&lt;/tr&gt;';              
+              }
+
+              stateDisplay = stateDisplay + '&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;';
+              stateDisplay;
+            &lt;/g:evaluate&gt;
+           ${jvar_state}
+
+
+  &lt;g:evaluate var="jvar_approval_items" object="true" jelly="true"&gt;
+     var gr_approval_items = GlideRecord('sysapproval_approver');
+     //var req_item = gr_approval_items.addJoinQuery('sc_req_item','document_id','sys_id');
+     //req_item.addCondition('cat_item','${jvar_cat_item_id}');
+
+     gr_approval_items.addQuery('approver', jelly.jvar_my_sys_id); 
+     gr_approval_items.addQuery('source_table','sc_req_item'); 
+     gr_approval_items.addQuery('sysapproval.cat_item', '${jvar_cat_item_id}');
+     gr_approval_items.orderByDesc('sys_updated_on');  
+     gr_approval_items.query();
+
+     var htmlC1 = '';
+     var htmlC2 = '';
+     var count1 = 0;
+     var count2 = 0;
+ 
+     var items = [];
+
+
+
+
+        while (gr_approval_items.next()) {	
+            var orginId = '';
+            var tickerNum = '';
+            var org_ticket_num = '';
+            var version = '';
+            var hasParent = '';
+            var selectedOrginId = '';
+                
+            var docId = gr_approval_items.document_id;
+
+            var selectedOrginId = gr_approval_items.document_id.contact_type;
+            if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web'){
+                 orginId = gr_approval_items.document_id.sys_id;
+                 org_ticket_num = gr_approval_items.document_id.number;
+                 hasParent = 'false';
+             }else{
+                var orgIds = selectedOrginId.split("=");
+                var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+                gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+                gr_tracking_item.query();
+
+                if(gr_tracking_item.getRowCount() &gt; 0){
+                     gr_tracking_item.next();
+                     orginId = gr_tracking_item.u_orgid;
+                     org_ticket_num = gr_tracking_item.u_ticket_number;
+                     version = orgIds[1];
+                     hasParent = 'true';
+                }
+            }
+
+            var ticket_number = '';
+            if(hasParent == 'true'){
+                 ticket_number = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+            }else{
+                ticket_number = "CCR_GDSP" + gr_approval_items.sysapproval.number.substring(8);
+            }
+            var stage_v = gr_approval_items.document_id.context.stage.name;
+            if(stage_v == 'Waiting for PI Resubmit'|| stage_v == 'Completed'|| (stage_v == 'Waiting for SD Review' &amp;amp;&amp;amp; jelly.jvar_group) || (stage_v == 'SD Rejected - Waiting for GPA Review' &amp;amp;&amp;amp; (jelly.jvar_group_h ||jelly.jvar_group_nh ))){
+         
+              if (!((stage_v == 'SD Rejected - Waiting for PI Resubmit' || stage_v == 'SD Rejected - Waiting for GPA Review') &amp;amp;&amp;amp; gr_approval_items.state == 'approved')) {
+
+	        htmlC1 = htmlC1 + '&lt;tr id="' + gr_approval_items.document_id + '"&gt;\n';
+                htmlC1 = htmlC1 + '&lt;td class="ritm_number"&gt;' + ticket_number + '&lt;/td&gt;';
+                //htmlC1 = htmlC1 + '&lt;td class="investigator"&gt;'+ gr_approval_items.document_id.u_investigator +'&lt;/td&gt;';
+                htmlC1 = htmlC1 + '&lt;td class="investigator"&gt;'+ gr_approval_items.sysapproval.variables['investigator'] +'&lt;/td&gt;';
+                //htmlC1 = htmlC1 + '&lt;td class="project"&gt;'+ gr_approval_items.document_id.u_project_name +'&lt;/td&gt;';
+                htmlC1 = htmlC1 + '&lt;td class="project"&gt;'+ gr_approval_items.sysapproval.variables['projectName'] +'&lt;/td&gt;';
+                htmlC1 = htmlC1 + '&lt;td class="ritm_opened_by"&gt;'+ gr_approval_items.sysapproval.opened_by.name +'&lt;/td&gt;';
+                htmlC1 = htmlC1 + '&lt;td class="ritm_stage"&gt;'+ gr_approval_items.document_id.sys_created_on.getDisplayValue()  +'&lt;/td&gt;';
+                 
+                htmlC1 = htmlC1 + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_approval_items.document_id.context.stage.name +'&lt;/td&gt;';
+		htmlC1 = htmlC1 + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_approval_items.sys_updated_on +'&lt;/td&gt;';	  
+	        var approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/td&gt;';  
+                if (stage_v == 'Waiting for GPA Review')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;'; }
+                if (stage_v == 'Waiting for SD Review') {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                }
+                if (stage_v == 'SD Rejected - Waiting for GPA Review') {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                }
+                if (stage_v == 'Waiting for PI Resubmit')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;'; 
+                }
+                if (stage_v == 'SD Rejected - Waiting for PI Resubmit')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;';
+                }
+                htmlC1 = htmlC1 + approval; 
+				   
+		htmlC1 = htmlC1 + '&lt;td&gt;&lt;a onclick="fetchDetails(\''+ gr_approval_items.document_id + '\',\'' + gr_approval_items.sys_id + '\',\'' + gr_approval_items.state + '\',\''+ gr_approval_items.document_id.context.stage.name +'\');" class="btn btn-sm btn-default"&gt;View&lt;/a&gt;&amp;#160;&amp;#160;';
+               htmlC1 = htmlC1 + '&lt;a href="report.do?sys_id=' + gr_approval_items.document_id.sys_id + '&amp;amp;ticket_num=' + ticket_number+ '" class="btn btn-sm btn-default" target="_blank"&gt;Export&lt;/a&gt;';
+                htmlC1 = htmlC1 + '&lt;input type="hidden" id="'+ gr_approval_items.document_id.sys_id +'" value="' + gr_approval_items.sysapproval.number +'"/&gt;';
+                htmlC1 = htmlC1 + '&lt;input type="hidden" id="'+ gr_approval_items.document_id.sys_id +'_ticket" value="' + ticket_number +'"/&gt;';
+                htmlC1 = htmlC1 + '&lt;/td&gt;&lt;/tr&gt;';
+                count1 = count1 + 1;
+              }
+           }else{
+
+             if (!((stage_v == 'SD Rejected - Waiting for PI Resubmit' || stage_v == 'SD Rejected - Waiting for GPA Review') &amp;amp;&amp;amp; gr_approval_items.state == 'approved')) {
+	        htmlC2 = htmlC2 + '&lt;tr id="' + gr_approval_items.document_id + '"&gt;\n';
+                htmlC2 = htmlC2 + '&lt;td class="ritm_number"&gt;' + ticket_number + '&lt;/td&gt;';
+                
+                htmlC2 = htmlC2 + '&lt;td class="investigator"&gt;'+ gr_approval_items.document_id.u_investigator +'&lt;/td&gt;';
+                htmlC2 = htmlC2 + '&lt;td class="project"&gt;'+ gr_approval_items.document_id.u_project_name +'&lt;/td&gt;';
+                htmlC2 = htmlC2 + '&lt;td class="ritm_opened_by"&gt;'+ gr_approval_items.sysapproval.opened_by.name +'&lt;/td&gt;';
+                htmlC2 = htmlC2 + '&lt;td class="ritm_stage"&gt;'+ gr_approval_items.document_id.sys_created_on.getDisplayValue()  +'&lt;/td&gt;';
+                 
+                htmlC2 = htmlC2 + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_approval_items.document_id.context.stage.name +'&lt;/td&gt;';
+		htmlC2 = htmlC2 + '&lt;td class="ritm_sys_created_on"&gt;'+ gr_approval_items.sys_updated_on +'&lt;/td&gt;';		  
+	        var approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/td&gt;';  
+                if (stage_v == 'Waiting for GPA Review')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;'; }
+                if (stage_v == 'Waiting for SD Review') {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                }
+                if (stage_v == 'SD Rejected - Waiting for GPA Review') {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/td&gt;';
+                }
+                if (stage_v == 'Waiting for PI Resubmit')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted"  title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;'; 
+                }
+                if (stage_v == 'SD Rejected - Waiting for PI Resubmit')  {
+                    approval = '&lt;td class="ritm_cat_item"&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/td&gt;';
+                }
+                htmlC2 = htmlC2 + approval; 
+				   
+		htmlC2 = htmlC2 + '&lt;td&gt;&lt;a onclick="fetchDetails(\''+ gr_approval_items.document_id + '\',\'' + gr_approval_items.sys_id + '\',\'' + gr_approval_items.state + '\',\''+ gr_approval_items.document_id.context.stage.name +'\');" class="btn btn-sm btn-default"&gt;View&lt;/a&gt;&amp;#160;&amp;#160;';
+                htmlC2 = htmlC2 + '&lt;a href="report.do?sys_id=' + gr_approval_items.document_id.sys_id + '&amp;amp;ticket_num=' + ticket_number+ '" class="btn btn-sm btn-default" target="_blank"&gt;Export&lt;/a&gt;';
+                htmlC2 = htmlC2 + '&lt;input type="hidden" id="'+ gr_approval_items.document_id.sys_id +'" value="' + gr_approval_items.sysapproval.number +'"/&gt;';
+                htmlC2 = htmlC2 + '&lt;input type="hidden" id="'+ gr_approval_items.document_id.sys_id +'_ticket" value="' + ticket_number +'"/&gt;';
+                htmlC2 = htmlC2 + '&lt;/td&gt;&lt;/tr&gt;';
+                count2 = count2 + 1;
+              }
+
+           }
+
+       }
+
+
+    items.push(htmlC2);
+    items.push(htmlC1);
+    items.push(count2);
+    items.push(count1);
+   items;
+   &lt;/g:evaluate&gt;
+   &lt;g:evaluate var="jvar_approval_item1" object="true" jelly="true"&gt;
+        var items = jelly.jvar_approval_items;
+        item = items[0];
+        item;
+   &lt;/g:evaluate&gt;
+   
+   &lt;g:evaluate var="jvar_approval_item2" object="true" jelly="true"&gt;
+        var items = jelly.jvar_approval_items;
+        item = items[1];
+        item;
+   &lt;/g:evaluate&gt;
+
+   &lt;g:evaluate var="jvar_approval_count1" object="true" jelly="true"&gt;
+        var items = jelly.jvar_approval_items;
+        item = items[2].toFixed(0);
+        item;
+   &lt;/g:evaluate&gt;
+
+   &lt;g:evaluate var="jvar_approval_count2" object="true" jelly="true"&gt;
+        var items = jelly.jvar_approval_items;
+        item = items[3].toFixed(0);
+        item;
+   &lt;/g:evaluate&gt;
+
+   &lt;g:evaluate var="jvar_approval_style2" object="true" jelly="true"&gt;
+        var style = '';
+        var items = jelly.jvar_approval_items;
+        if(items[2] == 0){
+           style='display:none;';
+        }else{
+           style = '';
+        }
+        style;
+   &lt;/g:evaluate&gt;
+  &lt;g:evaluate var="jvar_approval_style1" object="true" jelly="true"&gt;
+        var style = '';
+        var items = jelly.jvar_approval_items;
+        if(items[3]== 0){
+           style='display:none;';
+        }else{
+           style = '';
+        }
+        style;
+   &lt;/g:evaluate&gt;
+   &lt;div id="waitId"&gt;
+   &lt;div class="panel panel-success" style="${jvar_approval_style2}"&gt;
+      &lt;div class="panel-heading" role="tab" id="heading_approvalItems"&gt;
+      &lt;h4 class="panel-title"&gt;
+      &lt;a role="button" data-toggle="collapse" data-target="#collapseApprovalItems" aria-expanded="true" aria-controls="collapseApprovalItems"&gt;
+      &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; GDSPs Waiting for &lt;span id="approvalId"&gt;&lt;/span&gt; Approval &lt;span class="badge" id="ritm_count"&gt;${jvar_approval_count1}&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div id="collapseApprovalItems" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_approvalItems"&gt;
+        &lt;table class="table table-bordered table-striped table-condensed"&gt;
+           &lt;tr&gt;&lt;th&gt;GDSP ID&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('pi', 'waiting');"&gt;&lt;u&gt;Principle Investigator&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('pn', 'waiting');"&gt;&lt;u&gt;Project Name&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;Submitted By&lt;/th&gt;&lt;th&gt;Submitted Date&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('ud', 'waiting');"&gt;&lt;u&gt;Latest Updated Date&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;Approval&lt;/th&gt;&lt;th&gt;Actions&lt;/th&gt;&lt;/tr&gt;
+
+             ${jvar_approval_item1}             
+
+        &lt;/table&gt;
+        &lt;input type="hidden" id="piOrder1"/&gt;
+        &lt;input type="hidden" id="pnOrder1"/&gt;
+        &lt;input type="hidden" id="udOrder1"/&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;	
+    &lt;/div&gt; 
+   &lt;div id="apprId"&gt;
+   &lt;div class="panel panel-success" style="${jvar_approval_style1}"&gt;
+      &lt;div class="panel-heading" role="tab" id="heading_approvalItems"&gt;
+      &lt;h4 class="panel-title"&gt;
+      &lt;a role="button" data-toggle="collapse" data-target="#collapseApprovalItems" aria-expanded="true" aria-controls="collapseApprovalItems"&gt;
+      &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; GDSPs reviewed by &lt;span id="otherId"&gt;&lt;/span&gt;  &lt;span class="badge" id="ritm_count"&gt;${jvar_approval_count2}&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div id="collapseApprovalItems" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading_approvalItems"&gt;
+        &lt;table class="table table-bordered table-striped table-condensed"&gt;
+           &lt;tr&gt;&lt;th&gt;GDSP ID&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('pi', 'approval');"&gt;&lt;u&gt;Principle Investigator&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('pn', 'approval');"&gt;&lt;u&gt;Project Name&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;Submitted By&lt;/th&gt;&lt;th&gt;Submitted Date&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;&lt;a href="#" onclick="sortTable('ud', 'approval');"&gt;&lt;u&gt;Latest Updated Date&lt;/u&gt;&lt;/a&gt;&lt;/th&gt;&lt;th&gt;Approval&lt;/th&gt;&lt;th&gt;Actions&lt;/th&gt;&lt;/tr&gt;
+            &lt;div id="approId"&gt; ${jvar_approval_item2} &lt;/div&gt; 
+              
+        &lt;/table&gt;
+        &lt;input type="hidden" id="piOrder2"/&gt;
+        &lt;input type="hidden" id="pnOrder2"/&gt;
+        &lt;input type="hidden" id="udOrder2"/&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+ &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+   &lt;footer class="container footer"&gt;
+    	&lt;div class="col-xs-12"&gt;
+		&lt;ul class="list-inline"&gt;
+	  	    &lt;li&gt;&lt;a href="http://www.cancer.gov/" title="Home" target="_blank"&gt;&lt;u&gt;Home&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+	 	    &lt;li&gt;&lt;a href="mailto:nciccrgdspwebadmin@nih.gov?subject=CCR_GDSP" target="_top" title="Support"&gt;&lt;u&gt;Support&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://www.cancer.gov/global/web/policies" title="Policies" target="_blank"&gt;&lt;u&gt;Policies&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://www.cancer.gov/global/web/policies/accessibility" title="Accessibility" target="_blank"&gt;&lt;u&gt;Accessibility&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://cancer.gov/global/viewing-files" title="Viewing Files" target="_blank"&gt;&lt;u&gt;Viewing Files&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://www.cancer.gov/global/web/policies/foia" title="FOIA" target="_blank"&gt;&lt;u&gt;FOIA&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;ul class="list-inline"&gt;
+		    &lt;li&gt;&lt;a href="http://www.hhs.gov/" target="_blank"&gt;&lt;u&gt;U.S. Department of Health and Human Services&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://www.nih.gov" target="_blank"&gt;&lt;u&gt;National Institutes of Health&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://www.cancer.gov/" target="_blank"&gt;&lt;u&gt;National Cancer Institute&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		    &lt;li class="footer-spacer"&gt;|&lt;/li&gt;
+		    &lt;li&gt;&lt;a href="http://usa.gov" target="_blank"&gt;&lt;u&gt;USA.gov&lt;/u&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+  &lt;/footer&gt;
+
+
+&lt;div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="loadedRequests" class="modal fade" data-keyboard="false" data-backdrop="static"&gt;
+
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content" style="height:900px; overflow-y:auto; overflow-x: hidden;"&gt;
+       &lt;div id="anchor"&gt;&lt;/div&gt;
+      &lt;div class="modal-header"&gt;
+           &lt;div&gt;
+                 &lt;font size="5"&gt;&lt;b&gt;Genomic Data Sharing Plan&lt;/b&gt;&lt;/font&gt;
+           &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+         &lt;div class="container"&gt;
+             
+             &lt;div id="errorMessage" style="display:none;"&gt;
+             &lt;/div&gt;
+             &lt;table width="70%" border="0"&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Demographics&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                             &lt;tr&gt;
+                                &lt;td width="40%" align="right"&gt;&lt;label for="investigator"&gt;Principle Investigator&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="investigator" name="investigator"/&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                 &lt;td width="40%" align="right"&gt;&lt;label for="email"&gt;Email&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="email" name="email"/&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td width="40%" align="right"&gt;&lt;label for="phone"&gt;Phone&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="phone" name="phone"/&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td width="40%" align="right"&gt;&lt;label for="date"&gt;Date&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="date" name="date"/&gt;&amp;#160;&lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/table&gt;   
+                     &lt;/fieldset&gt;  
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                      &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Project Information&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                             &lt;tr&gt;
+                                &lt;td width="40%" align="right"&gt;&lt;label for="projectName"&gt;Project Name&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="projectName" name="prjectName"/&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td width="40%" align="right"&gt;&lt;label for="simpleSize"&gt;Plan enrollment/Sample Size&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td width="60%" align="left"&gt;&lt;input type="text" style="height: 25px;" size="40" id="simpleSize" name="sampleSize"/&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="prospective"&gt;Collection Type [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" name="prospective" id="prospective" value="prospective"/&gt;&amp;#160;Prospective&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="restrospective"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                                &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" name="retrospective" id="restrospective" value="retrospective"/&gt;&amp;#160;Retrospective&lt;/td&gt;
+                              &lt;/tr&gt;
+                          &lt;/table&gt;
+                      &lt;/fieldset&gt;                  
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="human"&gt;Source [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" name="human" id="human" value="human"/&gt;&amp;#160;Human&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="nonHuman"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" name="nonHuman" id="nonHuman" value="nonHuman"/&gt;&amp;#160;Non-Human&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="germLine"&gt;Sample Types [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="germLine" id="germLine" value="germLine"/&gt;&amp;#160;Germ Line&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="somatic"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="somatic" id="somatic" value="somatic"/&gt;&amp;#160;Somatic&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="dnaType"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="dna" id="dnaType" value="dna"/&gt;&amp;#160;DNA&lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="rnaType"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="rna" id="rnaType" value="rna"/&gt;&amp;#160;RNA &lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="microbiome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="microbiome" id="microbiome" value="microbiome"/&gt;&amp;#160;Microbiome&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="mitochrondria"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" name="mitochrondria" id="mitochrondria" value="mitochrondria"/&gt;&amp;#160;Mitochrondria&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right"&gt;&lt;label for="otherType"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" name="otherSampleType" id="otherType" value="otherSampleType"/&gt;&amp;#160;Other,&amp;#160; &amp;#160;please specify&amp;#160; &lt;label for="specifyOtherType"&gt;&amp;#160;&lt;/label&gt;&lt;input type="text" name="otherSampleTypeText" id="specifyOtherType" style="height: 25px;" size="20"/&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                     &lt;/fieldset&gt;   
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+ 
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="snpArrayData"&gt;Array Data [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="snpArrayData" name="snp" value="snp"/&gt;&amp;#160;Single Nucleotide&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="expressionArray"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="expressionArray" name="expressArray" value="expressArray"/&gt;&amp;#160;Expression Array&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="methylationArray"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="methylationArray" name="methylationArray" value="methylationArray"/&gt;&amp;#160;Methylation Array&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="arrayDerive"&gt;Genotypes [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="arrayDerive" name="arrayDerived" value="arrayDerived"/&gt;&amp;#160;Array Derived Genotypes&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="microarrayData"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="microarrayData" name="microarrayData" value="cnvFromMicroarray"/&gt;&amp;#160;CNV calls from Microarray&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="sequenceData"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="sequenceData" name="cnvFromSequence" value="cnvFromSequence"/&gt;&amp;#160;CNV calls derived from Sequence&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="somaticSnv"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="somaticSnv" name="maf" value="maf"/&gt;&amp;#160;Somatic SNV (.MFA)&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="arrayCgh"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="arrayCgh" name="arrayCGH" value="arrayCGH"/&gt;&amp;#160;Array CGH CNVs&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="wholeGenome"&gt;Sequence [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="wholeGenome" name="wholeGenome" value="wholeGenome"/&gt;&amp;#160;Whole Genome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="wholeExome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="wholeExome" name="wholeExome" value="wholeExome"/&gt;&amp;#160;Whole Exome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="targetGenome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="targetGenome" name="targetGenome" value="targetGenome"/&gt;&amp;#160;Targeted Genome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="targetExome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="targetExome" name="targetExome" value="TargetExome"/&gt;&amp;#160;Targeted Exome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="wholeTranscriptome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="wholeTranscriptome" name="wholeTranscript" value="wholeTranscript"/&gt;&amp;#160;Whole Transcriptome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="targetTrabscriptome"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="targetTrabscriptome" name="targetTranscript" value="targetTranscript"/&gt;&amp;#160;Targeted Transcriptome&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="epigenomicMark"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="epigenomicMark" name="epigMarks" value="epigMarks"/&gt;&amp;#160;Epigenomic Marks&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="sanger"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="sanger" name="sanger" value="sanger"/&gt;&amp;#160;Sanger&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="rrna"&gt;&amp;#160; &amp;#160;&lt;/label&gt;&amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="rrna" name="rRna" value="rRna"/&gt;&amp;#160;16S rRNA&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="association"&gt;Analysis [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="association" name="linkage" value="linkage"/&gt;&amp;#160;Association/Linkage&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt; &lt;label for="arrayDerivedExpression"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="arrayDerivedExpression" name="arrayDeriveExp" value="arrayDeriveExp"/&gt;&amp;#160;Array Derived Expression&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="rnaExpression"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="rnaExpression" name="seqDeriveExp" value="seqDeriveExp"/&gt;&amp;#160;RNA Seq Derived Expression&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="derivedMethylation"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="derivedMethylation" name="arrayDeriveMethyl" value="arrayDeriveMethyl"/&gt;&amp;#160;Array Derived Methylation&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="top"&gt;&lt;label for="otherAnalysis"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="otherAnalysis" name="otherType" value="otherType"/&gt;&amp;#160;Other,&amp;#160; &amp;#160;&lt;label for="spcifiedOtherAnalysis"&gt;please specify&lt;/label&gt; &amp;#160; &amp;#160;&lt;input type="text" style="height: 25px;" id="spcifiedOtherAnalysis" name="otherTypeText" size="20"/&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="individual"&gt;Data Form [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="individual" name="individual" value="individual"/&gt;&amp;#160;Individual&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="aggregate"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="aggregate" name="aggregate" value="aggregate"/&gt;&amp;#160;Aggregate&amp;#160; &amp;#160;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="notApplicableDataForm"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="notApplicableDataForm" name="na" value="na" onclick="toggleNotApplicable()"/&gt;&amp;#160;Not Applicable&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="arrayExpress" &gt;Data Repository [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="arrayExpress" name="arrayExpress" value="arrayExpress"/&gt;&amp;#160;Array Express&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="cancerGenomics"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="cancerGenomics" name="cancerHub" value="cancerHub"/&gt;&amp;#160;Cancer Genomics Hub&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="clinVar"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="clinVar" name="clinVar" value="clinVar"/&gt;&amp;#160;ClinVar&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="dbGap"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="dbGap" name="dbGap" value="dbGap"/&gt;&amp;#160;Database of Genotypes and Phenotypes (dnGaP)&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                             &lt;td align="right" valign="bottom"&gt;&lt;label for="dbSnp"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                             &lt;td align="left"&gt;&lt;input type="checkbox" id="dbSnp" name="dbSNP" value="dbSNP"/&gt;&amp;#160;Database of Short Generic Variants (dbSNP)&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&lt;label for="dbVar"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left"&gt;&lt;input type="checkbox" id="dbVar" name="dbVar" value="dbVar"/&gt;&amp;#160;Database of Genomic Structure Variation&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="ena"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="ena" name="ena" value="ena"/&gt;&amp;#160;European Nucleotide Archive (ENA)&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="geo"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="geo" name="geo" value="geo"/&gt;&amp;#160;Gene Expression Omnibus (GEO)&lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="mgi"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="mgi" name="mgi" value="mgi"/&gt;&amp;#160;Mouse Genome Informatics (MGI)&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="genBank"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="genBank" name="genBank" value="genBank"/&gt;&amp;#160;Gene Bank&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="traceArchive"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="traceArchive" name="traceArchive" value="traceArchive"/&gt;&amp;#160;Trace Archive&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="wormbase"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="wormbase" name="wormBase" value="wormBase"/&gt;&amp;#160;WormBase&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="sra"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="sra" name="sra" value="sra"/&gt;&amp;#160;Sequence Read Archive (SRA)&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="zfin"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="zfin" name="zfin" value="zfin"/&gt;&amp;#160;Sebrafish Model Organism Database&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right"&gt;&lt;label for="OtherRepository"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" &gt;&lt;input type="checkbox" id="OtherRepository" name="otherRepository" value="otherRepository"/&gt;&amp;#160;Other,&amp;#160; &amp;#160;&lt;label for="specifiedRepository"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text" style="height: 25px;" id="specifiedRepository" name="otherRepositoryText" size="20"/&gt;       &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="phenotype"&gt;Companion Informationy [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="phenotype" name="phenotype" value="phenotype"/&gt;&amp;#160;Phenotype&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="exposure"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="exposure" name="exposure" value="exposure"/&gt;&amp;#160;Exposure&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&lt;label for="surveyTool"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="surveyTool" name="surveyTool" value="surveyTool"/&gt;&amp;#160;Survey Tool&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right"&gt;&lt;label for="clinicalData"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left"&gt;&lt;input type="checkbox" id="clinicalData" name="clinicData" value="clinicData"/&gt;&amp;#160;Clinic Data,&amp;#160; &amp;#160;&lt;label for="specifiedClinicalData"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text" id="specifiedClinicalData" name="clinicDataText" style="height: 25px;" size="20"/&gt;       &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&lt;label for="protocol"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left"&gt;&lt;input type="checkbox" id="protocol" name="protocol" value="protocol"/&gt;&amp;#160;Study/Protocol,&amp;#160; &amp;#160;&lt;label for="specifiedProtocol"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text" name="protocolText" id="specifiedProtocol" style="height: 25px;" size="20"/&gt;       &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&lt;label for="instrument"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left"&gt;&lt;input type="checkbox" id="instrument" name="instrument" value="instrument"/&gt;&amp;#160;Data Collection instrument,&amp;#160; &amp;#160;&lt;label for="specifiedInstrument"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text" style="height: 25px;" id="specifiedInstrument" name="instrumentText" size="10"/&gt;       &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&lt;label for="otherCompanion"&gt;&amp;#160; &amp;#160;&lt;/label&gt; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left"&gt;&lt;input type="checkbox" id="otherCompanion" name="otherCompanion" value="otherCompanion"/&gt;&amp;#160;Other,&amp;#160; &amp;#160;&lt;label for="specifiedCompanion"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text"  style="height: 25px;" id="specifiedCompanion" name="otherCompanionText" size="20"/&gt;       &lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                      &lt;/fieldset&gt; 
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Submission Information&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                              &lt;td width="40%" align="right"&gt;&lt;label for="dataCheck"&gt;Data Submission and Release Timeline &lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="dataCheck" name="cleanAnalysis" value="cleanAnalysis"/&gt;&amp;#160;Following data cleaning, analysis, and quality checks&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right"&gt;&lt;label for="publication"&gt;[Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left" &gt;&lt;input type="checkbox" id="publication" name="publication" value="publication"/&gt;&amp;#160;At the time of publication&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right"&gt;&lt;label for="otherSubmission"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="otherSubmission" name="otherSubmission" value="otherSubmission"/&gt;&amp;#160;Other,&amp;#160; &amp;#160;&lt;label for="psecifiedOtherSubmission"&gt;please specify&lt;/label&gt;&amp;#160; &amp;#160;&lt;input type="text"  style="height: 25px;" id="psecifiedOtherSubmission" name="otherSubmissionText" size="20"/&gt;   &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="noHumanData"&gt;Data Use Limitation [Check all that apply]&lt;/label&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="noHumanData" name="noHumanData" value="noHumanData" onclick="toggleNoHumanData()"/&gt;&amp;#160;Not Applicable, no human data&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="noLimitation"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="noLimitation" name="noUseLimitation" value="noUseLimitation"/&gt;&amp;#160;No data use limitations&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="limitedOnly"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="limitedOnly" name="limitedOnly" value="limitedOnly"/&gt;&amp;#160;Limited only by the terms of the Data Use Certification&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="limitedPurpose"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="limitedPurpose" name="limitToHealth" value="limitToHealth"/&gt;&amp;#160;Limited to health/medical/biomedical purposes &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160;  &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt; &amp;#160; &amp;#160; &amp;#160;doesn't include the study of population origins or ancestry &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="40%" align="right" valign="bottom"&gt;&lt;label for="relateToDisease"&gt;&amp;#160; &amp;#160;&lt;/label&gt;  &amp;#160; &lt;/td&gt;
+                               &lt;td width="60%" align="left"&gt;&lt;input type="checkbox" id="relateToDisease" name="relateToDisease" value="relateToDisease"/&gt;&amp;#160;Must be related to the specified disease&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                     &lt;/fieldset&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td align="right" colspan="2" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td align="right" colspan="2"&gt;
+                  &lt;div id="regularSubmit"&gt;
+                  &lt;input type="button" name="saveBt" value="SAVE" onclick="submitSaveRequest()"/&gt;&amp;#160; &amp;#160; &amp;#160;&amp;#160; &amp;#160; &amp;#160;
+                  &lt;input type="button" name="cancelBt" value="CANCEL" onclick="closeModal()"/&gt;&amp;#160; &amp;#160; &amp;#160;&amp;#160; &amp;#160; &amp;#160; &lt;input type="button" name="submitBt" value="SUBMIT" onclick="submitRequest()"/&gt;
+                  &lt;/div&gt;
+                  &lt;div id="resubmit" style="display:none;"&gt;
+                     &lt;input type="button" name="cancelBt" value="CANCEL" onclick="closeModal()"/&gt;&amp;#160; &amp;#160; &amp;#160;&amp;#160; &amp;#160; &amp;#160; 
+					 &lt;input type="button" name="submitBt" value="SUBMIT" onclick="resubmit()"/&gt;
+                  &lt;/div&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+             &lt;/table&gt;  
+             &lt;input type='hidden' id='ccr_id'/&gt;
+             &lt;input type='hidden' id='saved_id'/&gt;
+          &lt;/div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div id="displayRequests" class="modal fade" data-keyboard="false" data-backdrop="static"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content" style="height:900px; overflow-y:auto; overflow-x: hidden;"&gt;
+     &lt;div id="anchor1"&gt;&lt;/div&gt;
+     &lt;div id="anchor1"&gt;&lt;/div&gt;
+      &lt;div class="modal-header"&gt;
+           &lt;div&gt;
+                 &lt;font size="5"&gt;&lt;b&gt;Genomic Data Sharing Plan&lt;/b&gt;&lt;/font&gt; &lt;br/&gt;
+                  &lt;b&gt;GDSP Number - &lt;span id="displayRequestId"&gt;&lt;/span&gt;&lt;/b&gt;
+           &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+         &lt;div id="sdErrorMessage" style="display:none;"&gt;
+         &lt;/div&gt;
+         &lt;div class="container"&gt;
+             &lt;table width="70%" border="0"&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Demographics&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                             &lt;tr&gt;
+                                &lt;td width="60%" align="right"&gt;Principle Investigator&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td width="40%" align="left"&gt;&lt;div id="investigator1"&gt;&lt;/div&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                 &lt;td align="right"&gt;Email&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td align="left"&gt;&lt;div id="email1"&gt;&lt;/div&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td align="right"&gt;Phone&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left"&gt;&lt;div id="phone1"&gt;&lt;/div&gt;&lt;/td&gt;
+                             &lt;/tr&gt;
+                             &lt;tr&gt;
+                                &lt;td align="right"&gt;Date&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left"&gt;&lt;div id="date1"&gt;&lt;/div&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/table&gt;   
+                     &lt;/fieldset&gt;  
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                      &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Project Information&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                             &lt;tr&gt;
+                                &lt;td width="60%" align="right"&gt;Project Name&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td width="40%" align="left"&gt;&lt;div id="projectName1"&gt;&lt;/div&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                 &lt;td width="60%" align="right"&gt;Plan enrollment/Sample Size&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                 &lt;td width="40%" align="left"&gt;&lt;div id="simpleSize1"&gt;&lt;/div&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td width="60%" align="right" valign="bottom"&gt;Collection Type [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                                &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="prospective1"&gt;&lt;/span&gt;&amp;#160;&amp;#160;&lt;label for="prospective1"&gt;Prospective&lt;/label&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160;&lt;/td&gt;
+                                &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="restrospective1"&gt;&lt;/span&gt;&amp;#160;&amp;#160;;&lt;label for="restrospective1"&gt;Retrospective&lt;/label&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                          &lt;/table&gt;
+                      &lt;/fieldset&gt;                  
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;Source [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="human1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="human1"&gt;Human&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="nonHuman1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="nonHuman1"&gt;Non-Human&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;Sample Types [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="germLine1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="germLine1"&gt;Germ Line&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="somatic1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="somatic1"&gt;Somatic&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="dnaType1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="dnaType1"&gt;DNA&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="rnaType1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="rnaType1"&gt;RNA&lt;/label&gt; &lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="microbiome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="microbiome1"&gt;Microbiome&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="mitochrondria1"&gt;&lt;/span&gt; &amp;#160; &amp;#160;&lt;label for="mitochrondria1"&gt; Mitochrondria &lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right"&gt;&amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="otherType1"&gt;&lt;/span&gt;&amp;#160; &amp;#160; &lt;label for="otherType1"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifyOtherType1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                     &lt;/fieldset&gt;   
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+ 
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                              &lt;td width="60%" align="right" valign="bottom"&gt;Array Data [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="snpArrayData1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="snpArrayData1"&gt;Single Nucleotide&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="expressionArray1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="expressionArray1"&gt;Expression Array&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="methylationArray1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="methylationArray1"&gt;Methylation Array&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;Genotypes [Check all that apply]&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="arrayDerive1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="arrayDerive1"&gt;Array Derived Genotypes&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="microarrayData1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="microarrayData1"&gt;CNV calls from Microarray&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="sequenceData1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="sequenceData1"&gt;CNV calls derived from Sequencing&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="somaticSnv1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="somaticSnv1"&gt;Somatic SNV (.MFA)&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="arrayCgh1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="arrayCgh1"&gt;Array CGH CNVs&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;Sequence [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="wholeGenome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="wholeGenome1"&gt;Whole Genome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="wholeExome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="wholeExome1"&gt;Whole Exome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="targetGenome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="targetGenome1"&gt;Targeted Genome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="targetExome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="targetExome1"&gt;Targeted Exome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="wholeTranscriptome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="wholeTranscriptome1"&gt;Whole Transcriptome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="targetTrabscriptome1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="targetTrabscriptome1"&gt;Targeted Transcriptome&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="epigenomicMark1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="epigenomicMark1"&gt;Epigenomic Marks&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="sanger1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="sanger1"&gt;Sanger&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="rrna1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;16S &lt;label for="rrna1"&gt;rRNA&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;Analysis [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="association1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="association1"&gt;Association/Linkage&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="arrayDerivedExpression1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="arrayDerivedExpression1"&gt;Array Derived Expressio&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="rnaExpression1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="rnaExpression1"&gt;RNA Seq Derived Expression&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="derivedMethylation1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="derivedMethylation1"&gt;Array Derived Methylation&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="top"&gt;Other&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="otherAnalysis1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="otherAnalysis1"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="spcifiedOtherAnalysis1"&gt;&lt;/span&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;Data Form [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="individual1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="individual1"&gt;Individual&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="aggregate1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="aggregate1"&gt;Aggregate&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="notApplicableDataForm1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="notApplicableDataForm1"&gt;Not Applicable&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;ata Repository [Check all that apply]&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="arrayExpress1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="arrayExpress1"&gt;Array Expres&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="cancerGenomics1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="cancerGenomics1"&gt;Cancer Genomics Hub&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="clinVar1"&gt;&lt;/span&gt;&amp;#160; &amp;#160; &lt;label for="clinVar1"&gt;ClinVar &lt;/label&gt; &lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="dbGap1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="dbGap1"&gt;Database of Genotypes and Phenotypes (dnGaP)&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                             &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                             &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="dbSnp1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="dbSnp1"&gt;Database of Short Generic Variants (dbSNP)&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                              &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="dbVar1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="dbVar1"&gt;Database of Genomic Structure Variation (dbVar)&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="ena1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="ena1"&gt;European Nucleotide Archive (ENA)&lt;/label&gt;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="geo1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="geo1"&gt;Gene Expression Omnibus (GEO)&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                           &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="mgi1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="mgi1"&gt;Mouse Genome Informatics (MGI)&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="genBank1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="genBank1"&gt;Gene Bank&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="traceArchive1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="traceArchive1"&gt;Trace Archive&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="wormbase1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="wormbase1"&gt;WormBase&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="sra1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="sra1"&gt;Sequence Read Archive (SRA)&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="zfin1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="zfin1"&gt;Zebrafish Model Organism Database (ZFIN)&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="OtherRepository1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="OtherRepository1"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifiedRepository1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;Companion Informationy [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="phenotype1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="phenotype1"&gt;Phenotype&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="exposure1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="exposure1"&gt;Exposure&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="surveyTool1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="surveyTool1"&gt;Survey Tool&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td align="right"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="clinicalData1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="clinicalData1"&gt;Clinic Data&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifiedClinicalData1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                                &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="protocol1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="protocol1"&gt;Study/Protocol&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifiedProtocol1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                                &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="instrument1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="instrument1"&gt;Data Collection instrument&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifiedInstrument1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td align="right"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+                                &lt;td align="left" style="white-space:nowrap;"&gt;&lt;span id="otherCompanion1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="otherCompanion1"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160;&lt;span id="specifiedCompanion1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                      &lt;/fieldset&gt; 
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Submission Information&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                          &lt;table width="100%" border="0"&gt;
+                            &lt;tr&gt;
+                              &lt;td width="60%" align="right"&gt;Data Submission and Release Timeline&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                              &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="dataCheck1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="dataCheck1"&gt;Following data cleaning, analysis, and quality checks&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="publication1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="publication1"&gt;At the time of publication&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="otherSubmission1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="otherSubmission1"&gt;Other&lt;/label&gt;&amp;#160; &amp;#160; &lt;span id="psecifiedOtherSubmission1"&gt;&lt;/span&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;&lt;td colspan="2"&gt;&amp;#160; &amp;#160; &lt;/td&gt;&lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;Data Use Limitation [Check all that apply]&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="noHumanData1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="noHumanData1"&gt;Not Applicable, no human data&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="noLimitation1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="noLimitation1"&gt;No data use limitations&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="limitedOnly1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="limitedOnly1"&gt;Limited only by the terms of the Data Use Certification&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="limitedPurpose1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="limitedPurpose1"&gt;Limited to health/medical/biomedical purposes&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt; &lt;span id=""&gt;&lt;/span&gt;&amp;#160; &amp;#160; &amp;#160; &amp;#160;doesn't include the study of population origins or ancestry &lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                               &lt;td width="60%" align="right" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                               &lt;td width="40%" align="left" style="white-space:nowrap;"&gt;&lt;span id="relateToDisease1"&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;label for="relateToDisease1"&gt;Must be related to the specified disease&lt;/label&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;
+                     &lt;/fieldset&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                     &lt;div id="pre_comments_div" style="display:none;"&gt;
+                     &lt;fieldset class="scheduler-border"&gt;
+                        &lt;legend class="scheduler-border"&gt;&lt;font size="3"&gt;&lt;b&gt;Approval Status&lt;/b&gt;&lt;/font&gt;&lt;/legend&gt;
+                        &lt;div id="commentReviewId1"&gt;&lt;/div&gt;
+                     &lt;/fieldset&gt;
+                   &lt;/div&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="2"&gt;
+                    &lt;div id="sd_div" style="display:none;"&gt;
+                        &lt;table width="100%" border="0"&gt;
+                           &lt;tr&gt;
+                             &lt;td colspan="2"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                           &lt;/tr&gt;     
+                              &lt;tr&gt;
+                                 &lt;td  width="30%" align="left" valign="top"&gt;&lt;label&gt;&lt;font size="3" color="darkblue"&gt;Scientific Director&lt;/font&gt;&lt;/label&gt;&lt;/td&gt;
+                                 &lt;td width="70%" align="left"&gt;
+                                     &lt;select id="selectSD" width="100px"&gt;
+                                         &lt;option value="NONE"&gt;Please select a scientific director&lt;/option&gt;
+                                         &lt;option value="${jvar_sd_human_item}"&gt;Human&lt;/option&gt;
+                                         &lt;option value="${jvar_sd_nonhuman_item}"&gt; Non_Human&lt;/option&gt;
+                                     &lt;/select&gt;
+                                 &lt;/td&gt;
+                              &lt;/tr&gt;
+                         &lt;/table&gt;
+                     &lt;/div&gt;   
+                     &lt;div id="comments_div" style="display:none;"&gt;
+                        &lt;table width="100%" border="0"&gt;
+                           &lt;tr&gt;
+                             &lt;td colspan="2"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                           &lt;/tr&gt;     
+                           &lt;tr&gt;
+                               &lt;td colspan="2"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                             &lt;td width="30%" align="left" valign="top"&gt;&lt;div id="commentId1Lable"&gt;&lt;label for="commentId1"&gt;&lt;font size="3" color="darkblue"&gt;Comments&lt;/font&gt;&lt;/label&gt;&lt;/div&gt;&lt;/td&gt;
+                             &lt;td width="70%" align="left"&gt;
+                                     &lt;textarea id="commentId1" rows="5" cols="70%" &gt;&lt;/textarea&gt;
+                             &lt;/td&gt;
+                           &lt;/tr&gt;
+                         &lt;/table&gt;
+                   &lt;/div&gt;
+                  &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                    &lt;td colspan="2"&gt;&amp;#160; &amp;#160; &amp;#160;&lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                   &lt;td colspan="2" align="center"&gt;
+                          &lt;div id="closeButton"&gt;&lt;input type="button" onclick="closeDisplayModal();" value="CLOSE"/&gt; &lt;/div&gt;
+                          &lt;div id="submitButton"&gt; &lt;input type="button" onclick="closeDisplayModal();" value="CLOSE"/&gt; &amp;#160; &amp;#160; &amp;#160;&amp;#160; &amp;#160; &amp;#160; &lt;input type="button" onclick="submitApprove('rejected');" value="REJECT"/&gt;&amp;#160; &amp;#160; &amp;#160;&amp;#160; &amp;#160; &amp;#160; &lt;input type="button" onclick="submitApprove('approved');" value="APPROVE"/&gt;&lt;/div&gt;
+                   &lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td align="right" colspan="2" valign="bottom"&gt;&amp;#160; &amp;#160; &amp;#160; &lt;/td&gt;
+               &lt;/tr&gt;
+             &lt;/table&gt;  
+          &lt;/div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;input type="hidden" id="hiddenRequestId" /&gt;
+&lt;input type="hidden" id="hiddenRequestItemId" /&gt;
+&lt;input type="hidden" id="hiddenStage"/&gt;
+&lt;div id="signaturepad" class="modal fade" data-keyboard="false" data-backdrop="static"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content" style="height:500px; overflow-y:auto; overflow-x: hidden;"&gt;
+      &lt;div class="modal-header"&gt;
+           &lt;div&gt;
+                 &lt;font size="5"&gt;&lt;b&gt;User Data&lt;/b&gt;&lt;/font&gt;
+           &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+         &lt;div class="container"&gt;
+                  &lt;iframe  style="width: 70% !important; height: 330px !important;" border="0"  frameborder="0" scrolling="no" 
+                  id="hrss_review_a_job_requisition" name="hrss_review_a_job_requisition" width="100%" allowtransparency="true"  
+                  src="/sys_user.do?sys_id=${jvar_my_sys_id}&amp;amp;sysparm_view=SignaturePad"&gt;
+                  &lt;/iframe&gt;
+                  &lt;BR/&gt;
+                  &lt;input type="button" name="closeSP" value="CLOSE" onclick="closeSingaturePad()"/&gt;
+          &lt;/div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="progressId" class="modal fade" data-keyboard="false" data-backdrop="static"&gt;
+ &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content" style="height:200px; overflow-y:auto; overflow-x: hidden;"&gt;
+      &lt;div class="modal-header"&gt;
+           &lt;div&gt;
+                 &lt;font size="2"&gt;&lt;b&gt;Submit Data&lt;/b&gt;&lt;/font&gt;
+           &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;br/&gt;
+   &lt;center&gt; 
+           &lt;div class="row"&gt;
+               &lt;img src="ico-inprogress.gif" height="70" Alt="Submitting in progress"/&gt;
+           &lt;/div&gt; 
+   &lt;/center&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/j:jelly&gt;]]&gt;&lt;/programmatic_content&gt;&lt;sys_class_name&gt;content_block_programmatic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-19 17:46:48&lt;/sys_created_on&gt;&lt;sys_id&gt;c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_id&gt;&lt;sys_mod_count&gt;1217&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 21:21:34&lt;/sys_updated_on&gt;&lt;two_phase&gt;false&lt;/two_phase&gt;&lt;/content_block_programmatic&gt;&lt;sys_app_file action="INSERT_OR_UPDATE"&gt;&lt;customer_update&gt;true&lt;/customer_update&gt;&lt;publish_override/&gt;&lt;replace_on_upgrade&gt;false&lt;/replace_on_upgrade&gt;&lt;restore/&gt;&lt;sys_app/&gt;&lt;sys_code&gt;!!:RO/&lt;/sys_code&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-19 17:46:48&lt;/sys_created_on&gt;&lt;sys_id&gt;f5d788f96fcd1600bbc002e6eb3ee4f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Software Solution GDSP Page&lt;/sys_name&gt;&lt;sys_parent/&gt;&lt;sys_path&gt;!!:RO/&lt;/sys_path&gt;&lt;sys_policy/&gt;&lt;sys_source_deleted&gt;false&lt;/sys_source_deleted&gt;&lt;sys_source_id&gt;c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_source_id&gt;&lt;sys_source_table&gt;content_block_programmatic&lt;/sys_source_table&gt;&lt;sys_type/&gt;&lt;sys_update_name&gt;content_block_programmatic_c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-04-04 21:21:34&lt;/sys_updated_on&gt;&lt;/sys_app_file&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_1.0.0_4_4_2016">90017ce66fa692000a09034abb3ee4aa</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-04-05 18:16:17</sys_created_on>
+<sys_id>e0017ce66fa692000a09034abb3ee4aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-04-05 18:16:17</sys_updated_on>
+<table/>
+<target_name>Software Solution GDSP Page</target_name>
+<type>Dynamic Content</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
