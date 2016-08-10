@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2016-08-09 20:31:05">
+<unload unload_date="2016-08-10 14:28:34">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -17,15 +17,112 @@
 <state>loaded</state>
 <summary/>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-08-09 20:31:05</sys_created_on>
-<sys_id>6728428b6f092600bbc002e6eb3ee492</sys_id>
+<sys_created_on>2016-08-10 14:28:34</sys_created_on>
+<sys_id>83cef9576fc92600bbc002e6eb3ee496</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-08-09 20:31:05</sys_updated_on>
+<sys_updated_on>2016-08-10 14:28:34</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_email_dc6328106f0e92000a09034abb3ee4d8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;ccr_gdsp_ready_to_review_wf&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[var contact_type = '';
+var ticketNum = '';
+var version = '';
+var hasParent = '';
+var org_ticket_num = '';
+var variables;
+		 
+  var varown = new GlideRecord('sc_req_item');
+  varown.addQuery('sys_id', current.sys_id);
+  varown.query();
+
+  if(varown.getRowCount() &gt; 0){
+	varown.next();
+	contact_type = varown.getValue('contact_type');
+
+    if(contact_type == '' || contact_type === undefined || contact_type == 'Web'){
+	     org_ticket_num = varown.number;
+		 hasParent = 'false';
+    }else{
+		var orgIds = contact_type.split("=");
+        var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+        gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+        gr_tracking_item.query();
+        if(gr_tracking_item.getRowCount() &gt; 0){
+             gr_tracking_item.next();
+             org_ticket_num = gr_tracking_item.u_ticket_number;
+             version = orgIds[1];
+             hasParent = 'true';
+         }	else {
+			 org_ticket_num = varown.number;
+			 hasParent = 'false';
+		 }
+	}
+
+    if(hasParent == 'true'){
+           ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+    }else{
+           ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
+    } 	
+    var url =  gs.getProperty('ccr_gdsp_uri') + '/ssp.do?id='+current.sys_id;
+
+	  email.setFrom("CCR Genomic Data Sharing");
+   if(varown.context.stage.name == 'Waiting for GPA Review'|| varown.context.stage.name == 'Requested' || varown.context.stage.name == ''){
+      email.subject='Notification for Genomic Data Sharing Plan Review and Signoff';
+      template.print('Your review of a Genomic Data Sharing Plan is required. If approved please provide your electronic signature.\n\n');
+      template.print('Action: OPTIONS - New Genomic Data Sharing Plan/Resubmission of Genomic Data Sharing Plan.\n\n');
+	  template.print('GDSP number: ' + ticketNum + '\n');
+	  template.print('Principle Investigator: ' + varown.u_investigator + '\n');
+	  template.print('Study Name: ' + varown.u_project_name + '\n\n\n');
+	  template.print('Go To : ' + "&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;");
+   }else if(varown.context.stage.name == 'Waiting for SD Review' || varown.context.stage.name == 'GPA Approved'){
+      email.subject='Notification for Genomic Data Sharing Plan Review and Signoff';
+      template.print('Your review of a GPA reviewed Genomic Data Sharing Plan is required. If approved please provide your electronic signature.\n\n');
+      template.print('Action: OPTIONS - New Genomic Data Sharing Plan/Resubmission of Genomic Data Sharing Plan.\n\n');
+	  template.print('GDSP number: ' + ticketNum + '\n');
+  	template.print('Principle Investigator: ' + varown.u_investigator + '\n');
+	  template.print('Study Name: ' + varown.u_project_name + '\n\n\n');
+	  template.print('Go To : ' + "&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;");	
+   }else{
+      email.subject='GDSP ' + ticketNum + ' is ready for review';
+    		
+      //template.print("The ticket you selected : " + ticketNum);
+      //template.print("\n\n object id: " + current.sys_id);
+	  gs.logWarning("email error " + varown.context.stage.name + "-"); 
+	   if (varown.context.stage.name == '') {
+	      log.Warning('empty');
+	   }else {
+		   log.Warning('Null');
+			   }
+
+	  gs.logWarning("email error " + varown.context.stage.name + "-"); 
+      template.print("Click on the link to view the details of the request" + varown.context.stage.name);
+      template.print("&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;"); 
+   }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-03-04 20:59:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;dc6328106f0e92000a09034abb3ee4d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;ccr_gdsp_ready_to_review_wf&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_dc6328106f0e92000a09034abb3ee4d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:37:01&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">83cef9576fc92600bbc002e6eb3ee496</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-08-10 14:28:34</sys_created_on>
+<sys_id>07cef9576fc92600bbc002e6eb3ee496</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-08-10 14:28:34</sys_updated_on>
+<table/>
+<target_name>ccr_gdsp_ready_to_review_wf</target_name>
+<type>Email Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
@@ -432,14 +529,14 @@ template.print(": &amp;lt;a href='" + url + "'&amp;gt;" + ticketNum + "&amp;lt;/
 			   &amp;#13;
 &amp;lt;/mail_script&amp;gt;&lt;/value&gt;&lt;variable display_value=""&gt;c35db5a50a0a0ba96248a70938ae8de6&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;96fcbe3c6f7822000a09034abb3ee463&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:43&lt;/sys_created_on&gt;&lt;sys_id&gt;5efcbe3c6f7822000a09034abb3ee463&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:43&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;6d6816cd0a6a803f0853a8df38007572&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;96fcbe3c6f7822000a09034abb3ee463&lt;/document_key&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:43&lt;/sys_created_on&gt;&lt;sys_id&gt;52fcbe3c6f7822000a09034abb3ee464&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:43&lt;/sys_updated_on&gt;&lt;value&gt;// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&amp;#13;
 answer=current.opened_by&lt;/value&gt;&lt;variable display_value=""&gt;c35dae3d0a0a0ba96248a7098ed9b4aa&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Send Notification to Submiter"&gt;96fcbe3c6f7822000a09034abb3ee463&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:43&lt;/sys_created_on&gt;&lt;sys_id&gt;d2fcbe3c6f7822000a09034abb3ee464&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:43&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;2afcbe3c6f7822000a09034abb3ee469&lt;/condition&gt;&lt;from display_value="Send Notification to SD"&gt;eafcbe3c6f7822000a09034abb3ee468&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;22fcbe3c6f7822000a09034abb3ee46c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="CCR Scientific Director"&gt;16fc3e3c6f7822000a09034abb3ee422&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;d2fc3e3c6f7822000a09034abb3ee425&lt;/condition&gt;&lt;from display_value="CCR Scientific Director"&gt;16fc3e3c6f7822000a09034abb3ee422&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;26fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="SD Reject"&gt;aafcbe3c6f7822000a09034abb3ee469&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;56fcbe3c6f7822000a09034abb3ee462&lt;/condition&gt;&lt;from display_value="Revise"&gt;96fc3e3c6f7822000a09034abb3ee425&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;2afcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="PI need to Resubmit"&gt;12fc3e3c6f7822000a09034abb3ee421&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;9afcbe3c6f7822000a09034abb3ee467&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;9afcbe3c6f7822000a09034abb3ee464&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;2efcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;52fc3e3c6f7822000a09034abb3ee420&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;16fcbe3c6f7822000a09034abb3ee463&lt;/condition&gt;&lt;from display_value="Send Notification to GPA and GPA ASST"&gt;d6fcbe3c6f7822000a09034abb3ee462&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;62fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="CCR GPA"&gt;9afcbe3c6f7822000a09034abb3ee464&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;56fc3e3c6f7822000a09034abb3ee41c&lt;/condition&gt;&lt;from display_value="Revise"&gt;0afc3e3c6f7822000a09034abb3ee41b&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;62fcbe3c6f7822000a09034abb3ee46c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="PI need to Resubmit"&gt;1efc3e3c6f7822000a09034abb3ee41f&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;16fc3e3c6f7822000a09034abb3ee425&lt;/condition&gt;&lt;from display_value="CCR Scientific Director"&gt;16fc3e3c6f7822000a09034abb3ee422&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;66fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Retain the copy for a record"&gt;56fc3e3c6f7822000a09034abb3ee421&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;9efc3e3c6f7822000a09034abb3ee420&lt;/condition&gt;&lt;from display_value="Send Notification to Submiter"&gt;52fc3e3c6f7822000a09034abb3ee420&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;6afcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to SD"&gt;eafcbe3c6f7822000a09034abb3ee468&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;5afcbe3c6f7822000a09034abb3ee467&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;9afcbe3c6f7822000a09034abb3ee464&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;6efcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Revise"&gt;96fc3e3c6f7822000a09034abb3ee425&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;e6fcbe3c6f7822000a09034abb3ee46a&lt;/condition&gt;&lt;from display_value="SD Reject"&gt;aafcbe3c6f7822000a09034abb3ee469&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a2fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="CCR GPA"&gt;5afc3e3c6f7822000a09034abb3ee41c&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;6afcbe3c6f7822000a09034abb3ee468&lt;/condition&gt;&lt;from display_value="Retain the copy for a record - PSO"&gt;1efcbe3c6f7822000a09034abb3ee467&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a2fcbe3c6f7822000a09034abb3ee46c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Review is completed"&gt;56fcbe3c6f7822000a09034abb3ee464&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;d2fcbe3c6f7822000a09034abb3ee464&lt;/condition&gt;&lt;from display_value="Send Notification to Submiter"&gt;96fcbe3c6f7822000a09034abb3ee463&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a6fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to GPA and GPA ASST"&gt;d6fcbe3c6f7822000a09034abb3ee462&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;1afc3e3c6f7822000a09034abb3ee41f&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;5afc3e3c6f7822000a09034abb3ee41c&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;aafcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;52fc3e3c6f7822000a09034abb3ee420&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;1afcbe3c6f7822000a09034abb3ee464&lt;/condition&gt;&lt;from display_value="Review is completed"&gt;56fcbe3c6f7822000a09034abb3ee464&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;aefcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;aefcbe3c6f7822000a09034abb3ee46a&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;d2fc3e3c6f7822000a09034abb3ee421&lt;/condition&gt;&lt;from display_value="PI need to Resubmit"&gt;12fc3e3c6f7822000a09034abb3ee421&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e2fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;aefcbe3c6f7822000a09034abb3ee46a&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;defc3e3c6f7822000a09034abb3ee41f&lt;/condition&gt;&lt;from display_value="PI need to Resubmit"&gt;1efc3e3c6f7822000a09034abb3ee41f&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e2fcbe3c6f7822000a09034abb3ee46c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;aefcbe3c6f7822000a09034abb3ee46a&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;eafcbe3c6f7822000a09034abb3ee46a&lt;/condition&gt;&lt;from display_value="Begin"&gt;aafcbe3c6f7822000a09034abb3ee46a&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e6fcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;96fcbe3c6f7822000a09034abb3ee463&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;5afc3e3c6f7822000a09034abb3ee41f&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;5afc3e3c6f7822000a09034abb3ee41c&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;eafcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Revise"&gt;0afc3e3c6f7822000a09034abb3ee41b&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;92fc3e3c6f7822000a09034abb3ee422&lt;/condition&gt;&lt;from display_value="Retain the copy for a record"&gt;56fc3e3c6f7822000a09034abb3ee421&lt;/from&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:44&lt;/sys_created_on&gt;&lt;sys_id&gt;eefcbe3c6f7822000a09034abb3ee46b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:44&lt;/sys_updated_on&gt;&lt;to display_value="Retain the copy for a record - PSO"&gt;1efcbe3c6f7822000a09034abb3ee467&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_estimated_runtime_config action="INSERT_OR_UPDATE"&gt;&lt;estimated_run_time/&gt;&lt;no_of_data_points&gt;1&lt;/no_of_data_points&gt;&lt;percentage_threshold_ert&gt;20&lt;/percentage_threshold_ert&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-07-21 14:19:42&lt;/sys_created_on&gt;&lt;sys_id&gt;c6fc3e3c6f7822000a09034abb3ee41a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:19:42&lt;/sys_updated_on&gt;&lt;workflow_version display_value="GDSP Work Flow"&gt;46fc3e3c6f7822000a09034abb3ee41a&lt;/workflow_version&gt;&lt;/wf_estimated_runtime_config&gt;&lt;wf_workflow_version action="update_multiple" query="workflow=0dd8997f6f3416000a09334abb3ee4d0^sys_id!=46fc3e3c6f7822000a09034abb3ee41a"&gt;&lt;published&gt;false&lt;/published&gt;&lt;/wf_workflow_version&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">6728428b6f092600bbc002e6eb3ee492</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">83cef9576fc92600bbc002e6eb3ee496</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-08-09 20:31:05</sys_created_on>
-<sys_id>2b28428b6f092600bbc002e6eb3ee492</sys_id>
+<sys_created_on>2016-08-10 14:28:34</sys_created_on>
+<sys_id>47cef9576fc92600bbc002e6eb3ee496</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-08-09 20:31:05</sys_updated_on>
+<sys_updated_on>2016-08-10 14:28:34</sys_updated_on>
 <table/>
 <target_name>GDSP Work Flow</target_name>
 <type>Workflow</type>
@@ -539,11 +636,11 @@ function getUrlParameter(sParam)
     return '';
 } 
 jQuery(document).ready(function($){
-	history.pushState(null, null, 'no-back-button');
+	history.pushState(null, null, '');
     window.addEventListener('popstate', function(event) {
-                    history.pushState(null, null, 'no-back-button');
+                    history.pushState(null, null, '');
     });
-	
+
   //you can now use $ as your jQuery object.
 	$("#date").datepicker();
         if(isGDSPSubmitter()){
@@ -3347,115 +3444,18 @@ Investigators are required to develop a Genomic Data Sharing Plan if they are pr
  &lt;/div&gt;
 &lt;/div&gt;
 	
-&lt;/j:jelly&gt;]]&gt;&lt;/programmatic_content&gt;&lt;sys_class_name&gt;content_block_programmatic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-19 17:46:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_id&gt;&lt;sys_mod_count&gt;1435&lt;/sys_mod_count&gt;&lt;sys_name&gt;Software Solution GDSP Page&lt;/sys_name&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope/&gt;&lt;sys_update_name&gt;content_block_programmatic_c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-08-09 20:22:19&lt;/sys_updated_on&gt;&lt;two_phase&gt;false&lt;/two_phase&gt;&lt;/content_block_programmatic&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">6728428b6f092600bbc002e6eb3ee492</remote_update_set>
+&lt;/j:jelly&gt;]]&gt;&lt;/programmatic_content&gt;&lt;sys_class_name&gt;content_block_programmatic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-19 17:46:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_id&gt;&lt;sys_mod_count&gt;1438&lt;/sys_mod_count&gt;&lt;sys_name&gt;Software Solution GDSP Page&lt;/sys_name&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope/&gt;&lt;sys_update_name&gt;content_block_programmatic_c8a7483d6fcd1600bbc002e6eb3ee407&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-08-10 14:24:51&lt;/sys_updated_on&gt;&lt;two_phase&gt;false&lt;/two_phase&gt;&lt;/content_block_programmatic&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">83cef9576fc92600bbc002e6eb3ee496</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-08-09 20:31:05</sys_created_on>
-<sys_id>a728428b6f092600bbc002e6eb3ee492</sys_id>
+<sys_created_on>2016-08-10 14:28:34</sys_created_on>
+<sys_id>c3cef9576fc92600bbc002e6eb3ee496</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-08-09 20:31:05</sys_updated_on>
+<sys_updated_on>2016-08-10 14:28:34</sys_updated_on>
 <table/>
 <target_name>Software Solution GDSP Page</target_name>
 <type>Dynamic Content</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_email_dc6328106f0e92000a09034abb3ee4d8</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_email"&gt;&lt;sys_script_email action="INSERT_OR_UPDATE"&gt;&lt;name&gt;ccr_gdsp_ready_to_review_wf&lt;/name&gt;&lt;new_lines_to_html&gt;false&lt;/new_lines_to_html&gt;&lt;script&gt;&lt;![CDATA[var contact_type = '';
-var ticketNum = '';
-var version = '';
-var hasParent = '';
-var org_ticket_num = '';
-var variables;
-		 
-  var varown = new GlideRecord('sc_req_item');
-  varown.addQuery('sys_id', current.sys_id);
-  varown.query();
-
-  if(varown.getRowCount() &gt; 0){
-	varown.next();
-	contact_type = varown.getValue('contact_type');
-
-    if(contact_type == '' || contact_type === undefined || contact_type == 'Web'){
-	     org_ticket_num = varown.number;
-		 hasParent = 'false';
-    }else{
-		var orgIds = contact_type.split("=");
-        var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
-        gr_tracking_item.addQuery('u_orgid',orgIds[0]);
-        gr_tracking_item.query();
-        if(gr_tracking_item.getRowCount() &gt; 0){
-             gr_tracking_item.next();
-             org_ticket_num = gr_tracking_item.u_ticket_number;
-             version = orgIds[1];
-             hasParent = 'true';
-         }	else {
-			 org_ticket_num = varown.number;
-			 hasParent = 'false';
-		 }
-	}
-
-    if(hasParent == 'true'){
-           ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
-    }else{
-           ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
-    } 	
-    var url =  gs.getProperty('ccr_gdsp_uri') + '/ssp.do?id='+current.sys_id;
-
-	  email.setFrom("CCR Genomic Data Sharing");
-   if(varown.context.stage.name == 'Waiting for GPA Review'|| varown.context.stage.name == 'Requested' || varown.context.stage.name == ''){
-      email.subject='Notification for Genomic Data Sharing Plan Review and Signoff';
-      template.print('Your review of a Genomic Data Sharing Plan is required. If approved please provide your electronic signature.\n\n');
-      template.print('Action: OPTIONS - New Genomic Data Sharing Plan/Resubmission of Genomic Data Sharing Plan.\n\n');
-	  template.print('GDSP number: ' + ticketNum + '\n');
-	  template.print('Principle Investigator: ' + varown.u_investigator + '\n');
-	  template.print('Study Name: ' + varown.u_project_name + '\n\n\n');
-	  template.print('Go To : ' + "&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;");
-   }else if(varown.context.stage.name == 'Waiting for SD Review' || varown.context.stage.name == 'GPA Approved'){
-      email.subject='Notification for Genomic Data Sharing Plan Review and Signoff';
-      template.print('Your review of a GPA reviewed Genomic Data Sharing Plan is required. If approved please provide your electronic signature.\n\n');
-      template.print('Action: OPTIONS - New Genomic Data Sharing Plan/Resubmission of Genomic Data Sharing Plan.\n\n');
-	  template.print('GDSP number: ' + ticketNum + '\n');
-  	template.print('Principle Investigator: ' + varown.u_investigator + '\n');
-	  template.print('Study Name: ' + varown.u_project_name + '\n\n\n');
-	  template.print('Go To : ' + "&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;");	
-   }else{
-      email.subject='GDSP ' + ticketNum + ' is ready for review';
-    		
-      //template.print("The ticket you selected : " + ticketNum);
-      //template.print("\n\n object id: " + current.sys_id);
-	  gs.logWarning("email error " + varown.context.stage.name + "-"); 
-	   if (varown.context.stage.name == '') {
-	      log.Warning('empty');
-	   }else {
-		   log.Warning('Null');
-			   }
-
-	  gs.logWarning("email error " + varown.context.stage.name + "-"); 
-      template.print("Click on the link to view the details of the request" + varown.context.stage.name);
-      template.print("&lt;a href='" + url + "'&gt;" + ticketNum + "&lt;/a&gt;"); 
-   }
-
-}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-03-04 20:59:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;dc6328106f0e92000a09034abb3ee4d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;ccr_gdsp_ready_to_review_wf&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_dc6328106f0e92000a09034abb3ee4d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-07-21 14:37:01&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_1.0.0_07_21_2016">6728428b6f092600bbc002e6eb3ee492</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-08-09 20:31:05</sys_created_on>
-<sys_id>e728428b6f092600bbc002e6eb3ee492</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-08-09 20:31:05</sys_updated_on>
-<table/>
-<target_name>ccr_gdsp_ready_to_review_wf</target_name>
-<type>Email Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
