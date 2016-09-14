@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-09-14 18:08:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CBIIT_BIZ_TRAVEL_1.0.1_09_08_2016</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>dbb984f06f3526000a09034abb3ee4e8</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>08e04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_243e3fb46f520200e04fd15eae3ee408</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>otherEventDetails</name><order>370</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>If selecting "Other" please specify:</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-09-02 16:17:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>243e3fb46f520200e04fd15eae3ee408</sys_id><sys_mod_count>1</sys_mod_count><sys_name>If selecting "Other" please specify:</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_243e3fb46f520200e04fd15eae3ee408</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:16:43</sys_updated_on><table/><tooltip/><type>16</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=243e3fb46f520200e04fd15eae3ee408"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>00e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>If selecting "Other" please specify:</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_e17b2b506f9b0200250e6bbeae3ee490</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter27</name><order>965</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>nomulaa@nih.gov</sys_created_by><sys_created_on>2015-10-20 18:40:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e17b2b506f9b0200250e6bbeae3ee490</sys_id><sys_mod_count>1</sys_mod_count><sys_name>formatter27</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_e17b2b506f9b0200250e6bbeae3ee490</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 20:01:36</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=e17b2b506f9b0200250e6bbeae3ee490"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>04e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_f8a8ff566f3162000a09034abb3ee4a9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;collection&gt;sc_req_item&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;description/&gt;&lt;event_name&gt;travel.registration.validation.reminder&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;You are receiving this additional notification because you have not yet validated your registration. You will continue to receive these notifications weekly until you have completed the steps below to validate. If you believe you are receiving these messages in error, please contact wuye@mail.nih.gov&lt;/p&gt;
+&lt;p&gt;To validate your registration for this trip:&lt;br /&gt; &lt;br /&gt;1) Log on to service.cancer.gov &amp;gt; My Requested Items &amp;gt; Open ${number}&lt;/p&gt;
+&lt;p&gt;2) Review all information entered in the Registration section and modify as needed. You will not be able to modify any other sections of this travel request. * Be certain to update the dollar amount if this has changed from your initial request.&lt;/p&gt;
+&lt;p&gt;3)Attach snapshots of approved CTPS/ STEPS notification &amp;amp; Registration Form (excluding credit card information)&lt;/p&gt;
+&lt;p&gt;4)Click Registration Validation button&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Click here to view and validate Request: ${URI_REF}&lt;/p&gt;
+&lt;p&gt;Requested for: &amp;nbsp;${request.requested_for}&lt;/p&gt;
+&lt;div&gt;Name of Event: ${variables.meetingName}${variables.meet_name}&lt;/div&gt;
+&lt;p&gt;Opened by: ${opened_by}&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Opened: ${opened_at}&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;For questions please refer to the&amp;nbsp;&lt;a title="CBIIT Travel Hub" href="https://collaborate.nci.nih.gov/display/CC/Travel"&gt;CBIIT Travel Hub&lt;/a&gt; on CBIIT Central.&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Travel and M+C - Validate Reminder&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;request.requested_for&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Reminder - ${cat_item} ${number}  - Validate Registration Information&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-14 03:34:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;f8a8ff566f3162000a09034abb3ee4a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Travel and M+C - Validate Reminder&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_f8a8ff566f3162000a09034abb3ee4a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-14 17:29:32&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>08e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table>sc_req_item</table>
+<target_name>Travel and M+C - Validate Reminder</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_register_84897fd66f3162000a09034abb3ee417</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><description>This event is used to fire a notification to the traveler to validate the registrration variables..</description><event_name>travel.registration.validation.reminder</event_name><fired_by>Travel and Registration Scheduled Job</fired_by><queue/><suffix/><sys_class_name>sysevent_register</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-14 03:37:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>84897fd66f3162000a09034abb3ee417</sys_id><sys_mod_count>1</sys_mod_count><sys_name>travel.registration.validation.reminder</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysevent_register_84897fd66f3162000a09034abb3ee417</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 03:38:48</sys_updated_on><table>sc_req_item</table></sysevent_register></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>0ce04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table>sc_req_item</table>
+<target_name>travel.registration.validation.reminder</target_name>
+<type>Event Registration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_bb30e0f86f3526000a09034abb3ee403</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter39</name><order>847</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-08 19:57:56</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bb30e0f86f3526000a09034abb3ee403</sys_id><sys_mod_count>0</sys_mod_count><sys_name>formatter39</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_bb30e0f86f3526000a09034abb3ee403</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:57:56</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=bb30e0f86f3526000a09034abb3ee403"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>0ce04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_c03f00150f3096005aad9259a1050ea0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;collection&gt;sc_req_item&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;description/&gt;&lt;event_name&gt;travel.registration.validation&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Dear Traveler,&lt;/p&gt;
+&lt;p&gt;Your meeting/conference has now been approved by NIH/NCI. Registration for this conference can now be processed by our financial management team.&lt;/p&gt;
+&lt;p&gt;At this time, please review and validate the registration information submitted as part of your initial request. Please note that your registration will not be processed or paid for by the financial management team until all required information is uploaded to the request and until the &amp;ldquo;Validate&amp;rdquo; button is submitted.&lt;/p&gt;
+&lt;p&gt;To Validate Registration for ${number}:&lt;/p&gt;
+&lt;p&gt;1) Log into &lt;a title="service.cancer.gov" href="service.cancer.gov"&gt;service.cancer.gov&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;2) Locate the ${number} under My Requested Items &amp;gt; Open.&lt;/p&gt;
+&lt;p&gt;3) Review all information previously entered under the Registration Section and modify as needed. NOTE: This is the only section that can be modified at this time.&lt;/p&gt;
+&lt;p&gt;**Pay special attention to the dollar amount initially listed. This should be the actual amount that our Financial Management will need to pay when your registration is processed. &amp;nbsp;&lt;/p&gt;
+&lt;p&gt;4) Attach the following documents if not already submitted or if incorrect:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Approved CTPS/ STEPS snapshot&lt;/li&gt;
+&lt;li&gt;Completed Registration Form as obtained from the conference website (excluding the credit card information) - upload either a PDF or snapshot of this document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note: &lt;/strong&gt;Usernames and passwords will no longer be accepted.&lt;/p&gt;
+&lt;p&gt;5)&amp;nbsp;Click Registration Validation button located at the top and bottom of the page to submit request. NOTE: your request will not move forward until you select the Validation button.&lt;/p&gt;
+&lt;p&gt;Failure to submit the documents as listed above and/or to correct any outdated information for registration will result in a delay and/or denial of your request.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Click here to view and validate Request: ${URI_REF}&lt;/p&gt;
+&lt;p&gt;Requested for: &amp;nbsp;${request.requested_for}&lt;/p&gt;
+&lt;p&gt;Opened by: ${opened_by}&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Opened: ${opened_at}&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;For questions please refer to the&amp;nbsp;&lt;a title="CBIIT Travel Hub" href="https://collaborate.nci.nih.gov/display/CC/Travel"&gt;CBIIT Travel Hub&lt;/a&gt; on CBIIT Central.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Travel and M+C - Validate Reg Info&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;request.requested_for&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;${cat_item} ${number}  - Validate Registration Information&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cotterra&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-05 19:10:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;c03f00150f3096005aad9259a1050ea0&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;Travel and M+C - Validate Reg Info&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_c03f00150f3096005aad9259a1050ea0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-14 17:30:50&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>40e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table>sc_req_item</table>
+<target_name>Travel and M+C - Validate Reg Info</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_772f1a6a6fb16200bbc002e6eb3ee46a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.TravelValiationReminder&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Query sc_req_item to find out all tasks that are in "waiting_on_validation" stage and trigger events.&lt;/description&gt;&lt;name&gt;TravelValiationReminder&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TravelValiationReminder = Class.create();
+TravelValiationReminder.prototype = {
+    initialize: function() {
+    },
+	
+	process: function() {
+		var gr_requested_items = new GlideRecord('sc_req_item');
+		gr_requested_items.addQuery('u_pending_reason', 'waiting_on_validation');
+		gr_requested_items.addQuery('cat_item','960e56486f868a00e04fd15eae3ee41b');
+		gr_requested_items.addActiveQuery();
+		gr_requested_items.query();
+
+		while (gr_requested_items.next()) {
+		   gs.eventQueue('travel.registration.validation.reminder',gr_requested_items); 
+		}
+	},
+
+    type: 'TravelValiationReminder'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-14 15:42:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;772f1a6a6fb16200bbc002e6eb3ee46a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;TravelValiationReminder&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_772f1a6a6fb16200bbc002e6eb3ee46a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-09-14 15:43:43&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>44e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>TravelValiationReminder</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_ca0642de6fc51200ef8e56c31c3ee4ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>typeCT_4111</name><order>4111</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>ce</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cotterra</sys_created_by><sys_created_on>2016-01-21 16:15:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ca0642de6fc51200ef8e56c31c3ee4ed</sys_id><sys_mod_count>6</sys_mod_count><sys_name>ce</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_ca0642de6fc51200ef8e56c31c3ee4ed</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 13:32:07</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=ca0642de6fc51200ef8e56c31c3ee4ed"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>48e04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>ce</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_950060f86f3526000a09034abb3ee4ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter38</name><order>845</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-08 19:56:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>950060f86f3526000a09034abb3ee4ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>formatter38</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_950060f86f3526000a09034abb3ee4ed</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:56:57</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=950060f86f3526000a09034abb3ee4ed"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>48e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_681502de6fc51200ef8e56c31c3ee400</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>true</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text>For information regarding the policy for usage of Comp Time and type of Comp Time please refer to the CBIIT Policy on Comp Time Off for Travel (CTT) found here: &lt;a href="https://collaborate.nci.nih.gov/pages/viewpage.action?pageId=154734090" rel="nofollow" target="_blank"&gt;https://collaborate.nci.nih.gov/pages/viewpage.action?pageId=154734090&lt;/a&gt; </help_text><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerStart21</name><order>2490</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>Comp Time (CTT &amp; CT)</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>true</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cotterra</sys_created_by><sys_created_on>2016-01-21 16:11:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>681502de6fc51200ef8e56c31c3ee400</sys_id><sys_mod_count>12</sys_mod_count><sys_name>Comp Time (CTT &amp; CT)</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_681502de6fc51200ef8e56c31c3ee400</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 12:55:43</sys_updated_on><table/><tooltip/><type>19</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=681502de6fc51200ef8e56c31c3ee400"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>4ce04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>Comp Time (CTT &amp; CT)</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_5d896f0c6fc68a00e04fd15eae3ee4e2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter20</name><order>1102</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 20:35:19</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5d896f0c6fc68a00e04fd15eae3ee4e2</sys_id><sys_mod_count>3</sys_mod_count><sys_name>formatter20</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_5d896f0c6fc68a00e04fd15eae3ee4e2</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:48:31</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=5d896f0c6fc68a00e04fd15eae3ee4e2"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>4ce04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_e339af0c6fc68a00e04fd15eae3ee4bf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>hours</name><order>1095</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>Total Annual Leave Hours</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 20:34:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e339af0c6fc68a00e04fd15eae3ee4bf</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Total Annual Leave Hours</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_e339af0c6fc68a00e04fd15eae3ee4bf</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:47:02</sys_updated_on><table/><tooltip/><type>6</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=e339af0c6fc68a00e04fd15eae3ee4bf"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>80e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>Total Annual Leave Hours</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_13b8eec86f868a00e04fd15eae3ee42b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerStart5_1</name><order>225</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 15:52:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>13b8eec86f868a00e04fd15eae3ee42b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>containerStart5_1</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_13b8eec86f868a00e04fd15eae3ee42b</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:12:44</sys_updated_on><table/><tooltip/><type>19</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=13b8eec86f868a00e04fd15eae3ee42b"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>84e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_b30a662b6f815200ef8e56c31c3ee4cf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter29</name><order>2525</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cotterra</sys_created_by><sys_created_on>2016-01-25 16:05:15</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b30a662b6f815200ef8e56c31c3ee4cf</sys_id><sys_mod_count>4</sys_mod_count><sys_name>formatter29</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_b30a662b6f815200ef8e56c31c3ee4cf</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 13:17:09</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=b30a662b6f815200ef8e56c31c3ee4cf"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>88e04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_2248ab0c6fc68a00e04fd15eae3ee449</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>2across</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerStart19</name><order>1101</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 20:30:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2248ab0c6fc68a00e04fd15eae3ee449</sys_id><sys_mod_count>3</sys_mod_count><sys_name>containerStart19</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_2248ab0c6fc68a00e04fd15eae3ee449</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:48:20</sys_updated_on><table/><tooltip/><type>19</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=2248ab0c6fc68a00e04fd15eae3ee449"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>88e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_b2a8d4386f3526000a09034abb3ee467</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter37</name><order>366</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-08 19:25:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b2a8d4386f3526000a09034abb3ee467</sys_id><sys_mod_count>1</sys_mod_count><sys_name>formatter37</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_b2a8d4386f3526000a09034abb3ee467</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:25:23</sys_updated_on><table/><tooltip/><type>12</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=b2a8d4386f3526000a09034abb3ee467"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>8ce04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_02f72ec86f868a00e04fd15eae3ee455</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerSplit</name><order>300</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>split</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 15:50:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>02f72ec86f868a00e04fd15eae3ee455</sys_id><sys_mod_count>1</sys_mod_count><sys_name>split</sys_name><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_02f72ec86f868a00e04fd15eae3ee455</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:19:42</sys_updated_on><table/><tooltip/><type>24</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=02f72ec86f868a00e04fd15eae3ee455"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>8ce04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>split</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_e6869cf46f3526000a09034abb3ee4ee</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>formatter36</name><order>440</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-08 19:15:31</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e6869cf46f3526000a09034abb3ee4ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>formatter36</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_e6869cf46f3526000a09034abb3ee4ee</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:15:31</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=e6869cf46f3526000a09034abb3ee4ee"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>c0e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_3b43c8856fdd520008f1d5432e3ee405</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>2across</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerStart30</name><order>2495</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cotterra</sys_created_by><sys_created_on>2016-01-29 19:47:15</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3b43c8856fdd520008f1d5432e3ee405</sys_id><sys_mod_count>2</sys_mod_count><sys_name>containerStart30</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_3b43c8856fdd520008f1d5432e3ee405</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 13:18:19</sys_updated_on><table/><tooltip/><type>19</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=3b43c8856fdd520008f1d5432e3ee405"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>c4e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_45565cf46f3526000a09034abb3ee41f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>containerStart6</name><order>367</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text/><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-08 19:14:52</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>45565cf46f3526000a09034abb3ee41f</sys_id><sys_mod_count>3</sys_mod_count><sys_name>containerStart6</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_45565cf46f3526000a09034abb3ee41f</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-08 19:19:14</sys_updated_on><table/><tooltip/><type>19</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=45565cf46f3526000a09034abb3ee41f"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>c8e04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name/>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_4943e2e76f815200ef8e56c31c3ee455</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>typeCT_2600</name><order>2600</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>ce1</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>cotterra</sys_created_by><sys_created_on>2016-01-25 15:35:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4943e2e76f815200ef8e56c31c3ee455</sys_id><sys_mod_count>3</sys_mod_count><sys_name>ce1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_4943e2e76f815200ef8e56c31c3ee455</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 13:31:38</sys_updated_on><table/><tooltip/><type>20</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=4943e2e76f815200ef8e56c31c3ee455"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>c8e04bee6fb16200bbc002e6eb3ee4bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>ce1</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_0d4a3d626fb16200bbc002e6eb3ee4ba</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="DELETE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text/><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>Container_split1</name><order>2515</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>Container_split1</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>false</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>wuye@nih.gov</sys_created_by><sys_created_on>2016-09-14 13:04:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0d4a3d626fb16200bbc002e6eb3ee4ba</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Container_split1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_0d4a3d626fb16200bbc002e6eb3ee4ba</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2016-09-14 13:06:48</sys_updated_on><table/><tooltip/><type>24</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>true</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=0d4a3d626fb16200bbc002e6eb3ee4ba"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.1_09_8_2016">08e04bee6fb16200bbc002e6eb3ee4be</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-14 18:08:55</sys_created_on>
+<sys_id>cce04bee6fb16200bbc002e6eb3ee4be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2016-09-14 18:08:55</sys_updated_on>
+<table/>
+<target_name>Container_split1</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
