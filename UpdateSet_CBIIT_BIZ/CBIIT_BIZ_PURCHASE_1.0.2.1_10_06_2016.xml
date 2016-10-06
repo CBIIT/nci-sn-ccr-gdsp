@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2016-10-06 16:24:58">
+<unload unload_date="2016-10-06 17:00:55">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -17,11 +17,11 @@
 <state>loaded</state>
 <summary/>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-10-06 16:24:58</sys_created_on>
-<sys_id>3b0c7f69db566600e92cff621f9619fb</sys_id>
+<sys_created_on>2016-10-06 17:00:55</sys_created_on>
+<sys_id>de440cbddb566600e92cff621f961956</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-10-06 16:24:58</sys_updated_on>
+<sys_updated_on>2016-10-06 17:00:55</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -63,7 +63,7 @@ Thank you
 &lt;div&gt;Program&amp;nbsp;Name: ${sysapproval.variables.u_program}&lt;/div&gt;
 &lt;div&gt;
 &lt;div&gt;Project/Service&amp;nbsp;Name: ${sysapproval.variables.u_item}&lt;/div&gt;
-&lt;div&gt;FY2016 Project Name (If submitted before Septebmer 30, 2016):&amp;nbsp;${sysapproval.variables.Project_Name}&lt;/div&gt;
+&lt;div&gt;FY16 Project Name (If submitted before Septebmer 30, 2016):&amp;nbsp;${sysapproval.variables.Project_Name}&lt;/div&gt;
 &lt;/div&gt;
 &lt;div&gt;Vendor: ${sysapproval.variables.First_Vendor}&lt;/div&gt;
 &lt;div&gt;Total Cost: ${sysapproval.variables.total_cost}&lt;/div&gt;
@@ -77,15 +77,15 @@ Thank you
 &lt;/div&gt;
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;Thank you&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;BSS - Approval assigned - CPR&lt;/name&gt;&lt;sms_alternate/&gt;&lt;subject&gt;An Approval for ${sysapproval.number} ${sysapproval.cat_item} has been assigned to you&lt;/subject&gt;&lt;sys_class_name&gt;sysevent_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mcsweeneyra&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-06 18:16:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;66e111ad0f3496005aad9259a1050efc&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;BSS - Approval assigned - CPR&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_template_66e111ad0f3496005aad9259a1050efc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-10-06 16:22:44&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;/sysevent_email_template&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CBIIT_BIZ_PURCHASE_1.0.2.1_10_06_2016">3b0c7f69db566600e92cff621f9619fb</remote_update_set>
+&lt;div&gt;Thank you&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;BSS - Approval assigned - CPR&lt;/name&gt;&lt;sms_alternate/&gt;&lt;subject&gt;An Approval for ${sysapproval.number} ${sysapproval.cat_item} has been assigned to you&lt;/subject&gt;&lt;sys_class_name&gt;sysevent_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mcsweeneyra&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-01-06 18:16:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;66e111ad0f3496005aad9259a1050efc&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;BSS - Approval assigned - CPR&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_template_66e111ad0f3496005aad9259a1050efc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-10-06 17:00:25&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;/sysevent_email_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_PURCHASE_1.0.2.1_10_06_2016">de440cbddb566600e92cff621f961956</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-10-06 16:24:58</sys_created_on>
-<sys_id>7b0c7f69db566600e92cff621f9619fb</sys_id>
+<sys_created_on>2016-10-06 17:00:55</sys_created_on>
+<sys_id>12440cbddb566600e92cff621f961957</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-10-06 16:24:58</sys_updated_on>
+<sys_updated_on>2016-10-06 17:00:55</sys_updated_on>
 <table>sysapproval_approver</table>
 <target_name>BSS - Approval assigned - CPR</target_name>
 <type>Email Template</type>
@@ -134,7 +134,7 @@ Thank you
 &lt;/div&gt;
 &lt;div&gt;
 &lt;div&gt;
-&lt;div&gt;FY2016 Project Name (If submitted before Septebmer 30, 2016):&amp;nbsp;${sysapproval.variables.Project_Name}&lt;/div&gt;
+&lt;div&gt;FY16 Project Name (If submitted before Septebmer 30, 2016):&amp;nbsp;${sysapproval.variables.Project_Name}&lt;/div&gt;
 &lt;/div&gt;
 Vendor: ${sysapproval.variables.First_Vendor}&lt;/div&gt;
 &lt;div&gt;Total Cost: ${sysapproval.variables.total_cost}&lt;/div&gt;
@@ -146,15 +146,15 @@ Vendor: ${sysapproval.variables.First_Vendor}&lt;/div&gt;
 &lt;/div&gt;
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;Thank you&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;BSS - Approval assigned - CPR - Software&lt;/name&gt;&lt;sms_alternate/&gt;&lt;subject&gt;An Approval for ${sysapproval.number} ${sysapproval.cat_item} for Software  has been assigned to you&lt;/subject&gt;&lt;sys_class_name&gt;sysevent_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cotterra&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-05-12 17:44:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf8cc71e6fdb160008f1d5432e3ee439&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;BSS - Approval assigned - CPR - Software&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_template_cf8cc71e6fdb160008f1d5432e3ee439&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-10-06 16:23:15&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;/sysevent_email_template&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CBIIT_BIZ_PURCHASE_1.0.2.1_10_06_2016">3b0c7f69db566600e92cff621f9619fb</remote_update_set>
+&lt;div&gt;Thank you&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;BSS - Approval assigned - CPR - Software&lt;/name&gt;&lt;sms_alternate/&gt;&lt;subject&gt;An Approval for ${sysapproval.number} ${sysapproval.cat_item} for Software  has been assigned to you&lt;/subject&gt;&lt;sys_class_name&gt;sysevent_email_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;cotterra&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-05-12 17:44:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf8cc71e6fdb160008f1d5432e3ee439&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;BSS - Approval assigned - CPR - Software&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_template_cf8cc71e6fdb160008f1d5432e3ee439&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-10-06 17:00:39&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;/sysevent_email_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_PURCHASE_1.0.2.1_10_06_2016">de440cbddb566600e92cff621f961956</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>wuye@nih.gov</sys_created_by>
-<sys_created_on>2016-10-06 16:24:58</sys_created_on>
-<sys_id>bb0c7f69db566600e92cff621f9619fb</sys_id>
+<sys_created_on>2016-10-06 17:00:55</sys_created_on>
+<sys_id>52440cbddb566600e92cff621f961957</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>wuye@nih.gov</sys_updated_by>
-<sys_updated_on>2016-10-06 16:24:58</sys_updated_on>
+<sys_updated_on>2016-10-06 17:00:55</sys_updated_on>
 <table>sysapproval_approver</table>
 <target_name>BSS - Approval assigned - CPR - Software</target_name>
 <type>Email Template</type>
