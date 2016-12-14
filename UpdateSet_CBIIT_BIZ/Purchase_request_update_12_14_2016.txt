@@ -1,0 +1,1940 @@
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Business Intelligence and Data Warehouse Support    Oracle Discove');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Business Intelligence and Data Warehouse Support';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Clinical Systems and Data Management Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Clinical Systems and Data Management updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Clinical Systems and Data Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Management Services Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Data Management Services updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Data Management Services';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Services Environment (Data Management)');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Data Services Environment updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Data Services Environment';
+     cbiit_pr.update();
+  }
+      
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Enterprise Vocabulary Services Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Enterprise Vocabulary Services updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Enterprise Vocabulary Services';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Evaluation and Strategic Initiatives Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Evaluation and Strategic Initiatives updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Evaluation and Strategic Initiatives';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Exploratory Computing Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Exploratory Computing updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Exploratory Computing';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Genomic Data Commons Metadata Validator');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Genomic Data Commons Metadata Validator updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Genomics Data Commons Metadata Validator';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Grants Management Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Grants Management updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Grants Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','High Performance Computing Initiative Program (HPC)');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('High Performance Computing Initiative updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'High Performance Computing Initiative';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IMPAC II and I2E User Account Management (New Requests, Changes, D');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('IMPAC II and I2E User Account Management updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'IMPAC II and I2E User Account Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Informatics Technology for Cancer Research (ITCR)');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Informatics Technology for Cancer Research updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Informatics Technology for Cancer Research';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI Enterprise and Business Application Development and Support Pr');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('NCI Enterprise and Business Application Development and Support updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'NCI Enterprise and Business Application Development and Support';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI IT and Informatics Training Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('NCI IT and Informatics Training updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'NCI IT and Informatics Training';
+     cbiit_pr.update();
+  }
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI LAN Modernization (TRP)');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('NCI LAN Modernization');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'NCI LAN Modernization';
+     cbiit_pr.update();
+  }
+
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Service Automation Platform Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('Service Automation Platform Management Service updated');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'Service Automation Platform Management Service';
+     cbiit_pr.update();
+  }
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','System Accounts Management (I2E System and Database Access, web se');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+     gs.print('System Accounts Management update');
+     cbiit_pr.u_fy17_portfolio_items_group_by_program = 'System Accounts Management';
+     cbiit_pr.update();
+  }
+
+  var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Business Intelligence and Data Warehouse Support    Oracle Discove');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     cbiit_pr.u_key = 'Business Intelligence and Data Warehouse Support';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Clinical Systems and Data Management Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Clinical Systems and Data Management updated');
+     cbiit_pr.u_key = 'Clinical Systems and Data Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Data Management Services Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Data Management Services updated');
+     cbiit_pr.u_key = 'Data Management Services';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Data Services Environment (Data Management)');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Data Services Environment updated');
+     cbiit_pr.u_key = 'Data Services Environment';
+     cbiit_pr.update();
+  }
+      
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Enterprise Vocabulary Services Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Enterprise Vocabulary Services updated');
+     cbiit_pr.u_key = 'Enterprise Vocabulary Services';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Evaluation and Strategic Initiatives Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Evaluation and Strategic Initiatives updated');
+     cbiit_pr.u_key = 'Evaluation and Strategic Initiatives';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Exploratory Computing Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Exploratory Computing updated');
+     cbiit_pr.u_key = 'Exploratory Computing';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Genomic Data Commons Metadata Validator');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Genomic Data Commons Metadata Validator updated');
+     cbiit_pr.u_key = 'Genomics Data Commons Metadata Validator';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Grants Management Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Grants Management updated');
+     cbiit_pr.u_key = 'Grants Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','High Performance Computing Initiative Program (HPC)');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('High Performance Computing Initiative updated');
+     cbiit_pr.u_key = 'High Performance Computing Initiative';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','IMPAC II and I2E User Account Management (New Requests, Changes, D');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('IMPAC II and I2E User Account Management updated');
+     cbiit_pr.u_key = 'IMPAC II and I2E User Account Management';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Informatics Technology for Cancer Research (ITCR)');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Informatics Technology for Cancer Research updated');
+     cbiit_pr.u_key = 'Informatics Technology for Cancer Research';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','NCI Enterprise and Business Application Development and Support Pr');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('NCI Enterprise and Business Application Development and Support updated');
+     cbiit_pr.u_key = 'NCI Enterprise and Business Application Development and Support';
+     cbiit_pr.update();
+  }
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','NCI IT and Informatics Training Program');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('NCI IT and Informatics Training updated');
+     cbiit_pr.u_key = 'NCI IT and Informatics Training';
+     cbiit_pr.update();
+  }
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','NCI LAN Modernization (TRP)');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('NCI LAN Modernization');
+     cbiit_pr.u_key = 'NCI LAN Modernization';
+     cbiit_pr.update();
+  }
+
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','Service Automation Platform Management');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('Service Automation Platform Management Service updated');
+     cbiit_pr.u_key = 'Service Automation Platform Management Service';
+     cbiit_pr.update();
+  }
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','System Accounts Management (I2E System and Database Access, web se');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('System Accounts Management update');
+     cbiit_pr.u_key = 'System Accounts Management';
+     cbiit_pr.update();
+  }
+
+
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_key','NCI Enterprise and Business Application Development and Sup');
+cbiit_pr.query();
+ while (cbiit_pr.next()) {
+     gs.print('SNCI Enterprise and Business Application Development and Sup update');
+     cbiit_pr.u_key = 'NCI Enterprise and Business Application Development and Support';
+     cbiit_pr.update();
+  }
+
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Application Development');
+cbiit_pr.addQuery('u_key','NCI Enterprise and Business Application Development and Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kwokj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Application Development');
+cbiit_pr.addQuery('u_key','Grants Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Application Support');
+cbiit_pr.addQuery('u_key','NCI Enterprise and Business Application Development and Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kwokj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Application Support');
+cbiit_pr.addQuery('u_key','Grants Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','josephsar@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Audio Visual');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','heiskame@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Basic Research Systems and Data Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','meerzamd@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Bioinformatics Support and Training');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hopeda@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Biomedical Citizen Science Hub');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hastaks@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','BRIDG');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Business Intelligence and Data Warehouse Support ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','andonyac@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','C3D Tools Production Support and Clinical Connector for C3D');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','pandyas@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','caNanoLab Development');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','klemmj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cancer Genomics Cloud Pilots');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kerlavagear@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cancer Knowledge System');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hallde3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT Administrative Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','alkisbd@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT App Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hallde3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT Business Operations Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hallde3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT Director\'s Priority and Crisis Response Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','brownjd3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT Staff Salaries, Awards, and Training Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','silverdg@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CBIIT Supported Software');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','pattondr@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CDMS');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','nordana@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Central Receiving');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jbo@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CGAP and Gene Collections Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kerlavagear@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CIB Operations and General Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','pattondr@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Clinical and Translational Research and Development Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kerlavagear@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Clinical Systems and Data Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cloud Initiative ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','chandramoulisi@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cloud Pilot NCI Intramural Evaluation');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jbo@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cloud Pilot Performance Metrics Evaluation');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','sheppardk@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Cloud Usage');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','elwellhc@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Communications Consultation');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','desain2@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CRF Harmonization and Standardization Initiative');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jbo@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTD2 Dashboard Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jbo@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTD2 Data Matrix Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','whitleys@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTRO Data Abstraction');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','whitleys@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTRO Program Support-Analysts/Consultants');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','undalehv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTRP Application Update and Modernization');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','undalehv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTRP Clinical Trials Database');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','undalehv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','CTRP-Operations Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','buckmash@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Customer Service and Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','omatetera@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Calls and Legislative Compliance');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mageetg@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Center Consolidation');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Management Services');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','johnsonmar@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Protection and Storage');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Services Environment');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','caldwelv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Database Services');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','gormleypj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Desktop Refresh');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','linjc3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Desktop Support ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','ulrike@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Digital Pathology in support of SEER');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','DOE Collaboration');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','fakhraifb@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Engineering Solutions Service');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','smallwoodrc@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Engineering Support and Consultation Service');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','haync@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Enterprise Security');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','silverdg@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Enterprise Software');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','lwright@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Enterprise Vocabulary Services');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mccabecw@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Evaluation and Strategic Initiatives');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','rawioa@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Evaluation and Strategic Initiatives Branch General Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','whitemanl@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','EVS Operations - Content, Production, Maintenance and NCI Software');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','ulrike@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Data Integration for Imaging Informatics');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mccabecw@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Exploratory Computing');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','myrickkt@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Facilities ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hallde3@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','FFRDC Operations Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','chahalv2@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Financial Management License Maintenance');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','GenoMel Cloud Pilot with DCEG');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','lwright@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Genomics Data Commons Metadata Validator');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Grants Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mccabecw@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','High Performance Computing Initiative');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','caldwelv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Hosting Services');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','HPC for Genomic Data Commons');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','HPC User Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','shirleyrr@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IITOB Management Optimization Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','heltone2@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Imaging Informatics for Precision Medicine');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IMPAC II and I2E User Account Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','lawheadk@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Informatics and IT Training');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','klemmj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Informatics Systems, Support and Training');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','klemmj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Informatics Technology for Cancer Research');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','sheppardk@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Infrastructure Refresh');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','pansu@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IT Engineering Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','wongcc@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IT Operations Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','woodcocb@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','IT Security Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','warzeld@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','MDR Semantic Infrastructure Modernization');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','maeskeb@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Metadata Curation and Harmonization (caDSR)');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','decorons@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Metadata Software and Services Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI Enterprise and Business Application Development and Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','lawheadk@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI IT and Informatics Training');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','tayeaa@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI LAN Modernization');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','coffeybd@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCI MATCH');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','chandramoulisi@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCIP Hub');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','shalleyer@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCIP Program Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','kuntipuramkv@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','NCTN Data Archive');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','rogerst@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Network Connectivity ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mcneilgd@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Office 365');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','scottom@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Operational Security');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','coffeybd@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Pediatric MATCH');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','shahnj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Portfolio Expert');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','longojm@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Portfolio Management and Operations Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hetheringtonsm@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Portfolio Processes Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hetheringtonsm@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Portfolio Staffing');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','shahnj@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Portfolio Tools Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','stahlbergea@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Predictive Models Exploration Efforts');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','shalleyer@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','PRO-CTCAE');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','johnsonkl4@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Security Assessment and Authorization');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','scottom@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Security Maintenance');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','rogerst@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Server ');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','milesjk@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Service Automation Platform Management Service');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','josephsar@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Service Catalog Development');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jpan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Software License Management Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','hodgelc@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Software License Program Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','guninan@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','System Accounts Management');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','jbo@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','TARGET (Portal and Data Coordination) Support');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','wongcc@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Technology Refresh Program');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','mahoneyl@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','UC Campus Rollout');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+ var user = new GlideRecord('sys_user');
+ var userid = '';
+ user.addQuery('user_name','josephsar@nih.gov');
+ user.query();
+ if (user.next()) {
+    userid = user.sys_id;
+  }
+var cbiit_pr = new GlideRecord('u_cbiit_biz_purchase_program_info');
+cbiit_pr.addQuery('u_fy17_portfolio_items_group_by_program','Unified Communications');
+cbiit_pr.query();
+ if (cbiit_pr.next()) {
+    cbiit_pr.u_federal_lead=userid;
+    cbiit_pr.update();
+  }
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
