@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-01-25 15:36:19">
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>a9aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_updated_by>goldwebersa@nih.gov</sys_updated_by>
+<sys_updated_on>2017-01-25 15:25:59</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Gisele Sarosy">8fbf70a96f6f2100e04fd15eae3ee471</u_federal_approver>
+<u_federal_lead display_value="Stephanie Whitley">ebdfbca96f6f2100e04fd15eae3ee461</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CTRP-Operations Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Clinical Systems and Data Management</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>goldwebersa@nih.gov</sys_created_by>
+<sys_created_on>2017-01-24 19:07:10</sys_created_on>
+<sys_id>42af7a41db683600e92cff621f9619d5</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>goldwebersa@nih.gov</sys_updated_by>
+<sys_updated_on>2017-01-25 15:23:01</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_approver>
+<u_federal_lead display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Harmonization of Various Common Data Models and Open Standards for Evidence Gene</u_fy17_portfolio_items_group_by_program>
+<u_key>Metadata Software and Services</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b1aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>goldwebersa@nih.gov</sys_updated_by>
+<sys_updated_on>2017-01-24 19:10:31</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Juli Klemm">71bffc696f6f2100e04fd15eae3ee4b5</u_federal_approver>
+<u_federal_lead display_value="Mervi Heiskanen">60bfbc696f6f2100e04fd15eae3ee420</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCIP Hub</u_fy17_portfolio_items_group_by_program>
+<u_key>Informatics Systems, Support and Training</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>69aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>goldwebersa@nih.gov</sys_updated_by>
+<sys_updated_on>2017-01-24 19:09:50</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot Performance Metrics Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>Cancer Knowledge System</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f1aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>goldwebersa@nih.gov</sys_updated_by>
+<sys_updated_on>2017-01-24 19:09:10</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot NCI Intramural Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>Cancer Knowledge System</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+</unload>
