@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-09 18:21:35">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCR_GDSP_validation_Rest_API_201703008</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>06c2c08fdbd9b20054d8ff621f961953</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-03-09 18:21:35</sys_created_on>
+<sys_id>ed9bd957db11f200f59974131f961961</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-09 18:21:35</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_3d03404fdbd9b20054d8ff621f9619d6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/naci/ccr_gds_rest</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>ccr_gds_rest</name><namespace>naci</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>ccr_gds_rest</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>zhoujim@nih.gov</sys_created_by><sys_created_on>2017-03-08 17:16:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3d03404fdbd9b20054d8ff621f9619d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ccr_gds_rest</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_3d03404fdbd9b20054d8ff621f9619d6</sys_update_name><sys_updated_by>zhoujim@nih.gov</sys_updated_by><sys_updated_on>2017-03-08 17:16:33</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="CCR_GDSP_validation_Rest_API_201703008">ed9bd957db11f200f59974131f961961</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-03-09 18:21:35</sys_created_on>
+<sys_id>619bd957db11f200f59974131f961962</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-09 18:21:35</sys_updated_on>
+<table/>
+<target_name>ccr_gds_rest</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_2c23c00fdbd9b20054d8ff621f961911</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;validategdsp&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var jsonArr = [];
+	var gdsp_id = request.queryParams.gdsp_id.toString();
+	var ned_id = request.queryParams.ned_id.toString();
+	var association = '';
+    var base_id = gdsp_id.substring(8);
+	var real_gdsp_id = 'NCI-RITM' + base_id;
+	var req_items = new GlideRecord('sc_req_item');
+	req_items.addQuery('opened_by.employee_number', ned_id);
+	req_items.addQuery('number', real_gdsp_id);
+	req_items.query();
+	if(req_items.getRowCount() &gt; 0){
+		association = "True";
+	}else{
+		association = "False";
+	}
+	var obj_id = '';
+	if(association == 'False'){
+		var real_id = base_id.substring(0, base_id.indexOf('-'));
+		var tracking_items = new GlideRecord('u_ccr_tracking_t');
+		tracking_items.addQuery('u_ticket_number', 'CONTAINS', real_id);
+		tracking_items.query();
+		tracking_items.next();
+		
+		obj_id = tracking_items.u_orgid;
+		var req_items1 = new GlideRecord('sc_req_item');
+		req_items1.addQuery('opened_by.employee_number', ned_id);
+		req_items1.addQuery('contact_type','CONTAINS', obj_id);
+		req_items1.query();
+		if(req_items1.getRowCount() &gt; 0){
+			association = "True";
+		}else{
+			association = "False";
+		}
+	}
+
+	jsonArr.push({
+		ned_id: ned_id.toString(),
+		gdsp_id: gdsp_id.toString(),
+		association: association.toString(),
+	});
+   return jsonArr;
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/naci/ccr_gds_rest/validategdsp&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/validategdsp&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 17:16:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2c23c00fdbd9b20054d8ff621f961911&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;validategdsp&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_2c23c00fdbd9b20054d8ff621f961911&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-08 17:47:08&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="ccr_gds_rest"&gt;3d03404fdbd9b20054d8ff621f9619d6&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_validation_Rest_API_201703008">ed9bd957db11f200f59974131f961961</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-03-09 18:21:35</sys_created_on>
+<sys_id>e19bd957db11f200f59974131f961962</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-09 18:21:35</sys_updated_on>
+<table/>
+<target_name>validategdsp</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
