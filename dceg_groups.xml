@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-10 15:37:07">
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>DCEG RRS Bioinformatc</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>DCEG_BIOINFORMATIC</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-02-06 21:57:38</sys_created_on>
+<sys_id>6aa366dddbfc3a00f59974131f9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-02-06 21:57:38</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>DCEG RRS Chairman</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>DCEG_CHAIR</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-02-06 21:57:12</sys_created_on>
+<sys_id>6383661ddbfc3a00f59974131f961954</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-02-06 21:57:12</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>DCEG RRS Committe</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>DCEG_COMMITTEE</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-02-06 21:56:42</sys_created_on>
+<sys_id>187326dddbfc3a00f59974131f96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-02-06 21:56:42</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>DCEG RRS PI</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>DCEG_PI</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-02-06 21:55:42</sys_created_on>
+<sys_id>f1236e9ddbfc3a00f59974131f961915</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-02-06 21:55:42</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>DCEG RRS Secratary</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>DCEG_SECRETARY</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-02-06 21:56:14</sys_created_on>
+<sys_id>f453e2dddbfc3a00f59974131f961903</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-02-06 21:56:14</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+</unload>
