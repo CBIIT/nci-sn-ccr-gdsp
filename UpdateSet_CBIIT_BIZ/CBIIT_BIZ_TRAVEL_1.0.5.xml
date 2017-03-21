@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-21 19:25:07">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CBIIT_BIZ_TRAVEL_1.0.5</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>6ccad74bdbe5b200e92cff621f961915</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-03-21 19:25:07</sys_created_on>
+<sys_id>1d3d9f4bdbe5b200e92cff621f9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-21 19:25:07</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_99295f086fc68a00e04fd15eae3ee459</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="item_option_new"&gt;&lt;item_option_new action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;attributes/&gt;&lt;cat_item display_value="CBIIT Travel and Registration Request"&gt;960e56486f868a00e04fd15eae3ee41b&lt;/cat_item&gt;&lt;category/&gt;&lt;choice_direction&gt;down&lt;/choice_direction&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;create_roles/&gt;&lt;default_html_value/&gt;&lt;default_value/&gt;&lt;delete_roles/&gt;&lt;delivery_plan/&gt;&lt;description&gt;&lt;![CDATA[&lt;p&gt;The Estimated Per Diem amount is determined by the allowances provided for lodging per night, meals and incidental expenses (M&amp;amp;IE) provided for the destination, and the number of travel days. Refer to the GSA Website for Domestic or Foreign Rates CBIIT Travel site on Collaborate for the M&amp;amp;IE rate for your destination. Enter all appropriate information in the fields below to determine the estimated Per Diem for the trip.&lt;/p&gt;]]&gt;&lt;/description&gt;&lt;display_title&gt;false&lt;/display_title&gt;&lt;do_not_select_first&gt;false&lt;/do_not_select_first&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;field/&gt;&lt;global&gt;false&lt;/global&gt;&lt;help_tag&gt;More information&lt;/help_tag&gt;&lt;help_text&gt;The Estimated Per Diem amount is determined by the allowances provided for lodging per night, meals and incidental expenses (M&amp;amp;IE) provided for the destination, and the number of travel days. Refer to the following websites for your destination's Per Diem Rates:   Domestic   ( http://www.gsa.gov/portal/content/110007) or&amp;#13;
+Foreign ( https://aoprals.state.gov/web920/per_diem.asp ).&amp;#13;
+ Enter all appropriate information in the fields below to determine the estimated Per Diem for the trip.&lt;/help_text&gt;&lt;include_none&gt;false&lt;/include_none&gt;&lt;layout&gt;normal&lt;/layout&gt;&lt;list_table/&gt;&lt;lookup_label/&gt;&lt;lookup_price/&gt;&lt;lookup_table/&gt;&lt;lookup_unique&gt;false&lt;/lookup_unique&gt;&lt;lookup_value/&gt;&lt;macro/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;map_to_field&gt;false&lt;/map_to_field&gt;&lt;mask_use_confirmation&gt;false&lt;/mask_use_confirmation&gt;&lt;mask_use_encryption&gt;false&lt;/mask_use_encryption&gt;&lt;name&gt;perDiem&lt;/name&gt;&lt;order&gt;760&lt;/order&gt;&lt;price_if_checked&gt;0&lt;/price_if_checked&gt;&lt;pricing_implications&gt;false&lt;/pricing_implications&gt;&lt;question_text&gt;Estimated Per Diem for Travel Area&lt;/question_text&gt;&lt;read_roles/&gt;&lt;rec_lookup_price/&gt;&lt;rec_price_if_checked&gt;0&lt;/rec_price_if_checked&gt;&lt;record/&gt;&lt;record_producer_table/&gt;&lt;reference/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;scale_max&gt;5&lt;/scale_max&gt;&lt;scale_min&gt;0&lt;/scale_min&gt;&lt;show_help&gt;true&lt;/show_help&gt;&lt;summary_macro/&gt;&lt;sys_class_name&gt;item_option_new&lt;/sys_class_name&gt;&lt;sys_created_by&gt;greiffra@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-08-18 19:24:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;99295f086fc68a00e04fd15eae3ee459&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Estimated Per Diem for Travel Area&lt;/sys_name&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;item_option_new_99295f086fc68a00e04fd15eae3ee459&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wuye@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-21 19:19:34&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;tooltip/&gt;&lt;type&gt;11&lt;/type&gt;&lt;ui_page/&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;variable_name/&gt;&lt;variable_set/&gt;&lt;visibility&gt;1&lt;/visibility&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;visible_summary&gt;false&lt;/visible_summary&gt;&lt;write_roles/&gt;&lt;/item_option_new&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=99295f086fc68a00e04fd15eae3ee459"/&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.5">1d3d9f4bdbe5b200e92cff621f9619f3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-03-21 19:25:07</sys_created_on>
+<sys_id>113d9f4bdbe5b200e92cff621f9619f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-21 19:25:07</sys_updated_on>
+<table/>
+<target_name>Estimated Per Diem for Travel Area</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>item_option_new_166a72406fc68a00e04fd15eae3ee49c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new"><item_option_new action="INSERT_OR_UPDATE"><active>true</active><attributes/><cat_item display_value="CBIIT Travel and Registration Request">960e56486f868a00e04fd15eae3ee41b</cat_item><category/><choice_direction>down</choice_direction><choice_field/><choice_table/><create_roles/><default_html_value/><default_value/><delete_roles/><delivery_plan/><description/><display_title>false</display_title><do_not_select_first>false</do_not_select_first><dynamic_default_value/><dynamic_ref_qual/><field/><global>false</global><help_tag>More information</help_tag><help_text>Select a Transportation Mode below. For estimated cost of Air and Rail travel, please contact Omega World Travel (nihmd@owt.net) for ticket prices.</help_text><include_none>false</include_none><layout>normal</layout><list_table/><lookup_label/><lookup_price/><lookup_table/><lookup_unique>false</lookup_unique><lookup_value/><macro/><mandatory>false</mandatory><map_to_field>false</map_to_field><mask_use_confirmation>false</mask_use_confirmation><mask_use_encryption>false</mask_use_encryption><name>transModeLabel</name><order>490</order><price_if_checked>0</price_if_checked><pricing_implications>false</pricing_implications><question_text>Transportation Mode &amp; Estimated Cost</question_text><read_roles/><rec_lookup_price/><rec_price_if_checked>0</rec_price_if_checked><record/><record_producer_table/><reference/><reference_qual/><reference_qual_condition/><scale_max>5</scale_max><scale_min>0</scale_min><show_help>true</show_help><summary_macro/><sys_class_name>item_option_new</sys_class_name><sys_created_by>greiffra@nih.gov</sys_created_by><sys_created_on>2015-08-18 17:11:00</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>166a72406fc68a00e04fd15eae3ee49c</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Transportation Mode &amp; Estimated Cost</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>item_option_new_166a72406fc68a00e04fd15eae3ee49c</sys_update_name><sys_updated_by>wuye@nih.gov</sys_updated_by><sys_updated_on>2017-03-21 19:17:43</sys_updated_on><table/><tooltip/><type>11</type><ui_page/><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><variable_name/><variable_set/><visibility>1</visibility><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><visible_summary>false</visible_summary><write_roles/></item_option_new><sys_translated_text action="delete_multiple" query="documentkey=166a72406fc68a00e04fd15eae3ee49c"/></record_update>]]></payload>
+<remote_update_set display_value="CBIIT_BIZ_TRAVEL_1.0.5">1d3d9f4bdbe5b200e92cff621f9619f3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-03-21 19:25:07</sys_created_on>
+<sys_id>9d3d9f4bdbe5b200e92cff621f9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-03-21 19:25:07</sys_updated_on>
+<table/>
+<target_name>Transportation Mode &amp; Estimated Cost</target_name>
+<type>Variable</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
