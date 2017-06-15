@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-06-13 18:49:27">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCRGDSP_1.1.1</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>e98d470adb5ff20054d8ff621f96199b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-06-13 18:49:27</sys_created_on>
+<sys_id>3d9a770adbdff20054d8ff621f961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-13 18:49:27</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_084ccac5dbde7200f59974131f9619da</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $http, spUtil) {
+  /* widget controller */
+  var c = this;
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.approvalTasks.length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.approvalTasks = c.data.approvalTasks.sort(compareRows);
+		}
+	};
+	//for reviewed table
+	c.pagination1 = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns1 = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange1 = function() {
+		var currentSize = c.pagination1.currentSize;
+		var currentPage = c.pagination1.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.reviewedTasks.length / currentSize));
+	};
+	
+	c.setPage1 = function(index) {
+		c.pagination1.currentPage = index;
+	};
+	
+	c.toggleSort1 = function(index) {
+		var column = c.columns1[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.reviewedTasks = c.data.reviewedTasks.sort(compareRows);
+		}
+	};
+	//start client JS
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther']; 
+	var sessionId = c.data.info.sessionId;
+	var userId = c.data.info.userId;
+	var gpa = c.data.info.gpa;
+	var sd = c.data.info.sd;
+	
+	c.view = function(doc_id, sys_id, state, stage, ticket_id){
+		//alert(doc_id + ":" + sys_id +":" + stage + ":" + stage);
+		fetchDetails(doc_id, sys_id, state, stage, ticket_id);
+	}
+	c.report = function(sys_id, gdsp_id){
+		window.open('$sp.do?id=gdsp_report_page&amp;itemId='+sys_id+'&amp;ticket='+gdsp_id, '_BLANK');
+	}
+	
+function fetchDetails(number, approvalId, state, stage, ticket_id){
+		var variables= {};
+		data = {
+			requestedid : number	
+		};
+    var request = {
+			url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+			method: 'POST',
+			beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+				var result = response.data.result;
+			  var variables = result.variables;
+			  var comments = result.comments;
+			  var comment_str = parse(comments);
+			  $('#displayRequestId').html(ticket_id);
+			  resetRequestValue();
+			  loadApprovalData(variables);
+			  clearDiv();
+				$('#commentReviewId1').empty();
+				$('#commentReviewId1').append(comment_str);
+
+				$('#commentId1').show();
+				$('#commentId1Lable').show();
+
+				if(comment_str .length &lt; 137){
+							 $('#pre_comments_div').hide();
+				 }else{
+							 $('#pre_comments_div').show();
+				 }
+				$('#hiddenRequestId').val(approvalId);
+				$('#hiddenRequestItemId').val(number);
+				$('#comments_div').show();
+				if(state == 'approved' || state.indexOf('not_required') &gt;=0){
+					 $('#comments_div').hide();
+					 $('#submitButton').hide();
+					 $('#closeButton').show();
+				}else if(state == 'requested' || state == 'rejected'){
+					 if((stage == 'Waiting for GPA Review' || stage == 'SD Rejected - Waiting for GPA Review') &amp;&amp; gpa){
+							$('#comments_div').show();
+							$('#sd_div').show();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; !sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'SD Approved'){
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }else{
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }
+				}else{
+					 $('#comments_div').show();
+					 $('#submitButton').show();
+					 $('#closeButton').hide();
+				}
+				var ticketN = $('#'+number+'_ticket').val();
+				$('#displayRequestId').html(ticketN);		
+			  $('#displayRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);}); 
+		}
+		function handleError(response){
+			console.error(response);
+			alert('ERROR');
+		}
+		$('#hiddenStage').val(stage);
+ }	
+    function clearDiv(){
+		$('#comments_div').hide();
+		$('#sd_div').hide();
+		$('#submitButton').hide();
+		$('#closeButton').hide();
+	}
+	
+	function parse(allcomments) {
+	 var comments = allcomments.split("ENDCOMMENTS");
+	 var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+	 for(i = 0; i &lt; comments .length; i++){
+			 if (comments[i].length &gt; 40) { 
+				 if (comments[i][0] == '\n') {
+						 var lastI = 0;
+						 while (lastI &lt; comments[i].length &amp;&amp; comments[i][lastI] == '\n') 
+									lastI ++;
+						 comments[i] = comments[i].substring(lastI,comments[i].length);
+				 }
+				 var t = comments[i].substring(0,22);
+				 var approver = comments[i].substring(comments[i].indexOf('(ENDROLE)')+9,comments[i].length);
+				 var results = comments[i].substring(comments[i].indexOf('(Additional comments)') + 57,comments[i].indexOf('(Additional comments)') + 65);
+				 var comm= comments[i].substring(comments[i].indexOf('(Additional comments)') + 66, comments[i].indexOf('(role)'));
+				 var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].indexOf('(ENDROLE)')); 
+				 commentsblock = commentsblock + "&lt;tr&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;/tr&gt;";
+			 }
+	 }
+	 commentsblock = commentsblock + "&lt;/table&gt;";
+
+	return commentsblock;
+	}	
+	
+	function loadApprovalData(data){
+	  for(key in data){
+			var value = getValue(key, data[key]);
+			$('#'+key+"1").html(value);
+		}
+	}
+	
+  function getValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(value, '1');
+        }else{
+           return value;
+        }
+     }else{
+        if(value == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return value; 
+     }
+  }	
+	
+	function getConvertedValue(value, flag){
+		 if(flag == '0'){
+				var values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				var values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}	
+
+ function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i] + "1").html('');
+      }else{
+				   $('#'+names[i] +"1").html('&lt;input type="checkbox" id="'+ names[i] +"1" + '" disabled="true"/&gt;');
+           $('#'+names[i] + "1").prop('checked', false); 
+		       $('#'+names[i] + "1").removeAttr("disabled");
+      }
+    }
+  }	
+
+spUtil.recordWatch($scope, "sysapproval_approver", "", function(name, data) {  
+			spUtil.update($scope);
+	});	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-sd-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP SD Approval Table&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.approvalTasks = [];
+	data.reviewedTasks = [];
+	data.info = [];
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	var gr = gs.getUser(); 
+	var gpa = gr.isMemberOf('CCR_GPA');
+	var sd = gr.isMemberOf('CCR_SD');
+	
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id,
+		gpa: gpa,
+		sd: sd
+	};
+	if(sd){
+		var gr1 = new GlideRecord("sc_cat_item");
+				gr1.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+				gr1.query();	
+				gr1.next();
+				var cat_item_id = gr1.getValue('sys_id');
+
+
+			 var gr_approval_items = GlideRecord('sysapproval_approver');
+			 var req_item = gr_approval_items.addJoinQuery('sc_req_item','document_id','sys_id');
+			 req_item.addCondition('cat_item', cat_item_id);
+
+			 gr_approval_items.addQuery('approver', my_sys_id); 
+			 gr_approval_items.addQuery('source_table','sc_req_item');
+			 gr_approval_items.orderByDesc('sys_updated_on');  
+			 gr_approval_items.query();
+			 while (gr_approval_items.next()){
+				 var orginId = '';
+				 var tickerNum = '';
+				 var org_ticket_num = '';
+				 var version = '';
+				 var hasParent = '';
+				 var selectedOrginId = '';
+
+				 var docId = gr_approval_items.document_id;
+
+				 selectedOrginId = gr_approval_items.document_id.contact_type;
+				 if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web' ){
+							orginId = gr_approval_items.document_id.sys_id;
+							org_ticket_num = gr_approval_items.document_id.number;
+							hasParent = 'false';
+					}else{
+						 var orgIds = selectedOrginId.split("=");
+						 var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+						 gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+						 gr_tracking_item.query();
+
+						 if(gr_tracking_item.getRowCount() &gt; 0){
+									gr_tracking_item.next();
+									orginId = gr_tracking_item.u_orgid;
+									org_ticket_num = gr_tracking_item.u_ticket_number;
+									version = orgIds[1];
+									hasParent = 'true';
+						 }else {
+									orginId = gr_requested_items.sys_id;
+									org_ticket_num = gr_requested_items.number;
+									hasParent = 'false';
+						 }
+					}
+
+					var ticket_number = '';
+					if(hasParent == 'true'){
+							ticket_number = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+					}else{
+							ticket_number = "CCR_GDSP" + gr_approval_items.sysapproval.number.substring(8);
+					}
+
+					var stage_v = gr_approval_items.document_id.context.stage.name;		
+					//if(stage_v == 'Waiting for PI Resubmit'|| stage_v == 'Completed'|| (stage_v == 'Waiting for SD Review' &amp;&amp; gpa) || (stage_v == 'SD Rejected - Waiting for GPA Review' &amp;&amp; sd )){
+						//	if (!((stage_v == 'SD Rejected - Waiting for PI Resubmit' || stage_v == 'SD Rejected - Waiting for GPA Review') &amp;&amp; gr_approval_items.state == 'approved')) {
+							//	 if ((gr_approval_items.document_id.sys_created_by == gr_approval_items.sys_created_by)||(gr.isMemberOf('CCR_SD'))) {
+									
+							if(!(stage_v == 'Waiting for SD Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for SD Review') &amp;&amp; gr_approval_items.state == 'approved'){	
+									if(stage_v != 'Completed' || (stage_v == 'Completed' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for SD Review')){	 //When record completed, there is no stage name for that, it will has two or three records in approval table, get GPA Review record
+											var item = {};
+											item.gdsp_id = ticket_number;
+											item.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+											item.project_name = gr_approval_items.document_id.u_project_name.toString();
+											item.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+											item.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+											item.status = gr_approval_items.document_id.context.stage.name.toString(); 
+											item.last_update_date = gr_approval_items.sys_updated_on.toString();
+											item.stage = stage_v.toString();
+											item.sys_id = gr_approval_items.sys_id.toString();
+											item.doc_id = gr_approval_items.document_id.toString();
+											item.state = gr_approval_items.state.toString();
+											data.reviewedTasks.push(item);
+									}
+							}
+							if (stage_v == 'Waiting for SD Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for SD Review' ) {
+									var items = {};
+									items.gdsp_id = ticket_number;
+									items.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+									items.project_name = gr_approval_items.document_id.u_project_name.toString();
+									items.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+									items.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+									items.status = gr_approval_items.document_id.context.stage.name.toString();
+									items.last_update_date = gr_approval_items.sys_updated_on.toString();
+									items.stage = stage_v.toString();
+									items.sys_id = gr_approval_items.sys_id.toString();
+									items.doc_id = gr_approval_items.document_id.toString();
+									items.state = gr_approval_items.state.toString();						
+									data.approvalTasks.push(items);
+							}
+
+					//}
+			 }
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 15:11:15&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;084ccac5dbde7200f59974131f9619da&lt;/sys_id&gt;&lt;sys_mod_count&gt;52&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP SD Approval Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_084ccac5dbde7200f59974131f9619da&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-13 18:47:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;br/&gt;
+  &lt;div class="panel panel-success" ng-show="c.data.approvalTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_sdApprovalItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsesdApprovalItems" aria-expanded="true" data-target="#collapsesdApprovalItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs Waiting for SD Approval &lt;span class="badge" id="ritm_count"&gt;{{ c.data.approvalTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_sdApprovalItems" class="panel-collapse collapse in table-responsive" id="collapsesdApprovalItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns track by $index" 
+              ng-click="c.toggleSort($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.approvalTasks track by $index"
+            ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                     $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted"  title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination.currentSize = c.pagination.pageSizes[1]"
+          ng-model="c.pagination.currentSize"
+          ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination.currentSize &lt; c.data.approvalTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange() track by $index"
+        ng-click="c.setPage($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;br/&gt;&lt;br/&gt;
+
+  &lt;div class="panel panel-success" ng-show="c.data.reviewedTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_sdReviewedItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsesdReviewedItems" aria-expanded="true" data-target="#collapsesdReviewedItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs reviewed by SD &lt;span class="badge" id="ritm_count"&gt;{{ c.data.reviewedTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_sdReviewedItems" class="panel-collapse collapse in table-responsive" id="collapsesdReviewedItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns1 track by $index" 
+              ng-click="c.toggleSort1($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.reviewedTasks track by $index"
+            ng-show="$index &gt;= c.pagination1.currentPage * c.pagination1.currentSize &amp;&amp;
+                     $index &lt; (c.pagination1.currentPage + 1) * c.pagination1.currentSize"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage,row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination1.currentSize = c.pagination1.pageSizes[1]"
+          ng-model="c.pagination1.currentSize"
+          ng-options="sizes for sizes in c.pagination1.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination1.currentSize &lt; c.data.reviewedTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange1() track by $index"
+        ng-click="c.setPage1($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;  
+  
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCRGDSP_1.1.1">3d9a770adbdff20054d8ff621f961956</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-06-13 18:49:27</sys_created_on>
+<sys_id>359a770adbdff20054d8ff621f961957</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-13 18:49:27</sys_updated_on>
+<table/>
+<target_name>GDSP SD Approval Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fac5b724dbe2ba00f59974131f9619bd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $http, spUtil, $window) {
+  /* widget controller */
+  var c = this;
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	}; 
+	c.state = $window.state;
+	c.columns = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.approvalTasks.length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.approvalTasks = c.data.approvalTasks.sort(compareRows);
+		}
+	};
+	//for reviewed table
+	c.pagination1 = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns1 = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange1 = function() {
+		var currentSize = c.pagination1.currentSize;
+		var currentPage = c.pagination1.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.reviewedTasks.length / currentSize));
+	};
+	
+	c.setPage1 = function(index) {
+		c.pagination1.currentPage = index;
+	};
+	
+	c.toggleSort1 = function(index) {
+		var column = c.columns1[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.reviewedTasks = c.data.reviewedTasks.sort(compareRows);
+		}
+	};
+	//start client JS 
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther']; 
+	var sessionId = c.data.info.sessionId;
+	var userId = c.data.info.userId;
+	var gpa = c.data.info.gpa;
+	var sd = c.data.info.sd;
+	
+	c.view = function(doc_id, sys_id, state, stage, ticket_id){
+		//alert(doc_id + ":" + sys_id +":" + stage + ":" + stage);
+		fetchDetails(doc_id, sys_id, state, stage, ticket_id);
+	}
+	c.report = function(sys_id, gdsp_id){
+		window.open('$sp.do?id=gdsp_report_page&amp;itemId='+sys_id+'&amp;ticket='+gdsp_id, '_BLANK');
+	}
+	
+function fetchDetails(number, approvalId, state, stage, ticket_id){
+		var variables= {};
+		data = {
+			requestedid : number	
+		};
+    var request = {
+			url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+			method: 'POST',
+			beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+				var result = response.data.result;
+			  var variables = result.variables;
+			  var comments = result.comments;
+			  var comment_str = parse(comments);
+			  $('#displayRequestId').html(ticket_id);
+			  resetRequestValue();
+			  loadApprovalData(variables);
+			  clearDiv();
+				$('#commentReviewId1').empty();
+				$('#commentReviewId1').append(comment_str);
+
+				$('#commentId1').show();
+				$('#commentId1Lable').show();
+
+				if(comment_str .length &lt; 137){
+							 $('#pre_comments_div').hide();
+				 }else{
+							 $('#pre_comments_div').show();
+				 }
+				$('#hiddenRequestId').val(approvalId);
+				$('#hiddenRequestItemId').val(number);
+			  $('#roleId').val('SD');
+				$('#comments_div').show();
+				if(state == 'approved' || state.indexOf('not_required') &gt;=0){
+					 $('#comments_div').hide();
+					 $('#submitButton').hide();
+					 $('#closeButton').show();
+				}else if(state == 'requested' || state == 'rejected'){
+					 if((stage == 'Waiting for GPA Review' || stage == 'SD Rejected - Waiting for GPA Review') &amp;&amp; gpa){
+							$('#comments_div').show();
+							$('#sd_div').show();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; !sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'SD Approved'){
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }else{
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }
+				}else{
+					 $('#comments_div').show();
+					 $('#submitButton').show();
+					 $('#closeButton').hide();
+				}
+				var ticketN = $('#'+number+'_ticket').val();
+				$('#displayRequestId').html(ticketN);		
+			  $('#displayRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);}); 
+		}
+		function handleError(response){
+			console.error(response);
+			alert('ERROR');
+		}
+		$('#hiddenStage').val(stage);
+ }	
+    function clearDiv(){
+		$('#comments_div').hide();
+		$('#sd_div').hide();
+		$('#submitButton').hide();
+		$('#closeButton').hide();
+	}
+	
+	function parse(allcomments) {
+	 var comments = allcomments.split("ENDCOMMENTS");
+	 var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+	 for(i = 0; i &lt; comments .length; i++){
+			 if (comments[i].length &gt; 40) { 
+				 if (comments[i][0] == '\n') {
+						 var lastI = 0;
+						 while (lastI &lt; comments[i].length &amp;&amp; comments[i][lastI] == '\n') 
+									lastI ++;
+						 comments[i] = comments[i].substring(lastI,comments[i].length);
+				 }
+				 var t = comments[i].substring(0,22);
+				 var approver = comments[i].substring(comments[i].indexOf('(ENDROLE)')+9,comments[i].length);
+				 var results = comments[i].substring(comments[i].indexOf('(Additional comments)') + 57,comments[i].indexOf('(Additional comments)') + 65);
+				 var comm= comments[i].substring(comments[i].indexOf('(Additional comments)') + 66, comments[i].indexOf('(role)'));
+				 var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].indexOf('(ENDROLE)')); 
+				 commentsblock = commentsblock + "&lt;tr&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;/tr&gt;";
+			 }
+	 }
+	 commentsblock = commentsblock + "&lt;/table&gt;";
+
+	return commentsblock;
+	}	
+	
+	function loadApprovalData(data){
+	  for(key in data){
+			var value = getValue(key, data[key]);
+			$('#'+key+"1").html(value);
+		}
+	}
+	
+  function getValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(value, '1');
+        }else{
+           return value;
+        }
+     }else{
+        if(value == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return value; 
+     }
+  }	
+	
+	function getConvertedValue(value, flag){
+		 if(flag == '0'){
+				var values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				var values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}	
+
+ function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i] + "1").html('');
+      }else{
+				   $('#'+names[i] +"1").html('&lt;input type="checkbox" id="'+ names[i] +"1" + '" disabled="true"/&gt;');
+           $('#'+names[i] + "1").prop('checked', false); 
+		       $('#'+names[i] + "1").removeAttr("disabled");
+      }
+    }
+  }	
+
+spUtil.recordWatch($scope, "sysapproval_approver", "", function(name, data) {  
+			spUtil.update($scope);
+	});	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.highlight {
+  background-color: yellow !important;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gds-sd-approval-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDS SD Approval Table&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.approvalTasks = [];
+	data.reviewedTasks = [];
+	data.info = [];
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	var gr = gs.getUser(); 
+	var gpa = gr.isMemberOf('CCR_GPA');
+	var sd = gr.isMemberOf('CCR_SD');
+	
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id,
+		gpa: gpa,
+		sd: sd
+	};
+	if(sd){
+		var gr1 = new GlideRecord("sc_cat_item");
+				gr1.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+				gr1.query();	
+				gr1.next();
+				var cat_item_id = gr1.getValue('sys_id');
+
+
+			 var gr_approval_items = GlideRecord('sysapproval_approver');
+			 var req_item = gr_approval_items.addJoinQuery('sc_req_item','document_id','sys_id');
+			 req_item.addCondition('cat_item', cat_item_id);
+
+			 gr_approval_items.addQuery('approver', my_sys_id); 
+			 gr_approval_items.addQuery('source_table','sc_req_item');
+			 gr_approval_items.orderByDesc('sys_updated_on');  
+			 gr_approval_items.query();
+			 while (gr_approval_items.next()){
+				 var orginId = '';
+				 var tickerNum = '';
+				 var org_ticket_num = '';
+				 var version = '';
+				 var hasParent = '';
+				 var selectedOrginId = '';
+
+				 var docId = gr_approval_items.document_id;
+
+				 selectedOrginId = gr_approval_items.document_id.contact_type;
+				 if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web' ){
+							orginId = gr_approval_items.document_id.sys_id;
+							org_ticket_num = gr_approval_items.document_id.number;
+							hasParent = 'false';
+					}else{
+						 var orgIds = selectedOrginId.split("=");
+						 var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+						 gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+						 gr_tracking_item.query();
+
+						 if(gr_tracking_item.getRowCount() &gt; 0){
+									gr_tracking_item.next();
+									orginId = gr_tracking_item.u_orgid;
+									org_ticket_num = gr_tracking_item.u_ticket_number;
+									version = orgIds[1];
+									hasParent = 'true';
+						 }else {
+									orginId = gr_requested_items.sys_id;
+									org_ticket_num = gr_requested_items.number;
+									hasParent = 'false';
+						 }
+					}
+
+					var ticket_number = '';
+					if(hasParent == 'true'){
+							ticket_number = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+					}else{
+							ticket_number = "CCR_GDSP" + gr_approval_items.sysapproval.number.substring(8);
+					}
+
+					var stage_v = gr_approval_items.document_id.context.stage.name;		
+					//if(stage_v == 'Waiting for PI Resubmit'|| stage_v == 'Completed'|| (stage_v == 'Waiting for SD Review' &amp;&amp; gpa) || (stage_v == 'SD Rejected - Waiting for GPA Review' &amp;&amp; sd )){
+						//	if (!((stage_v == 'SD Rejected - Waiting for PI Resubmit' || stage_v == 'SD Rejected - Waiting for GPA Review') &amp;&amp; gr_approval_items.state == 'approved')) {
+							//	 if ((gr_approval_items.document_id.sys_created_by == gr_approval_items.sys_created_by)||(gr.isMemberOf('CCR_SD'))) {
+									
+							if(!(stage_v == 'Waiting for SD Review' || gr_approval_items.wf_activity.stage.name == 'Waiting for SD Review') &amp;&amp; gr_approval_items.state == 'approved'){	
+									if(stage_v != 'Completed' || (stage_v == 'Completed' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for GPA Review')){	 //When record completed, there is no stage name for that, it will has two or three records in approval table, get GPA Review record
+											var item = {};
+											item.gdsp_id = ticket_number;
+											item.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+											item.project_name = gr_approval_items.document_id.u_project_name.toString();
+											item.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+											item.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+											item.status = gr_approval_items.document_id.context.stage.name.toString(); 
+											item.last_update_date = gr_approval_items.sys_updated_on.toString();
+											item.stage = stage_v.toString();
+											item.sys_id = gr_approval_items.sys_id.toString();
+											item.doc_id = gr_approval_items.document_id.toString();
+											item.state = gr_approval_items.state.toString();
+											data.reviewedTasks.push(item);
+									}
+							}
+							if (stage_v == 'Waiting for SD Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for SD Review' ) {
+									var items = {};
+									items.gdsp_id = ticket_number;
+									items.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+									items.project_name = gr_approval_items.document_id.u_project_name.toString();
+									items.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+									items.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+									items.status = gr_approval_items.document_id.context.stage.name.toString();
+									items.last_update_date = gr_approval_items.sys_updated_on.toString();
+									items.stage = stage_v.toString();
+									items.sys_id = gr_approval_items.sys_id.toString();
+									items.doc_id = gr_approval_items.document_id.toString();
+									items.state = gr_approval_items.state.toString();						
+									data.approvalTasks.push(items);
+							}
+
+					//}
+			 }
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-05-02 19:50:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fac5b724dbe2ba00f59974131f9619bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDS SD Approval Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fac5b724dbe2ba00f59974131f9619bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-13 18:30:37&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;br/&gt;
+  &lt;div class="panel panel-success" ng-show="c.data.approvalTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_sdApprovalItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsesdApprovalItems" aria-expanded="true" data-target="#collapsesdApprovalItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs Waiting for SD Approval &lt;span class="badge" id="ritm_count"&gt;{{ c.data.approvalTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_sdApprovalItems" class="panel-collapse collapse in" id="collapsesdApprovalItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns track by $index" 
+              ng-click="c.toggleSort($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.approvalTasks track by $index"
+            ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                     $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize"
+            				 ng-class="{highlight: row.doc_id == c.state.id }"
+          					 id="{{row.doc_id}}"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted"  title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination.currentSize = c.pagination.pageSizes[1]"
+          ng-model="c.pagination.currentSize"
+          ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination.currentSize &lt; c.data.approvalTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange() track by $index"
+        ng-click="c.setPage($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;br/&gt;&lt;br/&gt;
+
+  &lt;div class="panel panel-success" ng-show="c.data.reviewedTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_sdReviewedItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsesdReviewedItems" aria-expanded="true" data-target="#collapsesdReviewedItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs reviewed by SD &lt;span class="badge" id="ritm_count"&gt;{{ c.data.reviewedTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_sdReviewedItems" class="panel-collapse collapse in" id="collapsesdReviewedItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns1 track by $index" 
+              ng-click="c.toggleSort1($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.reviewedTasks track by $index"
+            ng-show="$index &gt;= c.pagination1.currentPage * c.pagination1.currentSize &amp;&amp;
+                     $index &lt; (c.pagination1.currentPage + 1) * c.pagination1.currentSize"
+            				 ng-class="{highlight: row.doc_id == c.state.id }"
+          					 id="{{row.doc_id}}"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage,row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination1.currentSize = c.pagination1.pageSizes[1]"
+          ng-model="c.pagination1.currentSize"
+          ng-options="sizes for sizes in c.pagination1.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination1.currentSize &lt; c.data.reviewedTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange1() track by $index"
+        ng-click="c.setPage1($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCRGDSP_1.1.1">3d9a770adbdff20054d8ff621f961956</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-06-13 18:49:27</sys_created_on>
+<sys_id>bd9a770adbdff20054d8ff621f961957</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-13 18:49:27</sys_updated_on>
+<table/>
+<target_name>GDS SD Approval Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_d87f513bdb027e00f59974131f96199c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $http, spUtil) {
+  /* widget controller */
+  var c = this;
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.approvalTasks.length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.approvalTasks = c.data.approvalTasks.sort(compareRows);
+		}
+	};
+	//for reviewed table
+	c.pagination1 = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns1 = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_investigator',
+			label: 'Principal Investigator',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_by',
+			label: 'Submitted By',
+			sort: 'asc'
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'last_update_date',
+			label: 'Last Update Date',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange1 = function() {
+		var currentSize = c.pagination1.currentSize;
+		var currentPage = c.pagination1.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.reviewedTasks.length / currentSize));
+	};
+	
+	c.setPage1 = function(index) {
+		c.pagination1.currentPage = index;
+	};
+	
+	c.toggleSort1 = function(index) {
+		var column = c.columns1[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.reviewedTasks = c.data.reviewedTasks.sort(compareRows);
+		}
+	};
+	//start client JS
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther']; 
+	var sessionId = c.data.info.sessionId;
+	var userId = c.data.info.userId;
+	var gpa = c.data.info.gpa;
+	var sd = c.data.info.sd;
+	
+	c.view = function(doc_id, sys_id, state, stage, ticket_id){
+		//alert(doc_id + ":" + sys_id +":" + stage + ":" + stage);
+		fetchDetails(doc_id, sys_id, state, stage, ticket_id);
+	}
+	c.report = function(sys_id, gdsp_id){
+		window.open('$sp.do?id=gdsp_report_page&amp;itemId='+sys_id+'&amp;ticket='+gdsp_id, '_BLANK');
+	}
+	
+
+function fetchDetails(number, approvalId, state, stage, ticket_id){
+		var variables= {};
+		data = {
+			requestedid : number	
+		};
+    var request = {
+			url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+			method: 'POST',
+			beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			  var variables = result.variables;
+			  var comments = result.comments;
+			  var comment_str = parse(comments);
+			  $('#displayRequestId').html(ticket_id);
+			  //reset SD selection and comments
+			  $('#selectSD').val('NONE');
+			  $('#commentId1').val('');
+			  resetRequestValue();
+			  loadApprovalData(variables);
+			  clearDiv();
+				$('#commentReviewId1').empty();
+				$('#commentReviewId1').append(comment_str);
+
+				$('#commentId1').show();
+				$('#commentId1Lable').show();
+
+				if(comment_str .length &lt; 137){
+							 $('#pre_comments_div').hide();
+				 }else{
+							 $('#pre_comments_div').show();
+				 }
+				$('#hiddenRequestId').val(approvalId);
+				$('#hiddenRequestItemId').val(number);
+				$('#comments_div').show();
+				if(state == 'approved' || state.indexOf('not_required') &gt;=0){
+					 $('#comments_div').hide();
+					 $('#submitButton').hide();
+					 $('#closeButton').show();
+				}else if(state == 'requested' || state == 'rejected'){
+					 if((stage == 'Waiting for GPA Review' || stage == 'SD Rejected - Waiting for GPA Review') &amp;&amp; gpa){
+							$('#comments_div').show();
+							$('#sd_div').show();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; !sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'Waiting for SD Review' &amp;&amp; sd){
+							$('#comments_div').show();
+							$('#sd_div').hide();
+							$('#submitButton').show();
+							$('#closeButton').hide();
+					 }else if(stage == 'SD Approved'){
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }else{
+								$('#comments_div').hide();
+								$('#sd_div').hide();
+								$('#submitButton').hide();
+								$('#closeButton').show();
+					 }
+				}else{
+					 $('#comments_div').show();
+					 $('#submitButton').show();
+					 $('#closeButton').hide();
+				}
+				var ticketN = $('#'+number+'_ticket').val();
+				$('#displayRequestId').html(ticketN);		
+			  $('#displayRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);}); 
+		}
+		function handleError(response){
+			console.error(response);
+			alert('ERROR');
+		}
+		$('#hiddenStage').val(stage);
+ }	
+    function clearDiv(){
+		$('#comments_div').hide();
+		$('#sd_div').hide();
+		$('#submitButton').hide();
+		$('#closeButton').hide();
+	}
+	
+	function parse(allcomments) {
+	 var comments = allcomments.split("ENDCOMMENTS");
+	 var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+	 for(i = 0; i &lt; comments .length; i++){
+			 if (comments[i].length &gt; 40) { 
+				 if (comments[i][0] == '\n') {
+						 var lastI = 0;
+						 while (lastI &lt; comments[i].length &amp;&amp; comments[i][lastI] == '\n') 
+									lastI ++;
+						 comments[i] = comments[i].substring(lastI,comments[i].length);
+				 }
+				 var t = comments[i].substring(0,22);
+				 var approver = comments[i].substring(comments[i].indexOf('(ENDROLE)')+9,comments[i].length);
+				 var results = comments[i].substring(comments[i].indexOf('(Additional comments)') + 57,comments[i].indexOf('(Additional comments)') + 65);
+				 var comm= comments[i].substring(comments[i].indexOf('(Additional comments)') + 66, comments[i].indexOf('(role)'));
+				 var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].indexOf('(ENDROLE)')); 
+				 commentsblock = commentsblock + "&lt;tr&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;/tr&gt;";
+			 }
+	 }
+	 commentsblock = commentsblock + "&lt;/table&gt;";
+
+	return commentsblock;
+	}	
+	
+	function loadApprovalData(data){
+	  for(key in data){
+			var value = getValue(key, data[key]);
+			$('#'+key+"1").html(value);
+		}
+	}
+	
+  function getValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(value, '1');
+        }else{
+           return value;
+        }
+     }else{
+        if(value == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return value; 
+     }
+  }	
+	
+	function getConvertedValue(value, flag){
+		 if(flag == '0'){
+				var values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				var values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}	
+	
+	  function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i] + "1").html('');
+      }else{
+				   $('#'+names[i] +"1").html('&lt;input type="checkbox" id="'+ names[i] +"1" + '" disabled="true"/&gt;');
+           $('#'+names[i] + "1").prop('checked', false); 
+		       $('#'+names[i] + "1").removeAttr("disabled");
+      }
+    }
+  }	
+	
+spUtil.recordWatch($scope, "sysapproval_approver", "", function(name, data) {  
+			spUtil.update($scope);
+	});	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-gpa-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP GPA Approval Table&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.approvalTasks = [];
+	data.reviewedTasks = [];
+	data.info = [];
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	var gr = gs.getUser(); 
+	var gpa = gr.isMemberOf('CCR_GPA');
+	var sd = gr.isMemberOf('CCR_SD');
+	
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id,
+		gpa: gpa,
+		sd: sd
+	};
+	if(gpa){
+		var gr1 = new GlideRecord("sc_cat_item");
+				gr1.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+				gr1.query();	
+				gr1.next();
+				var cat_item_id = gr1.getValue('sys_id');
+
+
+			 var gr_approval_items = GlideRecord('sysapproval_approver');
+			 var req_item = gr_approval_items.addJoinQuery('sc_req_item','document_id','sys_id');
+			 req_item.addCondition('cat_item', cat_item_id);
+
+			 gr_approval_items.addQuery('approver', my_sys_id); 
+			 gr_approval_items.addQuery('source_table','sc_req_item'); 
+			 gr_approval_items.orderByDesc('sys_updated_on');  
+			 gr_approval_items.query();
+			 while (gr_approval_items.next()){
+				 var orginId = '';
+				 var tickerNum = '';
+				 var org_ticket_num = '';
+				 var version = '';
+				 var hasParent = '';
+				 var selectedOrginId = '';
+
+				 var docId = gr_approval_items.document_id;
+
+				 selectedOrginId = gr_approval_items.document_id.contact_type;
+				 if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web' ){
+							orginId = gr_approval_items.document_id.sys_id;
+							org_ticket_num = gr_approval_items.document_id.number;
+							hasParent = 'false';
+					}else{
+						 var orgIds = selectedOrginId.split("=");
+						 var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+						 gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+						 gr_tracking_item.query();
+
+						 if(gr_tracking_item.getRowCount() &gt; 0){
+									gr_tracking_item.next();
+									orginId = gr_tracking_item.u_orgid;
+									org_ticket_num = gr_tracking_item.u_ticket_number;
+									version = orgIds[1];
+									hasParent = 'true';
+						 }else {
+									orginId = gr_requested_items.sys_id;
+									org_ticket_num = gr_requested_items.number;
+									hasParent = 'false';
+						 }
+					}
+
+					var ticket_number = '';
+					if(hasParent == 'true'){
+							ticket_number = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+					}else{
+							ticket_number = "CCR_GDSP" + gr_approval_items.sysapproval.number.substring(8);
+					}
+
+					var stage_v = gr_approval_items.document_id.context.stage.name;		
+							
+					if(!((stage_v == 'Waiting for GPA Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for GPA Review') || (stage_v == 'SD Rejected - Waiting for GPA Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'SD Rejected - Waiting for GPA Review')) &amp;&amp; gr_approval_items.state == 'approved'){	
+							if(stage_v != 'Completed' || (stage_v == 'Completed' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for GPA Review')){			
+										var item = {};
+										item.gdsp_id = ticket_number;
+										item.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+										item.project_name = gr_approval_items.document_id.u_project_name.toString();
+										item.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+										item.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+										item.status = gr_approval_items.document_id.context.stage.name.toString();
+										item.last_update_date = gr_approval_items.sys_updated_on.toString();
+										item.stage = stage_v.toString();
+										item.sys_id = gr_approval_items.sys_id.toString();
+										item.doc_id = gr_approval_items.document_id.toString();
+										item.state = gr_approval_items.state.toString();
+										data.reviewedTasks.push(item);
+							}
+						}
+							if((stage_v == 'Waiting for GPA Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'Waiting for GPA Review') || (stage_v == 'SD Rejected - Waiting for GPA Review' &amp;&amp; gr_approval_items.wf_activity.stage.name == 'SD Rejected - Waiting for GPA Review')){
+								  var items = {};
+									items.gdsp_id = ticket_number;
+									items.principal_investigator = gr_approval_items.document_id.u_investigator.toString();
+									items.project_name = gr_approval_items.document_id.u_project_name.toString();
+									items.submitted_by = gr_approval_items.sysapproval.opened_by.name.toString();
+									items.submitted_date = gr_approval_items.document_id.sys_created_on.toString();
+									items.status = gr_approval_items.document_id.context.stage.name.toString();
+									items.last_update_date = gr_approval_items.sys_updated_on.toString();
+									items.stage = stage_v.toString();
+									items.sys_id = gr_approval_items.sys_id.toString();
+									items.doc_id = gr_approval_items.document_id.toString();
+									items.state = gr_approval_items.state.toString();						
+									data.approvalTasks.push(items);
+							}
+			}
+	}	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 14:43:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d87f513bdb027e00f59974131f96199c&lt;/sys_id&gt;&lt;sys_mod_count&gt;172&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP GPA Approval Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_d87f513bdb027e00f59974131f96199c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-13 18:28:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;br/&gt;
+  &lt;div class="panel panel-success" ng-show="c.data.approvalTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_gpaApprovalItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsegpaApprovalItems" aria-expanded="true" data-target="#collapsegpaApprovalItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs Waiting for GPA Approval &lt;span class="badge" id="ritm_count"&gt;{{ c.data.approvalTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_gpaApprovalItems" class="panel-collapse collapse in table-responsive" id="collapsegpaApprovalItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns track by $index" 
+              ng-click="c.toggleSort($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.approvalTasks track by $index"
+            ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                     $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted"  title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination.currentSize = c.pagination.pageSizes[1]"
+          ng-model="c.pagination.currentSize"
+          ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination.currentSize &lt; c.data.approvalTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange() track by $index"
+        ng-click="c.setPage($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;br/&gt;&lt;br/&gt;
+
+  &lt;div class="panel panel-success" ng-show="c.data.reviewedTasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading" id="heading_gpaReviewedItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapsegpaReviewedItems" aria-expanded="true" data-target="#collapsegpaReviewedItems" data-toggle="collapse" role="button"&gt;
+          &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+          GDSPs reviewed by GPA &lt;span class="badge" id="ritm_count"&gt;{{ c.data.reviewedTasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+
+    &lt;div aria-labelledby="heading_gpaReviewedItems" class="panel-collapse collapse in table-responsive" id="collapsegpaReviewedItems" role="tabpanel"&gt;
+      &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th 
+              ng-repeat="column in c.columns1 track by $index" 
+              ng-click="c.toggleSort1($index)" 
+              style="cursor: pointer"&gt;
+              {{ column.label }}
+              &lt;span 
+                class="glyphicon small" 
+                ng-class="{
+                            'glyphicon-chevron-up': column.sort === 'asc',
+                            'glyphicon-chevron-down': column.sort === 'desc'
+                          }"&gt;
+              &lt;/span&gt;
+          &lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tr ng-repeat="row in c.data.reviewedTasks track by $index"
+            ng-show="$index &gt;= c.pagination1.currentPage * c.pagination1.currentSize &amp;&amp;
+                     $index &lt; (c.pagination1.currentPage + 1) * c.pagination1.currentSize"&gt;
+          &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.principal_investigator }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_by }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.submitted_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;{{ row.last_update_date }}&lt;/td&gt;
+          &lt;td class="ritm_number"&gt;
+                &lt;span ng-switch on='row.stage'&gt;
+                  &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+                  &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+            		&lt;/span&gt; 
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.view(row.doc_id, row.sys_id, row.state, row.stage,row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+              View
+            &lt;/button&gt;
+            &lt;button class="btn btn-sm btn-primary" ng-click="c.report(row.doc_id, row.gdsp_id)"style="width: 70px; text-align: center;"&gt;
+              Export
+            &lt;/button&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;!-- select the page size --&gt;
+    &lt;form class="form-inline pull-right"&gt;
+      &lt;div class="pagination form-group"&gt;
+        &lt;label for="pageSize"&gt;
+          Items per page
+        &lt;/label&gt;
+
+        &lt;select 
+          id="pageSize" 
+          class="form-control"
+          style="display: inline"
+          ng-init="c.pagination1.currentSize = c.pagination1.pageSizes[1]"
+          ng-model="c.pagination1.currentSize"
+          ng-options="sizes for sizes in c.pagination1.pageSizes"&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;  
+
+    &lt;!-- select the page index (offset) --&gt;
+    &lt;ul class="pagination" ng-show="c.pagination1.currentSize &lt; c.data.reviewedTasks.length"&gt;
+      &lt;li
+        ng-repeat="index in c.getRange1() track by $index"
+        ng-click="c.setPage1($index)"
+        &gt;
+        &lt;a href=""&gt;
+          {{ $index + 1 }}
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCRGDSP_1.1.1">3d9a770adbdff20054d8ff621f961956</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-06-13 18:49:27</sys_created_on>
+<sys_id>f99a770adbdff20054d8ff621f961957</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-13 18:49:27</sys_updated_on>
+<table/>
+<target_name>GDSP GPA Approval Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
