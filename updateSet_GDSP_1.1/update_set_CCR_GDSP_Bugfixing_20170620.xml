@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-06-20 21:25:33">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCR_GDSP_BugFixing_20170620</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>3bd650ecdb6f3a0054d8ff621f961910</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-06-20 21:25:33</sys_created_on>
+<sys_id>34716c64dbaf3a0054d8ff621f961999</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-20 21:25:33</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_d5c0724edb12360054d8ff621f96193b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, spUtil, $http) {
+  /* widget controller */
+  var c = this;
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_name',
+			label: 'Principal Name',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.tasks.length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.tasks = c.data.tasks.sort(compareRows);
+		}
+	};
+	//start client js	
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther']; 
+	var my_sys_id = c.data.info.userId;
+	var sessionId = c.data.info.sessionId;
+  
+	$scope.viewItem = function(id, gdsp_id){
+		var data = {
+			requestedid: id	
+		};
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response) {
+			var result = response.data.result;
+			cleanDisplayDiv();
+			resetRequestValue();
+			$('#displayRequestId').html(gdsp_id);
+			var variables = result.variables;
+			var comments = result.comments;
+			var comment_str = parse(comments);
+			$('#commentReviewId1').empty();
+			$('#commentReviewId1').append(comment_str);
+			if(comment_str.length &lt; 137){
+            $('#pre_comments_div').hide();
+            $('#comments_div').hide();
+      }else{
+          $('#pre_comments_div').show();
+          $('#comments_div').hide();
+      }
+			loadSubmittedData(variables);
+			$('#displayRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);}); 
+			$('#closeButton').show();
+			$('#submitButton').hide();
+			$('#sd_div').hide();
+		}
+		function handleError(response) {
+			console.error(response);
+			$confirm.modal('hide');
+			alert('ERROR');
+		}			
+	};
+	$scope.report = function(id, gdsp_id){
+		window.open('$sp.do?id=gdsp_report_page&amp;itemId='+id+'&amp;ticket='+gdsp_id, '_BLANK');
+	};
+	$scope.withdraw = function(id){
+		 $('#messageWithdraw').html('Are you sure you want to withdraw this request?');
+		 $('#withdrawDiv').modal('show');
+		 $('#btnYesWithdraw').off('click').click(function(){			
+					withdrawRequest(id, my_sys_id);			     
+					$('#withdrawDiv').modal('hide');
+			});						
+		 $('#btnNoWithdraw').off('click').click(function(){			
+					 $('#withdrawDiv').modal('hide');
+			});						
+
+	};
+	$scope.displayResubmit = function (request_id){
+		  var variables= {};
+      variables.requestedid = request_id;
+			var request = {
+				url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+				method: 'POST',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: variables
+			};
+			$http(request).then(handleResponse, handleError);
+			function handleResponse(response) {
+				var result = response.data.result;
+				var variables = result.variables;
+				var comments = result.comments;
+				var comment_str = parse(comments);
+				$('#commentReviewId1').empty();
+				$('#commentReviewId1').append(comment_str);
+				$('#resubmitCommentsId').val(comments);
+				if(comment_str.length &lt; 137){
+							$('#pre_comments_div').hide();
+							$('#comments_div').hide();
+				}else{
+						$('#pre_comments_div').show();
+						$('#comments_div').hide();
+				}
+				loadResubmittedData(variables);
+				 
+	       $('#ccr_id').val(request_id);
+         $('#errorMessage').hide();
+         $('#regularSubmit').hide();
+         $('#resubmit').show();			
+				 $('#loadedRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);});
+			}
+			function handleError(response) {
+				console.error(response);
+				$confirm.modal('hide');
+				alert('ERROR');
+			}				
+		
+		
+	}
+	function withdrawRequest(id){
+		var variables = {};
+		variables.requestedid = id;
+	  var request = {
+			url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+			method: 'POST',
+			beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			data: variables
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response) {
+			var result = response.data.result;
+			var variables = result.variables;
+			var comments = result.comments;
+			var data = getGDSPData(variables, my_sys_id);
+			data.comments = comments;
+			var gdspData = JSON.stringify(data);
+			saveWithdrawRequestData(gdspData, id);			
+		}
+		function handleError(response) {
+			console.error(response);
+			$confirm.modal('hide');
+			alert('ERROR');
+		}					
+	}
+	function saveWithdrawRequestData(data, id){
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/saveRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			withdrawDeletion(id);
+		}
+		function handleError(){
+			console.error(response);
+			alert('ERROR');
+		}
+	}
+	function withdrawDeletion(id){
+		var variables= {};
+		variables.id = id;
+		variables.method = 'withdraw';
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/gsdspUtil',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: variables
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			console.log(result);
+		}
+		function handleError(){
+			console.error(response);
+			alert('ERROR');
+		}		
+	}
+	function getGDSPData(data, id){
+		var variables= {};
+     variables.requested_for = my_sys_id;
+     variables.value =''; 
+	   variables.project_name ='';
+		 variables.saved_id = '';		//id is for update?
+     var index = 0;
+		 for(key in data){
+			  if (index != 0) variables.value += ',';
+			  if (key == 'projectName'){
+					 variables.project_name = data[key];
+				}
+			  variables.value  +=  key + '=' + data[key];
+			 index++;
+		 }
+		
+		return variables;
+	}
+	
+	function cleanDisplayDiv(){
+		$('#pre_comments_div').hide();
+		$('#closeButton').hide();
+		$('#comments_div').hide();
+		$('#submitButton').hide();
+	}
+	function parse(allcomments) {
+	 var comments = allcomments.split("ENDCOMMENTS");
+	 var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+	 for(i = 0; i &lt; comments .length; i++){
+			 if (comments[i].length &gt; 40) { 
+				 if (comments[i][0] == '\n') {
+						 var lastI = 0;
+						 while (lastI &lt; comments[i].length &amp;&amp; comments[i][lastI] == '\n') 
+									lastI ++;
+						 comments[i] = comments[i].substring(lastI,comments[i].length);
+				 }
+				 var t = comments[i].substring(0,22);
+				 var approver = comments[i].substring(comments[i].indexOf('(ENDROLE)')+9,comments[i].length);
+				 var results = comments[i].substring(comments[i].indexOf('(Additional comments)') + 57,comments[i].indexOf('(Additional comments)') + 65);
+				 var comm= comments[i].substring(comments[i].indexOf('(Additional comments)') + 66, comments[i].indexOf('(role)'));
+				 var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].indexOf('(ENDROLE)')); 
+				 commentsblock = commentsblock + "&lt;tr&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;/tr&gt;";
+			 }
+		}
+		commentsblock = commentsblock + "&lt;/table&gt;";
+		return commentsblock;
+	}	
+	
+	function loadSubmittedData(data){
+	  for(key in data){
+			var value = getValue(key, data[key]);
+			$('#'+key+"1").html(value);
+		}
+	}
+	
+	function loadResubmittedData(data){
+	  for(key in data){
+			setResubmitValue(key, data[key]);
+		}
+		
+	}
+	
+  function getValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(value, '1');
+        }else{
+           return value;
+        }
+     }else{
+        if(value == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return value; 
+     }
+  }	
+	
+	  function setResubmitValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           $('#'+name).val(getConvertedValue(value, '1'));
+        }else{
+           $('#'+name).val(value);
+        }
+     }else{
+        if(value == "true"){
+            $('#'+name).prop('checked', true); 
+        }else{
+            $('#'+name).prop('checked', false); 
+        }
+			  otherFieldWatcher(name, value);	 
+     }
+  }
+	
+	function otherFieldWatcher(name, value){
+		var otherCheckbox = ['otherType', 'otherAnalysis', 'OtherRepository', 'clinicalData', 'protocol', 'instrument', 'otherCompanion', 'otherSubmission', 'yeast',  'bacteria', 'nonHuman', 'snpArrayData', 'expressionArray', 'methylationArray', 'arrayDerive','microarrayData','sequenceData','somaticSnv','arrayCgh','wholeGenome','wholeExome','targetGenome','targetExome','wholeTranscriptome','targetTrabscriptome','epigenomicMark','sanger','rrna'];
+		var otherField = ['specifyOtherType', 'spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument', 'specifiedCompanion', 'psecifiedOtherSubmission', 'yeastSpecies', 'bacteriaSpecies','noHumanOther', 'numSNP', 'numExpression', 'numMethylation', 'numDerivedGenotype', 'numMicroarrayData','numSquenceData','numSomaticSnv','numArrayCgh','numWholeGenome','numWholeExome','numTargetGenome','numTargetedExome','numWholeTranscriptome','numTargetedTranscriptome','numEpigenomic','numSanger','numRrna'];
+	  
+		var index = otherCheckbox.indexOf(name);
+
+		if( index &gt;= 0){
+			if(value == 'true'){
+				$('#'+otherField[index]).prop('disabled', false);
+			}else{
+				$('#'+otherField[index]).prop('disabled', true);
+			}
+		}
+	}
+	
+  function getConvertedValue(value, flag){
+		 if(flag == '0'){
+				var values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				var values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}	
+	
+  function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i]).val('');
+      }else{
+		   $('#'+names[i] +"1").html('&lt;input type="checkbox" id="'+ names[i] +"1" + '" disabled="true"/&gt;');
+           $('#'+names[i]).prop('checked', false); 
+		   $('#'+names[i]).removeAttr("disabled");
+		  
+      }
+    }
+    $('#withdrawCommentsId').val('');
+    $('#withdrawSubmitId').val('');
+	$('#saved_id').val('');  
+  }	
+	spUtil.recordWatch($scope, "sc_req_item", "", function(name, data) {  
+			spUtil.update($scope);
+	});	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-submitted-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP Submitted Table&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.tasks = [];
+	data.info = [];
+
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id
+	};
+	
+	var gr = new GlideRecord("sc_cat_item");
+      gr.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+      gr.query();
+      gr.next();
+	var cat_item_id = gr.getValue('sys_id');
+	
+	var gr_requested_items = new GlideRecord('sc_req_item');
+  var gd_requested_items = gr_requested_items.addQuery('request.requested_for', my_sys_id);
+  var gc_requested_items = gr_requested_items.addQuery('cat_item', cat_item_id);
+  gr_requested_items.addActiveQuery();
+  gr_requested_items.orderByDesc('number');
+  gr_requested_items.query();
+	while (gr_requested_items.next()){
+			var orginId = '';
+			var tickerNum = '';
+			var org_ticket_num = '';
+			var version = '';
+			var hasParent = '';
+			var selectedOrginId = '';	
+		
+			selectedOrginId = gr_requested_items.contact_type;
+		 
+      if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web' ){
+            orginId = gr_requested_items.sys_id;
+            org_ticket_num = gr_requested_items.number;
+            hasParent = 'false';
+       }else{
+            var orgIds = selectedOrginId.split("=");
+            var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+								gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+                gr_tracking_item.query();
+
+                if(gr_tracking_item.getRowCount() &gt; 0){
+                     gr_tracking_item.next();
+                     orginId = gr_tracking_item.u_orgid;
+                     org_ticket_num = gr_tracking_item.u_ticket_number;
+                     version = orgIds[1];
+                     hasParent = 'true';
+                 }else {
+                     orginId = gr_requested_items.sys_id;
+                     org_ticket_num = gr_requested_items.number;
+                     hasParent = 'false';
+									}
+       }		
+       if(hasParent == 'true'){
+            ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+       }else{
+            ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
+       }		
+		
+			 var items= {};
+		   items.sys_id = gr_requested_items.sys_id.toString();
+		   items.gdsp_id = ticketNum;
+		   items.principal_name = gr_requested_items.u_investigator.toString();
+			 items.project_name = gr_requested_items.u_project_name.toString();
+		   items.status = gr_requested_items.context.stage.name.toString(); 
+		   items.approval = gr_requested_items.context.stage.name.toString();
+		   items.submitted_date = gr_requested_items.sys_created_on.toString();
+			 items.orginId = orginId.toString();
+		   items.org_ticket_num = org_ticket_num.toString();
+		   data.tasks.push(items);
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 20:25:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d5c0724edb12360054d8ff621f96193b&lt;/sys_id&gt;&lt;sys_mod_count&gt;181&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Submitted Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_d5c0724edb12360054d8ff621f96193b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-20 21:23:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;br/&gt;
+&lt;div class="panel panel-success" ng-show="c.data.tasks.length &gt; 0"&gt;
+  &lt;div class="panel-heading" id="heading_submittedItems" role="tab"&gt;
+    &lt;h4 class="panel-title"&gt;
+      &lt;a aria-controls="collapseSubmittedItems" aria-expanded="true" data-target="#collapseSubmittedItems" data-toggle="collapse" role="button"&gt;
+        &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+        Submitted GDSPs &lt;span class="badge" id="ritm_count"&gt;{{ c.data.tasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+  
+  &lt;div aria-labelledby="heading_submittedItems" class="panel-collapse collapse in table-responsive" id="collapseSubmittedItems" role="tabpanel"&gt;
+    &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+			&lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th 
+            ng-repeat="column in c.columns track by $index" 
+            ng-click="c.toggleSort($index)" 
+            style="cursor: pointer"&gt;
+        		{{ column.label }}
+          	&lt;span 
+            	class="glyphicon small" 
+              ng-class="{
+                        	'glyphicon-chevron-up': column.sort === 'asc',
+                        	'glyphicon-chevron-down': column.sort === 'desc'
+                        }"&gt;
+          	&lt;/span&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tr ng-repeat="row in c.data.tasks track by $index"
+          ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                   $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize"&gt;
+        &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.principal_name }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;
+        	&lt;span ng-switch on='row.approval'&gt;
+            &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA review"  title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" title="Request Submitted" Alt="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+      		&lt;/span&gt;  
+        &lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.submitted_date}}&lt;/td&gt;
+        &lt;td&gt;
+        	&lt;button class="btn btn-sm btn-primary" ng-click="viewItem(row.sys_id, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+          	View
+         	&lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-show="row.approval == 'Waiting for PI Resubmit' " ng-click="displayResubmit(row.sys_id)" style="width: 70px; text-align: center;"&gt;
+            Resubmit
+          &lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-show="row.approval != 'Completed' " ng-click="withdraw(row.sys_id)" style="width: 70px; text-align: center;"&gt;
+            Withdraw
+          &lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-click="report(row.sys_id, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+            Export
+         	&lt;/button&gt;
+             &lt;input type="hidden" id="{{ row.sys_id }}_orginId" value="{{ row.orginId}}"/&gt;
+						 &lt;input type="hidden" id="{{ row.sys_id }}_ticket_num" value="{{ row.org_ticket_num }}"/&gt;
+						 &lt;input type="hidden" id="{{ row.sys_id }}_ticket" value="{{row.gdsp_id}}"/&gt;
+       	&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+	&lt;!-- select the page size --&gt;
+	&lt;form class="form-inline pull-right"&gt;
+    &lt;div class="pagination form-group"&gt;
+      &lt;label for="pageSize"&gt;
+      	Items per page
+      &lt;/label&gt;
+      
+      &lt;select 
+      	id="pageSize" 
+        class="form-control"
+				style="display: inline"
+        ng-init="c.pagination.currentSize = c.pagination.pageSizes[1]"
+        ng-model="c.pagination.currentSize"
+        ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;  
+  
+  &lt;!-- select the page index (offset) --&gt;
+  &lt;ul class="pagination" ng-show="c.pagination.currentSize &lt; c.data.tasks.length"&gt;
+    &lt;li
+      ng-repeat="index in c.getRange() track by $index"
+      ng-click="c.setPage($index)"
+      &gt;
+      &lt;a href=""&gt;
+      	{{ $index + 1 }}
+      &lt;/a&gt;
+    &lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- confirm modal --&gt;
+&lt;div id="withdrawDiv" class="modal fade"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 id="lblTitleConfirmYesNo" class="modal-title"&gt;Confirmation&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p align="center" id="messageWithdraw"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button id="btnYesWithdraw" 
+                type="button" class="btn btn-primary" 
+                style="width: 70px; text-align: center;"&gt;Yes&lt;/button&gt;
+                &lt;button id="btnNoWithdraw" 
+                type="button" class="btn btn-default" 
+                style="width: 70px; text-align: center;"&gt;No&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_BugFixing_20170620">34716c64dbaf3a0054d8ff621f961999</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-06-20 21:25:33</sys_created_on>
+<sys_id>38716c64dbaf3a0054d8ff621f961999</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-06-20 21:25:33</sys_updated_on>
+<table/>
+<target_name>GDSP Submitted Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
