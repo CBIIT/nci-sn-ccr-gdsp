@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-07-26 18:14:35">
+<unload unload_date="2017-07-26 18:23:40">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,11 +18,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>6efe4144db988b0054d8ff621f961956</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>6301d144db988b0054d8ff621f961976</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -87,14 +87,14 @@
 	  });
 	  return jsonData;
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/naci/gdspapi/saveRequestData&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/saveRequestData&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-12 21:04:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ec5681dedb4e7a00f59974131f961950&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;saveRequestData&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_ec5681dedb4e7a00f59974131f961950&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-21 14:28:19&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="gdspAPI"&gt;212601dedb4e7a00f59974131f961986&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>26fe4144db988b0054d8ff621f961958</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>2701d144db988b0054d8ff621f961977</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>saveRequestData</target_name>
 <type>Scripted REST Resource</type>
@@ -1643,14 +1643,14 @@ input[type=radio] {
     &lt;/div&gt;
 &lt;/div&gt;
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>2afe4144db988b0054d8ff621f961957</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>2b01d144db988b0054d8ff621f961976</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>GDSP Data Entry Section</target_name>
 <type>Widget</type>
@@ -1682,14 +1682,14 @@ input[type=radio] {
 	}
   return jsonData;
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/naci/gdspapi/getPiUserId&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/getPiUserId&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-20 18:59:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1ecf968adb084700f59974131f9619d5&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;getPiUserId&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_1ecf968adb084700f59974131f9619d5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-20 19:28:02&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="gdspAPI"&gt;212601dedb4e7a00f59974131f961986&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>62fe4144db988b0054d8ff621f961958</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>6301d144db988b0054d8ff621f961977</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>getPiUserId</target_name>
 <type>Scripted REST Resource</type>
@@ -2118,7 +2118,7 @@ function parse(allcomments) {
 	  var gr = gs.getUser();  
     if (! (gr.isMemberOf('CCR_GPA') || gr.isMemberOf('CCR_SD_HUMAN') || gr.isMemberOf('CCR_SD_NON_HUMAN') ||gr.isMemberOf('CCR_GPA_ASST') || gr.isMemberOf('CCR_PSO'))) {
        var it_rd = gr_requested_item.addQuery('opened_by',gs.getUserID() );
-			 it_rd.addOrCondition('request.requested_for', getUserID());
+			 it_rd.addOrCondition('request.requested_for', gs.getUserID());
     }
 	
 	  gr_requested_item.query();
@@ -2137,7 +2137,7 @@ function parse(allcomments) {
 	  data.tasks.variables = items;
 	  data.tasks.comments = comments;
 	  data.tasks.gdsp_id = ticket;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-20 15:26:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;01160574db12720054d8ff621f96192a&lt;/sys_id&gt;&lt;sys_mod_count&gt;246&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Report Page Content&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_01160574db12720054d8ff621f96192a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-26 18:13:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt; 
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-20 15:26:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;01160574db12720054d8ff621f96192a&lt;/sys_id&gt;&lt;sys_mod_count&gt;247&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Report Page Content&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_01160574db12720054d8ff621f96192a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-26 18:23:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt; 
   &lt;div class="row"&gt;
      &lt;img src="NCI-logo-full.jpg" height="50" alt="NCI LOGO"/&gt;
   &lt;/div&gt;
@@ -2975,14 +2975,14 @@ function parse(allcomments) {
  &lt;input type="hidden" name="pName" id="pName"/&gt;  
   
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>66fe4144db988b0054d8ff621f961957</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>6701d144db988b0054d8ff621f961976</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>GDSP Report Page Content</target_name>
 <type>Widget</type>
@@ -3072,14 +3072,14 @@ var variables;
    }
 
 }]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_email&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-03-04 20:59:01&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;dc6328106f0e92000a09034abb3ee4d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;ccr_gdsp_ready_to_review_wf&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_email_dc6328106f0e92000a09034abb3ee4d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:28:33&lt;/sys_updated_on&gt;&lt;/sys_script_email&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>aefe4144db988b0054d8ff621f961957</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>af01d144db988b0054d8ff621f961976</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>ccr_gdsp_ready_to_review_wf</target_name>
 <type>Email Script</type>
@@ -3892,14 +3892,14 @@ template.print("GDSP details: &amp;lt;a href='" + url + "'&amp;gt;" + ticketNum 
 			   &amp;#13;
 &amp;lt;/mail_script&amp;gt;&lt;/value&gt;&lt;variable display_value=""&gt;c35db5a50a0a0ba96248a70938ae8de6&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;34a6069fdb4cc700f59974131f961940&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:20&lt;/sys_created_on&gt;&lt;sys_id&gt;f8a6069fdb4cc700f59974131f961940&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:20&lt;/sys_updated_on&gt;&lt;value&gt;1&lt;/value&gt;&lt;variable display_value=""&gt;6d6816cd0a6a803f0853a8df38007572&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;34a6069fdb4cc700f59974131f961940&lt;/document_key&gt;&lt;order&gt;500&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:20&lt;/sys_created_on&gt;&lt;sys_id&gt;30a6069fdb4cc700f59974131f961941&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:20&lt;/sys_updated_on&gt;&lt;value&gt;// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&amp;#13;
 answer=current.opened_by&lt;/value&gt;&lt;variable display_value=""&gt;c35dae3d0a0a0ba96248a7098ed9b4aa&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961940&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;false&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:20&lt;/sys_created_on&gt;&lt;sys_id&gt;b4a6069fdb4cc700f59974131f961942&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:20&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;7ca6069fdb4cc700f59974131f96193f&lt;/condition&gt;&lt;from display_value="Revise"&gt;f8a6069fdb4cc700f59974131f96193d&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;34a6069fdb4cc700f59974131f961960&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="PI need to Resubmit"&gt;bca6069fdb4cc700f59974131f961950&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;b4a6069fdb4cc700f59974131f961950&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;7ca6069fdb4cc700f59974131f961948&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;38a6069fdb4cc700f59974131f961964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961940&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;70a6069fdb4cc700f59974131f961932&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;70a6829fdb4cc700f59974131f9619e6&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;70a6069fdb4cc700f59974131f961961&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Revise"&gt;fca6069fdb4cc700f59974131f96195b&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;38a6069fdb4cc700f59974131f96195b&lt;/condition&gt;&lt;from display_value="PI need to Resubmit"&gt;fca6069fdb4cc700f59974131f96195a&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;78a6069fdb4cc700f59974131f961960&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;fca6069fdb4cc700f59974131f961947&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;34a6069fdb4cc700f59974131f96193d&lt;/condition&gt;&lt;from display_value="CCR Scientific Director"&gt;f8a6069fdb4cc700f59974131f961935&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;78a6069fdb4cc700f59974131f961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="SD Reject"&gt;b4a6069fdb4cc700f59974131f961945&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;38a6069fdb4cc700f59974131f961947&lt;/condition&gt;&lt;from display_value="SD Reject"&gt;b4a6069fdb4cc700f59974131f961945&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;7ca6069fdb4cc700f59974131f961960&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="CCR GPA"&gt;70a6829fdb4cc700f59974131f9619e6&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;fca6069fdb4cc700f59974131f961957&lt;/condition&gt;&lt;from display_value="Send Notification to SD"&gt;7ca6069fdb4cc700f59974131f961955&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b0a6069fdb4cc700f59974131f961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="CCR Scientific Director"&gt;f8a6069fdb4cc700f59974131f961935&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;b4a6069fdb4cc700f59974131f961942&lt;/condition&gt;&lt;from display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961940&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b0a6069fdb4cc700f59974131f961964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to SD"&gt;7ca6069fdb4cc700f59974131f961955&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;b0a6069fdb4cc700f59974131f96195f&lt;/condition&gt;&lt;from display_value="Begin"&gt;38a6069fdb4cc700f59974131f96195e&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b4a6069fdb4cc700f59974131f961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961953&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Rejected"&gt;34a6069fdb4cc700f59974131f961950&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;7ca6069fdb4cc700f59974131f961948&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b4a6069fdb4cc700f59974131f961964&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Revise"&gt;f8a6069fdb4cc700f59974131f96193d&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;b4a6069fdb4cc700f59974131f961955&lt;/condition&gt;&lt;from display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961953&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;b8a6069fdb4cc700f59974131f961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to GPA and GPA ASST"&gt;3ca6069fdb4cc700f59974131f961932&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;7ca6069fdb4cc700f59974131f961951&lt;/condition&gt;&lt;from display_value="PI need to Resubmit"&gt;bca6069fdb4cc700f59974131f961950&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;bca6069fdb4cc700f59974131f961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;fca6069fdb4cc700f59974131f961947&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;7ca6069fdb4cc700f59974131f961952&lt;/condition&gt;&lt;from display_value="Review is completed"&gt;34a6069fdb4cc700f59974131f961952&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;bca6069fdb4cc700f59974131f961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;fca6069fdb4cc700f59974131f961947&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;bca6069fdb4cc700f59974131f961931&lt;/condition&gt;&lt;from display_value="CCR GPA"&gt;70a6829fdb4cc700f59974131f9619e6&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f0a6069fdb4cc700f59974131f961961&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Send Notification to Submiter"&gt;34a6069fdb4cc700f59974131f961940&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;70a6069fdb4cc700f59974131f96195e&lt;/condition&gt;&lt;from display_value="Revise"&gt;fca6069fdb4cc700f59974131f96195b&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f0a6069fdb4cc700f59974131f961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="PI need to Resubmit"&gt;fca6069fdb4cc700f59974131f96195a&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;38a6069fdb4cc700f59974131f96195a&lt;/condition&gt;&lt;from display_value="Retain the copy for a record"&gt;b4a6069fdb4cc700f59974131f961958&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f4a6069fdb4cc700f59974131f961961&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Retain the copy for a record - PSO"&gt;7ca6069fdb4cc700f59974131f961942&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Approved"&gt;b0a6069fdb4cc700f59974131f96193d&lt;/condition&gt;&lt;from display_value="CCR Scientific Director"&gt;f8a6069fdb4cc700f59974131f961935&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f4a6069fdb4cc700f59974131f961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Retain the copy for a record"&gt;b4a6069fdb4cc700f59974131f961958&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;fca6069fdb4cc700f59974131f961944&lt;/condition&gt;&lt;from display_value="Retain the copy for a record - PSO"&gt;7ca6069fdb4cc700f59974131f961942&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f8a6069fdb4cc700f59974131f961961&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="Review is completed"&gt;34a6069fdb4cc700f59974131f961952&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;34a6069fdb4cc700f59974131f961935&lt;/condition&gt;&lt;from display_value="Send Notification to GPA and GPA ASST"&gt;3ca6069fdb4cc700f59974131f961932&lt;/from&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;fca6069fdb4cc700f59974131f961961&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:21&lt;/sys_updated_on&gt;&lt;to display_value="CCR GPA"&gt;7ca6069fdb4cc700f59974131f961948&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_estimated_runtime_config action="INSERT_OR_UPDATE"&gt;&lt;estimated_run_time/&gt;&lt;no_of_data_points&gt;1&lt;/no_of_data_points&gt;&lt;percentage_threshold_ert&gt;20&lt;/percentage_threshold_ert&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-24 14:22:20&lt;/sys_created_on&gt;&lt;sys_id&gt;a4a6829fdb4cc700f59974131f9619e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-24 14:22:20&lt;/sys_updated_on&gt;&lt;workflow_version display_value="GDSP Work Flow"&gt;a0a6829fdb4cc700f59974131f9619e2&lt;/workflow_version&gt;&lt;/wf_estimated_runtime_config&gt;&lt;wf_workflow_version action="update_multiple" query="workflow=0dd8997f6f3416000a09334abb3ee4d0^sys_id!=a0a6829fdb4cc700f59974131f9619e2"&gt;&lt;published&gt;false&lt;/published&gt;&lt;/wf_workflow_version&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>e6fe4144db988b0054d8ff621f961958</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>e701d144db988b0054d8ff621f961977</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>GDSP Work Flow</target_name>
 <type>Workflow</type>
@@ -4530,14 +4530,14 @@ answer=current.opened_by&lt;/value&gt;&lt;variable display_value=""&gt;c35dae3d0
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6efe4144db988b0054d8ff621f961956</remote_update_set>
+<remote_update_set display_value="CCR_GDSP_PI_Name_fix_20170714 2">6301d144db988b0054d8ff621f961976</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>zhoujim@nih.gov</sys_created_by>
-<sys_created_on>2017-07-26 18:14:35</sys_created_on>
-<sys_id>eafe4144db988b0054d8ff621f961957</sys_id>
+<sys_created_on>2017-07-26 18:23:40</sys_created_on>
+<sys_id>eb01d144db988b0054d8ff621f961976</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>zhoujim@nih.gov</sys_updated_by>
-<sys_updated_on>2017-07-26 18:14:35</sys_updated_on>
+<sys_updated_on>2017-07-26 18:23:40</sys_updated_on>
 <table/>
 <target_name>GDSP Submitted Table</target_name>
 <type>Widget</type>
