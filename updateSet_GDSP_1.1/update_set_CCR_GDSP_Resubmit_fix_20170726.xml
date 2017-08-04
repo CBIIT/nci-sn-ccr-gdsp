@@ -1,0 +1,2224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-26 17:48:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCR_GDSP_Resubmit_fixing_20170726</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>e0f924c8db188b0054d8ff621f96190c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-07-26 17:48:55</sys_created_on>
+<sys_id>12194540db988b0054d8ff621f9619ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-26 17:48:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_5bf38bfddb4e7a0054d8ff621f961914</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $http, spUtil) {
+	$("#datetimepicker").datetimepicker({format:'MM/DD/YYYY'}).on('dp.show', function() {
+		$('.bootstrap-datetimepicker-widget li.accordion-toggle').hide();
+	});
+	$('[data-toggle="popover"]').popover(); 
+	var c = this;
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna']; 
+	var sessionId = c.data.info.sessionId;
+	var userId = c.data.info.userId;
+ 
+	var catItemId = '';
+	var itemIdArray = {};
+	//ajax call to fetch catItemId
+	var req = {
+				method: 'GET',
+				url: '/api/naci/gdspapi/getCatItem',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				params: {name: 'CCR Genomic Data Sharing Plan'}	
+	}
+	$http(req).then(function(response){
+		 console.log(response);
+		 catItemId = response.data.result[0].cat_item_id;
+	});
+	//end of ajax call
+	//get variable array
+	var req1 = {
+				method: 'GET',
+				url: '/api/naci/gdspapi/getGDSPVariableIdArray',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				params: {email: 'zhoujim@nih.gov'}	
+	}
+	$http(req1).then(function(response){
+		 console.log(response);
+		 itemIdArray = response.data.result[0].itemId;
+	});	
+	
+	//end of variable array
+	var requestModal = $('#loadedRequests');
+	$scope.closeModal = function(){
+		requestModal.modal('hide');
+	};
+
+	$scope.processOtherValue = function(target1, target2){
+		 if($('#'+target1).is(':checked')){
+			 $('#'+target2).prop('disabled', false);
+		 }else{
+			 $('#'+target2).val(''); 
+			 $('#'+target2).prop('disabled', true);
+		 }		
+	};
+	$scope.toggleNotApplicable = function(){
+			if($('#notApplicableDataForm').is(":checked")){
+				$('#individual').attr("checked", false);
+				$('#aggregate').attr("checked", false);
+				$('#individual').attr("disabled", "disabled");
+				$('#aggregate').attr("disabled","disabled");
+			}else{
+				$('#individual').removeAttr("disabled");
+				$('#aggregate').removeAttr("disabled");
+			}		
+	};
+	$scope.toggleNoHumanData = function(){
+    if($('#noHumanData').is(":checked")){
+          $('#noLimitation').attr("checked", false);
+          $('#noLimitation').attr("disabled", "disabled");
+          $('#limitedOnly').attr("checked", false);
+          $('#limitedOnly').attr("disabled", "disabled");
+          $('#limitedPurpose').attr("checked", false);
+          $('#limitedPurpose').attr("disabled", "disabled");
+          $('#relateToDisease').attr("checked", false);
+          $('#relateToDisease').attr("disabled", "disabled");
+    }else{
+          $('#noLimitation').removeAttr("disabled");
+          $('#limitedOnly').removeAttr("disabled");
+          $('#limitedPurpose').removeAttr("disabled");
+          $('#relateToDisease').removeAttr("disabled");
+    }		
+	};
+	$scope.submitSaveRequest = function(){
+			$('#errorMessage').hide();
+			var variables = getGDSPData();
+			var gdspData = JSON.stringify(variables);
+			var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/saveRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: gdspData
+			};
+			$http(request).then(handleResponse, handleError);
+		  function handleResponse(response){
+				var result = response.data.result;
+			}
+		  function handleError(){
+				console.error(response);
+				alert('ERROR');
+			}
+      $('#loadedRequests').modal('hide');  
+	}
+	
+	$scope.loadRequestConfirm = function(){
+		if(validation()){
+			$('#loadedRequests .modal-content').scrollTop(0);
+			$('#errorMessage').show();
+			return;
+		}else{
+			var $confirm = $('#confirmSubmitDiv');
+			$confirm.modal('show');
+			$('#message1').html("Are you sure you want to submit this request?");		
+			$('#btnYesConfirm').off('click').click(function() {
+				//submit request
+				$('#errorMessage').hide();
+				submitRequest();	
+				$confirm.modal('hide');
+				requestModal.modal('hide');
+			});
+			$('#btnNoConfirm').off('click').click(function() {
+				$confirm.modal('hide');
+			});
+			
+		}
+	}
+	
+	$scope.loadResubmitConfirm = function(){
+		if(validation()){
+			$('#loadedRequests .modal-content').scrollTop(0);
+			$('#errorMessage').show();
+			return;
+		}else{	
+			var $confirm = $('#confirmResubmitDiv');
+			$confirm.modal('show');
+			$('#message2').html("Are you sure you want to resubmit this request?");	
+			$('#btnYesResubmitConfirm').off('click').click(function() {
+				//submit request
+				$('#errorMessage').hide();
+				resubmitRequest();	
+				$confirm.modal('hide');
+				requestModal.modal('hide');
+			});
+			$('#btnNoResubmitConfirm').off('click').click(function() {
+				$confirm.modal('hide');
+			});			
+		}
+	}
+	
+	function resubmitRequest(){    
+		var variables = {};
+    var currentId = $('#ccr_id').val();
+		
+		variables.org_id = $('#'+currentId +'_orginId').val();
+    variables.ticket_number = $('#'+currentId +'_ticket_num').val();
+    if(currentId == $('#'+currentId +'_orginId').val()){
+        variables.method = 'insert';
+    }else{
+        variables.method = 'update';
+    }
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/gsdspUtil',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: variables
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			var version = result.version;
+			resubmit($('#'+currentId +'_orginId').val(), version, currentId);
+		}
+		function handleError(){
+			console.error(response);
+			alert('ERROR');
+		}		
+		
+	}
+	
+	function formatHistoricComment(comment){
+		if(comment.length&gt;= 50){
+				 var index = comment.indexOf('Added comment to Approval record:');
+				 return comment.substring(index);
+		}else{
+				 return  ' ';
+		}
+	}
+	function resubmit(org_id, version, currentId){
+     var variables= getGDSPEntryData();
+		 variables.orginId = org_id;
+		 variables.version = version;
+     //variables.requested_for = userId;
+     variables.opened_by = userId;
+     variables.contact_type = org_id +"="+version;
+     variables.investigator = $('#investigator').val();
+     variables.project_name = $('#projectName').val();	
+     variables.cat_item = catItemId;
+     variables.short_discription = "Genome Data Sharing Plan";
+		 var fixedComments = formatHistoricComment($('#resubmitCommentsId').val());
+		variables.comments = fixedComments;
+	  
+		variables.resubmit = 'true';
+		variables.variables= itemIdArray;
+		
+		var pinames = getPIName($('#investigator').val());
+		var req = {
+						method: 'GET',
+						url: '/api/naci/gdspapi/getPiUserId',
+						beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						params: {'last': pinames.last, 'first': pinames.first}, 
+						async: false
+			}
+			$http(req).then(function(response){
+				 console.log(response);
+				 piUserId = response.data.result.id;
+				 handleResubmit(variables,piUserId);
+			});
+	}
+	
+	function handleResubmit(variables,piUserId){	
+		 if(piUserId != 'n/a'){
+				variables.requested_for = piUserId;
+		 }else{
+			 variables.requested_for = userId;
+		 }
+		 var gdspData = JSON.stringify(variables);
+			var req = {
+						method: 'POST',
+						url: '/api/naci/gdspapi/submitRequest',
+						beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						data: gdspData
+			}
+			$http(req).then(function(response){
+				 console.log(response);
+			});
+	}
+  
+	function getPIName(pi){
+		 var pinames = {};
+		 var pi_last, pi_first, piname;
+		 var ind = pi.indexOf(",");
+		 if(ind &gt; 0){
+			 piname = pi.split(",");
+			 if(piname.length == 2){
+				 pinames.last = piname[0].trim();
+				 pinames.first = piname[1].trim();
+			 }else{
+				 pinames.last = piname[0].trim();
+				 pinames.first = " ";
+			 } 
+		 }else{
+			 piname = pi.split(" ");
+			 if(piname.length == 2){
+				 pinames.first = piname[0].trim();
+				 pinames.last = piname[1].trim();
+			 }else{
+				 pinames.first = piname[0].trim();
+				 pinames.last = " ";
+			 }
+		 }
+			 return pinames;
+	}
+	
+	function submitRequest(){
+		var piUserId = '';
+		var variables= getGDSPEntryData();
+		if ($('#withdrawSubmitId').val() == 'true') {
+				variables.comments = formatHistoricComment($('#withdrawCommentsId').val());
+				variables.resubmit = 'true';
+		}
+		 variables.opened_by = userId;
+     variables.contact_type = 'Web';
+		 variables.short_discription = "Genome Data Sharing Plan";
+		 variables.cat_item = catItemId;
+		 variables.variables = itemIdArray;
+		 //use requested_for to store PI 
+		var pinames = getPIName($('#investigator').val());
+		
+		var req = {
+						method: 'GET',
+						url: '/api/naci/gdspapi/getPiUserId',
+						beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						params: {'last': pinames.last, 'first': pinames.first}, 
+						async: false
+			}
+			$http(req).then(function(response){
+				 console.log(response);
+				 piUserId = response.data.result.id;
+				 handlePiUserId(variables,piUserId);
+			});
+	}
+	
+	function handlePiUserId(variables,piUserId) {
+		 
+		 if(piUserId != 'n/a'){
+				variables.requested_for = piUserId;
+		 }else{
+			 variables.requested_for = userId;
+		 }
+    
+		 var gdspData = JSON.stringify(variables);
+	
+		 var req = {
+						method: 'POST',
+						url: '/api/naci/gdspapi/submitRequest',
+						beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						data: gdspData
+			}
+			$http(req).then(function(response){
+				 console.log(response);
+				 removeSavedRecordAfterSubmit();
+			});
+	}
+	
+	function validation(){
+		var errorMessage = '&lt;font size="2" color="red"&gt; &lt;ul&gt;';
+		var flag = "false";
+		clearRequiredFieldBackColor();
+		if($('#investigator').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;Investigator is a required field. &lt;/li&gt;';
+			 $('#investigator').css("background-color", "yellow");
+			 flag = 'true';
+		 }
+		if($('#email').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;Email is a required field. &lt;/li&gt;';
+			 $('#email').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if($('#email').val().indexOf('@') == -1){
+			 errorMessage = errorMessage + '&lt;li&gt;Incorrect Email address. &lt;/li&gt;';
+			 $('#email').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if($('#phone').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;Phone is a required field. &lt;/li&gt;';
+			 $('#phone').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if($('#date').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;Date is a required field. &lt;/li&gt;';
+			 $('#date').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if($('#projectName').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;project Name is a required field. &lt;/li&gt;';
+			 $('#projectName').css("background-color", "yellow");
+			 flag='true';
+		} 
+		if($('#simpleSize').val().trim().length == 0){
+			 errorMessage = errorMessage + '&lt;li&gt;Plan Enrollment/Sample Size is a required field. &lt;/li&gt;';
+			 $('#simpleSize').css("background-color", "yellow"); 
+			 flag = 'true';
+		} 
+		if(!validateCollectionType()){
+			 errorMessage = errorMessage + '&lt;li&gt;Collection Type at least one needs to be checked. &lt;/li&gt;';
+			 $('#collectionTypeId').css("background-color", "yellow"); 
+			 flag = 'true';
+		}
+		if(!validateDataSection()){
+			 errorMessage = errorMessage + '&lt;li&gt;Data Section at least one needs to be checked.(if the other is chosen, please specify the data item) &lt;/li&gt;';
+			 $('#dataId').css("background-color", "yellow"); 
+			 $('#data2Id').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateArrayGenoSequence()){
+			 errorMessage = errorMessage + '&lt;li&gt;Array Data, GenoType, Sequence at least one needs to be checked.&lt;/li&gt;';
+			 $('#arrayDataId').css("background-color", "yellow"); 
+			 $('#genotypesId').css("background-color", "yellow"); 
+			 $('#sequenceId').css("background-color", "yellow"); 
+			 flag = 'true';
+		}
+		if(!validateAnalysisOther()){
+			 errorMessage = errorMessage + '&lt;li&gt;Analysis, Other Analysis at least one needs to be checked.(if the other is chosen, please specify the other analysis)&lt;/li&gt;';
+			 $('#analysisId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateDataForm()){
+			 errorMessage = errorMessage + '&lt;li&gt;Data Form at least one needs to be checked.&lt;/li&gt;';
+			 $('#dataFormId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateDataRepository()){
+			 errorMessage = errorMessage + '&lt;li&gt;Data Repository at least one needs to be checked. (if Clinic Data/Study/Data Collection/Other is chosen, please specify the companion)&lt;/li&gt;';
+			 $('#dataRepositoryId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateCompanion()){
+			 errorMessage = errorMessage + '&lt;li&gt;Companion Information at least one needs to be checked. (if the other is chosen, please specify the other data repository)&lt;/li&gt;';
+			 $('#companionInfoId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateDataSubmission()){
+			 errorMessage = errorMessage + '&lt;li&gt;Data Submission and Release Timeline at least one needs to be checked. (if the other is chosen, please specify the other data)&lt;/li&gt;';
+			 $('#dataSubmissionId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+		if(!validateDataUseLimitation()){
+			 errorMessage = errorMessage + '&lt;li&gt;Data Use Limitation at least one needs to be checked.&lt;/li&gt;';
+			 $('#dataUseId').css("background-color", "yellow");
+			 flag = 'true';
+		}
+
+		 errorMessage = errorMessage + '&lt;/ul&gt;&lt;/font&gt;';
+
+		 if(flag == 'true'){
+				$('#errorMessage').html(errorMessage);
+				return true;
+		 }else{
+				return false;
+		 }
+	}
+	
+	function getGDSPData(){
+		var variables= {};
+     variables.requested_for = userId;
+	 variables.application = 'GDSP';
+     variables.value=''; 
+	   variables.project_name='';
+		 variables.saved_id=$('#saved_id').val();		
+     var index = 0;
+     for(index=0; index &lt; names.length; index++) {
+          if (index != 0) variables.value += ',';
+          if(textFields.indexOf(names[index]) &gt; -1 ){ 
+             var value= $('#'+names[index]).val();
+						 if (names[index] == 'projectName')
+							 variables.project_name=value;
+						 if (names[index] == 'date') {
+								 value = getConvertedValue(value, '0');
+						 }
+						 variables.value +=  names[index] + '=' + value;
+					}else {
+							if($('#'+names[index]).is(':checked')){
+									variables.value +=  names[index] + '=true';
+							}else{
+									variables.value +=  names[index] + '=false';
+							} 
+					}
+      }
+		
+		return variables;
+	}
+	function getGDSPEntryData(){
+		var variables = {};
+     var index = 0;
+     for(index=0; index &lt; names.length; index++) {
+          if(textFields.indexOf(names[index]) &gt; -1 ){ 
+             var value= $('#'+names[index]).val();
+						 if (names[index] == 'date') {
+								 value = getConvertedValue(value, '0');
+						 }
+						 variables[names[index]] = value;
+					}else {
+							if($('#'+names[index]).is(':checked')){
+									variables[names[index]] = 'true';
+							}else{
+									variables[names[index]] = 'false';
+							} 
+					}
+      }		
+		return variables;
+	}
+	function clearRequiredFieldBackColor(){
+		$('#investigator').css("background-color", "");
+		$('#email').css("background-color", "");
+		$('#phone').css("background-color", "");
+		$('#date').css("background-color", "");
+		$('#projectName').css("background-color", "");
+		$('#simpleSize').css("background-color", ""); 
+		$('#collectionTypeId').css("background-color", "");
+		$('#dataId').css("background-color", "");  
+		$('#specifyOtherType').css("background-color", "");
+		$('#data2Id').css("background-color", "");  
+		$('#arrayDataId').css("background-color", ""); 
+		$('#genotypesId').css("background-color", ""); 
+		$('#sequenceId').css("background-color", ""); 
+		$('#analysisId').css("background-color", "");
+		$('#spcifiedOtherAnalysis').css("background-color", "");
+		$('#dataFormId').css("background-color", "");
+		$('#dataRepositoryId').css("background-color", "");
+		$('#specifiedRepository').css("background-color", "");
+		$('#companionInfoId').css("background-color", "");
+		$('#specifiedClinicalData').css("background-color", "");
+		$('#specifiedProtocol').css("background-color", "");
+		$('#specifiedInstrument').css("background-color", "");
+		$('#specifiedCompanion').css("background-color", "");
+		$('#dataSubmissionId').css("background-color", "");
+		$('#psecifiedOtherSubmission').css("background-color", "");
+		$('#dataUseId').css("background-color", "");
+	}
+	
+	function validateCollectionType(){
+		 if($('#prospective').is(":checked") || $('#restrospective').is(":checked")){
+				 return true;
+		 }else{
+				return false;
+		 }
+	}	
+
+	function validateDataSection(){
+		 if($('#human').is(":checked") || $('#rat').is(":checked") || $('#mouse').is(":checked") || $('#celegans').is(":checked") || $('#drosophila').is(":checked")  || $('#yeast').is(":checked") || $('#bacteria').is(":checked") || $('#nonHuman').is(":checked") || $('#germLine').is(":checked") || $('#somatic').is(":checked") || $('#dnaType').is(":checked") || $('#rnaType').is(":checked") || $('#microbiome').is(":checked") || $('#mitochrondria').is(":checked") || $('#otherType').is(":checked")){
+				 if($('#otherType').is(":checked")){
+						 if($('#specifyOtherType').val().trim().length == 0){
+								$('#specifyOtherType').css("background-color", "yellow");
+								return false;
+						 }
+				 }
+				 if($('#yeast').is(":checked")){
+						 if($('#yeastSpecies').val().trim().length == 0){
+								$('#yeastSpecies').css("background-color", "yellow");
+								return false;
+						 }
+				 }
+				 if($('#bacteria').is(":checked")){
+						 if($('#bacteriaSpecies').val().trim().length == 0){
+								$('#bacteriaSpecies').css("background-color", "yellow");
+								return false;
+						 }
+				 }
+				 if($('#nonHuman').is(":checked")){
+						 if($('#noHumanOther').val().trim().length == 0){
+								$('#noHumanOther').css("background-color", "yellow");
+								return false;
+						 }
+				 }
+			 
+				 return true;
+		 }else{
+				return false;
+		 }
+	}
+
+	function validateArrayGenoSequence(){
+	 if($('#snpArrayData').is(":checked") || $('#expressionArray').is(":checked") || $('#methylationArray').is(":checked") || $('#arrayDerive').is(":checked") || $('#microarrayData').is(":checked") || $('#sequenceData').is(":checked") || $('#somaticSnv').is(":checked") || $('#arrayCgh').is(":checked") || $('#wholeGenome').is(":checked") || $('#wholeExome').is(":checked") || $('#targetGenome').is(":checked") || $('#targetExome').is(":checked") || $('#wholeTranscriptome').is(":checked") || $('#targetTrabscriptome').is(":checked") || $('#epigenomicMark').is(":checked") || $('#sanger').is(":checked") || $('#rrna').is(":checked") ){
+			 return true;
+		}else{
+			return false;
+		}
+	}	
+
+	function validateAnalysisOther(){
+		 if($('#association').is(":checked") || $('#arrayDerivedExpression').is(":checked") || $('#rnaExpression').is(":checked") || $('#derivedMethylation').is(":checked") || $('#otherAnalysis').is(":checked")){
+				if($('#otherAnalysis').is(":checked")){
+						if( $('#spcifiedOtherAnalysis').val().trim().length == 0){
+							 $('#spcifiedOtherAnalysis').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				return true;
+		 }else{
+				return false;
+		 }
+	}
+
+	function validateDataForm(){
+		if($('#individual').is(":checked") || $('#aggregate').is(":checked") || $('#notApplicableDataForm').is(":checked")){
+			return true;
+		}else{
+			return false;
+		}
+	}	
+
+	function validateDataRepository(){
+		 if($('#arrayExpress').is(":checked") || $('#cancerGenomics').is(":checked") || $('#clinVar').is(":checked") || $('#dbGap').is(":checked") || $('#dbSnp').is(":checked") || $('#dbVar').is(":checked") || $('#ena').is(":checked") || $('#geo').is(":checked") || $('#mgi').is(":checked") || $('#genBank').is(":checked") || $('#traceArchive').is(":checked") || $('#wormbase').is(":checked") || $('#sra').is(":checked") || $('#zfin').is(":checked") || $('#OtherRepository').is(":checked") ){
+				if($('#OtherRepository').is(":checked")){
+						if( $('#specifiedRepository').val().trim().length == 0){
+								$('#specifiedRepository').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				return true;
+		 }else{
+				return false;
+		 }
+	}	
+	
+	function validateCompanion(){
+		 if($('#phenotype').is(":checked") || $('#exposure').is(":checked") || $('#surveyTool').is(":checked") || $('#clinicalData').is(":checked") || $('#protocol').is(":checked") || $('#instrument').is(":checked") || $('#otherCompanion').is(":checked")){
+				if($('#clinicalData').is(":checked")){
+						if( $('#specifiedClinicalData').val().trim().length == 0){
+							 $('#specifiedClinicalData').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				if($('#protocol').is(":checked")){
+						if( $('#specifiedProtocol').val().trim().length == 0){
+							 $('#specifiedProtocol').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				if($('#instrument').is(":checked")){
+					 if( $('#specifiedInstrument').val().trim().length == 0){
+							 $('#specifiedInstrument').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				if($('#otherCompanion').is(":checked")){
+					 if( $('#specifiedCompanion').val().trim().length == 0){
+							 $('#specifiedCompanion').css("background-color", "yellow");
+							 return false;
+						}
+				}
+
+				return true;
+		 }else{
+				return false;
+		 }
+	}	
+	
+	function validateDataSubmission(){
+		 if($('#dataCheck').is(":checked") || $('#publication').is(":checked") || $('#otherSubmission').is(":checked")){
+				if($('#otherSubmission').is(":checked")){
+						if( $('#psecifiedOtherSubmission').val().trim().length == 0){
+								$('#psecifiedOtherSubmission').css("background-color", "yellow");
+							 return false;
+						}
+				}
+				return true;
+		 }else{
+				return false;
+		 }
+
+	}	
+	
+	function validateDataUseLimitation(){
+		if($('#noHumanData').is(":checked") || $('#noLimitation').is(":checked") || $('#limitedOnly').is(":checked") || $('#limitedPurpose').is(":checked") || $('#relateToDisease').is(":checked")){
+			return true;
+		}else{
+			return false;
+		}
+	}	
+
+	function formatHistoricComment(comment){
+		if(comment.length&gt;= 50){
+				 var index = comment.indexOf('Added comment to Approval record:');
+				 return comment.substring(index);
+		}else{
+				 return  ' ';
+		}
+	}
+	
+	function getConvertedValue(value, flag){
+		if(value == ''){
+			return '';
+		}
+		var values = '';
+		 if(flag == '0'){
+				values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}
+	
+	function removeSavedRecordAfterSubmit(){
+			var id = $('#saved_id').val();
+			var data = {
+				saved_id: id,
+				action: 'DELETE'
+			};
+			var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/saveRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: data
+			};
+			$http(request).then(handleResponse, handleError);
+			function handleResponse(response) {
+				var result = response.data.result;
+				//$confirm.modal('hide');
+				console.log(result);
+			}
+			
+			function handleError(response) {
+				console.error(response);
+				//$confirm.modal('hide');
+				alert('ERROR');
+			}					
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.btn-form {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.form-label {
+  font-weight: normal
+}
+
+.full-width {
+  width: 100%;
+}
+
+label.control-label {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+legend.scheduler-border {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.align-checkboxes {
+  margin-top: 8px;
+}
+
+.inline-form-input {
+  width: 160px;
+  max-width: 160px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+input[type=checkbox], input[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 3px !important;
+}
+
+input[type=radio] {
+  bottom: 2px;
+}
+
+.input-xs {
+  height: 24px;
+  padding: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  border-radius: 3px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-data-entry&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP Data Entry Section&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id
+	};
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-11 16:54:40&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5bf38bfddb4e7a0054d8ff621f961914&lt;/sys_id&gt;&lt;sys_mod_count&gt;558&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Data Entry Section&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5bf38bfddb4e7a0054d8ff621f961914&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-26 17:23:52&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;div id="loadedRequests" class="modal fade" data-keyboard="false" data-backdrop="static"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content" style="width:1000px; height:900px; overflow-y:auto; overflow-x: hidden;"&gt;
+      &lt;div class="modal-header"&gt;
+      &lt;button type="button" class="close btn btn-xs" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;x&lt;/span&gt;&lt;/button&gt;
+           &lt;div id="anchor"&gt;
+                 &lt;font size="5"&gt;&lt;b&gt;Genomic Data Sharing Plan&lt;/b&gt;&lt;/font&gt;
+           &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;div id="errorMessage" style="display:none;"&gt;&lt;/div&gt;
+        &lt;!-- Demographics --&gt;
+        &lt;fieldset class="scheduler-border"&gt;
+          &lt;legend class="scheduler-border"&gt;Demographics&lt;/legend&gt;
+          &lt;form class="form-horizontal"&gt;
+            &lt;!-- investigator --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="investigator"&gt;Principal Investigator&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="investigator" name="investigator"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- email --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="email"&gt;Email&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="email" name="email"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- phone --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="phone"&gt;Phone&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="phone" name="phone"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- date --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="date"&gt;Date&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;div class='input-group date' id='datetimepicker'&gt;
+                  &lt;input type="text" class="form-control" id="date" name="date" readonly='true'&gt;
+                  &lt;span class="input-group-addon"&gt;
+                          &lt;span class="glyphicon glyphicon-calendar"&gt;&lt;/span&gt;
+                  &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;!-- Project Information --&gt;
+        &lt;fieldset class="scheduler-border"&gt;
+          &lt;legend class="scheduler-border"&gt;Project Information&lt;/legend&gt;
+          &lt;form class="form-horizontal"&gt;
+            &lt;!-- project number --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="valign-top col-md-5 align-right" for="projectName"&gt;Intramural Project (Z01), Grant, or Contract number (if available) &lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="projectNumber" name="projectNumber"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- projectName --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="projectName"&gt;Project Name&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="projectName" name="projectName"&gt;
+              &lt;/div&gt;
+						&lt;/div&gt;
+            &lt;!-- sampleSize --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="sampleSize"&gt;Plan enrollment/Sample Size&lt;/label&gt;
+              &lt;div class="col-md-6"&gt;
+                &lt;input type="text" class="form-control" id="simpleSize" name="sampleSize"&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- collectionTypeId --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="collectionTypeId" for="collectionTypeId"&gt;Collection Type [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="prospective"&gt;
+                  &lt;input type="checkbox" name="prospective" id="prospective" value="prospective"&gt;
+                  Prospective
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="restrospective"&gt;
+                &lt;input type="checkbox" name="retrospective" id="restrospective" value="retrospective"&gt;
+                  Retrospective
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;!-- Data --&gt;
+        &lt;fieldset class="scheduler-border"&gt;
+          &lt;legend class="scheduler-border"&gt;Data&lt;/legend&gt;
+          &lt;form class="form-horizontal"&gt;
+            &lt;!-- dataId --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="dataId"&gt;Source [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="human"&gt;
+                  &lt;input type="checkbox" name="human" id="human" value="human"&gt;
+                  Human
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="rat"&gt;
+                  &lt;input type="checkbox" name="rat" id="rat" value="rat"&gt;
+                  Rat
+                &lt;/label&gt;
+	              &lt;br&gt;
+                &lt;label class="form-label" for="mouse"&gt;
+                  &lt;input type="checkbox" name="mouse" id="mouse" value="mouse"&gt;
+                  Mouse
+                &lt;/label&gt;                
+      			     &lt;br&gt;
+                &lt;label class="form-label" for="celegans"&gt;
+                  &lt;input type="checkbox" name="celegans" id="celegans" value="celegans"&gt;
+                  C. elegans
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="drosophila"&gt;
+                  &lt;input type="checkbox" name="drosophila" id="drosophila" value="drosophila"&gt;
+                  Drosophila
+                &lt;/label&gt;				
+                &lt;br&gt;
+                &lt;label class="form-label" for="yeast"&gt;
+                  &lt;input type="checkbox" name="yeast" id="yeast" value="yeast"  ng-click="processOtherValue('yeast', 'yeastSpecies');"&gt;
+                  Yeast
+                &lt;/label&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  (Species: 
+                &lt;input placeholder="Please specify" type="text" class="form-control input-xs inline-form-input" 
+                         id="yeastSpecies" name="yeastSpecies" style="width: 100px;" disabled="disabled"&gt;&amp;nbsp; )  
+                &lt;br&gt;
+                &lt;label class="form-label" for="bacteria"&gt;
+                  &lt;input type="checkbox" name="bacteria" id="bacteria" value="bacteria" ng-click="processOtherValue('bacteria', 'bacteriaSpecies');"&gt;
+                  Bacteria
+                &lt;/label&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; (Species: 
+                &lt;input placeholder="Please specify" type="text" class="form-control input-xs inline-form-input" 
+                         id="bacteriaSpecies" name="bacteriaSpecies" style="width: 100px;" disabled="disabled"&gt;&amp;nbsp; ) 
+                &lt;br&gt;
+                &lt;label class="form-label" for="nonHuman"&gt;
+                &lt;input type="checkbox" name="nonHuman" id="nonHuman" value="nonHuman" ng-click="processOtherValue('nonHuman', 'noHumanOther');"&gt;
+                  Other
+                &lt;/label&gt;
+                   &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  (Species: 
+                &lt;input placeholder="Please specify" type="text" class="form-control input-xs inline-form-input" 
+                         id="noHumanOther" name="noHumanOther" style="width: 100px;" disabled="disabled"&gt;&amp;nbsp; ) 
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Sample Types --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="data2Id"&gt;Sample Types [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-7 align-checkboxes"&gt;
+                &lt;label class="form-label" for="germLine"&gt;
+                  &lt;input type="checkbox" name="germLine" id="germLine" value="germLine"&gt;
+                  GermLine
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="dnaType"&gt;
+                  &lt;input type="checkbox" name="dnaType" id="dnaType" value="dnaType"&gt;
+                  DNA
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="rnaType"&gt;
+                &lt;input type="checkbox" name="rnaType" id="rnaType" value="rnaType"&gt;
+                  RNA
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="microbiome"&gt;
+                &lt;input type="checkbox" name="microbiome" id="microbiome" value="microbiome"&gt;
+                  Microbiome
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="mitochrondria"&gt;
+                &lt;input type="checkbox" name="mitochrondria" id="mitochrondria" value="mitochrondria"&gt;
+                  Mitochrondria
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="otherType" width="100%"&gt;
+                &lt;input type="checkbox" name="otherType" id="otherType" value="otherSampleType"  
+                  ng-click="processOtherValue('otherType', 'specifyOtherType');"&gt;
+                  &lt;label class="form-label" for="specifyOtherType"&gt;Other&lt;/label&gt;
+                  &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                         id="specifyOtherType" name="otherSampleTypeText" disabled="disabled"&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;!-- Type --&gt;
+        &lt;fieldset class="scheduler-border"&gt;
+          &lt;legend class="scheduler-border"&gt;Type&lt;/legend&gt;
+          &lt;form class="form-horizontal"&gt;
+            &lt;!-- Array Data --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="snpArrayData" id="arrayDataId"&gt;Array Data [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-7 align-checkboxes"&gt;
+                &lt;label class="form-label full-width" for="snpArrayData"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" name="snpArrayData" id="snpArrayData" value="snp"  ng-click="processOtherValue('snpArrayData', 'numSNP');"&gt;
+											SNP Array  
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                      # of Samples
+                      &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numSNP" name="numSNP" style="width: 100px;" disabled="disabled"&gt;                      
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="expressionArray"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" name="expressionArray" id="expressionArray" value="expressArray" ng-click="processOtherValue('expressionArray', 'numExpression');"&gt;
+                    		Expression Array  
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                      # of Samples
+                      &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numExpression" name="numExpression" style="width: 100px;" disabled="disabled"&gt;                      
+                    &lt;/div&gt;
+                  &lt;/div&gt;                 
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="methylationArray"&gt;
+                   &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+               				 &lt;input type="checkbox" name="methylationArray" id="methylationArray" value="methylationArray" ng-click="processOtherValue('methylationArray', 'numMethylation');"&gt;
+                 			  Methylation Array
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                      # of Samples
+                      &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numMethylation" name="numMethylation" style="width: 100px;" disabled="disabled"&gt;                      
+                    &lt;/div&gt;
+                  &lt;/div&gt;                                  
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt; 
+              
+           &lt;!-- Genotypes --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="genotypesId" for="arrayDerive"&gt;Genotypes [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-7 align-checkboxes"&gt;
+                &lt;label class="form-label full-width" for="arrayDerive"&gt;
+                &lt;div class="row"&gt;
+									&lt;div class="col-md-6"&gt;
+                    &lt;input type="checkbox" name="arrayDerive" id="arrayDerive" value="arrayDerived" ng-click="processOtherValue('arrayDerive', 'numDerivedGenotype');"&gt;
+                      Array Derived Genotypes
+                  &lt;/div&gt;
+									&lt;div class="col-md-6"&gt;
+                        # of Samples
+                      &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numDerivedGenotype" name="numDerivedGenotype" style="width: 100px;" disabled="disabled"&gt;                 
+                  &lt;/div&gt;	
+                &lt;/div&gt;  
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="microarrayData"&gt;
+									&lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                         &lt;input type="checkbox" id="microarrayData" name="microarrayData" value="cnvFromMicroarray" ng-click="processOtherValue('microarrayData', 'numMicroarrayData');"&gt;
+                        CNV cells from Microarray                     
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                       # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numMicroarrayData" name="numMicroarrayData" style="width: 100px;" disabled="disabled"&gt;                     
+                    &lt;/div&gt;
+                  &lt;/div&gt;                  
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="sequenceData"&gt;
+                  &lt;div class="row"&gt;
+                    	&lt;div class="col-md-6"&gt;
+                        &lt;input type="checkbox" id="sequenceData" name="cnvFromSequence" value="cnvFromSequence" ng-click="processOtherValue('sequenceData', 'numSquenceData');"&gt;
+                          CNV cells derived from Sequence                        
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                       # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numSquenceData" name="numSquenceData" style="width: 100px;" disabled="disabled"&gt;                            
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="somaticSnv"&gt;
+                &lt;div class="row"&gt;
+                	&lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" id="somaticSnv" name="maf" value="maf" ng-click="processOtherValue('somaticSnv', 'numSomaticSnv');"&gt;
+                        Somatic SNV (.MAF)
+                  &lt;/div&gt;
+                  &lt;div class="col-md-6"&gt;
+                      # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numSomaticSnv" name="numSomaticSnv" style="width: 100px;" disabled="disabled"&gt;                         
+                  &lt;/div&gt;
+                &lt;/div&gt;  
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="arrayCgh"&gt;
+                &lt;div class="row"&gt;
+                	&lt;div class="col-md-6"&gt;
+                    &lt;input type="checkbox" id="arrayCgh" name="arrayCGH" value="arrayCGH" ng-click="processOtherValue('arrayCgh', 'numArrayCgh');"&gt;
+                      Array CGH CNVs
+                  &lt;/div&gt;
+                  &lt;div class="col-md-6"&gt;
+                      # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numArrayCgh" name="numArrayCgh" style="width: 100px;" disabled="disabled"&gt;                      
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Sequence --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="sequenceId" for="wholeGenome"&gt;Sequence [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-7 align-checkboxes"&gt;
+                &lt;label class="form-label full-width" for="wholeGenome"&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-md-6"&gt;
+                     &lt;input type="checkbox" id="wholeGenome" name="wholeGenome" value="wholeGenome" ng-click="processOtherValue('wholeGenome', 'numWholeGenome');"&gt;
+                      Whole Genome                      
+                  &lt;/div&gt;
+                  &lt;div class="col-md-6"&gt;
+                      # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numWholeGenome" name="numWholeGenome" style="width: 100px;" disabled="disabled"&gt;                     
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="wholeExome"&gt;
+                &lt;div class="row"&gt;
+                	&lt;div class="col-md-6"&gt;
+                    &lt;input type="checkbox" id="wholeExome" name="wholeExome" value="wholeExome" ng-click="processOtherValue('wholeExome', 'numWholeExome');"&gt;
+                      Whole Exome                    
+                  &lt;/div&gt;
+                  &lt;div class="col-md-6"&gt;
+                       # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numWholeExome" name="numWholeExome" style="width: 100px;" disabled="disabled"&gt;                      
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="targetGenome"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" id="targetGenome" name="targetGenome" value="targetGenome" ng-click="processOtherValue('targetGenome', 'numTargetGenome');"&gt;
+                        Targeted Genome
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numTargetGenome" name="numTargetGenome" style="width: 100px;" disabled="disabled"&gt;                      
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label full-width" for="targetExome"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" id="targetExome" name="targetExome" value="TargetExome" ng-click="processOtherValue('targetExome', 'numTargetedExome');"&gt;
+                        Targeted Exome                      
+                    &lt;/div&gt;
+										&lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numTargetedExome" name="numTargetedExome" style="width: 100px;" disabled="disabled"&gt;                         
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label full-width" for="wholeTranscriptome"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                      &lt;input type="checkbox" id="wholeTranscriptome" name="wholeTranscript" value="wholeTranscript" ng-click="processOtherValue('wholeTranscriptome', 'numWholeTranscriptome');"&gt;
+                        Whole Transcriptome
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numWholeTranscriptome" name="numWholeTranscriptome" style="width: 100px;" disabled="disabled"&gt;                        
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label full-width" for="targetTrabscriptome"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                       &lt;input type="checkbox" id="targetTrabscriptome" name="targetTranscript" value="targetTranscript" ng-click="processOtherValue('targetTrabscriptome', 'numTargetedTranscriptome');"&gt;
+                        Targeted Transcriptome                     
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numTargetedTranscriptome" name="numTargetedTranscriptome" style="width: 100px;" disabled="disabled"&gt;                         
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label full-width" for="epigenomicMark" ng-click="processOtherValue('', '');"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                        &lt;input type="checkbox" id="epigenomicMark" name="epigMarks" value="epigMarks" ng-click="processOtherValue('epigenomicMark', 'numEpigenomic');"&gt;
+                        Epigenomic Marks                    
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numEpigenomic" name="numEpigenomic" style="width: 100px;" disabled="disabled"&gt;                        
+                    &lt;/div&gt;
+                  &lt;/div&gt;                  
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label full-width" for="sanger"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                       &lt;input type="checkbox" id="sanger" name="sanger" value="sanger" ng-click="processOtherValue('sanger', 'numSanger');"&gt;
+                        Sanger                     
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                         # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numSanger" name="numSanger" style="width: 100px;" disabled="disabled"&gt;                      
+                    &lt;/div&gt;
+                  &lt;/div&gt;                  
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label full-width" for="rrna"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-6"&gt;
+                       &lt;input type="checkbox" id="rrna" name="rRna" value="rRna" ng-click="processOtherValue('rrna', 'numRrna');"&gt;
+                        16S rRNA                     
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6"&gt;
+                          # of Samples
+                       &lt;input placeholder="Specify Number" type="text" class="form-control input-xs inline-form-input" 
+                         id="numRrna" name="numRrna" style="width: 100px;" disabled="disabled"&gt;                       
+                    &lt;/div&gt;
+                  &lt;/div&gt;                  
+
+                &lt;/label&gt;                                
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Analysis --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="analysisId" for="association"&gt;Analysis [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="association"&gt;
+                &lt;input type="checkbox" id="association" name="linkage" value="linkage"&gt;
+                  Association/Linkage
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="arrayDerivedExpression"&gt;
+                &lt;input type="checkbox" id="arrayDerivedExpression" name="arrayDeriveExp" value="arrayDeriveExp"&gt;
+                  Array Derived Expression
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="rnaExpression"&gt;
+                &lt;input type="checkbox" id="rnaExpression" name="seqDeriveExp" value="seqDeriveExp"&gt;
+                  RNA Seq Derived Expression
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="derivedMethylation"&gt;
+                &lt;input type="checkbox" id="derivedMethylation" name="arrayDeriveMethyl" value="arrayDeriveMethyl"&gt;
+                  Array Derived Methylation
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" for="otherAnalysis"&gt;Other&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="otherAnalysis" width="100%"&gt;
+                &lt;input type="checkbox" id="otherAnalysis" name="otherType" 
+                  ng-click="processOtherValue('otherAnalysis', 'spcifiedOtherAnalysis');"&gt;
+                  &lt;label class="form-label" for="spcifiedOtherAnalysis"&gt;Other&lt;/label&gt;
+                  &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                         id="spcifiedOtherAnalysis" name="otherTypeText" disabled="disabled"&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;          
+            &lt;!-- Data Form --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="dataFormId" for="individual"&gt;Data Form [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="individual"&gt;
+                &lt;input type="checkbox" id="individual" name="individual" value="individual"&gt;
+                  Individual
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="aggregate"&gt;
+                &lt;input type="checkbox" id="aggregate" name="aggregate" value="aggregate"&gt;
+                  Aggregate
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="notApplicableDataForm"&gt;
+                &lt;input type="checkbox" id="notApplicableDataForm" name="na" value="na" ng-click="toggleNotApplicable()"&gt;
+                  Not Applicable
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Data Form --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="dataRepositoryId" for="arrayExpress"&gt;Data Repository [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="arrayExpress"&gt;
+                &lt;input type="checkbox" id="arrayExpress" name="arrayExpress" value="arrayExpress"&gt;
+                  Array Express
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="cancerGenomics"&gt;
+                &lt;input type="checkbox" id="cancerGenomics" name="cancerHub" value="cancerHub"&gt;
+                  Cancer Genomics Hub
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="clinVar"&gt;
+                &lt;input type="checkbox" id="clinVar" name="clinVar" value="clinVar"&gt;
+                  ClinVar
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="dbGap"&gt;
+                &lt;input type="checkbox" id="dbGap" name="dbGap" value="dbGap"&gt;
+                  Database of Genotypes and Phenotypes (dbGaP)
+                &lt;/label&gt;   
+                &lt;br&gt;
+                &lt;label class="form-label" for="dbSnp"&gt;
+                &lt;input type="checkbox" id="dbSnp" name="dbSNP" value="dbSNP"&gt;
+                  Database of Short Generic Variants (dbSNP)
+                &lt;/label&gt; 
+                &lt;br&gt;
+                &lt;label class="form-label" for="dbVar"&gt;
+                &lt;input type="checkbox" id="dbVar" name="dbVar" value="dbVar"&gt;
+                  Database of Genomic Structure Variation
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="ena"&gt;
+                &lt;input type="checkbox" id="ena" name="ena" value="ena"&gt;
+                  European Nucleotide Archive (ENA)
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="geo"&gt;
+                &lt;input type="checkbox" id="geo" name="geo" value="geo"&gt;
+                  Gene Expression Omnibus (GEO)
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="mgi"&gt;
+                &lt;input type="checkbox" id="mgi" name="mgi" value="mgi"&gt;
+                  Mouse Genome Informatics (MGI)
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="genBank"&gt;
+                &lt;input type="checkbox" id="genBank" name="genBank" value="genBank"&gt;
+                  GenBank
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="traceArchive"&gt;
+                &lt;input type="checkbox" id="traceArchive" name="traceArchive" value="traceArchive"&gt;
+                  Trace Archive
+                &lt;/label&gt;                
+                &lt;br&gt;
+                &lt;label class="form-label" for="wormbase"&gt;
+                &lt;input type="checkbox" id="wormbase" name="wormBase" value="wormBase"&gt;
+                  WormBase
+                &lt;/label&gt;                     
+                &lt;br&gt;
+                &lt;label class="form-label" for="sra"&gt;
+                &lt;input type="checkbox" id="sra" name="sra" value="sra"&gt;
+                  Sequence Read Archive (SRA)
+                &lt;/label&gt;  
+                &lt;br&gt;
+                &lt;label class="form-label" for="zfin"&gt;
+                &lt;input type="checkbox" id="zfin" name="zfin" value="zfin"&gt;
+                  Zebrafish Model Organism Database (ZFIN)
+                &lt;/label&gt; 
+                &lt;br&gt;
+                &lt;label class="form-label" for="OtherRepository" width="100%"&gt;
+                  &lt;input type="checkbox" id="OtherRepository" name="otherRepository" value="otherRepository"
+                    ng-click="processOtherValue('OtherRepository', 'specifiedRepository');"&gt;
+                    &lt;label class="form-label" for="specifiedRepository"&gt;Other&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                      id="specifiedRepository" name="otherRepositoryText" disabled="disabled"&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Companion Information --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="companionInfoId" for="phenotype"&gt;Companion Information [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="phenotype"&gt;
+                &lt;input type="checkbox" id="phenotype" name="phenotype" value="phenotype"&gt;
+                  Phenotype &amp;nbsp;&amp;nbsp;&lt;a href="" data-toggle="popover"  data-trigger="focus"  data-content="Data pertinent to the interpretation of genomic data, including the minimal phenotype information needed to reproduce the primary analysis, such as associated phenotype data (e.g., clinical information), exposure data, relevant metadata, and descriptive information (e.g., protocols or methodologies used) will be shared."&gt;&lt;img src="contextual_help.png" width="20px" height="20px" Alt="Help" Title="Help"/&gt;&lt;/a&gt;
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="exposure"&gt;
+                &lt;input type="checkbox" id="exposure" name="exposure" value="exposure"&gt;
+                  Exposure
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="surveyTool"&gt;
+                &lt;input type="checkbox" id="surveyTool" name="surveyTool" value="surveyTool"&gt;
+                  Survey Tool
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="clinicalData" width="100%"&gt;
+                  &lt;input type="checkbox" id="clinicalData" name="clinicData" value="clinicData"
+                    ng-click="processOtherValue('clinicalData', 'specifiedClinicalData');"&gt;
+                    &lt;label class="form-label" for="specifiedClinicalData"&gt;Clinical Data&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                      id="specifiedClinicalData" name="clinicDataText" disabled="disabled"&gt;
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="protocol" width="100%"&gt;
+                  &lt;input type="checkbox" id="protocol" name="protocol" value="protocol" 
+                    ng-click="processOtherValue('protocol', 'specifiedProtocol');"&gt;
+                    &lt;label class="form-label" for="specifiedProtocol"&gt;Study/Protocol&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                       name="protocolText" id="specifiedProtocol" disabled="disabled"&gt;
+                &lt;/label&gt;                
+                &lt;br&gt;
+                &lt;label class="form-label" for="instrument" width="100%"&gt;
+                  &lt;input type="checkbox" id="instrument" name="instrument" value="instrument" 
+                    ng-click="processOtherValue('instrument', 'specifiedInstrument');"&gt;
+                    &lt;label class="form-label" for="specifiedInstrument"&gt;Data Collection Instrument&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                       name="instrumentText" id="specifiedInstrument" disabled="disabled"&gt;
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="otherCompanion" width="100%"&gt;
+                  &lt;input type="checkbox" id="otherCompanion" name="otherCompanion" value="otherCompanion"
+                    ng-click="processOtherValue('otherCompanion', 'specifiedCompanion');"&gt;
+                    &lt;label class="form-label" for="specifiedCompanion"&gt;Other&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                       id="specifiedCompanion" name="otherCompanionText" disabled="disabled"&gt;
+                &lt;/label&gt;                
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;!-- Submission Information --&gt;
+        &lt;fieldset class="scheduler-border"&gt;
+          &lt;legend class="scheduler-border"&gt;Submission Information&lt;/legend&gt;
+          &lt;form class="form-horizontal"&gt;
+            &lt;!-- dataCheck --&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="dataSubmissionId" for="dataCheck"&gt;Data Submission and Release Timeline &lt;div style="white-space: auto;"&gt;[Check all that apply]&lt;/div&gt;&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="dataCheck"&gt;
+                &lt;input type="checkbox" id="dataCheck" name="cleanAnalysis" value="cleanAnalysis"&gt;
+                  Following data cleaning, analysis, and quality checks
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="publication"&gt;
+                &lt;input type="checkbox" id="publication" name="publication" value="publication"&gt;
+                  At the time of publication
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="otherSubmission" width="100%"&gt;
+                  &lt;input type="checkbox" id="otherSubmission" name="otherSubmission"  value="otherSubmission"
+                    ng-click="processOtherValue('otherSubmission', 'psecifiedOtherSubmission');"&gt;
+                    &lt;label class="form-label" for="psecifiedOtherSubmission"&gt;Other&lt;/label&gt;
+                    &lt;input placeholder="Please Specify" type="text" class="form-control input-xs inline-form-input" 
+                       id="psecifiedOtherSubmission" name="otherSubmissionText" disabled="disabled"&gt;
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label class="control-label col-md-5" id="dataUseId" for="noHumanData"&gt;Data Use Limitation [Check all that apply]&lt;/label&gt;
+              &lt;div class="col-md-6 align-checkboxes"&gt;
+                &lt;label class="form-label" for="noHumanData"&gt;
+                &lt;input type="checkbox" id="noHumanData" name="noHumanData" value="noHumanData"  ng-click="toggleNoHumanData()"&gt;
+                  Not Applicable, no human data
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="noLimitation"&gt;
+                &lt;input type="checkbox" id="noLimitation" name="noUseLimitation" value="noUseLimitation"&gt;
+                  No data use limitations
+                &lt;/label&gt;
+                &lt;br&gt;
+                &lt;label class="form-label" for="limitedOnly"&gt;
+                &lt;input type="checkbox" id="limitedOnly" name="limitedOnly" value="limitedOnly"&gt;
+                  Limited only by the terms of the Data Use Certification
+                &lt;/label&gt;
+                &lt;br&gt;                
+                &lt;label class="form-label" for="limitedPurpose"&gt;
+                &lt;input type="checkbox" id="limitedPurpose" name="limitToHealth" value="limitToHealth"&gt;
+                  Limited to health/medical/biomedical purposes 
+                  &lt;br&gt;
+                  &lt;span style="display: inline-block; margin-left: 16px"&gt;
+                   (doesn't include the study of population origins or ancestry)
+                  &lt;/span&gt;
+                &lt;/label&gt;
+                &lt;br&gt;                      
+                &lt;label class="form-label" for="relateToDisease"&gt;
+                &lt;input type="checkbox" id="relateToDisease" name="relateToDisease" value="relateToDisease"&gt;
+                  Must be related to the specified disease
+                &lt;/label&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;            
+          &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;div class="clearfix"&gt;
+          &lt;div id="regularSubmit" class="pull-right"&gt;
+            &lt;input type="button" class="btn btn-primary btn-sm btn-form" name="saveBt"   value="SAVE" ng-click="submitSaveRequest()"/&gt;
+            &lt;input type="button" class="btn btn-primary btn-sm btn-form" name="submitBt" value="SUBMIT" ng-click="loadRequestConfirm();"/&gt;
+            &lt;input type="button" class="btn btn-primary btn-sm btn-form" name="cancelBt" value="CANCEL" ng-click="closeModal()"/&gt;
+          &lt;/div&gt;
+          &lt;div id="resubmit" style="display:none;" class="pull-right"&gt;
+            &lt;input type="button" class="btn btn-primary btn-sm btn-form" name="submitBt" value="SUBMIT" ng-click="loadResubmitConfirm()"/&gt; 
+            &lt;input type="button" class="btn btn-primary btn-sm btn-form" name="cancelBt" value="CANCEL" ng-click="closeModal()"/&gt;
+          &lt;/div&gt;          
+        &lt;/div&gt;
+             &lt;input type='hidden' id='ccr_id'/&gt;
+             &lt;input type='hidden' id='saved_id'/&gt;
+          &lt;/div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="confirmSubmitDiv" class="modal fade"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 id="lblTitleConfirmYesNo" class="modal-title"&gt;Confirmation&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p align="center" id="message1"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button id="btnYesConfirm" 
+                type="button" class="btn btn-primary" 
+                style="width: 70px; text-align: center;"&gt;Yes&lt;/button&gt;
+                &lt;button id="btnNoConfirm" 
+                type="button" class="btn btn-default" 
+                style="width: 70px; text-align: center;"&gt;No&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="confirmResubmitDiv" class="modal fade"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 id="lblTitleConfirmYesNo" class="modal-title"&gt;Confirmation&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p align="center" id="message2"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button id="btnYesResubmitConfirm" 
+                type="button" class="btn btn-primary" 
+                style="width: 70px; text-align: center;"&gt;Yes&lt;/button&gt;
+                &lt;button id="btnNoResubmitConfirm" 
+                type="button" class="btn btn-default" 
+                style="width: 70px; text-align: center;"&gt;No&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_Resubmit_fixing_20170726">12194540db988b0054d8ff621f9619ae</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-07-26 17:48:55</sys_created_on>
+<sys_id>2e194540db988b0054d8ff621f9619ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-26 17:48:55</sys_updated_on>
+<table/>
+<target_name>GDSP Data Entry Section</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_d5c0724edb12360054d8ff621f96193b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, spUtil, $http) {
+  /* widget controller */
+  var c = this;
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 1,
+		currentPage: 0
+	};
+
+	c.columns = [
+		{
+			key: 'gdsp_id',
+			label: 'GDSP ID',
+			sort: 'asc'
+		},
+		{
+			key: 'principal_name',
+			label: 'Principal Name',
+			sort: 'asc'
+		},
+		{
+			key: 'project_name',
+			label: 'Project Name',
+			sort: 'asc'
+		},
+		{
+			key: 'status',
+			label: 'Status',
+			sort: 'asc'
+		},
+		{
+			key: 'approval',
+			label: 'Approval',
+			sort: null
+		},
+		{
+			key: 'submitted_date',
+			label: 'Submitted Date',
+			sort: 'asc'
+		},
+		{
+			key: 'actions',
+			label: 'Actions',
+			sort: null
+		}		
+	];
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		return new Array(Math.ceil(c.data.tasks.length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.tasks = c.data.tasks.sort(compareRows);
+		}
+	};
+	//start client js	
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna']; 
+	var my_sys_id = c.data.info.userId;
+	var sessionId = c.data.info.sessionId;
+  
+	$scope.viewItem = function(id, gdsp_id){
+		var data = {
+			requestedid: id	
+		};
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response) {
+			var result = response.data.result;
+			cleanDisplayDiv();
+			resetRequestValue();
+			$('#displayRequestId').html(gdsp_id);
+			var variables = result.variables;
+			var comments = result.comments;
+			var comment_str = parse(comments);
+			$('#commentReviewId1').empty();
+			$('#commentReviewId1').append(comment_str);
+			if(comment_str.length &lt; 137){
+            $('#pre_comments_div').hide();
+            $('#comments_div').hide();
+      }else{
+          $('#pre_comments_div').show();
+          $('#comments_div').hide();
+      }
+			loadSubmittedData(variables);
+			$('#displayRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);}); 
+			$('#closeButton').show();
+			$('#submitButton').hide();
+			$('#sd_div').hide();
+		}
+		function handleError(response) {
+			console.error(response);
+			$confirm.modal('hide');
+			alert('ERROR');
+		}			
+	};
+	$scope.report = function(id, gdsp_id){
+		window.open('$sp.do?id=gdsp_report_page&amp;itemId='+id+'&amp;ticket='+gdsp_id, '_BLANK');
+	};
+	$scope.withdraw = function(id){
+		 $('#messageWithdraw').html('Are you sure you want to withdraw this request?');
+		 $('#withdrawDiv').modal('show');
+		 $('#btnYesWithdraw').off('click').click(function(){			
+					withdrawRequest(id, my_sys_id);			     
+					$('#withdrawDiv').modal('hide');
+			});						
+		 $('#btnNoWithdraw').off('click').click(function(){			
+					 $('#withdrawDiv').modal('hide');
+			});						
+
+	};
+	$scope.displayResubmit = function (request_id){
+		  var variables= {};
+      variables.requestedid = request_id;
+			var request = {
+				url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+				method: 'POST',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: variables
+			};
+			$http(request).then(handleResponse, handleError);
+			function handleResponse(response) {
+				var result = response.data.result;
+				var variables = result.variables;
+				var comments = result.comments;
+				var comment_str = parse(comments);
+				$('#commentReviewId1').empty();
+				$('#commentReviewId1').append(comment_str);
+				$('#resubmitCommentsId').val(comments);
+				if(comment_str.length &lt; 137){
+							$('#pre_comments_div').hide();
+							$('#comments_div').hide();
+				}else{
+						$('#pre_comments_div').show();
+						$('#comments_div').hide();
+				}
+				loadResubmittedData(variables);
+				 
+	       $('#ccr_id').val(request_id);
+         $('#errorMessage').hide();
+         $('#regularSubmit').hide();
+         $('#resubmit').show();			
+				 $('#loadedRequests').modal('show').on('shown.bs.modal', function(){$('#displayRequests .modal-content').scrollTop(0);});
+			}
+			function handleError(response) {
+				console.error(response);
+				$confirm.modal('hide');
+				alert('ERROR');
+			}				
+		
+		
+	}
+	function withdrawRequest(id){
+		var variables = {};
+		variables.requestedid = id;
+	  var request = {
+			url: '/api/naci/gdspapi/fetchSubmittedRequestData',
+			method: 'POST',
+			beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			data: variables
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response) {
+			var result = response.data.result;
+			var variables = result.variables;
+			var comments = result.comments;
+			var data = getGDSPData(variables, my_sys_id);
+			data.comments = comments;
+			var gdspData = JSON.stringify(data);
+			saveWithdrawRequestData(gdspData, id);			
+		}
+		function handleError(response) {
+			console.error(response);
+			$confirm.modal('hide');
+			alert('ERROR');
+		}					
+	}
+	function saveWithdrawRequestData(data, id){
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/saveRequestData',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: data
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			withdrawDeletion(id);
+		}
+		function handleError(){
+			console.error(response);
+			alert('ERROR');
+		}
+	}
+	function withdrawDeletion(id){
+		var variables= {};
+		variables.id = id;
+		variables.method = 'withdraw';
+		var request = {
+				method: 'POST',
+				url: '/api/naci/gdspapi/gsdspUtil',
+				beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				data: variables
+		};
+		$http(request).then(handleResponse, handleError);
+		function handleResponse(response){
+			var result = response.data.result;
+			console.log(result);
+		}
+		function handleError(){
+			console.error(response);
+			alert('ERROR');
+		}		
+	}
+	function getGDSPData(data, id){
+		var variables= {};
+     variables.requested_for = my_sys_id;
+     variables.value =''; 
+	   variables.project_name ='';
+		 variables.saved_id = '';		//id is for update?
+     var index = 0;
+		 for(key in data){
+			  if (index != 0) variables.value += ',';
+			  if (key == 'projectName'){
+					 variables.project_name = data[key];
+				}
+			  variables.value  +=  key + '=' + data[key];
+			 index++;
+		 }
+		
+		return variables;
+	}
+	
+	function cleanDisplayDiv(){
+		$('#pre_comments_div').hide();
+		$('#closeButton').hide();
+		$('#comments_div').hide();
+		$('#submitButton').hide();
+	}
+	function parse(allcomments) {
+	 var comments = allcomments.split("ENDCOMMENTS");
+	 var commentsblock = '&lt;table border="1" width="100%"&gt;&lt;tr&gt;&lt;th&gt;Role&lt;/th&gt;&lt;th&gt;Approver&lt;/th&gt;&lt;th&gt;Approval Status&lt;/th&gt;&lt;th&gt;Comments&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;'
+	 for(i = 0; i &lt; comments .length; i++){
+			 if (comments[i].length &gt; 40) { 
+				 if (comments[i][0] == '\n') {
+						 var lastI = 0;
+						 while (lastI &lt; comments[i].length &amp;&amp; comments[i][lastI] == '\n') 
+									lastI ++;
+						 comments[i] = comments[i].substring(lastI,comments[i].length);
+				 }
+				 var t = comments[i].substring(0,22);
+				 var approver = comments[i].substring(comments[i].indexOf('(ENDROLE)')+9,comments[i].length);
+				 var results = comments[i].substring(comments[i].indexOf('(Additional comments)') + 57,comments[i].indexOf('(Additional comments)') + 65);
+				 var comm= comments[i].substring(comments[i].indexOf('(Additional comments)') + 66, comments[i].indexOf('(role)'));
+				 var role = comments[i].substring(comments[i].indexOf('(role)') + 6, comments[i].indexOf('(ENDROLE)')); 
+				 commentsblock = commentsblock + "&lt;tr&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + role + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + approver + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + results+ "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + comm + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;td&gt;" + t + "&lt;/td&gt;";
+				 commentsblock = commentsblock + "&lt;/tr&gt;";
+			 }
+		}
+		commentsblock = commentsblock + "&lt;/table&gt;";
+		return commentsblock;
+	}	
+	
+	function loadSubmittedData(data){
+	  for(key in data){
+			var value = getValue(key, data[key]);
+			$('#'+key+"1").html(value);
+		}
+	}
+	
+	function loadResubmittedData(data){
+	  for(key in data){
+			setResubmitValue(key, data[key]);
+		}
+		
+	}
+	
+  function getValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           return getConvertedValue(value, '1');
+        }else{
+           return value;
+        }
+     }else{
+        if(value == "true"){
+           return '&lt;input type="checkbox" id="'+ name +'1" checked="true" disabled="true"/&gt;';
+        }else{
+           return '&lt;input type="checkbox" id="' + name+ '1" disabled="true"/&gt;';
+        }
+        return value; 
+     }
+  }	
+	
+	  function setResubmitValue(name, value){
+     if(textFields.indexOf(name) != -1 ){ 
+        if(name == 'date'){
+           $('#'+name).val(getConvertedValue(value, '1'));
+        }else{
+           $('#'+name).val(value);
+        }
+     }else{
+        if(value == "true"){
+            $('#'+name).prop('checked', true); 
+        }else{
+            $('#'+name).prop('checked', false); 
+        }
+			  otherFieldWatcher(name, value);	 
+     }
+  }
+	
+	function otherFieldWatcher(name, value){
+		var otherCheckbox = ['otherType', 'otherAnalysis', 'OtherRepository', 'clinicalData', 'protocol', 'instrument', 'otherCompanion', 'otherSubmission', 'yeast',  'bacteria', 'nonHuman', 'snpArrayData', 'expressionArray', 'methylationArray', 'arrayDerive','microarrayData','sequenceData','somaticSnv','arrayCgh','wholeGenome','wholeExome','targetGenome','targetExome','wholeTranscriptome','targetTrabscriptome','epigenomicMark','sanger','rrna'];
+		var otherField = ['specifyOtherType', 'spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument', 'specifiedCompanion', 'psecifiedOtherSubmission', 'yeastSpecies', 'bacteriaSpecies','noHumanOther', 'numSNP', 'numExpression', 'numMethylation', 'numDerivedGenotype', 'numMicroarrayData','numSquenceData','numSomaticSnv','numArrayCgh','numWholeGenome','numWholeExome','numTargetGenome','numTargetedExome','numWholeTranscriptome','numTargetedTranscriptome','numEpigenomic','numSanger','numRrna'];
+	  
+		var index = otherCheckbox.indexOf(name);
+
+		if( index &gt;= 0){
+			if(value == 'true'){
+				$('#'+otherField[index]).prop('disabled', false);
+			}else{
+				$('#'+otherField[index]).prop('disabled', true);
+			}
+		}
+	}
+	
+  function getConvertedValue(value, flag){
+		 if(flag == '0'){
+				var values = value.split('/');
+				return values[0]+'-'+values[1] + '-' + values[2];
+			}else {
+				var values = value.split('-');
+				return values[0]+'/'+values[1] + '/' + values[2];
+			}
+	}	
+	
+  function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i]).val('');
+      }else{
+		   $('#'+names[i] +"1").html('&lt;input type="checkbox" id="'+ names[i] +"1" + '" disabled="true"/&gt;');
+           $('#'+names[i]).prop('checked', false); 
+		   $('#'+names[i]).removeAttr("disabled");
+		  
+      }
+    }
+    $('#withdrawCommentsId').val('');
+    $('#withdrawSubmitId').val('');
+	$('#saved_id').val('');  
+  }	
+	spUtil.recordWatch($scope, "sc_req_item", "", function(name, data) {  
+			spUtil.update($scope);
+	});	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-submitted-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP Submitted Table&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.tasks = [];
+	data.info = [];
+
+	var session_id = gs.getSessionToken();
+	var my_sys_id = gs.getUserID();
+	data.info = {
+		userId: my_sys_id,
+		sessionId: session_id
+	};
+	
+	var gr = new GlideRecord("sc_cat_item");
+      gr.addQuery("short_description", "CCR Genomic Data Sharing Plan");
+      gr.query();
+      gr.next();
+	var cat_item_id = gr.getValue('sys_id');
+	
+	var gr_requested_items = new GlideRecord('sc_req_item');
+  var gd_requested_items = gr_requested_items.addQuery('request.opened_by', my_sys_id);
+	gd_requested_items.addOrCondition('request.requested_for', my_sys_id);
+  var gc_requested_items = gr_requested_items.addQuery('cat_item', cat_item_id);
+  gr_requested_items.addActiveQuery();
+  gr_requested_items.orderByDesc('number');
+  gr_requested_items.query();
+	while (gr_requested_items.next()){
+			var orginId = '';
+			var tickerNum = '';
+			var org_ticket_num = '';
+			var version = '';
+			var hasParent = '';
+			var selectedOrginId = '';	
+		
+			selectedOrginId = gr_requested_items.contact_type;
+		 
+      if(selectedOrginId == '' || selectedOrginId === undefined || selectedOrginId == 'Web' ){
+            orginId = gr_requested_items.sys_id;
+            org_ticket_num = gr_requested_items.number;
+            hasParent = 'false';
+       }else{
+            var orgIds = selectedOrginId.split("=");
+            var gr_tracking_item = GlideRecord('u_ccr_tracking_t');
+								gr_tracking_item.addQuery('u_orgid',orgIds[0]);
+                gr_tracking_item.query();
+
+                if(gr_tracking_item.getRowCount() &gt; 0){
+                     gr_tracking_item.next();
+                     orginId = gr_tracking_item.u_orgid;
+                     org_ticket_num = gr_tracking_item.u_ticket_number;
+                     version = orgIds[1];
+                     hasParent = 'true';
+                 }else {
+                     orginId = gr_requested_items.sys_id;
+                     org_ticket_num = gr_requested_items.number;
+                     hasParent = 'false';
+									}
+       }		
+       if(hasParent == 'true'){
+            ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8) + '-' + version;
+       }else{
+            ticketNum = 'CCR_GDSP' + org_ticket_num.substring(8);
+       }		
+		
+			 var items= {};
+		   items.sys_id = gr_requested_items.sys_id.toString();
+		   items.gdsp_id = ticketNum;
+		   items.principal_name = gr_requested_items.u_investigator.toString();
+			 items.project_name = gr_requested_items.u_project_name.toString();
+		   items.status = gr_requested_items.context.stage.name.toString(); 
+		   items.approval = gr_requested_items.context.stage.name.toString();
+		   items.submitted_date = gr_requested_items.sys_created_on.toString();
+			 items.orginId = orginId.toString();
+		   items.org_ticket_num = org_ticket_num.toString();
+		   data.tasks.push(items);
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 20:25:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d5c0724edb12360054d8ff621f96193b&lt;/sys_id&gt;&lt;sys_mod_count&gt;193&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Submitted Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_d5c0724edb12360054d8ff621f96193b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-26 17:47:58&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;br/&gt;
+&lt;div class="panel panel-success" ng-show="c.data.tasks.length &gt; 0"&gt;
+  &lt;div class="panel-heading" id="heading_submittedItems" role="tab"&gt;
+    &lt;h4 class="panel-title"&gt;
+      &lt;a aria-controls="collapseSubmittedItems" aria-expanded="true" data-target="#collapseSubmittedItems" data-toggle="collapse" role="button"&gt;
+        &lt;span class="accordion_icon"&gt;&lt;i class="fa fa-minus-square"&gt;&lt;/i&gt;&lt;/span&gt; 
+        Submitted GDSPs &lt;span class="badge" id="ritm_count"&gt;{{ c.data.tasks.length }}&lt;/span&gt;&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+  
+  &lt;div aria-labelledby="heading_submittedItems" class="panel-collapse collapse in table-responsive" id="collapseSubmittedItems" role="tabpanel"&gt;
+    &lt;table class="table table-bordered table-striped table-condensed table-hover"&gt;
+			&lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th 
+            ng-repeat="column in c.columns track by $index" 
+            ng-click="c.toggleSort($index)" 
+            style="cursor: pointer"&gt;
+        		{{ column.label }}
+          	&lt;span 
+            	class="glyphicon small" 
+              ng-class="{
+                        	'glyphicon-chevron-up': column.sort === 'asc',
+                        	'glyphicon-chevron-down': column.sort === 'desc'
+                        }"&gt;
+          	&lt;/span&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tr ng-repeat="row in c.data.tasks track by $index"
+          ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                   $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize"&gt;
+        &lt;td class="ritm_number"&gt;{{ row.gdsp_id }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.principal_name }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.project_name }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.status }}&lt;/td&gt;
+        &lt;td class="ritm_number"&gt;
+        	&lt;span ng-switch on='row.approval'&gt;
+            &lt;span ng-switch-when='Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA review"  title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='Waiting for SD Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='SD Rejected - Waiting for GPA Review'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_active.gifx" Alt="Waiting for GPA Review" title="Waiting for GPA Review"/&gt;&lt;img src="/images/workflow_pending.gifx" Alt="Waiting for SD Review" title="Waiting for SD Review"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-when='SD Rejected - Waiting for PI Resubmit'&gt;&lt;img src="/images/workflow_approved.gifx" Alt="Request Submitted" title="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA Approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="SD Rejected" title="SD Rejected"/&gt;&lt;img src="/images/workflow_rejected.gifx" Alt="GPA Rejected" title="GPA Rejected"/&gt;&lt;/span&gt;
+            &lt;span ng-switch-default&gt;&lt;img src="/images/workflow_approved.gifx" title="Request Submitted" Alt="Request Submitted"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="GPA approved" title="GPA Approved"/&gt;&lt;img src="/images/workflow_approved.gifx" Alt="SD Approved" title="SD Approved"/&gt;&lt;/span&gt;
+      		&lt;/span&gt;  
+        &lt;/td&gt;
+        &lt;td class="ritm_number"&gt;{{ row.submitted_date}}&lt;/td&gt;
+        &lt;td&gt;
+        	&lt;button class="btn btn-sm btn-primary" ng-click="viewItem(row.sys_id, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+          	View
+         	&lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-show="row.approval == 'Waiting for PI Resubmit' || row.approval == 'Completed'" ng-click="displayResubmit(row.sys_id)" style="width: 70px; text-align: center;"&gt;
+            Resubmit
+          &lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-show="row.approval != 'Completed' " ng-click="withdraw(row.sys_id)" style="width: 70px; text-align: center;"&gt;
+            Withdraw
+          &lt;/button&gt;
+          &lt;button class="btn btn-sm btn-primary" ng-click="report(row.sys_id, row.gdsp_id)" style="width: 70px; text-align: center;"&gt;
+            Export
+         	&lt;/button&gt;
+             &lt;input type="hidden" id="{{ row.sys_id }}_orginId" value="{{ row.orginId}}"/&gt;
+						 &lt;input type="hidden" id="{{ row.sys_id }}_ticket_num" value="{{ row.org_ticket_num }}"/&gt;
+						 &lt;input type="hidden" id="{{ row.sys_id }}_ticket" value="{{row.gdsp_id}}"/&gt;
+       	&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+	&lt;!-- select the page size --&gt;
+	&lt;form class="form-inline pull-right"&gt;
+    &lt;div class="pagination form-group"&gt;
+      &lt;label for="pageSize"&gt;
+      	Items per page
+      &lt;/label&gt;
+      
+      &lt;select 
+      	id="pageSize" 
+        class="form-control"
+				style="display: inline"
+        ng-init="c.pagination.currentSize = c.pagination.pageSizes[1]"
+        ng-model="c.pagination.currentSize"
+        ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;  
+  
+  &lt;!-- select the page index (offset) --&gt;
+  &lt;ul class="pagination" ng-show="c.pagination.currentSize &lt; c.data.tasks.length"&gt;
+    &lt;li
+      ng-repeat="index in c.getRange() track by $index"
+      ng-click="c.setPage($index)"
+      &gt;
+      &lt;a href=""&gt;
+      	{{ $index + 1 }}
+      &lt;/a&gt;
+    &lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- confirm modal --&gt;
+&lt;div id="withdrawDiv" class="modal fade"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 id="lblTitleConfirmYesNo" class="modal-title"&gt;Confirmation&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p align="center" id="messageWithdraw"&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button id="btnYesWithdraw" 
+                type="button" class="btn btn-primary" 
+                style="width: 70px; text-align: center;"&gt;Yes&lt;/button&gt;
+                &lt;button id="btnNoWithdraw" 
+                type="button" class="btn btn-default" 
+                style="width: 70px; text-align: center;"&gt;No&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="CCR_GDSP_Resubmit_fixing_20170726">12194540db988b0054d8ff621f9619ae</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-07-26 17:48:55</sys_created_on>
+<sys_id>ee194540db988b0054d8ff621f9619ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-26 17:48:55</sys_updated_on>
+<table/>
+<target_name>GDSP Submitted Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
