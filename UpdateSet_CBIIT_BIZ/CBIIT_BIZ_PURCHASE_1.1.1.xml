@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-27 13:48:33">
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:47:07</sys_created_on>
+<sys_id>d94bdd50db14cb0054d8ff621f9619ba</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:47:50</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Atom</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI DOE Collaboration</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:43:40</sys_created_on>
+<sys_id>eb6a5d50db14cb0054d8ff621f961946</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:43:55</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cancer Data Ecosystem</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f9aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:42:50</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Juli Klemm">71bffc696f6f2100e04fd15eae3ee4b5</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cancer Genomics Cloud Pilots</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f1aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:42:53</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot NCI Intramural Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>69aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:42:56</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot Performance Metrics Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-13 13:23:49</sys_created_on>
+<sys_id>5f9f85b3dbff3200f59974131f9619b2</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:42:58</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Malcolm James">a6091f9c6fae2100250e6bbeae3ee429</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Data Commons Framework</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:44:44</sys_created_on>
+<sys_id>54aa1190db14cb0054d8ff621f961930</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:45:37</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Expand Data Commons and Data Sharing</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b5aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:43:00</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Lawrence Wright">9dbffc696f6f2100e04fd15eae3ee407</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Genomics Data Commons Metadata Validator</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:47:31</sys_created_on>
+<sys_id>5f5bd190db14cb0054d8ff621f96195e</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:47:58</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>JDACS4C</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI DOE Collaboration</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:45:21</sys_created_on>
+<sys_id>7fca1d50db14cb0054d8ff621f9619d8</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:45:45</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Malcolm James">a6091f9c6fae2100250e6bbeae3ee429</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI Cancer Data Commons Framework</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>31aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:42:36</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI Cancer Research Data Commons</u_fy17_portfolio_items_group_by_program>
+<u_key>na</u_key>
+<u_type>Program</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:46:30</sys_created_on>
+<sys_id>761b1d50db14cb0054d8ff621f9619df</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-07-27 13:46:39</sys_updated_on>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI DOE Collaboration</u_fy17_portfolio_items_group_by_program>
+<u_key>na</u_key>
+<u_type>Program</u_type>
+</u_cbiit_biz_purchase_program_info>
+</unload>
