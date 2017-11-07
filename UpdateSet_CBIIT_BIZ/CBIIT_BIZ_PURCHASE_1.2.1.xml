@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-11-03 14:53:57">
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:52:24</sys_created_on>
+<sys_id>d94bdd50db14cb0054d8ff621f9619ba</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:46:57</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_approver>
+<u_federal_lead display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Atom</u_fy17_portfolio_items_group_by_program>
+<u_key>DOE NCI Collaboration</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-12-02 18:56:45</sys_created_on>
+<sys_id>f2618e4cdb6722004c89ff621f96192c</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:55:13</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Maurice Edmonds">32091f9c6fae2100250e6bbeae3ee433</u_federal_approver>
+<u_federal_lead display_value="Stephen Benitez">1b0a1ecfdbe88b00274df4b40f9619c7</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Audio Visual</u_fy17_portfolio_items_group_by_program>
+<u_key>Unified Communications Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Serivce</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>fdaa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:56:30</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Daoud Meerzaman">20cff0a96f6f2100e04fd15eae3ee4e0</u_federal_approver>
+<u_federal_lead display_value="Daoud Meerzaman">20cff0a96f6f2100e04fd15eae3ee4e0</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Bioinformatics Support and Training</u_fy17_portfolio_items_group_by_program>
+<u_key>Informatics Systems, Support and Training</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>a5aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:19:14</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Edward Helton">01bfbc696f6f2100e04fd15eae3ee492</u_federal_approver>
+<u_federal_lead display_value="Smita Hastak">e4df78a96f6f2100e04fd15eae3ee4ae</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>BRIDG</u_fy17_portfolio_items_group_by_program>
+<u_key>Imaging Informatics for Precision Medicine</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>e5aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:07:43</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Christo Andonyadis">ea091f9c6fae2100250e6bbeae3ee42a</u_federal_approver>
+<u_federal_lead display_value="Christo Andonyadis">ea091f9c6fae2100250e6bbeae3ee42a</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>C3D Tools Production Support and Clinical Connector for C3D</u_fy17_portfolio_items_group_by_program>
+<u_key>Clinical Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-04-13 18:48:54</sys_created_on>
+<sys_id>eade6d26db06fa0054d8ff621f961949</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:08:29</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Mervi Heiskanen">60bfbc696f6f2100e04fd15eae3ee420</u_federal_approver>
+<u_federal_lead display_value="Philippa Barnes">f3455587dbdbe2006a28f9231f9619de</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>caNanoLab Data Curation</u_fy17_portfolio_items_group_by_program>
+<u_key>Nano Technology Systems and Data</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:52:24</sys_created_on>
+<sys_id>eb6a5d50db14cb0054d8ff621f961946</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:09:03</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cancer Data Ecosystem</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f9aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:09:23</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Juli Klemm">71bffc696f6f2100e04fd15eae3ee4b5</u_federal_approver>
+<u_federal_lead display_value="Juli Klemm">71bffc696f6f2100e04fd15eae3ee4b5</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cancer Genomics Cloud Pilots</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>3daa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:10:28</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Shea Manley">11dfb8a96f6f2100e04fd15eae3ee4f4</u_federal_approver>
+<u_federal_lead display_value="Geneva Flanagan-Benedict">57d0f103dbe00b0085b7fd0d0f961901</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CBIIT Solutions</u_fy17_portfolio_items_group_by_program>
+<u_key>Customer Service and Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>7daa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:11:02</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Javis Brown">3a091f9c6fae2100250e6bbeae3ee42d</u_federal_approver>
+<u_federal_lead display_value="Javis Brown">3a091f9c6fae2100250e6bbeae3ee42d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CBIIT Staff Salaries, Awards, and Training Support</u_fy17_portfolio_items_group_by_program>
+<u_key>CBIIT Business Operations Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>71aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:11:13</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="David Patton">64cff0a96f6f2100e04fd15eae3ee4dd</u_federal_approver>
+<u_federal_lead display_value="David Patton">64cff0a96f6f2100e04fd15eae3ee4dd</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CDMS</u_fy17_portfolio_items_group_by_program>
+<u_key>Clinical Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>6daa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:11:45</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Cliff Wong">ab091f9c6fae2100250e6bbeae3ee452</u_federal_approver>
+<u_federal_lead display_value="Alex Nordan">d7091f9c6fae2100250e6bbeae3ee444</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Central Receiving</u_fy17_portfolio_items_group_by_program>
+<u_key>IT Operations Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b1aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:12:27</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="John Otridge">bfdfbca96f6f2100e04fd15eae3ee4a3</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CGAP and Gene Collections Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Basic Research Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f1aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:13:22</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot NCI Intramural Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>69aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:13:24</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Cloud Pilot Performance Metrics Evaluation</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>fdaa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:13:50</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Shea Manley">11dfb8a96f6f2100e04fd15eae3ee4f4</u_federal_approver>
+<u_federal_lead display_value="Dana Huff">cabca257db208b0085b7fd0d0f9619a4</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Communications Consultation</u_fy17_portfolio_items_group_by_program>
+<u_key>Customer Service and Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>2daa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:14:09</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_approver>
+<u_federal_lead display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CRF Harmonization and Standardization Initiative</u_fy17_portfolio_items_group_by_program>
+<u_key>Metadata Software and Services Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b9aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:14:26</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="John Otridge">bfdfbca96f6f2100e04fd15eae3ee4a3</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CTD2 Dashboard Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Basic Research Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>6daa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:14:29</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="John Otridge">bfdfbca96f6f2100e04fd15eae3ee4a3</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CTD2 Data Matrix Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Basic Research Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>a9aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>9</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:15:41</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_federal_approver>
+<u_federal_lead display_value="Stephanie Whitley">ebdfbca96f6f2100e04fd15eae3ee461</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>CTRP-Operations Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Clinical Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>31aa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:15:59</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Shea Manley">11dfb8a96f6f2100e04fd15eae3ee4f4</u_federal_approver>
+<u_federal_lead display_value="Abi Kronenberg">75889991db74074085b7fd0d0f961998</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Data Calls and Legislative Compliance</u_fy17_portfolio_items_group_by_program>
+<u_key>Customer Service and Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>7daa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:19:21</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Edward Helton">01bfbc696f6f2100e04fd15eae3ee492</u_federal_approver>
+<u_federal_lead display_value="Ulli Wagner">cfdf7ca96f6f2100e04fd15eae3ee490</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Data Integration for Imaging Informatics</u_fy17_portfolio_items_group_by_program>
+<u_key>Imaging Informatics for Precision Medicine</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>e1aa9662db0ae2002cbcdb0e0f961977</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:21:19</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_federal_approver>
+<u_federal_lead display_value="Eric Stahlberg">0fdf7ca96f6f2100e04fd15eae3ee445</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Data Services Environment</u_fy17_portfolio_items_group_by_program>
+<u_key>Data Management Services</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f1aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:19:35</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Edward Helton">01bfbc696f6f2100e04fd15eae3ee492</u_federal_approver>
+<u_federal_lead display_value="Ulli Wagner">cfdf7ca96f6f2100e04fd15eae3ee490</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Digital Pathology in support of SEER</u_fy17_portfolio_items_group_by_program>
+<u_key>Imaging Informatics for Precision Medicine</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:52:24</sys_created_on>
+<sys_id>761b1d50db14cb0054d8ff621f9619df</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:47:33</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_approver>
+<u_federal_lead display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>DOE NCI Collaboration</u_fy17_portfolio_items_group_by_program>
+<u_key>na</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Program</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-05-04 13:55:35</sys_created_on>
+<sys_id>63067091db62fa0054d8ff621f9619d1</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:23:25</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Shea Manley">11dfb8a96f6f2100e04fd15eae3ee4f4</u_federal_approver>
+<u_federal_lead display_value="Ellen Volkmar">171a57e2dbdd8b0062c772840f96197c</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Enterprise Content Management (ECM)</u_fy17_portfolio_items_group_by_program>
+<u_key>Customer Service and Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>69aa9662db0ae2002cbcdb0e0f961977</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:25:49</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_federal_approver>
+<u_federal_lead display_value="Joe Turbiville">93bc7e9bdba08b0085b7fd0d0f9619c9</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Evaluation and Strategic Initiatives Branch General Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Evaluation and Strategic Initiatives</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:52:24</sys_created_on>
+<sys_id>54aa1190db14cb0054d8ff621f961930</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:27:06</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_approver>
+<u_federal_lead display_value="Betsy Hsu">71bffc696f6f2100e04fd15eae3ee48d</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Expand Data Commons and Data Sharing</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b5aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:28:07</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Lawrence Wright">9dbffc696f6f2100e04fd15eae3ee407</u_federal_approver>
+<u_federal_lead display_value="Lawrence Wright">9dbffc696f6f2100e04fd15eae3ee407</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Genomics Data Commons Metadata Validator</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>21aa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:53:37</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Nelya Gunina">0b091f9c6fae2100250e6bbeae3ee438</u_federal_approver>
+<u_federal_lead display_value="Nelya Gunina">0b091f9c6fae2100250e6bbeae3ee438</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Grants Management Application Development</u_fy17_portfolio_items_group_by_program>
+<u_key>Grants Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>21aa9662db0ae2002cbcdb0e0f961977</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:53:31</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Nelya Gunina">0b091f9c6fae2100250e6bbeae3ee438</u_federal_approver>
+<u_federal_lead display_value="Nelya Gunina">0b091f9c6fae2100250e6bbeae3ee438</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Grants Management Application Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Grants Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>e9aa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:53:36</sys_updated_on>
+<u_active>false</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_federal_approver>
+<u_federal_lead display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>IITOB Management Optimization Program</u_fy17_portfolio_items_group_by_program>
+<u_key>na</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Program</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>adaa9662db0ae2002cbcdb0e0f961976</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:29:14</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_federal_approver>
+<u_federal_lead display_value="Geneva Flanagan-Benedict">57d0f103dbe00b0085b7fd0d0f961901</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Informatics and IT Training</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI IT and Informatics Training</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2017-01-10 03:12:20</sys_created_on>
+<sys_id>e12fd7d8db5072009b0a74131f9619b5</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:30:23</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</u_federal_approver>
+<u_federal_lead display_value="Mike Stockwell">71dff8a96f6f2100e04fd15eae3ee4fc</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Infrastructure Engineering Support and Consultation Service</u_fy17_portfolio_items_group_by_program>
+<u_key>IT Engineering Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-27 13:52:24</sys_created_on>
+<sys_id>5f5bd190db14cb0054d8ff621f96195e</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:47:20</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_approver>
+<u_federal_lead display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>JDACS4C</u_fy17_portfolio_items_group_by_program>
+<u_key>DOE NCI Collaboration</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b5aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:31:31</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_approver>
+<u_federal_lead display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>MDR Semantic Infrastructure Modernization</u_fy17_portfolio_items_group_by_program>
+<u_key>Metadata Software and Services Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>71aa9662db0ae2002cbcdb0e0f96197c</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:31:35</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_approver>
+<u_federal_lead display_value="Denise Warzel">13bf70a96f6f2100e04fd15eae3ee4f0</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Metadata Curation and Harmonization (caDSR)</u_fy17_portfolio_items_group_by_program>
+<u_key>Metadata Software and Services Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>hartswickdw@nih.gov</sys_created_by>
+<sys_created_on>2017-07-13 13:28:32</sys_created_on>
+<sys_id>5f9f85b3dbff3200f59974131f9619b2</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:34:40</sys_updated_on>
+<u_active>false</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Allen Dearry">7c24a48f6f9406001c857eeeae3ee41a</u_federal_approver>
+<u_federal_lead display_value="Malcolm James">a6091f9c6fae2100250e6bbeae3ee429</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI Cancer Data Commons Framework</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Cancer Research Data Commons</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>29aa9662db0ae2002cbcdb0e0f961977</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:54:03</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Jennifer Kwok">04cff0a96f6f2100e04fd15eae3ee433</u_federal_approver>
+<u_federal_lead display_value="Jennifer Kwok">04cff0a96f6f2100e04fd15eae3ee433</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI Enterprise  Application Development</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Enterprise and Business Application Development and Sup</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>adaa9662db0ae2002cbcdb0e0f961977</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 13:53:59</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Carl McCabe">0f091f9c6fae2100250e6bbeae3ee442</u_branchchief_name>
+<u_federal_approver display_value="Jennifer Kwok">04cff0a96f6f2100e04fd15eae3ee433</u_federal_approver>
+<u_federal_lead display_value="Jennifer Kwok">04cff0a96f6f2100e04fd15eae3ee433</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCI Enterprise  Application Support</u_fy17_portfolio_items_group_by_program>
+<u_key>NCI Enterprise and Business Application Development and Sup</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>b1aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:35:53</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Mervi Heiskanen">60bfbc696f6f2100e04fd15eae3ee420</u_federal_approver>
+<u_federal_lead display_value="Mervi Heiskanen">60bfbc696f6f2100e04fd15eae3ee420</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>NCIP Hub</u_fy17_portfolio_items_group_by_program>
+<u_key>Informatics Systems, Support and Training</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>25aa9662db0ae2002cbcdb0e0f96197a</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:37:04</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Jonathan Lin">bbbfb0a96f6f2100e04fd15eae3ee474</u_federal_approver>
+<u_federal_lead display_value="Doug Jacobsen">83091f9c6fae2100250e6bbeae3ee43c</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Office 365</u_fy17_portfolio_items_group_by_program>
+<u_key>Desktop Management Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>2daa9662db0ae2002cbcdb0e0f961979</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:37:53</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Bruce Woodcock">6f091f9c6fae2100250e6bbeae3ee452</u_federal_approver>
+<u_federal_lead display_value="Melina Scotto">d1effdfc6ffc0a002b0d58622e3ee451</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Operational Security</u_fy17_portfolio_items_group_by_program>
+<u_key>IT Security Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f9aa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:39:34</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Joe Longo">612e136a6f0a46001c857eeeae3ee4bd</u_federal_approver>
+<u_federal_lead display_value="Latha Ramesh">79dff8a96f6f2100e04fd15eae3ee4fb</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Portfolio Processes Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Portfolio Management and Operations Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f1aa9662db0ae2002cbcdb0e0f96197d</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:39:37</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Dwayne Forquer">f6091f9c6fae2100250e6bbeae3ee435</u_branchchief_name>
+<u_federal_approver display_value="Joe Longo">612e136a6f0a46001c857eeeae3ee4bd</u_federal_approver>
+<u_federal_lead display_value="Latha Ramesh">79dff8a96f6f2100e04fd15eae3ee4fb</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Portfolio Staffing</u_fy17_portfolio_items_group_by_program>
+<u_key>Portfolio Management and Operations Support</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>2daa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:38:16</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Bruce Woodcock">6f091f9c6fae2100250e6bbeae3ee452</u_federal_approver>
+<u_federal_lead display_value="Kevin Johnson">e4effca96f6f2100e04fd15eae3ee478</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Security Assessment and Authorization</u_fy17_portfolio_items_group_by_program>
+<u_key>IT Security Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-12-02 18:56:45</sys_created_on>
+<sys_id>3e618e4cdb6722004c89ff621f96192c</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:43:39</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Jj Pan">32bf70a96f6f2100e04fd15eae3ee431</u_federal_approver>
+<u_federal_lead display_value="David Silver">00df78a96f6f2100e04fd15eae3ee424</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Software Acquisitions</u_fy17_portfolio_items_group_by_program>
+<u_key>Software License Management Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>61aa9662db0ae2002cbcdb0e0f961979</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:41:28</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Jj Pan">32bf70a96f6f2100e04fd15eae3ee431</u_federal_approver>
+<u_federal_lead display_value="Christina Guglielmo">3c130a25db854f40593e76721f9619ad</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Software Management</u_fy17_portfolio_items_group_by_program>
+<u_key>Software License Management Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>f5aa9662db0ae2002cbcdb0e0f96197b</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:45:41</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Tony Kerlavage">4f091f9c6fae2100250e6bbeae3ee43d</u_branchchief_name>
+<u_federal_approver display_value="Tanja Davidsen">d8cff0a96f6f2100e04fd15eae3ee486</u_federal_approver>
+<u_federal_lead display_value="John Otridge">bfdfbca96f6f2100e04fd15eae3ee4a3</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>TARGET (Portal and Data Coordination) Support</u_fy17_portfolio_items_group_by_program>
+<u_key>Basic Research Systems and Data Management</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:37</sys_created_on>
+<sys_id>6daa9662db0ae2002cbcdb0e0f961979</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:42:02</sys_updated_on>
+<u_active>false</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Cliff Wong">ab091f9c6fae2100250e6bbeae3ee452</u_federal_approver>
+<u_federal_lead display_value="Cliff Wong">ab091f9c6fae2100250e6bbeae3ee452</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Technology Refresh Program</u_fy17_portfolio_items_group_by_program>
+<u_key>na</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Program</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>a5aa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:42:17</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Star Kline">cf091f9c6fae2100250e6bbeae3ee43e</u_federal_approver>
+<u_federal_lead display_value="Star Kline">cf091f9c6fae2100250e6bbeae3ee43e</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>UC Campus Rollout</u_fy17_portfolio_items_group_by_program>
+<u_key>Project Coordination Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Project</u_type>
+</u_cbiit_biz_purchase_program_info>
+<u_cbiit_biz_purchase_program_info action="INSERT_OR_UPDATE">
+<sys_created_by>wuye@nih.gov</sys_created_by>
+<sys_created_on>2016-09-27 01:37:36</sys_created_on>
+<sys_id>adaa9662db0ae2002cbcdb0e0f961978</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>wuye@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-03 14:42:33</sys_updated_on>
+<u_active>true</u_active>
+<u_branchchief_name display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</u_branchchief_name>
+<u_federal_approver display_value="Maurice Edmonds">32091f9c6fae2100250e6bbeae3ee433</u_federal_approver>
+<u_federal_lead display_value="Stephen Benitez">1b0a1ecfdbe88b00274df4b40f9619c7</u_federal_lead>
+<u_fy17_portfolio_items_group_by_program>Unified Communications</u_fy17_portfolio_items_group_by_program>
+<u_key>Unified Communications Program</u_key>
+<u_manager_email>40</u_manager_email>
+<u_project_manager_name>40</u_project_manager_name>
+<u_secondary_federal_approver display_value=""/>
+<u_type>Service</u_type>
+</u_cbiit_biz_purchase_program_info>
+</unload>
