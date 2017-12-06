@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-11-30 19:30:33">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This is update set for Jim's implementation</description>
+<inserted/>
+<name>Jim Service Portal - two widgets</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b561e3bcdbbecb002cbcfb0e0f961965</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:32</sys_created_on>
+<sys_id>d142efbcdbbecb002cbcfb0e0f9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:32</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_72997da8db7e8b002cbcfb0e0f9619a1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+  
+	c.searchText = '';
+	
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 5,
+		currentPage: 0
+	};
+	
+	/*c.columns = [
+		{
+			key: 'title',
+			label: c.options.title,
+			sort: 'asc'
+		}
+	];*/
+	
+	c.containsSearchTerms = function(text) {
+		return text.toLowerCase().indexOf(c.searchText.toLowerCase()) &gt;= 0;
+	}
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		var length = c.data.tasks.filter(function(task) {
+			return c.containsSearchTerms(task.title);
+		}).length;
+		
+		return new Array(Math.ceil(length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.tasks = c.data.tasks.sort(compareRows);
+		}
+	};	
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-success&amp;gt;.panel-heading .badge {&amp;#13;
+    color: #dff0d8;&amp;#13;
+    background-color: #3c763d;&amp;#13;
+}&amp;#13;
+badges.less:12&amp;#13;
+.badge {&amp;#13;
+    display: inline-block;&amp;#13;
+    min-width: 10px;&amp;#13;
+    padding: 3px 7px;&amp;#13;
+    font-size: 12px;&amp;#13;
+    font-weight: 700;&amp;#13;
+    line-height: 1;&amp;#13;
+    color: #fff;&amp;#13;
+    text-align: center;&amp;#13;
+    white-space: nowrap;&amp;#13;
+    vertical-align: middle;&amp;#13;
+    background-color: #717171;&amp;#13;
+    border-radius: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.badge-grey {&amp;#13;
+  color: #eee !important;&amp;#13;
+  background-color: #777 !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.search-container {&amp;#13;
+  padding: 4px 0;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.search-input {&amp;#13;
+  padding: 4px 6px;&amp;#13;
+  width: 100%;&amp;#13;
+  border: 1px solid #ddd;&amp;#13;
+  border-radius: 4px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.grey-border {&amp;#13;
+  border-color: #ddd !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-bg {&amp;#13;
+    background-color: #f5f5f5;&amp;#13;
+    border-top: 1px solid #ddd;&amp;#13;
+    border-bottom-right-radius: 3px;&amp;#13;
+    border-bottom-left-radius: 3px;&amp;#13;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;&amp;#13;
+    font-size: 14px;&amp;#13;
+    line-height: 1.42857;&amp;#13;
+    color: #717171; &amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;mfri&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;[NCI] Most Frequently Requested Items&lt;/name&gt;&lt;option_schema&gt;[{"hint":"This is the table name that  you want to query from","name":"table","default_value":"sc_category","label":"table","type":"string"},{"hint":"This is the column name that you want to get data from (1 column)","name":"column","default_value":"title","label":"column","type":"string"},{"hint":"This is the table title that will show on GUI","name":"title","default_value":"Services A to Z","label":"title","type":"string"},{"hint":"This is the widget display name on GUI","name":"name","default_value":"Services","label":"Name","type":"string"},{"name":"filter","label":"Filter","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+ data.tasks = [];
+ var table = options.table;
+ var encQuery = options.filter;
+ var col = options.column;
+ //default is sc_category table
+ var gr = GlideRecord(table);
+ gr.addEncodedQuery(encQuery);
+ gr.orderBy(col);
+ gr.query();
+ while(gr.next()){
+	 var item = {};
+   item.title = gr.getDisplayValue(col);
+   item.id = gr.getUniqueValue();
+	 data.tasks.push(item);
+ }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-29 17:15:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;72997da8db7e8b002cbcfb0e0f9619a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;[NCI] Most Frequently Requested Items&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_72997da8db7e8b002cbcfb0e0f9619a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-30 19:29:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="panel grey-border" ng-show="c.data.tasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading panel-bg" id="heading_serviceItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapseServiceItems" aria-expanded="true" data-target="#collapseServiceItems"  role="button"&gt;
+          {{::c.options.name}} &lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div aria-labelledby="heading_serviceItems" class="panel-collapse collapse in" id="collapseServiceItems" role="tabpanel"&gt;
+      &lt;br/&gt;
+		 &lt;table border="0" width="100%"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th 
+                  ng-repeat="column in c.columns track by $index" 
+                  ng-click="c.toggleSort($index)" 
+                  style="cursor: pointer"&gt;
+                  {{ column.label }}
+                  &lt;span 
+                    class="glyphicon small" 
+                    ng-class="{
+                                'glyphicon-chevron-up': column.sort === 'asc',
+                                'glyphicon-chevron-down': column.sort === 'desc'
+                              }"&gt;
+                  &lt;/span&gt;
+              &lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+             &lt;tr ng-repeat="row in c.data.tasks track by $index"
+                ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                         $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize &amp;&amp;
+                         c.containsSearchTerms(row.title)
+                         "&gt;
+               &lt;td class="ritm_number"&gt;&lt;a href="?id=sc_cat_item&amp;sys_id={{row.id}}"&gt;{{ row.title }}&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;/td&gt;   
+           &lt;/tr&gt;
+           &lt;tr&gt;
+              &lt;td&gt;
+                 &lt;!-- select the page size --&gt;
+                &lt;form class="form-inline  pull-right"&gt;
+                  &lt;div class="pagination form-group col-xs-12"&gt;
+                    &lt;label for="pageSize"&gt;
+                      Display Items
+                    &lt;/label&gt;
+                    &lt;select 
+                      id="pageSize" 
+                      style="display: inline; height:25px"
+                      ng-init="c.pagination.currentSize = c.pagination.pageSizes[0]"
+                      ng-model="c.pagination.currentSize"
+                      ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;  
+          	&lt;/td&gt;
+           &lt;/tr&gt;  
+      &lt;/table&gt;  
+
+    &lt;/div&gt;
+  &lt;/div&gt;   
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-517766454</payload_hash>
+<remote_update_set display_value="Jim Service Portal - two widgets">d142efbcdbbecb002cbcfb0e0f9619c4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:33</sys_created_on>
+<sys_id>1542efbcdbbecb002cbcfb0e0f9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1600e6824c40000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:33</sys_updated_on>
+<table/>
+<target_name>[NCI] Most Frequently Requested Items</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>77126fbc1fbecb007e4bfa78bcfa8133</update_guid>
+<update_guid_history>77126fbc1fbecb007e4bfa78bcfa8133:-517766454,a1d65b743abecb0018fa56acdfde9dec:1101109952,eec931e8e77e8b00a625de2d87ad10ab:101786978</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_2de9ea7cdbfacb002cbcfb0e0f9619a3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;rs&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;[NCI] Row Separator&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-30 15:26:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2de9ea7cdbfacb002cbcfb0e0f9619a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;[NCI] Row Separator&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2de9ea7cdbfacb002cbcfb0e0f9619a3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-30 19:29:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="col-md-12"&gt;
+  &lt;hr/&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-530656521</payload_hash>
+<remote_update_set display_value="Jim Service Portal - two widgets">d142efbcdbbecb002cbcfb0e0f9619c4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:33</sys_created_on>
+<sys_id>5142efbcdbbecb002cbcfb0e0f9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1600e6771bb0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:33</sys_updated_on>
+<table/>
+<target_name>[NCI] Row Separator</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>64f16bbcb7becb00c2182943ebbae25c</update_guid>
+<update_guid_history>64f16bbcb7becb00c2182943ebbae25c:-530656521,294b2afce9facb00080fe8231afc665a:1753668087,cf4aaa7c76facb00c92221a3207fb1cd:1576463744</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_f5b27a74db3ecb002cbcfb0e0f9619ad</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;340b66fcdbfacb002cbcfb0e0f961976&lt;/sp_column&gt;&lt;sp_widget display_value="[NCI] Most Frequently Requested Items"&gt;72997da8db7e8b002cbcfb0e0f9619a1&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-30 16:02:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f5b27a74db3ecb002cbcfb0e0f9619ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_f5b27a74db3ecb002cbcfb0e0f9619ad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-30 19:28:32&lt;/sys_updated_on&gt;&lt;title&gt;Test&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "",
+		"displayValue": ""
+	},
+	"column": {
+		"value": "",
+		"displayValue": ""
+	},
+	"title": {
+		"value": "Test",
+		"displayValue": "Test"
+	},
+	"name": {
+		"value": "Most Frequently Reported Items",
+		"displayValue": "Most Frequently Reported Items"
+	},
+	"filter": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2038974797</payload_hash>
+<remote_update_set display_value="Jim Service Portal - two widgets">d142efbcdbbecb002cbcfb0e0f9619c4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:33</sys_created_on>
+<sys_id>9d42efbcdbbecb002cbcfb0e0f9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1600e66e4b10000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:33</sys_updated_on>
+<table/>
+<target_name>Test</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>37c12bbc9dbecb00443f969b17f23aad</update_guid>
+<update_guid_history>37c12bbc9dbecb00443f969b17f23aad:2038974797,001793b4acbecb00fc76c970d57b9b57:-248175594,b5b27a74453ecb00fdd9fccfe5460aae:-1025334524</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_ad127274db3ecb002cbcfb0e0f961922</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;0&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;7c0b66fcdbfacb002cbcfb0e0f961974&lt;/sp_column&gt;&lt;sp_widget display_value="[NCI] most commonly reported issues"&gt;cb6931e8db7e8b002cbcfb0e0f9619dc&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-30 16:00:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ad127274db3ecb002cbcfb0e0f961922&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;test&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_ad127274db3ecb002cbcfb0e0f961922&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-30 19:28:39&lt;/sys_updated_on&gt;&lt;title&gt;test&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "",
+		"displayValue": ""
+	},
+	"column": {
+		"value": "",
+		"displayValue": ""
+	},
+	"title": {
+		"value": "test",
+		"displayValue": "test"
+	},
+	"name": {
+		"value": "Most Recent Reported Problems",
+		"displayValue": "Most Recent Reported Problems"
+	},
+	"filter": {
+		"value": "active=true^category.active=true^sc_catalogs=e0d08b13c3330100c8b837659bba8fb4",
+		"displayValue": "active=true^category.active=true^sc_catalogs=e0d08b13c3330100c8b837659bba8fb4"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-438632763</payload_hash>
+<remote_update_set display_value="Jim Service Portal - two widgets">d142efbcdbbecb002cbcfb0e0f9619c4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:32</sys_created_on>
+<sys_id>d542efbcdbbecb002cbcfb0e0f9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1600e6702280000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:32</sys_updated_on>
+<table/>
+<target_name>test</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2dd16bbc1abecb00e7867db8acbd4974</update_guid>
+<update_guid_history>2dd16bbc1abecb00e7867db8acbd4974:-438632763,b5e8fab8af3ecb00b41ed1ea4ee210c4:1387343474,972372b4b23ecb00ac157a171b2dfb3e:-210893048,39b27a74db3ecb00dfac16db03a7b2ab:-134664522,a1127274d83ecb0040a1ed4ad1099a24:-1828740779</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_cb6931e8db7e8b002cbcfb0e0f9619dc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+  
+	c.searchText = '';
+	
+	c.pagination = {
+		//pageDisplayLimit: 4,
+		numPages: 0,
+		//pageIndexes: ['first', 'previous', 'next', 'last'],
+		pageSizes: [5, 10, 15, 20, 25],
+		currentSize: 5,
+		currentPage: 0
+	};
+	
+	/*c.columns = [
+		{
+			key: 'title',
+			label: c.options.title,
+			sort: 'asc'
+		}
+	];*/
+	
+	c.containsSearchTerms = function(text) {
+		return text.toLowerCase().indexOf(c.searchText.toLowerCase()) &gt;= 0;
+	}
+	
+	c.getRange = function() {
+		var currentSize = c.pagination.currentSize;
+		var currentPage = c.pagination.currentPage;
+		
+		var offset = currentSize * currentPage;
+		
+		var length = c.data.tasks.filter(function(task) {
+			return c.containsSearchTerms(task.title);
+		}).length;
+		
+		return new Array(Math.ceil(length / currentSize));
+	};
+	
+	c.setPage = function(index) {
+		c.pagination.currentPage = index;
+	};
+	
+	c.toggleSort = function(index) {
+		var column = c.columns[index];
+		var key = column.key;
+		
+		// if sorting is defined, then we can toggle this column
+		if (column.sort !== null) {
+			
+			var sortAscending = column.sort === 'asc';
+			
+			column.sort = sortAscending ? 'desc' : 'asc';
+			sortAscending = !sortAscending;
+			
+			var compareRows = function(a, b) {
+				var keyA = a[key];
+				var keyB = b[key];
+
+				// use local-compare for strings
+				if (isNaN(keyA) &amp;&amp; isNaN(keyB)) {
+					return sortAscending ? keyA.localeCompare(keyB)
+						: keyB.localeCompare(keyA);
+				}
+
+				// use normal comparison for numbers
+				return sortAscending ? +keyA - +keyB : +keyB - +keyA;
+			};
+			
+			c.data.tasks = c.data.tasks.sort(compareRows);
+		}
+	};	
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-success&amp;gt;.panel-heading .badge {&amp;#13;
+    color: #dff0d8;&amp;#13;
+    background-color: #3c763d;&amp;#13;
+}&amp;#13;
+badges.less:12&amp;#13;
+.badge {&amp;#13;
+    display: inline-block;&amp;#13;
+    min-width: 10px;&amp;#13;
+    padding: 3px 7px;&amp;#13;
+    font-size: 12px;&amp;#13;
+    font-weight: 700;&amp;#13;
+    line-height: 1;&amp;#13;
+    color: #fff;&amp;#13;
+    text-align: center;&amp;#13;
+    white-space: nowrap;&amp;#13;
+    vertical-align: middle;&amp;#13;
+    background-color: #717171;&amp;#13;
+    border-radius: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.badge-grey {&amp;#13;
+  color: #eee !important;&amp;#13;
+  background-color: #777 !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.search-container {&amp;#13;
+  padding: 4px 0;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.search-input {&amp;#13;
+  padding: 4px 6px;&amp;#13;
+  width: 100%;&amp;#13;
+  border: 1px solid #ddd;&amp;#13;
+  border-radius: 4px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.grey-border {&amp;#13;
+  border-color: #ddd !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-bg {&amp;#13;
+    background-color: #f5f5f5;&amp;#13;
+    border-top: 1px solid #ddd;&amp;#13;
+    border-bottom-right-radius: 3px;&amp;#13;
+    border-bottom-left-radius: 3px;&amp;#13;
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;&amp;#13;
+    font-size: 14px;&amp;#13;
+    line-height: 1.42857;&amp;#13;
+    color: #717171; &amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;mcri&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;[NCI] most commonly reported issues&lt;/name&gt;&lt;option_schema&gt;[{"hint":"This is the table name that  you want to query from","name":"table","default_value":"sc_category","label":"table","type":"string"},{"hint":"This is the column name that you want to get data from (1 column)","name":"column","default_value":"title","label":"column","type":"string"},{"hint":"This is the table title that will show on GUI","name":"title","default_value":"Services A to Z","label":"title","type":"string"},{"hint":"This is the widget display name on GUI","name":"name","default_value":"Services","label":"Name","type":"string"},{"name":"filter","label":"Filter","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+ data.tasks = [];
+ var table = options.table;
+ var encQuery = options.filter;
+ var col = options.column;
+ //default is sc_category table
+ var gr = GlideRecord(table);
+ gr.addEncodedQuery(encQuery);
+ gr.orderBy(col);
+ gr.query();
+ while(gr.next()){
+	 var item = {};
+   item.title = gr.getDisplayValue(col);
+   item.id = gr.getUniqueValue();
+	 data.tasks.push(item);
+ }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-29 17:14:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;cb6931e8db7e8b002cbcfb0e0f9619dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;[NCI] most commonly reported issues&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cb6931e8db7e8b002cbcfb0e0f9619dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-30 19:29:35&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="panel grey-border" ng-show="c.data.tasks.length &gt; 0"&gt;
+    &lt;div class="panel-heading panel-bg" id="heading_serviceItems" role="tab"&gt;
+      &lt;h4 class="panel-title"&gt;
+        &lt;a aria-controls="collapseServiceItems" aria-expanded="true" data-target="#collapseServiceItems"  role="button"&gt;
+          {{::c.options.name}} &lt;/a&gt;&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div aria-labelledby="heading_serviceItems" class="panel-collapse collapse in" id="collapseServiceItems" role="tabpanel"&gt;
+      &lt;br/&gt;
+		 &lt;table border="0" width="100%"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th 
+                  ng-repeat="column in c.columns track by $index" 
+                  ng-click="c.toggleSort($index)" 
+                  style="cursor: pointer"&gt;
+                  {{ column.label }}
+                  &lt;span 
+                    class="glyphicon small" 
+                    ng-class="{
+                                'glyphicon-chevron-up': column.sort === 'asc',
+                                'glyphicon-chevron-down': column.sort === 'desc'
+                              }"&gt;
+                  &lt;/span&gt;
+              &lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+             &lt;tr ng-repeat="row in c.data.tasks track by $index"
+                ng-show="$index &gt;= c.pagination.currentPage * c.pagination.currentSize &amp;&amp;
+                         $index &lt; (c.pagination.currentPage + 1) * c.pagination.currentSize &amp;&amp;
+                         c.containsSearchTerms(row.title)
+                         "&gt;
+               &lt;td class="ritm_number"&gt;&lt;a href="?id=sc_cat_item&amp;sys_id={{row.id}}"&gt;{{ row.title }}&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;/td&gt;   
+           &lt;/tr&gt;
+           &lt;tr&gt;
+              &lt;td&gt;
+                 &lt;!-- select the page size --&gt;
+                &lt;form class="form-inline  pull-right"&gt;
+                  &lt;div class="pagination form-group col-xs-12"&gt;
+                    &lt;label for="pageSize"&gt;
+                      Display Items
+                    &lt;/label&gt;
+                    &lt;select 
+                      id="pageSize" 
+                      style="display: inline; height:25px"
+                      ng-init="c.pagination.currentSize = c.pagination.pageSizes[0]"
+                      ng-model="c.pagination.currentSize"
+                      ng-options="sizes for sizes in c.pagination.pageSizes"&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;  
+          	&lt;/td&gt;
+           &lt;/tr&gt;  
+      &lt;/table&gt;  
+
+    &lt;/div&gt;
+  &lt;/div&gt;   
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1517211449</payload_hash>
+<remote_update_set display_value="Jim Service Portal - two widgets">d142efbcdbbecb002cbcfb0e0f9619c4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-11-30 19:30:33</sys_created_on>
+<sys_id>d542efbcdbbecb002cbcfb0e0f9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1600e67dce60000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-11-30 19:30:33</sys_updated_on>
+<table/>
+<target_name>[NCI] most commonly reported issues</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>d7022fbc57becb00a6e264b6afd106f2</update_guid>
+<update_guid_history>d7022fbc57becb00a6e264b6afd106f2:-1517211449,5b169fb061becb00d66a8f5f44197a6e:183086179,f1f517f0fabecb00bfefa329be58cea5:1196244100,4ea513f013becb00d752b8b28224b2b3:-343756083,9a655f3098becb008629a1b26cbc1167:-1062694729,bb549f70fdbecb00b49990294f15e40c:1888799774,6144db7070becb0054c587235acbc42f:-793614426,e504d770acbecb008a0f64b586f41a39:1032477098,b6b3db7054becb0048a3ba9052998e2b:1695745693,e683d7b063becb00b1f2217eb63d6574:1255151442,82c21b3085becb005d5eeb76fa50a721:-981112263,ee92d770a0becb0050f8fd71f4176821:-1895859856,ec62d77caf7ecb001324b524f4623e35:1445502827,f2e193342e7ecb00c1fc005f946b8d45:267072600,60b19330a4becb00c331eabbe258dd96:84804669,70911ff0277ecb006b29843962d25098:90708280,05d93274773ecb0077c6d5d0ea703716:-335380407,6389b2b8393ecb00def8bd5fd835e1ec:-1157210647,30793af8323ecb000633ade61745928d:170783936,6419b2b8853ecb00b50921de3b23d4e6:-932711158,33983274113ecb0036dd52dff1d62f12:509156115,b98876b8453ecb00341b5a60819343d7:1731535908,40783e74723ecb00028f8b17d415f5e3:1435531531,ba487274953ecb00f50fa197e7570f3c:-445049935,37f23e74d33ecb00b010f972f148fcde:-1364314748,1102fe34313ecb0041a870e7f25532e6:-1335045087,c69931e8f97e8b006ca5c38740dafca8:1535205299</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
