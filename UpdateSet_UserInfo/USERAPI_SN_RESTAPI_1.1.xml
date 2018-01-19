@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-01-18 21:48:38">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Utilization_Report_20180118</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0aa49c78db73c70054d8ff621f9619d0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-01-18 21:48:38</sys_created_on>
+<sys_id>7dc7983cdb73c70054d8ff621f9619e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-01-18 21:48:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_a6e0f565db140f00f59974131f9619a2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;getAll&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var jsonArr = [];
+    var sysId = request.queryParams.sysId;
+	
+	var gr = new GlideRecord('u_data_center_optimization_initiative');
+	var year = request.queryParams.year;
+	var quarter = request.queryParams.quarter;
+	gr.addQuery('u_closing_fiscal_year', year);
+	gr.addQuery('u_closing_quarter', quarter);
+	
+	gr.query();
+	var gru = new GlideRecordUtil();
+	while(gr.next()){
+		var fieldNames = gru.getFields(gr);
+		var item = {};
+		for (var i = 0; i &lt;= fieldNames.length; i++) {
+			var fieldName = fieldNames[i];
+			item[fieldName] = gr.getValue(fieldName);
+		}
+		jsonArr.push(item);
+	}
+	
+	response.setContentType('application/json');
+	
+	return jsonArr; 
+	
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/naci/dcoiapi/getAll&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/getAll&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;yankovsr@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-31 12:34:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a6e0f565db140f00f59974131f9619a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;getAll&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a6e0f565db140f00f59974131f9619a2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;yankovsr@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-18 21:48:04&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Utilization"&gt;fc90f165db140f00f59974131f961922&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1658832074</payload_hash>
+<remote_update_set display_value="Utilization_Report_20180118">7dc7983cdb73c70054d8ff621f9619e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-01-18 21:48:38</sys_created_on>
+<sys_id>b1c7983cdb73c70054d8ff621f9619e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1610b3e411b0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-01-18 21:48:38</sys_updated_on>
+<table/>
+<target_name>getAll</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>61a7d0f8b473c70063b6c86538bf722e</update_guid>
+<update_guid_history>61a7d0f8b473c70063b6c86538bf722e:1658832074,feb51cb82a73c700088679498ff670dc:-1443448865,40e410b88c73c700bb31d959e2c93a02:1658832074,668414782873c700fbf6a9b0ab6f18d5:-1443448865,8f741478b273c700e7e5577640d5cad1:1658832074,1396053294:1396053294</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
