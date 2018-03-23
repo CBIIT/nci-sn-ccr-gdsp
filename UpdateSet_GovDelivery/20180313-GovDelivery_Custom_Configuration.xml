@@ -1,0 +1,1790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-23 18:32:51">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>20180313-GovDelivery_Custom_Configuration</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>fb28c18adbb85700f59974131f961907</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>75b05d11dbc19700f59974131f9619f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_building_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_building" label="Building" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_building</element><help/><hint/><label>Building</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>Buildings</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:45:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7f9ac10edbb85700f59974131f9619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Building</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_building_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:45:58</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-277384231</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>31b05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254427f00000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_building</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c4291612adf413004a671cb11db94456</update_guid>
+<update_guid_history>c4291612adf413004a671cb11db94456:-277384231,779ac50e8cb857001165698eab9ec00d:576584713</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c0ead652dbf41300f59974131f96198d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_govdelivery_subscriber_exceptions</description><name>u_govdelivery_subscriber_exceptions</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c0ead652dbf41300f59974131f96198d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_c0ead652dbf41300f59974131f96198d</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>457400542</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>31b05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b297d0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>80ead65212f413000bf4634edca2c691</update_guid>
+<update_guid_history>80ead65212f413000bf4634edca2c691:457400542</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_gd_subscriber_exceptions_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_gd_subscriber_exceptions" version="2" view=""><sys_ui_list action="DELETE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_gd_subscriber_exceptions</name><parent/><position/><relationship/><sum>false</sum><sys_class_name/><sys_created_by/><sys_created_on/><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>877b414edbb85700f59974131f9619f0</sys_id><sys_mod_count/><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2018-03-14 16:07:26</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>-19649153</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>31b05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225442a0a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>8c29161226f41300ce9723986bb60a6b</update_guid>
+<update_guid_history>8c29161226f41300ce9723986bb60a6b:-19649153,8f7b414e74b85700a715949e8968d5f3:-922671965,8e8a450e70b8570065d12b46b91e0b7e:945216689,8f6ac10e57b85700b0f4d0d09d90c9a1:-1520004157</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_govdelivery_subscriber_exceptions_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_govdelivery_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>u_govdelivery_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>48ead652dbf41300f59974131f961994</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_govdelivery_subscriber_exceptions_null</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>96490427</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>31b05d11dbc19700f59974131f9619f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b2c2f0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>dcead6524bf41300c45e34750e6a5eb2</update_guid>
+<update_guid_history>dcead6524bf41300c45e34750e6a5eb2:96490427</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_building</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_building" table="u_govdelivery_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>Building</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_building</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>20</max_length><name>u_govdelivery_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:16:09</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e6d69baedbb05300f59974131f961900</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Building</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_building</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:16:09</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>198282006</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>35b05151dbc19700f59974131f96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3b901e0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.Building</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>eef69beeadb053001e25c3362b8d736d</update_guid>
+<update_guid_history>eef69beeadb053001e25c3362b8d736d:198282006</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_govdelivery_subscriber_exceptions_u_user_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_user" label="User" language="en" table="u_govdelivery_subscriber_exceptions"><sys_documentation action="INSERT_OR_UPDATE"><element>u_user</element><help/><hint/><label>User</label><language>en</language><name>u_govdelivery_subscriber_exceptions</name><plural>Users</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:16:43</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>444b5e52dbf41300f59974131f96193c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_govdelivery_subscriber_exceptions_u_user_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:16:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>815211299</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>35b05151dbc19700f59974131f96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254caa630000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.User</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c44b5e529ff41300e0eff276fae6a944</update_guid>
+<update_guid_history>c44b5e529ff41300e0eff276fae6a944:815211299</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_40ead652dbf41300f59974131f96197b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>40ead652dbf41300f59974131f96197b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_govdelivery_subscriber_exceptions">c0ead652dbf41300f59974131f961975</sys_security_acl><sys_update_name>sys_security_acl_role_40ead652dbf41300f59974131f96197b</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><sys_user_role display_value="u_govdelivery_subscriber_exceptions_manager" name="u_govdelivery_subscriber_exceptions_manager">bbda9612dbf41300f59974131f961941</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1189735696</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>35b05151dbc19700f59974131f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b27f20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>04ead65263f413001df5afce4e46857d</update_guid>
+<update_guid_history>04ead65263f413001df5afce4e46857d:1189735696</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_last_name</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_last_name" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>Last Name</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_last_name</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>50</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:42:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>edc909cadbb85700f59974131f9619ac</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Last Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_last_name</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:44:22</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-579547585</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>35b05d11dbc19700f59974131f9619f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225444a330000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_last_name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>8a29561260f413009a2c50e7ff4e1817</update_guid>
+<update_guid_history>8a29561260f413009a2c50e7ff4e1817:-579547585,904a410eeab8570038f243baee061a8e:1980528755,5e1a8dca7fb85700fcc7c94dd3fbc1be:-555846680,51d949ca6bb8570007a160a6d0ca3668:1980528755</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="" label="GovDelivery Subscriber Exceptions" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element/><help/><hint/><label>GovDelivery Subscriber Exceptions</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>GovDelivery Subscriber Exceptions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5d19c98adbb85700f59974131f961987</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions__en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:40:12</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>237919382</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>39b05151dbc19700f59974131f96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e66a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7f0992127ef41300469cab00ac26c3a8</update_guid>
+<update_guid_history>7f0992127ef41300469cab00ac26c3a8:237919382,9749cd8a94b85700bbb70777c312a357:1988801198,1d19c98a26b857001c49f71d1dc5a494:1088061962</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_08ead652dbf41300f59974131f96198a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>08ead652dbf41300f59974131f96198a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_govdelivery_subscriber_exceptions">c8ead652dbf41300f59974131f961985</sys_security_acl><sys_update_name>sys_security_acl_role_08ead652dbf41300f59974131f96198a</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><sys_user_role display_value="u_govdelivery_subscriber_exceptions_manager" name="u_govdelivery_subscriber_exceptions_manager">bbda9612dbf41300f59974131f961941</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-2025867145</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>39b05151dbc19700f59974131f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b29150000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>44ead6520cf413008fd8b91cc6538a8c</update_guid>
+<update_guid_history>44ead6520cf413008fd8b91cc6538a8c:-2025867145</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_a02e05cedbb85700f59974131f96192b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;Get Subscriber Exceptions&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var jsonArr = [];
+    var sysId = request.queryParams.sysId;
+	
+	var gr = new GlideRecord('u_govdelivery_subscriber_exceptions');
+	
+	gr.query();
+	while(gr.next()){
+		var item = {
+			ned_id: gr.u_user.employee_number,
+			division: gr.u_division,
+			sac: gr.u_sac,
+			building: gr.u_building
+		};
+
+		jsonArr.push(item);
+	}
+	
+	response.setContentType('application/json');
+	
+	return jsonArr; 
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/naci/govdelivery/getSubscriberExceptions&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/getSubscriberExceptions&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;yankovsr@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-13 16:02:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a02e05cedbb85700f59974131f96192b&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get Subscriber Exceptions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a02e05cedbb85700f59974131f96192b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;yankovsr@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-15 15:20:45&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="GovDelivery Configuration"&gt;93fd41cedbb85700f59974131f961921&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-868565452</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>39b05151dbc19700f59974131f961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3fc7210000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>Get Subscriber Exceptions</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>c2085feeefb053000b7c35adeae41e04</update_guid>
+<update_guid_history>c2085feeefb053000b7c35adeae41e04:-868565452,47d75fee38b0530020bd634d34ef3d01:700508938,aa971bee80b05300c096ab383a6191d2:-1512738774,a3a0769253381300c3487bf85249a147:1650303300,68a0be1278381300d357f537fa8e07db:1200450106,0adfe61243381300b3afddbd3a0605c4:250205036,c6cfeedef3f4130051fced067212b604:136221130,19bf2612c238130008b8a14c27046cd5:2070995777,e2af62deeef4130088bc5d7d0ba23605:136221130,ab7f261260381300b95cb6b4122767d2:250205036,f2ee62dea5f41300d1d2d1e679337ae9:1006950924,681d269ec3f413008bc97570785c7027:1269786336,c763560eb77c570015c3fe9fb9b3c0ad:265257114,3ee31982b9f8570007730f410c6438e3:-1405928289,c3009502c6f85700ff959025cf482ead:1360493336,f3af81ce93b85700789859732813977c:1207697030,af7e05ce82b857006e9a2608e4326e2f:-978639836</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_building</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_building" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice>1</choice><choice_field/><choice_table/><column_label>Building</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_building</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>20</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:45:58</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5b8a850edbb85700f59974131f961983</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Building</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_building</sys_update_name><sys_updated_by>zhoujim@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 22:07:19</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1062725192</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>39b05d11dbc19700f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622544403d0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_building</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>ed29161200f41300992fcbe49f21b3df</update_guid>
+<update_guid_history>ed29161200f41300992fcbe49f21b3df:1062725192,86e1a60e38b41b00af9cd40be9f5dcb3:-575243116,739ac50e46b857001666122b02aa890c:605345550</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_last_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_last_name" label="Last Name" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_last_name</element><help/><hint/><label>Last Name</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>Last Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:42:31</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>59d949cadbb85700f59974131f961963</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Last Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_last_name_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:42:31</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1152722617</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>3db05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622544278e0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_last_name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>4029161205f4130011bd2a71f7b31f4f</update_guid>
+<update_guid_history>4029161205f4130011bd2a71f7b31f4f:-1152722617,55d949ca2cb8570024a30e2def7d5569:1704139831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_d519c98adbb85700f59974131f961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_gd_subscriber_exceptions</description><name>u_gd_subscriber_exceptions</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d519c98adbb85700f59974131f961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_d519c98adbb85700f59974131f961979</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1475944339</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>3db05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e8ea0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>48199212dbf41300101dfe7835d8b9bf</update_guid>
+<update_guid_history>48199212dbf41300101dfe7835d8b9bf:1475944339,9519c98a99b85700dc9ebd094fdb237d:1669708831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_be4b5a52dbf41300f59974131f961988</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="be4b5a52dbf41300f59974131f961988" sys_domain="global" table="u_govdelivery_subscriber_exceptions" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_user</element><position>0</position><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:34:19</sys_created_on><sys_id>f54fde16dbf41300f59974131f96195c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_govdelivery_subscriber_exceptions" sys_domain="global" view="Default view">be4b5a52dbf41300f59974131f961988</sys_ui_section><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:34:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_division</element><position>1</position><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:01</sys_created_on><sys_id>577617aedbb05300f59974131f9619d0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_govdelivery_subscriber_exceptions" sys_domain="global" view="Default view">be4b5a52dbf41300f59974131f961988</sys_ui_section><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:14:01</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_sac</element><position>2</position><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:39</sys_created_on><sys_id>e4a6d3eedbb05300f59974131f9619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_govdelivery_subscriber_exceptions" sys_domain="global" view="Default view">be4b5a52dbf41300f59974131f961988</sys_ui_section><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:14:39</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_building</element><position>3</position><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:16:09</sys_created_on><sys_id>aef69beedbb05300f59974131f961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_govdelivery_subscriber_exceptions" sys_domain="global" view="Default view">be4b5a52dbf41300f59974131f961988</sys_ui_section><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:16:09</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_govdelivery_subscriber_exceptions</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:16:55</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>be4b5a52dbf41300f59974131f961988</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_be4b5a52dbf41300f59974131f961988</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:16:55</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1785502186</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>3db05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3b8fba0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>a6f69beed8b053004596f7c9f4e84c68</update_guid>
+<update_guid_history>a6f69beed8b053004596f7c9f4e84c68:-1785502186,6ca6d3ee74b053008e41526d826851c0:1285735909,df7617ae4bb0530018dc38f42f2652d1:-2124874960,b54fde16e2f41300f65bd5f8bc21185d:1533663440,002f1e16f1f4130097f12f049e78feef:-1135674228,434b5a52e7f41300c5247ea18c927e90:1533663440,724b5a52fff41300fd1c93bbb278aa8b:-2007789583</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_u_gd_subscriber_exceptions_u_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="DELETE" field="u_status" table="u_gd_subscriber_exceptions" version="3"><sys_choice_set action="DELETE"><element>u_status</element><name>u_gd_subscriber_exceptions</name><sys_class_name/><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on/><sys_customer_update>false</sys_customer_update><sys_id>d2fac90edbb85700f59974131f961900</sys_id><sys_mod_count/><sys_name>u_status</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_u_gd_subscriber_exceptions_u_status</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:07:11</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+<payload_hash>-1236700559</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>3db05d11dbc19700f59974131f9619f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543ee720000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.Status</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>6419921235f413007c65b1b49d2165f6</update_guid>
+<update_guid_history>6419921235f413007c65b1b49d2165f6:-1236700559,10199212c5f4130050b7463538004af3:-2137115363,9419921299f413001d842456ff9d80f0:-1123704119,1419921262f41300b88a124890e475e1:1002835069,a26c018e72b85700fc0e5c3a713a8dd6:1179826665,794bc90e44b85700ba35f59d375f879e:1492530363,9e3b8d0ea8b85700455dfed0e15b76f0:910949455,372b014e30b8570039d2657252e09805:840373919,3e1b090ebcb85700f75c6495883e6eea:1085213025,d2fac90ee4b85700031912c0a94ffd01:-1034965439</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_govdelivery_subscriber_exceptions_u_sac_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_sac" label="SAC" language="en" table="u_govdelivery_subscriber_exceptions"><sys_documentation action="INSERT_OR_UPDATE"><element>u_sac</element><help/><hint/><label>SAC</label><language>en</language><name>u_govdelivery_subscriber_exceptions</name><plural>SACs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6ca6d3eedbb05300f59974131f9619c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SAC</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_govdelivery_subscriber_exceptions_u_sac_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:14:39</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1241322395</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>71b05151dbc19700f59974131f96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3a322e0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.SAC</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a8a6d3ee4fb0530026509ca67aefb5c7</update_guid>
+<update_guid_history>a8a6d3ee4fb0530026509ca67aefb5c7:-1241322395</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1d19c98adbb85700f59974131f961976</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1d19c98adbb85700f59974131f961976</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">dd19c98adbb85700f59974131f961971</sys_security_acl><sys_update_name>sys_security_acl_role_1d19c98adbb85700f59974131f961976</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><sys_user_role display_value="u_gd_subscriber_exceptions_user" name="u_gd_subscriber_exceptions_user">45198d86dbb85700f59974131f96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-376713092</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>71b05151dbc19700f59974131f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e9c90000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>dd19c98adbb85700f59974131f961971</table>
+<target_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>4819921257f413003466a4ff1c3145ce</update_guid>
+<update_guid_history>4819921257f413003466a4ff1c3145ce:-376713092,5919c98a65b85700a0b6bc312c551a78:-2040088469</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_first_name</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_first_name" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>First Name</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_first_name</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>50</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:42:08</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e5a985cadbb85700f59974131f961997</sys_id><sys_mod_count>3</sys_mod_count><sys_name>First Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_first_name</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:43:40</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1128359357</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>71b05d11dbc19700f59974131f9619f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254447c20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_first_name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>ce295612adf413001a46a98aa76e030f</update_guid>
+<update_guid_history>ce295612adf413001a46a98aa76e030f:1128359357,d61a8dca8fb857009f447e27c2abf4bd:382785009,760a4dcaceb85700dc68868138f1390d:14096662,14f9c9cad1b85700a8814033ad634404:382785009,b3b9c5cab4b857001be3534e5411a25e:14096662</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_status_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_status" label="Status" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_status</element><help/><hint/><label>Status</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>Status</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:47:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5beac90edbb85700f59974131f9619ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Status</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_status_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:47:17</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>2015465914</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>75b05151dbc19700f59974131f96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254427bc0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_status</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>0c2916120df41300b69fb96d18f90e52</update_guid>
+<update_guid_history>0c2916120df41300b69fb96d18f90e52:2015465914,57eac90e75b857001ae887580eebfbb1:1287954826</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_00ead652dbf41300f59974131f961992</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>00ead652dbf41300f59974131f961992</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_govdelivery_subscriber_exceptions">c0ead652dbf41300f59974131f96198d</sys_security_acl><sys_update_name>sys_security_acl_role_00ead652dbf41300f59974131f961992</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><sys_user_role display_value="u_govdelivery_subscriber_exceptions_manager" name="u_govdelivery_subscriber_exceptions_manager">bbda9612dbf41300f59974131f961941</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2094399454</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>75b05151dbc19700f59974131f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b29a20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>4cead652b9f41300faf67acf805a3893</update_guid>
+<update_guid_history>4cead652b9f41300faf67acf805a3893:2094399454</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_93fd41cedbb85700f59974131f961921</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/naci/govdelivery</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>GovDelivery Configuration</name><namespace>naci</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>govdelivery</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 16:01:02</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>93fd41cedbb85700f59974131f961921</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery Configuration</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_93fd41cedbb85700f59974131f961921</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 16:01:02</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>1735262572</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>75b05151dbc19700f59974131f961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622017ee810000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>GovDelivery Configuration</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>e41e094e00b85700c371e64eb31767ee</update_guid>
+<update_guid_history>e41e094e00b85700c371e64eb31767ee:1735262572</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9d19c98adbb85700f59974131f961980</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_null</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1771251744</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>75b05d11dbc19700f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225442ea10000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a4291612cff41300233f8b3224d5af90</update_guid>
+<update_guid_history>a4291612cff41300233f8b3224d5af90:1771251744,1919c98afcb8570000f72f85c9a95093:-925691540</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_first_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_first_name" label="First Name" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_first_name</element><help/><hint/><label>First Name</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>First Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:42:08</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>27b9c1cadbb85700f59974131f961964</sys_id><sys_mod_count>0</sys_mod_count><sys_name>First Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_first_name_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:42:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>545343561</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>79b05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254427460000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_first_name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>88291612ebf41300162d3692d054b530</update_guid>
+<update_guid_history>88291612ebf41300162d3692d054b530:545343561,b7b9c5ca26b857003784a089e8939f5f:393063353</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_d519c98adbb85700f59974131f96196a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_gd_subscriber_exceptions</description><name>u_gd_subscriber_exceptions</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d519c98adbb85700f59974131f96196a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_d519c98adbb85700f59974131f96196a</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1171545085</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>79b05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e9850000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>8819921256f4130071e4ebde7563d4c9</update_guid>
+<update_guid_history>8819921256f4130071e4ebde7563d4c9:1171545085,9519c98ab1b857008909c82598f5326e:-539156855</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_b6cbc54edbb85700f59974131f961902</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="b6cbc54edbb85700f59974131f961902" sys_domain="global" table="u_gd_subscriber_exceptions" version="3" view=""><sys_ui_section action="DELETE"><caption/><header>false</header><name>u_gd_subscriber_exceptions</name><roles/><sys_class_name/><sys_created_by/><sys_created_on/><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>b6cbc54edbb85700f59974131f961902</sys_id><sys_mod_count/><sys_name/><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2018-03-14 16:07:27</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-545055803</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>79b05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225442c140000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>d0291612b4f41300bd05c263db4b6f7a</update_guid>
+<update_guid_history>d0291612b4f41300bd05c263db4b6f7a:-545055803,facb494ec8b85700e448ff68368a1de9:-866334332,76cb494ee6b85700eadc5e7786b06de2:-101650264</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_f3da9612dbf41300f59974131f961948</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="GovDelivery">8919c98adbb85700f59974131f96195c</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>GovDelivery Subscriber Exceptions</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_govdelivery_subscriber_exceptions</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_govdelivery_subscriber_exceptions_manager</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>f3da9612dbf41300f59974131f961948</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_f3da9612dbf41300f59974131f961948</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on><timeline_page/><title>GovDelivery Subscriber Exceptions</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>1847699276</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>79b05d11dbc19700f59974131f9619f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b268c0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>80ead65268f413006d24481bf8a4d670</update_guid>
+<update_guid_history>80ead65268f413006d24481bf8a4d670:1847699276</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_user</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_user" table="u_govdelivery_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>User</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_user</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>u_govdelivery_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_user">sys_user</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:16:43</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7fea5a52dbf41300f59974131f96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_user</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:16:43</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1572757783</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>7db05151dbc19700f59974131f96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254caa4a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.User</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c04b5e527df413007e84884689fdc043</update_guid>
+<update_guid_history>c04b5e527df413007e84884689fdc043:-1572757783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c0ead652dbf41300f59974131f96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_govdelivery_subscriber_exceptions</description><name>u_govdelivery_subscriber_exceptions</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c0ead652dbf41300f59974131f96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_c0ead652dbf41300f59974131f96197e</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>549778612</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>7db05151dbc19700f59974131f96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b285a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>80ead65265f41300a8ff197940c91482</update_guid>
+<update_guid_history>80ead65265f41300a8ff197940c91482:549778612</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_control_e3aa6a1edbf41300f59974131f9619b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control"><sys_ui_list_control action="INSERT_OR_UPDATE"><columns_condition/><edit_condition/><edit_default_filter/><edit_roles/><empty_condition/><filter_condition/><filter_roles/><hierarchical_lists>false</hierarchical_lists><label/><link_condition/><link_roles/><list_edit_insert_row>false</list_edit_insert_row><list_edit_ref_qual_tag/><list_edit_type/><name>u_govdelivery_subscriber_exceptions</name><new_condition/><new_roles/><omit_columns_if_empty>false</omit_columns_if_empty><omit_drilldown_link>false</omit_drilldown_link><omit_edit_button>false</omit_edit_button><omit_filters>false</omit_filters><omit_if_empty>false</omit_if_empty><omit_links>true</omit_links><omit_new_button>false</omit_new_button><related_list/><sys_class_name>sys_ui_list_control</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 17:25:52</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>e3aa6a1edbf41300f59974131f9619b5</sys_id><sys_mod_count>5</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_overrides display_value="">global</sys_overrides><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_list_control_e3aa6a1edbf41300f59974131f9619b5</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:39:20</sys_updated_on></sys_ui_list_control></record_update>]]></payload>
+<payload_hash>-1477389742</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>7db05151dbc19700f59974131f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16245911c990000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>List Control</type>
+<update_domain>global</update_domain>
+<update_guid>d35c66107285d300452855cf9da31d34</update_guid>
+<update_guid_history>d35c66107285d300452855cf9da31d34:-1477389742,8cbba6dc6a45d3007e49f3a2f4fab4bc:7295915,a4bb665e2af41300fdf27616879b4c11:-1477389742,58abee1e9bf41300403d47322a1c7402:-479672778,e96b625e47f41300f6a5f771c8196daa:7295915,811b2a1ee0f413000f3084c769051143:-1477389742</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_status</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_status" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice>1</choice><choice_field/><choice_table/><column_label>Status</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_status</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="Choice">choice</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:47:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>17cac90edbb85700f59974131f961973</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Status</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_status</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 20:01:52</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-867825325</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>7db05d11dbc19700f59974131f9619f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254451cb0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_status</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>6a29561280f413001717627258c5e747</update_guid>
+<update_guid_history>6a29561280f413001717627258c5e747:-867825325,e8354ec2b17c57009a2fa880ae79fd02:454225287,0e9b054e18b857002af3d6c751968ab6:377856615,53eac90e2ab85700340554f3bc7900b0:889542768</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_sac_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_sac" label="SAC" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_sac</element><help/><hint/><label>SAC</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>SACs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:46:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>06cac50edbb85700f59974131f961989</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SAC</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_sac_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:46:40</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1540496133</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b1b05151dbc19700f59974131f96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254426c00000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_sac</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>c429921213f413008681e3fb430034fb</update_guid>
+<update_guid_history>c429921213f413008681e3fb430034fb:1540496133,02cac50ec3b85700c323537b9842ae8f:218464565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_00ead652dbf41300f59974131f961983</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>00ead652dbf41300f59974131f961983</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_govdelivery_subscriber_exceptions">c0ead652dbf41300f59974131f96197e</sys_security_acl><sys_update_name>sys_security_acl_role_00ead652dbf41300f59974131f961983</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><sys_user_role display_value="u_govdelivery_subscriber_exceptions_manager" name="u_govdelivery_subscriber_exceptions_manager">bbda9612dbf41300f59974131f961941</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>424923456</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b1b05151dbc19700f59974131f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b287e0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions.u_govdelivery_subscriber_exceptions_manager</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>4cead6529cf41300a8a26f43569ab384</update_guid>
+<update_guid_history>4cead6529cf41300a8a26f43569ab384:424923456</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_bbda9612dbf41300f59974131f961941</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>u_govdelivery_subscriber_exceptions_manager</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>bbda9612dbf41300f59974131f961941</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions_manager</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_bbda9612dbf41300f59974131f961941</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>-1316169331</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b1b05151dbc19700f59974131f961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b25a30000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>u_govdelivery_subscriber_exceptions_manager</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>b3da9612aef413003a3bd4d835bacc44</update_guid>
+<update_guid_history>b3da9612aef413003a3bd4d835bacc44:-1316169331</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_a98881c6dbb85700f59974131f9619aa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="DELETE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>true</create_access_controls><delete_access>true</delete_access><extension_model/><is_extendable>false</is_extendable><label>GovDelivery Subscriber Exceptions</label><live_feed_enabled>false</live_feed_enabled><name>u_gd_subscriber_exceptions</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a98881c6dbb85700f59974131f9619aa</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_a98881c6dbb85700f59974131f9619aa</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:40:11</sys_updated_on><update_access>true</update_access><user_role display_value="u_gd_subscriber_exceptions_user" name="u_gd_subscriber_exceptions_user">45198d86dbb85700f59974131f96194f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>1046275921</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b1b05d11dbc19700f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622544520f0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>ae29561243f41300531a8c7335734049</update_guid>
+<update_guid_history>ae29561243f41300531a8c7335734049:1046275921,d349cd8a7ab8570069efcd4bd1161e5a:-1898337571,5519c98a5bb85700c760b982586668a2:1620358895</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_email_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_email" label="Email" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_email</element><help/><hint/><label>Email</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>Emails</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:44:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>104ac9cadbb85700f59974131f961998</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_email_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:44:22</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>988603081</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b5b05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254426f70000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_email</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8829161219f41300854118578754a529</update_guid>
+<update_guid_history>8829161219f41300854118578754a529:988603081,d84a410ee1b85700bc401495ad466590:1306271865</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_cd19c98adbb85700f59974131f961961</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_gd_subscriber_exceptions</description><name>u_gd_subscriber_exceptions</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>cd19c98adbb85700f59974131f961961</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_cd19c98adbb85700f59974131f961961</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-674935759</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b5b05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e83f0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>c419921270f413009be52a22431994b5</update_guid>
+<update_guid_history>c419921270f413009be52a22431994b5:-674935759,0519c98a8eb85700969bbddebf88fd66:-481171267</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_module_ccead652dbf41300f59974131f961972</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="GovDelivery">80ead652dbf41300f59974131f961971</application><filter/><name>GovDelivery Subscriber Exceptions</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>u_govdelivery_subscriber_exceptions_manager</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>ccead652dbf41300f59974131f961972</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_module_ccead652dbf41300f59974131f961972</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on><table>u_govdelivery_subscriber_exceptions</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+<payload_hash>486964490</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b5b05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b27000000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>80ead65274f41300824bfe5e1b231b74</update_guid>
+<update_guid_history>80ead65274f41300824bfe5e1b231b74:486964490</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_0519c98adbb85700f59974131f96195f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="DELETE"><active>true</active><application display_value="GovDelivery">8919c98adbb85700f59974131f96195c</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>GD Subscriber Exceptions</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_gd_subscriber_exceptions</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_gd_subscriber_exceptions_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>0519c98adbb85700f59974131f96195f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_0519c98adbb85700f59974131f96195f</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:40:12</sys_updated_on><timeline_page/><title>GovDelivery Subscriber Exceptions</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>-54354137</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b5b05d11dbc19700f59974131f9619f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543eb530000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>d41992126bf4130029d2d07cb79721da</update_guid>
+<update_guid_history>d41992126bf4130029d2d07cb79721da:-54354137,d349cd8af7b85700f29d3b3a98c30f5d:-921762294,8d19c98a67b85700177fa37c49efeb60:-777792188</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_sac</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_sac" table="u_govdelivery_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>SAC</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_sac</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_govdelivery_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:39</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7c96d3eedbb05300f59974131f96193b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>SAC</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_sac</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:14:48</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-988044211</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b9b05151dbc19700f59974131f96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3a53d20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.SAC</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f2a653ee42b0530074313f5e4d3f3373</update_guid>
+<update_guid_history>f2a653ee42b0530074313f5e4d3f3373:-988044211,a4a6d3eeb4b05300f1e1cc6037d736c6:-83655074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c0ead652dbf41300f59974131f961975</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_govdelivery_subscriber_exceptions</description><name>u_govdelivery_subscriber_exceptions</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c0ead652dbf41300f59974131f961975</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_c0ead652dbf41300f59974131f961975</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>96241152</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b9b05151dbc19700f59974131f96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b27ad0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>80ead65200f41300db518a088c60b37a</update_guid>
+<update_guid_history>80ead65200f41300db518a088c60b37a:96241152</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_application_80ead652dbf41300f59974131f961971</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>GovDelivery</name><order/><roles/><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>80ead652dbf41300f59974131f961971</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_application_80ead652dbf41300f59974131f961971</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on></sys_ui_application></record_update>]]></payload>
+<payload_hash>-1428702512</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b9b05151dbc19700f59974131f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b26c50000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>GovDelivery</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>40ead65294f41300ca0f467ab1510572</update_guid>
+<update_guid_history>40ead65294f41300ca0f467ab1510572:-1428702512</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_547cb54edb3c5700f59974131f961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="DELETE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles>u_gd_subscriber_exceptions_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 19:24:37</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>547cb54edb3c5700f59974131f961954</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_547cb54edb3c5700f59974131f961954</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 19:24:37</sys_updated_on><title>GovDelivery</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-903142741</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b9b05d11dbc19700f59974131f9619f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16220d4d2630000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>GovDelivery</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>f24db54edd3c570012d5e748bd05f011</update_guid>
+<update_guid_history>f24db54edd3c570012d5e748bd05f011:-903142741,3aac350eb03c57003dce21639c857a37:838600351</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_sac</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_sac" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>SAC</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_sac</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:46:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4fba890edbb85700f59974131f961907</sys_id><sys_mod_count>1</sys_mod_count><sys_name>SAC</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_sac</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:50:04</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-450930875</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>b9b05d11dbc19700f59974131f9619f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225444f0a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_sac</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e62956121ef41300f09ec27e8a236133</update_guid>
+<update_guid_history>e62956121ef41300f09ec27e8a236133:-450930875,c89b054e79b8570016c95cbf039723dd:1685174929,0ecac50e55b8570006f9eca95e95278d:-934348938</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_govdelivery_subscriber_exceptions_u_division_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_division" label="Division" language="en" table="u_govdelivery_subscriber_exceptions"><sys_documentation action="INSERT_OR_UPDATE"><element>u_division</element><help/><hint/><label>Division</label><language>en</language><name>u_govdelivery_subscriber_exceptions</name><plural>Divisions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:01</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>177617aedbb05300f59974131f9619d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Division</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_govdelivery_subscriber_exceptions_u_division_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:14:01</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>532740447</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>bdb05151dbc19700f59974131f96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a399caf0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.Division</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>177653ee5fb05300f456c358c0865849</update_guid>
+<update_guid_history>177653ee5fb05300f456c358c0865849:532740447</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1519c98adbb85700f59974131f96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1519c98adbb85700f59974131f96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">d519c98adbb85700f59974131f961979</sys_security_acl><sys_update_name>sys_security_acl_role_1519c98adbb85700f59974131f96197e</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><sys_user_role display_value="u_gd_subscriber_exceptions_user" name="u_gd_subscriber_exceptions_user">45198d86dbb85700f59974131f96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-195498411</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>bdb05151dbc19700f59974131f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e88a0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>d519c98adbb85700f59974131f961979</table>
+<target_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>c419921253f41300d496b6d22135e4ba</update_guid>
+<update_guid_history>c419921253f41300d496b6d22135e4ba:-195498411,5119c98a73b85700f71d737fed9c0f80:-1858873788</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_18ead652dbf41300f59974131f9619b0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_govdelivery_subscriber_exceptions</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:06</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>18ead652dbf41300f59974131f9619b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_18ead652dbf41300f59974131f9619b0</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:06</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>2099117074</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>bdb05151dbc19700f59974131f961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b2c0d0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>58ead65256f413009d84187284d491b1</update_guid>
+<update_guid_history>58ead65256f413009d84187284d491b1:2099117074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_email</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_email" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>Email</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_email</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>50</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:44:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d52a010edbb85700f59974131f96195d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_email</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:44:21</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>167631029</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>bdb05d11dbc19700f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254445540000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_email</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>3529561254f4130061b58105f57c8a08</update_guid>
+<update_guid_history>3529561254f4130061b58105f57c8a08:167631029,d44a410e91b857002e3b1da20e78ae8f:-174102551</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_division_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_division" label="Division" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_division</element><help/><hint/><label>Division</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>Divisions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:46:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fdba450edbb85700f59974131f9619f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Division</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_division_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:46:22</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1135026713</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f1b05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254428980000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_division</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>00291612a3f41300eb4bcb0e657dc963</update_guid>
+<update_guid_history>00291612a3f41300eb4bcb0e657dc963:-1135026713,fdba090e30b85700613c86f7affea2e2:-863154665</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c8ead652dbf41300f59974131f961985</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_govdelivery_subscriber_exceptions</description><name>u_govdelivery_subscriber_exceptions</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c8ead652dbf41300f59974131f961985</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_c8ead652dbf41300f59974131f961985</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:05</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-447418128</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f1b05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b28eb0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>u_govdelivery_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>88ead65258f41300205ea4fd46ed0389</update_guid>
+<update_guid_history>88ead65258f41300205ea4fd46ed0389:-447418128</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_govdelivery_subscriber_exceptions_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_govdelivery_subscriber_exceptions" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_user.employee_number</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>326b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_user.name</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>b26b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_user.u_ad_email</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>366b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_user.u_employee_classification</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>b66b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_division</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>3a6b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_sac</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>ba6b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_building</element><list_id display_value="u_govdelivery_subscriber_exceptions" element="NULL" name="u_govdelivery_subscriber_exceptions" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">766bee9cdb45d30054d8ff621f961921</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_id>3e6b2adcdb45d30054d8ff621f96192b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_govdelivery_subscriber_exceptions</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-20 22:35:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>766bee9cdb45d30054d8ff621f961921</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_govdelivery_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_list_u_govdelivery_subscriber_exceptions_null</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-20 22:35:11</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>-839127930</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f1b05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162458d51090000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>fe6b2adc4e45d300c16ac8d803ecba2d</update_guid>
+<update_guid_history>fe6b2adc4e45d300c16ac8d803ecba2d:-839127930,152b26dca845d3008a300d9ee38f4489:-542086066,c92e1216a6f413002c503b5fc2126183:655068981,058d96d2eff413009d6d92f7a44579ff:-467998279,d50d16923cf41300595bcf8307b23f28:1404171095,476c9a9263f4130030a432a3ce325225:1209781924,8a4b5a521df41300eba93ec77e7935b3:-1803458310</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_8919c98adbb85700f59974131f96195c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>GD Subscriber Exceptions</name><order>100</order><roles>u_gd_subscriber_exceptions_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>8919c98adbb85700f59974131f96195c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GovDelivery</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_8919c98adbb85700f59974131f96195c</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 19:27:33</sys_updated_on><title>GovDelivery</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-1333013223</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f1b05d11dbc19700f59974131f9619f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16220d504040000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>GovDelivery</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>3d5d794e173c5700107b86cfa128e244</update_guid>
+<update_guid_history>3d5d794e173c5700107b86cfa128e244:-1333013223,8519c98a36b85700600956b2f1e8295e:91838999</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_division</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_division" table="u_govdelivery_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>Division</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_division</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_govdelivery_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:14:01</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b1f4db6edbb05300f59974131f9619e5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Division</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_govdelivery_subscriber_exceptions_u_division</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:15:11</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1139834637</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f5b05151dbc19700f59974131f96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3aadbb0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.Division</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>50c657ee14b05300c83b4e0766c22454</update_guid>
+<update_guid_history>50c657ee14b05300c83b4e0766c22454:-1139834637,9f7653ee4eb05300728e6c2730711747:-1041918570</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_govdelivery_subscriber_exceptions__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="GovDelivery Subscriber Exceptions" language="en" table="u_govdelivery_subscriber_exceptions"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>GovDelivery Subscriber Exceptions</label><language>en</language><name>u_govdelivery_subscriber_exceptions</name><plural>GovDelivery Subscriber Exceptions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:06</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>94ead652dbf41300f59974131f9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_govdelivery_subscriber_exceptions__en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:06</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1346483438</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f5b05151dbc19700f59974131f96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b2c460000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>90ead65255f4130007a8bb38d83ceeb4</update_guid>
+<update_guid_history>90ead65255f4130007a8bb38d83ceeb4:-1346483438</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_c119c98adbb85700f59974131f961967</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c119c98adbb85700f59974131f961967</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">cd19c98adbb85700f59974131f961961</sys_security_acl><sys_update_name>sys_security_acl_role_c119c98adbb85700f59974131f961967</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><sys_user_role display_value="u_gd_subscriber_exceptions_user" name="u_gd_subscriber_exceptions_user">45198d86dbb85700f59974131f96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>300277758</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f5b05151dbc19700f59974131f961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e7ab0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>cd19c98adbb85700f59974131f961961</table>
+<target_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>08199212c2f4130024834a8abf2780af</update_guid>
+<update_guid_history>08199212c2f4130024834a8abf2780af:300277758,0919c98a4fb85700b0d3416abd000b69:-1363097619</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_ned_id</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_ned_id" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>NED ID</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_ned_id</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:41:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>645901cadbb85700f59974131f9619a8</sys_id><sys_mod_count>3</sys_mod_count><sys_name>NED ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_ned_id</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:43:26</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-2112687467</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f5b05d11dbc19700f59974131f9619f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225444ca20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_ned_id</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>1e295612bff4130045fe1ca7f51f5e2b</update_guid>
+<update_guid_history>1e295612bff4130045fe1ca7f51f5e2b:-2112687467,fe0a4dca16b857001537736285ec490b:281986017,98f9c9ca07b857008ce225b6748d1a05:-95521968,fbb9c5ca07b85700b74020221520405c:281986017,9f9945ca2eb85700b97c6525c3971575:-95521968</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_govdelivery_subscriber_exceptions_u_building_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_building" label="Building" language="en" table="u_govdelivery_subscriber_exceptions"><sys_documentation action="INSERT_OR_UPDATE"><element>u_building</element><help/><hint/><label>Building</label><language>en</language><name>u_govdelivery_subscriber_exceptions</name><plural>Buildings</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-15 15:16:09</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a6f69beedbb05300f59974131f961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Building</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_govdelivery_subscriber_exceptions_u_building_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-15 15:16:09</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>927588241</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f9b05151dbc19700f59974131f96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622a3b90370000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions.Building</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e2f69bee4eb053002fc106875374b76f</update_guid>
+<update_guid_history>e2f69bee4eb053002fc106875374b76f:927588241</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1519c98adbb85700f59974131f96196f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1519c98adbb85700f59974131f96196f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">d519c98adbb85700f59974131f96196a</sys_security_acl><sys_update_name>sys_security_acl_role_1519c98adbb85700f59974131f96196f</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><sys_user_role display_value="u_gd_subscriber_exceptions_user" name="u_gd_subscriber_exceptions_user">45198d86dbb85700f59974131f96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-444640226</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f9b05151dbc19700f59974131f961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543e9260000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>d519c98adbb85700f59974131f96196a</table>
+<target_name>u_gd_subscriber_exceptions.u_gd_subscriber_exceptions_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>0819921231f41300bc57e23b804e04c4</update_guid>
+<update_guid_history>0819921231f41300bc57e23b804e04c4:-444640226,5119c98a2cb85700194dc2258b8dd671:-2108015603</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_1119c98adbb85700f59974131f961991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="DELETE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_gd_subscriber_exceptions</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>1119c98adbb85700f59974131f961991</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_1119c98adbb85700f59974131f961991</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>148976420</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f9b05151dbc19700f59974131f961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225442ac20000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>902916127ef41300b6cebf99b48caf72</update_guid>
+<update_guid_history>902916127ef41300b6cebf99b48caf72:148976420,5119c98aebb85700316801b50a644492:-160305360</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_gd_subscriber_exceptions_u_division</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="u_division" table="u_gd_subscriber_exceptions"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation><choice/><choice_field/><choice_table/><column_label>Division</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_division</element><element_reference>false</element_reference><foreign_database/><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>20</max_length><name>u_gd_subscriber_exceptions</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:46:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fdaa090edbb85700f59974131f961943</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Division</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_gd_subscriber_exceptions_u_division</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:50:28</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><u_model_id/><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-799513133</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>f9b05d11dbc19700f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254442ea0000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_division</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f9291612a5f4130081738e9d71f8abe7</update_guid>
+<update_guid_history>f9291612a5f4130081738e9d71f8abe7:-799513133,f9abc54e95b8570090771042a58d12ff:1459890975,f9ba090efdb857005da0e29c455542e1:781736846</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_gd_subscriber_exceptions_u_ned_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="u_ned_id" label="NED ID" language="en" table="u_gd_subscriber_exceptions"><sys_documentation action="DELETE"><element>u_ned_id</element><help/><hint/><label>NED ID</label><language>en</language><name>u_gd_subscriber_exceptions</name><plural>NED IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:41:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9799818adbb85700f59974131f961965</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NED ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_gd_subscriber_exceptions_u_ned_id_en</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:41:33</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1956812899</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>fdb05151dbc19700f59974131f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254428430000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions.u_ned_id</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>002916126cf413002f31ce52d67bb55c</update_guid>
+<update_guid_history>002916126cf413002f31ce52d67bb55c:1956812899,939945ca1eb8570075f11cd06c216077:-2001629229</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_dd19c98adbb85700f59974131f961971</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_gd_subscriber_exceptions</description><name>u_gd_subscriber_exceptions</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>dd19c98adbb85700f59974131f961971</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_dd19c98adbb85700f59974131f961971</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:14</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1340051393</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>fdb05151dbc19700f59974131f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1622543ea310000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_gd_subscriber_exceptions</table>
+<target_name>u_gd_subscriber_exceptions</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>c81992128af413003203f04df928eed3</update_guid>
+<update_guid_history>c81992128af413003203f04df928eed3:1340051393,9d19c98a7ab857007bb4e109e1cb5075:-1967005875</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_45198d86dbb85700f59974131f96194f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="DELETE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>u_gd_subscriber_exceptions_user</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-13 15:39:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>45198d86dbb85700f59974131f96194f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_gd_subscriber_exceptions_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_45198d86dbb85700f59974131f96194f</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-13 15:39:13</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>802568033</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>fdb05151dbc19700f59974131f961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16225457b040000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table/>
+<target_name>u_gd_subscriber_exceptions_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>55791a12caf41300611c700f443c25d8</update_guid>
+<update_guid_history>55791a12caf41300611c700f443c25d8:802568033,0519c98a3fb857005f27296ca250b658:238844653</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_0c3a1252dbf41300f59974131f961973</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>true</create_access_controls><delete_access>true</delete_access><extension_model/><is_extendable>false</is_extendable><label>GovDelivery Subscriber Exceptions</label><live_feed_enabled>false</live_feed_enabled><name>u_govdelivery_subscriber_exceptions</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>yankovsr@nih.gov</sys_created_by><sys_created_on>2018-03-14 16:15:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>0c3a1252dbf41300f59974131f961973</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GovDelivery Subscriber Exceptions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_0c3a1252dbf41300f59974131f961973</sys_update_name><sys_updated_by>yankovsr@nih.gov</sys_updated_by><sys_updated_on>2018-03-14 16:15:04</sys_updated_on><update_access>true</update_access><user_role display_value="u_govdelivery_subscriber_exceptions_manager" name="u_govdelivery_subscriber_exceptions_manager">bbda9612dbf41300f59974131f961941</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>1891684121</payload_hash>
+<remote_update_set display_value="20180313-GovDelivery_Custom_Configuration">75b05d11dbc19700f59974131f9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2018-03-23 18:32:51</sys_created_on>
+<sys_id>fdb05d11dbc19700f59974131f9619f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162254b2c620000001</sys_recorded_at>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2018-03-23 18:32:51</sys_updated_on>
+<table>u_govdelivery_subscriber_exceptions</table>
+<target_name>GovDelivery Subscriber Exceptions</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>14ead652fef41300c9641975f7b9cab5</update_guid>
+<update_guid_history>14ead652fef41300c9641975f7b9cab5:1891684121</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
