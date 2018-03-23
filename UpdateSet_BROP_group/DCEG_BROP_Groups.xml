@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-22 19:17:03">
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_ADMIN</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2017-12-18 16:08:20</sys_created_on>
+<sys_id>3330e72edb030f00f59974131f961912</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-18 16:08:20</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_BIOINFORMATIC</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-12-06 15:32:22</sys_created_on>
+<sys_id>6735a5fadb728300f59974131f96193a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-06 15:32:22</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_BIOINFORMATICIAN_TASK</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>yankovsr@nih.gov</sys_created_by>
+<sys_created_on>2017-12-13 22:28:36</sys_created_on>
+<sys_id>3b974b49db030b00f59974131f961948</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yankovsr@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-13 22:28:36</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_CHAIR</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-12-06 15:32:06</sys_created_on>
+<sys_id>c535e5fadb728300f59974131f9619ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-06 15:32:06</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_COMMITTEE</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-12-06 15:31:39</sys_created_on>
+<sys_id>fa05297adb728300f59974131f9619f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-06 15:31:39</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_PI</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-12-06 15:30:34</sys_created_on>
+<sys_id>beb465fadb728300f59974131f9619e2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-06 15:30:34</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description/>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>DCEG_SECRETARY</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2017-12-06 15:31:55</sys_created_on>
+<sys_id>cd25a9fadb728300f59974131f96190d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2017-12-06 15:31:55</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+</unload>
