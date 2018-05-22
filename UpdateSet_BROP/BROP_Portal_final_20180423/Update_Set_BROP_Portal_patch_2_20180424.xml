@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-04-24 18:58:12">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>DCEG_BROP_Portal_patch_2_20180424</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>de584ee7dbed5380f59974131f961906</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-04-24 18:58:12</sys_created_on>
+<sys_id>1d694ee7dbed5380f59974131f96190e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-04-24 18:58:12</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_8caac70edbe70300f59974131f961990</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $http, bropConstantsService) {
+  /* widget controller */
+  var c = this;
+  var sessionId = c.data.info.sessionId;
+  var canSubmitProposal = c.data.info.canSubmitProposal;
+	
+  $scope.logout =	function(){
+		window.location.href="/logout.do";
+  };
+	
+		$('.collapse').on('shown.bs.collapse', function() {
+				$(this).parent().find(".fa-plus-square").removeClass("fa-plus-square").addClass("fa-minus-square");
+		}).on('hidden.bs.collapse', function() {
+				$(this).parent().find(".fa-minus-square").removeClass("fa-minus-square").addClass("fa-plus-square");
+		});	
+	
+	
+  /* Initialize constants in the bropConstants Service */
+  $.ajax({
+	  dataType: "json",
+	  type: "GET",
+	  url: "/api/naci/getdata/getCatItemId",
+	  beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+	  data: {name: bropConstantsService.getCatItemDesc()},
+	  async: false,
+	  success: function(data){
+		  bropConstantsService.setCatItemId(data.result[0].id);
+	  },
+	  error: function(data){
+		  alert("ERROR");
+	  }
+  });		
+	
+	$.ajax({
+		dataType: "json",
+		type: "GET",
+		url: "/api/naci/getdata/getVariableArray",
+		beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+		data: {email: 'zhoujim@nih.gov'},
+		async: false,
+		success: function(data){
+			bropConstantsService.setItemIdArray(data.result[0].itemId);
+		},
+		error: function(data){
+			alert("ERROR");
+		}
+	});	
+	
+	$.ajax({
+		dataType: "json",
+		type: "GET",
+		url: "/api/naci/getdata/getBioinformaticianGroupMember",
+		beforeSend: function(xhr){ xhr.setRequestHeader('X-UserToken', sessionId); },
+		async: false,
+		success: function(data){
+			bropConstantsService.setBioMemberOption(data.result[0].option);
+		},
+		error: function(data){
+			alert("ERROR");
+		}
+	});		
+	
+	
+	/* Initialize date picker */
+	
+	/* Show/hide proposal submission */
+	if (canSubmitProposal) {
+		$('#submitterSpan').show();
+	} else {
+		$('#submitterSpan').hide();
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;dceg-brop-header&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;DCEG BROP Header&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	
+  var session_id = gs.getSessionToken();
+	var userId = gs.getUserID();
+	var user = gs.getUser();
+	var canSubmitProposal = user.isMemberOf('DCEG_PI') || user.isMemberOf('DCEG_COMMITTEE') || user.isMemberOf('DCEG_CHAIR');
+
+	data.info = {
+		sessionId: session_id,
+		canView: canSubmitProposal
+	};		
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-10 21:47:22&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8caac70edbe70300f59974131f961990&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;DCEG BROP Header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8caac70edbe70300f59974131f961990&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-24 18:55:40&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  
+  &lt;div class="row"&gt;
+     &lt;img src="NCI-logo-full.jpg" height="70" Alt="NCI LOGO"/&gt; &lt;span style="float:right"&gt; &lt;input type="button" class="btn btn-default active" value="Logout" ng-click="logout()"/&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;
+  &lt;/div&gt;  
+  
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1139729011</payload_hash>
+<remote_update_set display_value="DCEG_BROP_Portal_patch_2_20180424">1d694ee7dbed5380f59974131f96190e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-04-24 18:58:12</sys_created_on>
+<sys_id>11694ee7dbed5380f59974131f96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>162f902ea9f0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-04-24 18:58:12</sys_updated_on>
+<table/>
+<target_name>DCEG BROP Header</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>98d8422b61ed53804f49ba0065ff84ba</update_guid>
+<update_guid_history>98d8422b61ed53804f49ba0065ff84ba:1139729011,3a4782e7d8ed5380ca46d12edc6f4af6:-1762726820,bec6c2a3a3ed53808c28ef21199ab69d:1594003101,5fb6ca2742ed53807e5015b22da2637a:486537002,1a8606279fed5380cf36c43670ec3a36:1568066715,676642a330ed53801bf9ed7af78f81f4:-585843211,8d160e238aed5380b1eb7d2d3a8b7487:179396949,34d50e63c2ed538075a98b8aa719261e:2125998512,deb50e635ced5380450f6a53a37b08c7:-720217621,b254c623c1ed5380f73b828147eea691:2125998512,dd24822332ed53806ac6be0843da7e4a:871305169,de04822333ed538047431e1f4af0e843:1368725937,91e34eafa9ad5380c655f9f4ee2d27f6:2048914353,7d5e7d6bf8ad53800ce5ebc28771ad27:1368725937,118fe9935b255380755eb960ee8cb147:2048914353,5e2fed533525538024173d44011a9aa1:-1115186751,d7fee153672553805279ad6de72c227e:-643980927,dacee553d525538019444bde07f316a0:1909006155,b138addbbfe1538034c2becc8770befd:1778326520,f807e1db14e1538044bc4fdf69aea5c0:253909649,af7b071d309c1f404a9e6ea41bc4de5f:1778326520,046b471db39c1f4070650823acadcb94:-668181241,6f8ef691479c1f409735919e5834179d:1759793597,defdf691219c1f4061f14995d90f8a2e:76069925,dfb162dd661c1f404a98b5bbd529abdb:1397639759,11912e9d4c1c1f401bfbee57598ed51c:421636250,a651669de51c1f4022eba612b2c84c10:344831970,ce31ea9d3b1c1f409bfd28196f1ce683:1441062914,04906a5da91c1f40b53107f687e2f215:-894512366,35806e5d011c1f40a834ff0eb7681fb3:451370155,b26f9ad9df1c1f401c21a4d2a338009c:803622530,e8f2b81eadff8b0014f274c86f0ed42f:-380148864,60b2341e3aff8b002f6cedde5d6ee66f:1730066098,1840385a67ff8b009a0b299c538134da:-623369670,a930341ac2ff8b000d01058f1c46ed2a:166157273,f2ffac1a82ff8b003ff57780bdb047da:303615037,f7ef605a15ff8b009615cfe275994555:-1898646948,f0efac1a6aff8b00943a34efae478be0:-1789090274,6adf605a41ff8b007bb208f5092bbc4d:-2038568540,687f681a55ff8b004f2c7a53b3aa79dc:1361725638,003fe01ac9ff8b000c22516e424ba35d:-1935275432,4e7efd40f1f747005873cec4779381b9:1361725638,ec5b3100a9f747004727208539377ee3:580645520,f84bfdcc1fb747007bbda01becf397e1:1766070784,9a0b790c85b7470001da2d5154bb91fa:-2054507766,f59a390cc5b7470021addd2f0f1d19de:1229166454,0a8af98c90b74700c706ddb9cf191589:-1431595762,f56af98c69b74700bb1211c22fc36475:493610760,1489f98cc9b74700134a7ca69267056e:-383326810,4419754c8db7470043ec8f9189122830:411412080,71d7b50cd3b74700302b59ea1d343291:-906104587,b36cc78edee7030032a03c39789f6a28:1433336313,e6ebcf4e8ae70300021edbd9fb265315:-1448969187,9bdbcb4ea5e7030038f88969d0102099:2082676748,12bb8b4e87e703007f3d671d9a656ea9:-1282361213,b8ab4b4e49e70300c7a4ebb60eff07ae:1734964345,ddcac70ea8e703008f602b8e80a89296:-912849403</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
