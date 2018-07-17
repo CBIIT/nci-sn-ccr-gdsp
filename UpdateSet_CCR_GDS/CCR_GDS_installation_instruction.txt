@@ -1,0 +1,11 @@
+Application:
+1. load update_set_CCR_GDS_20180405.xml
+2. load update_set_CCR_GDS_patch_1_latest.xml
+3. load update_set_CCR_GDS_patch_2_latest.xml
+
+ 
+MID server:
+1. load update_set_CCRGDS_Scoped_PDF_20180706.xml
+2. remove CCRGDSJAR from mid server jar file.
+3. upload CCRGDS.jar file
+4. restart MID server - CBITTBizMidServer
