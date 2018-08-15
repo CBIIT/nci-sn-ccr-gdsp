@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-07-23 13:52:51">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>DCEG_BROP_Portal_patch_1_20180723</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>dd4224a8db27170054d8ff621f9619d3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-07-23 13:52:51</sys_created_on>
+<sys_id>3592e4a8db27170054d8ff621f961981</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-07-23 13:52:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_portal_f399478adbe70300f59974131f96196a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables/><default>false</default><homepage display_value="dceg_brop_home">481a03cadbe70300f59974131f961977</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page display_value="nci_landing">d656f227dba25f00f59974131f961902</login_page><logo/><notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page><quick_start_config/><sc_catalog/><sc_catalog_page/><sc_category_page/><sp_chat_queue/><sp_rectangle_menu/><sqanda_knowledge_base/><sys_class_name>sp_portal</sys_class_name><sys_created_by>zhoujim@nih.gov</sys_created_by><sys_created_on>2018-01-10 21:43:44</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f399478adbe70300f59974131f96196a</sys_id><sys_mod_count>6</sys_mod_count><sys_name>DCEG RRS BROP Portal</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_portal_f399478adbe70300f59974131f96196a</sys_update_name><sys_updated_by>zhoujim@nih.gov</sys_updated_by><sys_updated_on>2018-07-23 13:52:28</sys_updated_on><theme display_value="Software Solution Theme">f6147a7ddb2d720054d8ff621f96194f</theme><title>DCEG RRS BROP Portal</title><url_suffix>dcegbrop</url_suffix></sp_portal></record_update>]]></payload>
+<payload_hash>2106345252</payload_hash>
+<remote_update_set display_value="DCEG_BROP_Portal_patch_1_20180723">3592e4a8db27170054d8ff621f961981</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-07-23 13:52:51</sys_created_on>
+<sys_id>b992e4a8db27170054d8ff621f961981</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164c769ad470000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-07-23 13:52:51</sys_updated_on>
+<table/>
+<target_name>DCEG RRS BROP Portal</target_name>
+<type>Service Portal</type>
+<update_domain>global</update_domain>
+<update_guid>1c8264a8dd271700714ec14f984c2179</update_guid>
+<update_guid_history>1c8264a8dd271700714ec14f984c2179:2106345252,d680785a1fff8b0061f446795ad72779:-881914134,d680785a1fff8b0061f446795ad72779:-881914134,6656710cd8b747005a25ea4bb6b94252:-1486135235,42257d8869b747009471572cbcfb4335:-881914134,b8e57440bf3747007dd2b3e3b7b05c71:-1486135235,ac1bcf0e3be703007ba8d103c514499f:-881914134,04f9cb8aede7030012e8eb7e063e7e7e:1383106870</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
