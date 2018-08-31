@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-29 20:52:10">
+<x_naci_gcp_gcp_drop_options action="INSERT_OR_UPDATE">
+<active>true</active>
+<label>CITI</label>
+<name>trainingType</name>
+<sys_created_by>yuw5@nih.gov</sys_created_by>
+<sys_created_on>2018-08-23 15:41:48</sys_created_on>
+<sys_id>79b4a066db046300b86770c08c96195f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yuw5@nih.gov</sys_updated_by>
+<sys_updated_on>2018-08-23 15:41:48</sys_updated_on>
+<value>Collaborative Institutional Training Initiative Program (CITI)</value>
+</x_naci_gcp_gcp_drop_options>
+<x_naci_gcp_gcp_drop_options action="INSERT_OR_UPDATE">
+<active>true</active>
+<label>NIAID</label>
+<name>trainingType</name>
+<sys_created_by>yuw5@nih.gov</sys_created_by>
+<sys_created_on>2018-08-23 15:41:20</sys_created_on>
+<sys_id>9b842066db046300b86770c08c9619ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yuw5@nih.gov</sys_updated_by>
+<sys_updated_on>2018-08-23 15:41:20</sys_updated_on>
+<value>National Institute of Allergy and Infectious Diseases (NIAID)</value>
+</x_naci_gcp_gcp_drop_options>
+<x_naci_gcp_gcp_drop_options action="INSERT_OR_UPDATE">
+<active>true</active>
+<label>Other</label>
+<name>trainingType</name>
+<sys_created_by>yuw5@nih.gov</sys_created_by>
+<sys_created_on>2018-08-23 15:42:57</sys_created_on>
+<sys_id>eaf428e2db046300b86770c08c961944</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>yuw5@nih.gov</sys_updated_by>
+<sys_updated_on>2018-08-27 15:38:43</sys_updated_on>
+<value>NIH Good Clinical Practice for Behavioral and Social Sciences Training (00162946)</value>
+</x_naci_gcp_gcp_drop_options>
+<x_naci_gcp_gcp_drop_options action="INSERT_OR_UPDATE">
+<active>true</active>
+<label>NIDA</label>
+<name>trainingType</name>
+<sys_created_by>yuw5@nih.gov</sys_created_by>
+<sys_created_on>2018-08-23 15:42:28</sys_created_on>
+<sys_id>f4d464e2db046300b86770c08c961986</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yuw5@nih.gov</sys_updated_by>
+<sys_updated_on>2018-08-23 15:42:28</sys_updated_on>
+<value>National Drug Abuse Treatment Clinical Trials Network Good Clinical Practice</value>
+</x_naci_gcp_gcp_drop_options>
+</unload>
