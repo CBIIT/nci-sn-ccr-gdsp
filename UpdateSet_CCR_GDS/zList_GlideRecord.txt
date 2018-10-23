@@ -1,0 +1,3665 @@
+var zList = [
+            {
+                "NedId": "0010190055",
+                "ZNumber": "ZIA BC 011746",
+                "Title": "Development Therapeutics Branch Clinical Trials"
+            },
+            {
+                "NedId": "0010171939",
+                "ZNumber": "ZIA BC 009279",
+                "Title": "Regulation of Expression of MHC Class I Genes"
+            },
+            {
+                "NedId": "0010154497",
+                "ZNumber": "ZIA SC 006321",
+                "Title": "Modulation of Therapeutic Response"
+            },
+            {
+                "NedId": "0010065973",
+                "ZNumber": "ZID SC 006329",
+                "Title": "Clinical Radiation Physics Service"
+            },
+            {
+                "NedId": "0010065973",
+                "ZNumber": "ZIA SC 006330",
+                "Title": "Radiation Field Modeling and Computerized Treatment Planning"
+            },
+            {
+                "NedId": "0010154497",
+                "ZNumber": "ZIA SC 006387",
+                "Title": "Nitroxides as Protectors Against Oxidative Stress"
+            },
+            {
+                "NedId": "0010100892",
+                "ZNumber": "ZID SC 007202",
+                "Title": "Biostatistics and Data Management Section"
+            },
+            {
+                "NedId": "0010108670",
+                "ZNumber": "ZIA SC 004020",
+                "Title": "Antigen-specific T-cell Activation, Application to Vaccines for Cancer and AIDS"
+            },
+            {
+                "NedId": "0010041577",
+                "ZNumber": "ZIA SC 004002",
+                "Title": "IL-2:IL-15 cytokine receptor: implications for cancer therapy and vaccine"
+            },
+            {
+                "NedId": "0010653093",
+                "ZNumber": "ZIA BC 010013",
+                "Title": "Molecular Studies of Cellular Cytotoxicity"
+            },
+            {
+                "NedId": "0010044338",
+                "ZNumber": "ZIA BC 010300",
+                "Title": "Signal Transduction of Paired Inhibitory Receptors of NK Cells and Macrophages"
+            },
+            {
+                "NedId": "0010138184",
+                "ZNumber": "ZIA BC 005562",
+                "Title": "Xenobiotic receptors"
+            },
+            {
+                "NedId": "0010196408",
+                "ZNumber": "ZIA BC 005645",
+                "Title": "T-cell Transformation by Oncoviruses"
+            },
+            {
+                "NedId": "0010190055",
+                "ZNumber": "ZIA BC 007333",
+                "Title": "Pharmacology of HIV Viral DNA & Retroviral Integrases"
+            },
+            {
+                "NedId": "0010144684",
+                "ZNumber": "ZIA SC 006663",
+                "Title": "Molecular Characterization of Breast Duct Epithelium at Risk for Breast Cancer"
+            },
+            {
+                "NedId": "0010034875",
+                "ZNumber": "ZIA BC 005093",
+                "Title": "Growth-Differentiation Factors in Organogenesis"
+            },
+            {
+                "NedId": "0010035257",
+                "ZNumber": "ZIA SC 010074",
+                "Title": "HSP90 Chaperone Proteins & Chaperone Interactors in Cellular Signal Transduction"
+            },
+            {
+                "NedId": "0010058007",
+                "ZNumber": "ZIA BC 009405",
+                "Title": "Regulation of Lymphocyte Proliferation and Replicative Capacity"
+            },
+            {
+                "NedId": "0010054321",
+                "ZNumber": "ZIA SC 006737",
+                "Title": "Development of Novel Therapies for HIV Infection"
+            },
+            {
+                "NedId": "0010168700",
+                "ZNumber": "ZIA BC 007363",
+                "Title": "Design and Synthesis of HIV Integrase as Potential Anti-AIDS Drugs"
+            },
+            {
+                "NedId": "0010051851",
+                "ZNumber": "ZIA BC 008382",
+                "Title": "Computational Approaches for RNA Structure/Function Determination"
+            },
+            {
+                "NedId": "0010088685",
+                "ZNumber": "ZIA BC 010015",
+                "Title": "The Role of Cellular Receptors Involved in Inflammation and Tumor Progression"
+            },
+            {
+                "NedId": "0010165418",
+                "ZNumber": "ZIA BC 010308",
+                "Title": "In vivo Imaging Analysis of Steroid-Nuclear Receptor Function"
+            },
+            {
+                "NedId": "0010072515",
+                "ZNumber": "ZIA BC 009404",
+                "Title": "Regulation of MHC Class II Trafficking in Antigen Presenting Cells"
+            },
+            {
+                "NedId": "0010653124",
+                "ZNumber": "ZIA BC 010012",
+                "Title": "Mechanisms of Immune-mediated Tumor Cell Destruction"
+            },
+            {
+                "NedId": "0010165418",
+                "ZNumber": "ZIA BC 010027",
+                "Title": "Function of Steroid Receptors in Subcellular Compartments"
+            },
+            {
+                "NedId": "0010176531",
+                "ZNumber": "ZIA BC 005785",
+                "Title": "TGF-betas in breast cancer progression"
+            },
+            {
+                "NedId": "0010171465",
+                "ZNumber": "ZIA SC 009389",
+                "Title": "A Mitogen-induced G Protein-coupled Receptor"
+            },
+            {
+                "NedId": "0010066568",
+                "ZNumber": "ZIA SC 009174",
+                "Title": "Roles of Glycoconjugates and Redox Signaling in Tumor Biology"
+            },
+            {
+                "NedId": "0010190055",
+                "ZNumber": "ZIA BC 006161",
+                "Title": "DNA Topoisomerases as nuclear and mitochondrial targets of Anticancer Drugs"
+            },
+            {
+                "NedId": "0010038444",
+                "ZNumber": "ZIA BC 010020",
+                "Title": "Clinical Trials with Immunotoxins"
+            },
+            {
+                "NedId": "0010046098",
+                "ZNumber": "ZIA SC 007263",
+                "Title": "Activating Cell Death Pathways in Breast Cancer Cells"
+            },
+            {
+                "NedId": "0010168700",
+                "ZNumber": "ZIA BC 006198",
+                "Title": "Inhibitors of Tyrosine Kinase-Dependent Signaling as Anti-Cancer Agents"
+            },
+            {
+                "NedId": "0010138184",
+                "ZNumber": "ZIA BC 005708",
+                "Title": "Xenobiotic metabolism, cancer chemoprevention and cancer biomarkers"
+            },
+            {
+                "NedId": "0010058007",
+                "ZNumber": "ZIA BC 009281",
+                "Title": "Receptor Mediated T and B Cell Activation"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 009273",
+                "Title": "T Cell Differentiation and Repertoire Selection"
+            },
+            {
+                "NedId": "0010049140",
+                "ZNumber": "ZIA BC 010006",
+                "Title": "Mechanisms of Cross-talk Between EphrinB and Alternate Signaling Pathways"
+            },
+            {
+                "NedId": "0010090560",
+                "ZNumber": "ZIC BC 009255",
+                "Title": "Application of Flow Cytometry to Cell Biology"
+            },
+            {
+                "NedId": "0010165418",
+                "ZNumber": "ZIA BC 005450",
+                "Title": "Chromatin Structure and Gene Expression"
+            },
+            {
+                "NedId": "0010058007",
+                "ZNumber": "ZIA BC 009265",
+                "Title": "Analysis of the T Cell Repertoire"
+            },
+            {
+                "NedId": "0010049375",
+                "ZNumber": "ZIA BC 009392",
+                "Title": "Determining the Fate of Transmembrane Proteins"
+            },
+            {
+                "NedId": "0010061781",
+                "ZNumber": "ZIA BC 007365",
+                "Title": "Regulation of ADP-ribosylation factor"
+            },
+            {
+                "NedId": "0010059704",
+                "ZNumber": "ZIC SC 009372",
+                "Title": "Flow Cytometric Analysis of Benign and Malignant Tumors"
+            },
+            {
+                "NedId": "0010081786",
+                "ZNumber": "ZIA SC 000892",
+                "Title": "Molecular Biology of the Metastatic Phenotype"
+            },
+            {
+                "NedId": "0010053062",
+                "ZNumber": "ZIA SC 007281",
+                "Title": "Nitric Oxide as a Modifier of Oxidative Stress"
+            },
+            {
+                "NedId": "0010106299",
+                "ZNumber": "ZIA SC 010098",
+                "Title": "The Evaluation of Novel Therapeutics for Genitourinary Malignancies"
+            },
+            {
+                "NedId": "0010049375",
+                "ZNumber": "ZIA BC 010292",
+                "Title": "Enzymes and Substrates of the Ubiquitin Conjugating System"
+            },
+            {
+                "NedId": "0010036231",
+                "ZNumber": "ZIA BC 008905",
+                "Title": "Tumor gene expression in vitro and in vivo"
+            },
+            {
+                "NedId": "0010385105",
+                "ZNumber": "ZIA BC 010411",
+                "Title": "Initiation of DNA Replication in Mammalian Cells"
+            },
+            {
+                "NedId": "0010084874",
+                "ZNumber": "ZIA BC 010412",
+                "Title": "Structural Analysis of Macromolecular Complexes by Electron Microscopy"
+            },
+            {
+                "NedId": "0010190055",
+                "ZNumber": "ZIA BC 006150",
+                "Title": "DNA Repair, Cell Cycle Checkpoints and Apoptosis as Targets for Anticancer Drugs"
+            },
+            {
+                "NedId": "0010038444",
+                "ZNumber": "ZIA BC 010298",
+                "Title": "Growth Regulation Section"
+            },
+            {
+                "NedId": "0010145873",
+                "ZNumber": "ZIA SC 009144",
+                "Title": "Mechanisms of transcription factor integration at the c-myc promoter"
+            },
+            {
+                "NedId": "0010011709",
+                "ZNumber": "ZIA BC 010413",
+                "Title": "Human Artificial Chromosomes for Cancer Research and Functional Genomics"
+            },
+            {
+                "NedId": "0010383425",
+                "ZNumber": "ZIA BC 010328",
+                "Title": "Role of C/EBP transcription factors in cell growth and tumorigenesis"
+            },
+            {
+                "NedId": "0010382709",
+                "ZNumber": "ZIA BC 010329",
+                "Title": "Regulation of Ras-Dependent Signal Transduction Pathways"
+            },
+            {
+                "NedId": "0010199351",
+                "ZNumber": "ZIA BC 010331",
+                "Title": "Phospholipid and Sphingolipid Signaling in Drosophila"
+            },
+            {
+                "NedId": "0010296364",
+                "ZNumber": "ZIA BC 010336",
+                "Title": "Lambda Genetic Networks and Lambda Red-Mediated Recombination"
+            },
+            {
+                "NedId": "0010062670",
+                "ZNumber": "ZIA BC 010338",
+                "Title": "The Role of Fgf Signaling in Vertebrate Development"
+            },
+            {
+                "NedId": "0010388355",
+                "ZNumber": "ZIA BC 010419",
+                "Title": "Molecular Mechanisms of TGF-beta Signaling Pathway"
+            },
+            {
+                "NedId": "0010011362",
+                "ZNumber": "ZIA SC 010354",
+                "Title": "Research and Development of Effective Therapies for Patients with Rare Tumors"
+            },
+            {
+                "NedId": "0010149506",
+                "ZNumber": "ZIA BC 005177",
+                "Title": "Interaction of Chemical Carcinogens and Chemotherapeutic Agents with DNA"
+            },
+            {
+                "NedId": "0010040146",
+                "ZNumber": "ZIE SC 000853",
+                "Title": "Translational Surgical Pathology"
+            },
+            {
+                "NedId": "0010151575",
+                "ZNumber": "ZIA BC 009052",
+                "Title": "Papillomavirus Virion Proteins and Vaccines"
+            },
+            {
+                "NedId": "0010108401",
+                "ZNumber": "ZIA BC 004504",
+                "Title": "Interacting Signaling Pathways that Initiate Squamous Cell Carcinogenesis"
+            },
+            {
+                "NedId": "0010079170",
+                "ZNumber": "ZIA BC 005599",
+                "Title": "Tumor Suppressor Protein, p53"
+            },
+            {
+                "NedId": "0010160318",
+                "ZNumber": "ZIA BC 005793",
+                "Title": "Mechanism of viral hepatitis-mediated hepatocarcinogenesis"
+            },
+            {
+                "NedId": "0010152949",
+                "ZNumber": "ZIA BC 008751",
+                "Title": "Regulation of Gene Transcription"
+            },
+            {
+                "NedId": "0010152949",
+                "ZNumber": "ZIA BC 010017",
+                "Title": "Use of Bacteriophages to Prevent, Diagnose, and Treat Diseases"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIA SC 006538",
+                "Title": "Development of Angiogenesis Inhibitors"
+            },
+            {
+                "NedId": "0010052379",
+                "ZNumber": "ZIA SC 000550",
+                "Title": "Lymphoma Disease Discovery and Definition"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA SC 006741",
+                "Title": "Lymphoma Studies"
+            },
+            {
+                "NedId": "0010041501",
+                "ZNumber": "ZIA SC 010093",
+                "Title": "Epigenetic Therapy for Thoracic Malignancies"
+            },
+            {
+                "NedId": "0010048534",
+                "ZNumber": "ZIA BC 008714",
+                "Title": "Bacterial Functions Involved in Cell Growth Control"
+            },
+            {
+                "NedId": "0010151727",
+                "ZNumber": "ZIA BC 010277",
+                "Title": "Mechanisms of Chromosome Maintenance in Bacteria"
+            },
+            {
+                "NedId": "0010095032",
+                "ZNumber": "ZIA BC 008710",
+                "Title": "Molecular Chaperones and DNA Replication"
+            },
+            {
+                "NedId": "0010160318",
+                "ZNumber": "ZIA BC 010313",
+                "Title": "Molecular signatures for liver cancer diagnosis and treatment stratification"
+            },
+            {
+                "NedId": "0010685436",
+                "ZNumber": "ZIA BC 010297",
+                "Title": "Identification of Genetic Factors Associated with Infectious Diseases"
+            },
+            {
+                "NedId": "0010685436",
+                "ZNumber": "ZIA BC 010022",
+                "Title": "Genetics of Complex Diseases and Health Disparities"
+            },
+            {
+                "NedId": "0010684773",
+                "ZNumber": "ZIA SC 006738",
+                "Title": "Development of Antiviral Therapy of HIV-1 Infection"
+            },
+            {
+                "NedId": "0010140206",
+                "ZNumber": "ZIA BC 010301",
+                "Title": "Development of Recombinant Toxins to Treat Hematologic Malignancies"
+            },
+            {
+                "NedId": "0010052475",
+                "ZNumber": "ZIA BC 008757",
+                "Title": "Bio-Therapies for the Treatment of Cancer"
+            },
+            {
+                "NedId": "0010108401",
+                "ZNumber": "ZIA BC 005445",
+                "Title": "Pathways that Suppress or Accelerate Premalignant Progression of Squamous Cancer"
+            },
+            {
+                "NedId": "0010061958",
+                "ZNumber": "ZIA BC 005270",
+                "Title": "Molecular Mechanism of Action of Phorbol Ester"
+            },
+            {
+                "NedId": "0010040808",
+                "ZNumber": "ZIA BC 005268",
+                "Title": "Mechanism of Meiotic Recombination"
+            },
+            {
+                "NedId": "0010061724",
+                "ZNumber": "ZIA BC 004517",
+                "Title": "DNA Repair in Human Cancer-Prone Genetic Diseases"
+            },
+            {
+                "NedId": "0010143374",
+                "ZNumber": "ZIA BC 010319",
+                "Title": "Structural Basis of Biological Membrane Protein Functions and Drug Resistance"
+            },
+            {
+                "NedId": "0010087627",
+                "ZNumber": "ZIA BC 010030",
+                "Title": "Biochemical Analysis of Multidrug Resistance-linked Transport Proteins"
+            },
+            {
+                "NedId": "0010048204",
+                "ZNumber": "ZIC SC 006743",
+                "Title": "Signal Transduction Events and the Regulation of Cell Growth"
+            },
+            {
+                "NedId": "0010054428",
+                "ZNumber": "ZIA BC 010021",
+                "Title": "Biology of Mammary Gland Development and Tumorigenesis"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIC SC 006536",
+                "Title": "Biospecimen Processing & Biorepository"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIC SC 006537",
+                "Title": "Using Clinical Pharmacology Principles to Develop New Anticancer Therapies"
+            },
+            {
+                "NedId": "0010173346",
+                "ZNumber": "ZIA BC 010278",
+                "Title": "Imaging cellular assemblies with three-dimensional electron microscopy"
+            },
+            {
+                "NedId": "0010014025",
+                "ZNumber": "ZIA BC 010309",
+                "Title": "Nuclear Architecture and Disease"
+            },
+            {
+                "NedId": "0010038444",
+                "ZNumber": "ZIA BC 008753",
+                "Title": "Immunotoxin Therapy of Solid and Hematopoietic Tumors:  Preclinical Studies"
+            },
+            {
+                "NedId": "0010173354",
+                "ZNumber": "ZIA BC 008752",
+                "Title": "Thyroid Hormone Nuclear Receptors in Health and Disease"
+            },
+            {
+                "NedId": "0010382901",
+                "ZNumber": "ZIA BC 010326",
+                "Title": "Biomolecular Structure and Mechanism, Structure-Based Drug Design"
+            },
+            {
+                "NedId": "0010066568",
+                "ZNumber": "ZIA SC 009172",
+                "Title": "Cellular Interactions with Thrombospondin"
+            },
+            {
+                "NedId": "0010051499",
+                "ZNumber": "ZIA BC 008756",
+                "Title": "Genetically Engineered Mouse Models to Study Melanoma Genesis and Progression"
+            },
+            {
+                "NedId": "0010056190",
+                "ZNumber": "ZIA BC 009369",
+                "Title": "Studies of Receptor Interactions and Effects of Alarmins"
+            },
+            {
+                "NedId": "0010120998",
+                "ZNumber": "ZIA BC 009287",
+                "Title": "Cytokines and T Cell Development"
+            },
+            {
+                "NedId": "0010685401",
+                "ZNumber": "ZIA BC 010014",
+                "Title": "Epigenetic control during embryogenesis"
+            },
+            {
+                "NedId": "0010043005",
+                "ZNumber": "ZIA BC 009283",
+                "Title": "Consequences of chronic Interferon-gamma expression on the host"
+            },
+            {
+                "NedId": "0010685397",
+                "ZNumber": "ZIA BC 010001",
+                "Title": "Molecular-Cellular Regulation of Hematopoietic Stem Cells"
+            },
+            {
+                "NedId": "0010103874",
+                "ZNumber": "ZIA BC 010307",
+                "Title": "Molecular Mechanisms Regulating Mouse Mammary Gland and Human Breast Tumor Cells"
+            },
+            {
+                "NedId": "0010153427",
+                "ZNumber": "ZIA BC 010008",
+                "Title": "The Genetics of Susceptibility to Mouse Plasma Cell Tumors"
+            },
+            {
+                "NedId": "0010045441",
+                "ZNumber": "ZIA BC 010283",
+                "Title": "DNA repair"
+            },
+            {
+                "NedId": "0010167098",
+                "ZNumber": "ZIA BC 004496",
+                "Title": "Chromosomal Proteins and Chromosomal Functions"
+            },
+            {
+                "NedId": "0010190305",
+                "ZNumber": "ZIA BC 005522",
+                "Title": "Stem-Progenitor Cells and Carcinogenesis of Thyroid"
+            },
+            {
+                "NedId": "0010119633",
+                "ZNumber": "ZIA BC 005271",
+                "Title": "Gene Regulation and Function: The B-ZIP Proteins"
+            },
+            {
+                "NedId": "0010048930",
+                "ZNumber": "ZIA BC 005598",
+                "Title": "Genetic Analysis of the Multidrug Resistance Phenotype in Tumor Cells"
+            },
+            {
+                "NedId": "0010121072",
+                "ZNumber": "ZIA BC 011255",
+                "Title": "Genetic Modifiers of Initiation and Progression of Mammary Cancer"
+            },
+            {
+                "NedId": "0010384820",
+                "ZNumber": "ZIA SC 010355",
+                "Title": "Angiogenesis and Tumor Growth"
+            },
+            {
+                "NedId": "0010296268",
+                "ZNumber": "ZIA BC 010341",
+                "Title": "Protein Expression and Purification in the Fast Lane"
+            },
+            {
+                "NedId": "0010386108",
+                "ZNumber": "ZIA BC 010345",
+                "Title": "The Role of Wnt Genes in Vertebrate Development and Cancer"
+            },
+            {
+                "NedId": "0010652620",
+                "ZNumber": "ZIA BC 010378",
+                "Title": "Macromolecular Crystallography Research with Synchrotron Radiation"
+            },
+            {
+                "NedId": "0010383732",
+                "ZNumber": "ZIA BC 010379",
+                "Title": "Search for the Structural Basis of Biomacromolecular Function and Activity"
+            },
+            {
+                "NedId": "0010042109",
+                "ZNumber": "ZIA SC 010357",
+                "Title": "Gene Expression and Post-Transcriptional Regulation of DNA Tumor Viruses"
+            },
+            {
+                "NedId": "0010052627",
+                "ZNumber": "ZIA BC 010425",
+                "Title": "Strategies for Cancer Immunotherapy Clinical Trials"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 010387",
+                "Title": "Functional Analysis of Breast Cancer Susceptibility Genes in Mice"
+            },
+            {
+                "NedId": "0010298591",
+                "ZNumber": "ZIA BC 010391",
+                "Title": "Role of Trk Receptors in the Development and Function of Non-neuronal Structures"
+            },
+            {
+                "NedId": "0010384127",
+                "ZNumber": "ZIA BC 010334",
+                "Title": "Conserved Element DNA Vaccine"
+            },
+            {
+                "NedId": "0010384127",
+                "ZNumber": "ZIA BC 010350",
+                "Title": "Prevention of AIDS"
+            },
+            {
+                "NedId": "0010298591",
+                "ZNumber": "ZIA BC 010390",
+                "Title": "Role of Neurotrophins in the Development of the Mammalian Nervous System"
+            },
+            {
+                "NedId": "0010146034",
+                "ZNumber": "ZIA BC 010304",
+                "Title": "Biochemical Basis of T Cell Activation"
+            },
+            {
+                "NedId": "0010061765",
+                "ZNumber": "ZIA SC 009179",
+                "Title": "The Role of TIMPs in Cell Growth, Tumor Progression and Metastasis"
+            },
+            {
+                "NedId": "0010383773",
+                "ZNumber": "ZIA BC 010348",
+                "Title": "Protein Structure"
+            },
+            {
+                "NedId": "0010013942",
+                "ZNumber": "ZIA SC 010366",
+                "Title": "Identification of Genes for Predicting Prognosis in Pediatric Cancers"
+            },
+            {
+                "NedId": "0010971976",
+                "ZNumber": "ZIA SC 010372",
+                "Title": "Molecular Profiling of Patients Undergoing Radiotherapy"
+            },
+            {
+                "NedId": "0010971976",
+                "ZNumber": "ZIA SC 010373",
+                "Title": "The Synergy Between Radiotherapy and Molecularly Targeted Agents"
+            },
+            {
+                "NedId": "0010171939",
+                "ZNumber": "ZIA SC 010375",
+                "Title": "TAF7: A Check-point Regulator in Transcription Initiation"
+            },
+            {
+                "NedId": "0010039033",
+                "ZNumber": "ZIA SC 010376",
+                "Title": "TNF Signaling, Cell Death and Cancer"
+            },
+            {
+                "NedId": "0010384820",
+                "ZNumber": "ZIA SC 010356",
+                "Title": "A Role for KSHV in the Pathogenesis of Malignancies"
+            },
+            {
+                "NedId": "0010042623",
+                "ZNumber": "ZIA SC 010378",
+                "Title": "Activation of Proto-Oncogenes by Chromosomal Translocation"
+            },
+            {
+                "NedId": "0010042623",
+                "ZNumber": "ZIA SC 010379",
+                "Title": "Mechanisms of Chromosomal Translocation"
+            },
+            {
+                "NedId": "0011018671",
+                "ZNumber": "ZIA SC 010384",
+                "Title": "Hematopoietic Stem Cell Gene Therapy for Leukocyte Adhesion Deficiency"
+            },
+            {
+                "NedId": "0010650999",
+                "ZNumber": "ZIA BC 010440",
+                "Title": "Protein Structure, Stability, and Amyloid Formation"
+            },
+            {
+                "NedId": "0010650999",
+                "ZNumber": "ZIA BC 010441",
+                "Title": "Biomolecular Recognition and Binding Mechanisms"
+            },
+            {
+                "NedId": "0010650999",
+                "ZNumber": "ZIA BC 010442",
+                "Title": "Method Development: Efficient Computer Vision Based Algorithms"
+            },
+            {
+                "NedId": "0010190305",
+                "ZNumber": "ZIA BC 010449",
+                "Title": "Role of Novel Cytokine-like Molecules Secretoglobin (SCGB) 3A1 and 3A2 in Lung"
+            },
+            {
+                "NedId": "0010059987",
+                "ZNumber": "ZIA BC 010451",
+                "Title": "Carbohydrate Antigen-bearing Nanoparticles for Antitumor Therapy"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIA BC 010453",
+                "Title": "Genetics & Molecular Mechanisms of Prostate Cancer"
+            },
+            {
+                "NedId": "0010149475",
+                "ZNumber": "ZIC BC 010469",
+                "Title": "Molecular Targets Program"
+            },
+            {
+                "NedId": "0010176726",
+                "ZNumber": "ZIA BC 010476",
+                "Title": "Time Domian Electron Paramagnetic Resonance Imaging"
+            },
+            {
+                "NedId": "0010176726",
+                "ZNumber": "ZIA BC 010477",
+                "Title": "Overhauser Enhanced Magnetic Resonance Imaging (OMRI)"
+            },
+            {
+                "NedId": "0010383255",
+                "ZNumber": "ZIA BC 010481",
+                "Title": "HIV-1 Reverse Transcriptase"
+            },
+            {
+                "NedId": "0011306716",
+                "ZNumber": "ZIA BC 010484",
+                "Title": "Functional Analysis of TEM5 and TEM8"
+            },
+            {
+                "NedId": "0010152586",
+                "ZNumber": "ZIA BC 010487",
+                "Title": "The role of CPSF6 in HIV-1 infection"
+            },
+            {
+                "NedId": "0010152586",
+                "ZNumber": "ZIA BC 010488",
+                "Title": "HIV-1 passage through the nuclear pore complex"
+            },
+            {
+                "NedId": "0010035538",
+                "ZNumber": "ZIA BC 010493",
+                "Title": "Nucleic Acid Footprinting and development of small molecule antagonists"
+            },
+            {
+                "NedId": "0010035538",
+                "ZNumber": "ZIA BC 010494",
+                "Title": "Small molecule targeting viral nucleotidyltransferases"
+            },
+            {
+                "NedId": "0011025277",
+                "ZNumber": "ZIA BC 010499",
+                "Title": "Maryland Prostate Cancer Case-Control Study"
+            },
+            {
+                "NedId": "0010383982",
+                "ZNumber": "ZIA BC 010504",
+                "Title": "Understanding Retroviral Reverse Transcription, Recombination, and Replication"
+            },
+            {
+                "NedId": "0010383982",
+                "ZNumber": "ZIA BC 010506",
+                "Title": "Defining Mechanisms of HIV-1 RNA Trafficking, Virus Assembly, & Virion Structure"
+            },
+            {
+                "NedId": "0010384022",
+                "ZNumber": "ZIA BC 010511",
+                "Title": "Retrovirus Assembly and Maturation"
+            },
+            {
+                "NedId": "0010384022",
+                "ZNumber": "ZIA BC 010512",
+                "Title": "Interactions of Retroviral Proteins with Nucleic Acids"
+            },
+            {
+                "NedId": "0010065973",
+                "ZNumber": "ZIA BC 010516",
+                "Title": "Gated Optical Detectors-Dose Guided Radiotherapy"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIC BC 010517",
+                "Title": "Large Databases of Small Molecules - Drug Development Tool and Public Resource"
+            },
+            {
+                "NedId": "0010062670",
+                "ZNumber": "ZIA BC 010518",
+                "Title": "Role of BMP and FGF signaling during limb development"
+            },
+            {
+                "NedId": "0011426459",
+                "ZNumber": "ZIA BC 010523",
+                "Title": "RNAi and Epigenetic Control of Higher-Order Chromatin Assembly"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIA BC 010524",
+                "Title": "HIV Integrase Modeling and Computer-Aided Inhibitor and Microbicide Development"
+            },
+            {
+                "NedId": "0010164634",
+                "ZNumber": "ZIA BC 010525",
+                "Title": "Immune Reconstitution"
+            },
+            {
+                "NedId": "0010081786",
+                "ZNumber": "ZIA BC 010538",
+                "Title": "Molecular Analysis of Breast Cancer Metastasis to the Brain"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIA BC 010547",
+                "Title": "Drug Development for Prostate Cancer and other Metastatic Processes"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIC BC 010548",
+                "Title": "Pharmacokinetic and Pharmacodynamic Modeling of Anticancer Agents"
+            },
+            {
+                "NedId": "0011018671",
+                "ZNumber": "ZIA BC 010549",
+                "Title": "Zebrafish Models of Cancer"
+            },
+            {
+                "NedId": "0011306716",
+                "ZNumber": "ZIA BC 010578",
+                "Title": "Targeting TEMs in Preclinical Tumor Models"
+            },
+            {
+                "NedId": "0010036231",
+                "ZNumber": "ZIA BC 010579",
+                "Title": "Papillomavirus Virion Proteins and Vaccines"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 010580",
+                "Title": "Phase II Trial of PEG-Intron in Children with Diffuse Pontine Gliomas"
+            },
+            {
+                "NedId": "0010383958",
+                "ZNumber": "ZIA BC 010595",
+                "Title": "Structure and Function of Vif and APOBEC3 (A3) Proteins"
+            },
+            {
+                "NedId": "0010052627",
+                "ZNumber": "ZIA BC 010598",
+                "Title": "Human Immune Responses to Tumor Antigens for Cancer Immunotherapy"
+            },
+            {
+                "NedId": "0010143374",
+                "ZNumber": "ZIA BC 010600",
+                "Title": "AAA Proteins, Their Functions and Related Diseases"
+            },
+            {
+                "NedId": "0010171465",
+                "ZNumber": "ZIA BC 010607",
+                "Title": "Ras-mediated signals in human epithelial cell transformation and metastasis"
+            },
+            {
+                "NedId": "0011025277",
+                "ZNumber": "ZIA BC 010624",
+                "Title": "The Molecular Profile of Prostate Tumors in African-American Men"
+            },
+            {
+                "NedId": "0010153267",
+                "ZNumber": "ZIA BC 010627",
+                "Title": "Clinical Pharmacogenetics"
+            },
+            {
+                "NedId": "0010152140",
+                "ZNumber": "ZIA BC 010632",
+                "Title": "Transcription Regulation in E. coli and H. pylori"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIC BC 010639",
+                "Title": "In Silico Screening for Cancer Targets"
+            },
+            {
+                "NedId": "0010165418",
+                "ZNumber": "ZIA BC 010646",
+                "Title": "Chromatin Remodeling Proteins"
+            },
+            {
+                "NedId": "0010065844",
+                "ZNumber": "ZIA BC 010654",
+                "Title": "Lymphatic Imaging"
+            },
+            {
+                "NedId": "0010065844",
+                "ZNumber": "ZIA BC 010655",
+                "Title": "Prostate Cancer Imaging"
+            },
+            {
+                "NedId": "0010065844",
+                "ZNumber": "ZIA BC 010656",
+                "Title": "Growth Factor Imaging and Photoimmunotherapy"
+            },
+            {
+                "NedId": "0010065844",
+                "ZNumber": "ZIA BC 010657",
+                "Title": "Cellular In vivo Imaging"
+            },
+            {
+                "NedId": "0010154657",
+                "ZNumber": "ZIA BC 010661",
+                "Title": "Vaccine and Drug Combination Therapy for Human Cancers"
+            },
+            {
+                "NedId": "0010154712",
+                "ZNumber": "ZIA BC 010666",
+                "Title": "Cancer Therapy Clinical Trials Using Novel Recombinant Vaccines"
+            },
+            {
+                "NedId": "0010065844",
+                "ZNumber": "ZIA BC 010668",
+                "Title": "Instrumentation for microSPECT and microPET imaging"
+            },
+            {
+                "NedId": "0010060104",
+                "ZNumber": "ZIA BC 010670",
+                "Title": "Radiation-induced molecular targets"
+            },
+            {
+                "NedId": "0010011008",
+                "ZNumber": "ZIA BC 010671",
+                "Title": "Genetic Analysis of T-cell Differentiation"
+            },
+            {
+                "NedId": "0011512195",
+                "ZNumber": "ZIA BC 010675",
+                "Title": "Development of a Carbohydrate Microarray"
+            },
+            {
+                "NedId": "0011690479",
+                "ZNumber": "ZIA BC 010677",
+                "Title": "NADPH Oxidases as Novel Targets for Cancer Therapy"
+            },
+            {
+                "NedId": "0010011065",
+                "ZNumber": "ZIA BC 010681",
+                "Title": "Development of inhibitors targeting Plk1 polo-box domain"
+            },
+            {
+                "NedId": "0010035257",
+                "ZNumber": "ZIA BC 010683",
+                "Title": "Role of FH loss in development of HLRCC heriditary kidney cancer"
+            },
+            {
+                "NedId": "0010146882",
+                "ZNumber": "ZIC BC 010685",
+                "Title": "Postmortem Pathology"
+            },
+            {
+                "NedId": "0013304212",
+                "ZNumber": "ZID BC 010686",
+                "Title": "Clinical Operations for Laboratory of Pathology"
+            },
+            {
+                "NedId": "0013304212",
+                "ZNumber": "ZIC BC 010687",
+                "Title": "Histology Core Laboratory"
+            },
+            {
+                "NedId": "0010040146",
+                "ZNumber": "ZIA BC 010696",
+                "Title": "Study of Hereditary Renal and Other Familial Syndromes"
+            },
+            {
+                "NedId": "0010056190",
+                "ZNumber": "ZIA BC 010707",
+                "Title": "Role of T Regulatory Cell Suppression in Autoimmunity and Cancer"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 010709",
+                "Title": "Exploratory Study of Biologic and Pathophysiologic Effects of Radiation Therapy"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA BC 010717",
+                "Title": "Phase I study of bortezomib and DA-EPOCH-R with microarray in DLBCL"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA BC 010719",
+                "Title": "Randomized Phase II study of borteozmib-EPOCH-R in Mantle cell lymphoma"
+            },
+            {
+                "NedId": "0010088685",
+                "ZNumber": "ZIA BC 010725",
+                "Title": "Role of Formylpeptide Receptors in Host Defense"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA BC 010728",
+                "Title": "Phase III Study of R-CHOP v DA-EPOCH-R with microarray"
+            },
+            {
+                "NedId": "0011306716",
+                "ZNumber": "ZIA BC 010736",
+                "Title": "Unraveling the function of CD276"
+            },
+            {
+                "NedId": "0010148474",
+                "ZNumber": "ZIA BC 010738",
+                "Title": "Molecular Genetic Study of Stem Cells, Cancer Stem Cells, and Stem Cell Aging"
+            },
+            {
+                "NedId": "0011512195",
+                "ZNumber": "ZIA BC 010740",
+                "Title": "Carbohydrate Microarray Profiling of Glycan-Binding Antibodies and Lectins"
+            },
+            {
+                "NedId": "0010044338",
+                "ZNumber": "ZIA BC 010747",
+                "Title": "Characterization of the Expression and Ligands of KIR3DS1"
+            },
+            {
+                "NedId": "0010296452",
+                "ZNumber": "ZIA BC 010749",
+                "Title": "Immunotherapeutic Approaches for AIDS"
+            },
+            {
+                "NedId": "0010296452",
+                "ZNumber": "ZIA BC 010750",
+                "Title": "Heterodimeric IL-15 in Cancer Immunotherapy"
+            },
+            {
+                "NedId": "0010145865",
+                "ZNumber": "ZIA BC 010759",
+                "Title": "Functional Genomics of Sarcoma"
+            },
+            {
+                "NedId": "0010139353",
+                "ZNumber": "ZIA BC 010763",
+                "Title": "Building on the success of the adoptive immunotherapy of cancer"
+            },
+            {
+                "NedId": "0010149506",
+                "ZNumber": "ZIA BC 010770",
+                "Title": "Genotoxicity and mitochondrial toxicity of antiretroviral NRTI and PI drugs"
+            },
+            {
+                "NedId": "0010384022",
+                "ZNumber": "ZIA BC 010773",
+                "Title": "Interactions of APOBEC3 Proteins with Murine Leukemia Viruses"
+            },
+            {
+                "NedId": "0010100010",
+                "ZNumber": "ZIA BC 010774",
+                "Title": "T Cell Alternative p38 Activation Pathway"
+            },
+            {
+                "NedId": "0010064743",
+                "ZNumber": "ZIA BC 010778",
+                "Title": "HIV-1 Maturation"
+            },
+            {
+                "NedId": "0010384820",
+                "ZNumber": "ZIA BC 010782",
+                "Title": "Study of the Roles of SDF1 and CXCR4 in Hematopoiesis"
+            },
+            {
+                "NedId": "0010039033",
+                "ZNumber": "ZIA BC 010783",
+                "Title": "Inflammation, Macrophage Differentiation, and Cancer"
+            },
+            {
+                "NedId": "0010171795",
+                "ZNumber": "ZIA BC 010788",
+                "Title": "Regulation of Differentiation of Pediatric Embryonal Tumors- Neuroblastoma"
+            },
+            {
+                "NedId": "0010171795",
+                "ZNumber": "ZIA BC 010789",
+                "Title": "Pathophysiologic Consequences of Neurotrophin Activation of Trk in Neuroblastoma"
+            },
+            {
+                "NedId": "0010801530",
+                "ZNumber": "ZIA BC 010791",
+                "Title": "Effects of genetic polymorphism in MHC, KIR, and related loci on human disease"
+            },
+            {
+                "NedId": "0010801530",
+                "ZNumber": "ZIA BC 010792",
+                "Title": "Molecular genetics and population studies of the KIR and HLA gene complexes"
+            },
+            {
+                "NedId": "0012018433",
+                "ZNumber": "ZIA BC 010793",
+                "Title": "Role of inflammation, innate resistance, and immunity in carcinogenesis"
+            },
+            {
+                "NedId": "0010297228",
+                "ZNumber": "ZIA BC 010795",
+                "Title": "Mechanisms of transcription fidelity in prokaryotes and eukaryotes"
+            },
+            {
+                "NedId": "0010011362",
+                "ZNumber": "ZIA BC 010801",
+                "Title": "Therapy for NF1-Related Tumors and other Genetic Tumor Predisposition Syndromes"
+            },
+            {
+                "NedId": "0010171465",
+                "ZNumber": "ZIA BC 010802",
+                "Title": "Tumor stem cells and metastatic outcomes in mouse models of prostate cancer"
+            },
+            {
+                "NedId": "0010013942",
+                "ZNumber": "ZIA BC 010806",
+                "Title": "Developing Novel Therapies for Neuroblastoma and Rhabdomyosarcoma"
+            },
+            {
+                "NedId": "0010067899",
+                "ZNumber": "ZIA BC 010808",
+                "Title": "Chromatin structure and dynamics"
+            },
+            {
+                "NedId": "0010383982",
+                "ZNumber": "ZIA BC 010814",
+                "Title": "Elucidating the Regulation of HIV RNA Functions and Genome Packaging"
+            },
+            {
+                "NedId": "0011350074",
+                "ZNumber": "ZIA BC 010816",
+                "Title": "Immunotherapy for  Malignant Mesothelioma, Lung Cancer and Thymic Malignancies"
+            },
+            {
+                "NedId": "0010051337",
+                "ZNumber": "ZIA BC 010819",
+                "Title": "HIV-1 Genetic Variation in Infected Individuals"
+            },
+            {
+                "NedId": "0010163906",
+                "ZNumber": "ZIA BC 010822",
+                "Title": "Molecular Determinants of Chromosome Transmission and Cell Cycle Regulation"
+            },
+            {
+                "NedId": "0010173346",
+                "ZNumber": "ZIA BC 010824",
+                "Title": "Molecular structures of membrane protein assemblies"
+            },
+            {
+                "NedId": "0010173346",
+                "ZNumber": "ZIA BC 010825",
+                "Title": "HIV neutralization and mechanisms of cellular entry"
+            },
+            {
+                "NedId": "0010173346",
+                "ZNumber": "ZIA BC 010826",
+                "Title": "Technology Development for 3D Electron Microscopy"
+            },
+            {
+                "NedId": "0010084874",
+                "ZNumber": "ZIA BC 010827",
+                "Title": "Structural Studies of Metabolic Enzymes and Their Regulation"
+            },
+            {
+                "NedId": "0010048930",
+                "ZNumber": "ZIA BC 010830",
+                "Title": "Mechanisms of non-classical multidrug resistance in cancer"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIA BC 010832",
+                "Title": "Fundamentals of Ligand-Protein Interactions"
+            },
+            {
+                "NedId": "0010040613",
+                "ZNumber": "ZIA BC 010833",
+                "Title": "Global consequences of aneuploidy on gene expression and nuclear architecture"
+            },
+            {
+                "NedId": "0010040613",
+                "ZNumber": "ZIA BC 010834",
+                "Title": "Intratumor heterogeneity and tumor evolution"
+            },
+            {
+                "NedId": "0010040613",
+                "ZNumber": "ZIA BC 010837",
+                "Title": "Disease prognostication and treatment response in rectal cancer patients"
+            },
+            {
+                "NedId": "0014338696",
+                "ZNumber": "ZIE BC 010843",
+                "Title": "Medical Oncology Fellowship Program"
+            },
+            {
+                "NedId": "0010084067",
+                "ZNumber": "ZIA BC 010844",
+                "Title": "DNA Folding in Chromatin and Interaction with Transcription Factors"
+            },
+            {
+                "NedId": "0010084067",
+                "ZNumber": "ZIA BC 010845",
+                "Title": "p53-induced Regulation of Transcription in the Chromatin Context"
+            },
+            {
+                "NedId": "0010892153",
+                "ZNumber": "ZIA BC 010850",
+                "Title": "Mechanisms of Normal Tissue Toxicity From Irradiation"
+            },
+            {
+                "NedId": "0011475834",
+                "ZNumber": "ZIA BC 010852",
+                "Title": "Mechanism of action and therapeutic utility of stimulatory CpG oligonucleotides"
+            },
+            {
+                "NedId": "0011475834",
+                "ZNumber": "ZIA BC 010853",
+                "Title": "Mechanism of action and therapeutic utility of immunosuppressive oligonucleotide"
+            },
+            {
+                "NedId": "0010101908",
+                "ZNumber": "ZIG BC 010856",
+                "Title": "Basic and Preclinical Animal Models in support of Cancer and HIV-AIDS Research"
+            },
+            {
+                "NedId": "0010041034",
+                "ZNumber": "ZIK BC 010857",
+                "Title": "Science and Technology Resources"
+            },
+            {
+                "NedId": "0012143552",
+                "ZNumber": "ZIC BC 010858",
+                "Title": "CCR Confocal Microscopy Core"
+            },
+            {
+                "NedId": "0011018671",
+                "ZNumber": "ZIA BC 010870",
+                "Title": "Hematopoietic Stem Cell Transplant for GATA2 Deficiency"
+            },
+            {
+                "NedId": "0010160318",
+                "ZNumber": "ZIA BC 010876",
+                "Title": "The role of cancer stem cells in liver cancer heterogeneity and subtypes"
+            },
+            {
+                "NedId": "0010160318",
+                "ZNumber": "ZIA BC 010877",
+                "Title": "The identification of human hepatocellular carcinoma metastasis genes"
+            },
+            {
+                "NedId": "0010176531",
+                "ZNumber": "ZIA BC 010881",
+                "Title": "Development of TGF-beta antagonists for cancer therapy"
+            },
+            {
+                "NedId": "0011064860",
+                "ZNumber": "ZID BC 010882",
+                "Title": "Center for Cancer Research Clinical Trials Support"
+            },
+            {
+                "NedId": "0010054321",
+                "ZNumber": "ZIA BC 010885",
+                "Title": "Study of Tumor Pathogenesis and Development of Therapies for AIDS Malignancies"
+            },
+            {
+                "NedId": "0011025277",
+                "ZNumber": "ZIA BC 010886",
+                "Title": "Non-coding RNAs as Prognostic and Diagnostic Markers in Prostate Cancer"
+            },
+            {
+                "NedId": "0011025277",
+                "ZNumber": "ZIA BC 010887",
+                "Title": "Novel Markers for Disease Outcome in Breast Cancer"
+            },
+            {
+                "NedId": "0010054321",
+                "ZNumber": "ZIA BC 010888",
+                "Title": "Clinical Trials of Patients with AIDS-Related Malignancies"
+            },
+            {
+                "NedId": "0011370311",
+                "ZNumber": "ZIA BC 010891",
+                "Title": "Development of new antibody-based cancer therapies"
+            },
+            {
+                "NedId": "0010053062",
+                "ZNumber": "ZIA BC 010898",
+                "Title": "Redox Mechanism Process of Angiogenesis and Wound Healing"
+            },
+            {
+                "NedId": "0010053062",
+                "ZNumber": "ZIA BC 010899",
+                "Title": "Inflammation and cancer treatment"
+            },
+            {
+                "NedId": "0010301959",
+                "ZNumber": "ZIC BC 010903",
+                "Title": "Transgenic Core Facility"
+            },
+            {
+                "NedId": "0010036024",
+                "ZNumber": "ZIC BC 010905",
+                "Title": "Surgery Branch Cell Prep Core"
+            },
+            {
+                "NedId": "0010041577",
+                "ZNumber": "ZIB BC 010906",
+                "Title": "Interleukin-15 Production for Treatment of Patients with Metastatic Malignancy"
+            },
+            {
+                "NedId": "0012239004",
+                "ZNumber": "ZIA BC 010914",
+                "Title": "Gene Expression Profiling and Clinical Characterization of Phototoxicity"
+            },
+            {
+                "NedId": "0011063787",
+                "ZNumber": "ZIC BC 010915",
+                "Title": "EIB Microscopy Core Facility"
+            },
+            {
+                "NedId": "0010131931",
+                "ZNumber": "ZIG BC 010931",
+                "Title": "Comparative Biomedical Scientist Training Program"
+            },
+            {
+                "NedId": "0011089289",
+                "ZNumber": "ZIC BC 010934",
+                "Title": "Immune reconstitution following autologous and allogeneic stem cell transplant"
+            },
+            {
+                "NedId": "0013691277",
+                "ZNumber": "ZIC BC 010936",
+                "Title": "CCR Vaccine Branch FACS Core"
+            },
+            {
+                "NedId": "0010661948",
+                "ZNumber": "ZIC BC 010937",
+                "Title": "Novel Targets for Vaccine Therapy"
+            },
+            {
+                "NedId": "0012239004",
+                "ZNumber": "ZIA BC 010938",
+                "Title": "Studies of Skin Microflora in Healthy Individuals and Atopic Dermatitis Patients"
+            },
+            {
+                "NedId": "0012239004",
+                "ZNumber": "ZIA BC 010940",
+                "Title": "Cutaneous Adverse Drug Reactions"
+            },
+            {
+                "NedId": "0010052627",
+                "ZNumber": "ZIA BC 010944",
+                "Title": "Strategies for Cancer Immunotherapy Development:  Preclinical Studies"
+            },
+            {
+                "NedId": "0010154712",
+                "ZNumber": "ZIA BC 010945",
+                "Title": "Clinical trials employing cancer vaccine combination therapies"
+            },
+            {
+                "NedId": "0010154497",
+                "ZNumber": "ZIA BC 010946",
+                "Title": "Protection against Radiation-Induced Carcinogenesis"
+            },
+            {
+                "NedId": "0011527105",
+                "ZNumber": "ZIC BC 010947",
+                "Title": "Laboratory of Genitourinary Cancer Pathogenesis Microscopy Core Facility"
+            },
+            {
+                "NedId": "0010037476",
+                "ZNumber": "ZIC BC 010948",
+                "Title": "DNA Sequencing and FACS Core Facilities"
+            },
+            {
+                "NedId": "0010131931",
+                "ZNumber": "ZIC BC 010953",
+                "Title": "Computational Molecular Pathology Research for Cancer Diagnostics and Biomarkers"
+            },
+            {
+                "NedId": "0010049140",
+                "ZNumber": "ZIA BC 010958",
+                "Title": "Signaling Mechanisms of EphrinB1 in Cell Adhesion, Migration and Invasion"
+            },
+            {
+                "NedId": "0010045441",
+                "ZNumber": "ZIA BC 010959",
+                "Title": "Relationship between DNA damage detection and signaling"
+            },
+            {
+                "NedId": "0010164634",
+                "ZNumber": "ZIA BC 010960",
+                "Title": "ETIB Clinical Trials"
+            },
+            {
+                "NedId": "0010164634",
+                "ZNumber": "ZID BC 010963",
+                "Title": "ETIB Clinical Research Core"
+            },
+            {
+                "NedId": "0010298315",
+                "ZNumber": "ZIC BC 010965",
+                "Title": "CCR Biophysics Resource Core"
+            },
+            {
+                "NedId": "0010154657",
+                "ZNumber": "ZIA BC 010975",
+                "Title": "Vaccine and radiation for the therapy of human cancers"
+            },
+            {
+                "NedId": "0010046098",
+                "ZNumber": "ZIA BC 010977",
+                "Title": "Cbl Proteins as Regulators of Tyrosine Kinase Signaling"
+            },
+            {
+                "NedId": "0010015340",
+                "ZNumber": "ZIC BC 010978",
+                "Title": "Confocal Core for the Laboratory of Cellular and Molecular Biology"
+            },
+            {
+                "NedId": "0012112860",
+                "ZNumber": "ZIC BC 010981",
+                "Title": "Biomarker Investigations for Clinical Trials"
+            },
+            {
+                "NedId": "0010042623",
+                "ZNumber": "ZIA BC 010982",
+                "Title": "Collaborative Pathways that Lead to Leukemia"
+            },
+            {
+                "NedId": "0010042623",
+                "ZNumber": "ZIA BC 010983",
+                "Title": "Pre-clinical Studies of Therapy for Myelodysplastic Syndrome"
+            },
+            {
+                "NedId": "0010043992",
+                "ZNumber": "ZIA BC 010984",
+                "Title": "Adoptive Cell Transfer Immunotherapy of Cancer"
+            },
+            {
+                "NedId": "0010043992",
+                "ZNumber": "ZIA BC 010985",
+                "Title": "Gene therapy of cancer"
+            },
+            {
+                "NedId": "0011064860",
+                "ZNumber": "ZID BC 010987",
+                "Title": "Center for Cancer Research Patient Travel"
+            },
+            {
+                "NedId": "0010654246",
+                "ZNumber": "ZIC BC 010989",
+                "Title": "Clinical production of viral vectors for cancer gene therapy"
+            },
+            {
+                "NedId": "0010971976",
+                "ZNumber": "ZID BC 010990",
+                "Title": "Radiation Oncology Branch - Radiation Clinic"
+            },
+            {
+                "NedId": "0010971976",
+                "ZNumber": "ZIC BC 010991",
+                "Title": "Radiation Oncology Branch - Microarray Facility"
+            },
+            {
+                "NedId": "0010013942",
+                "ZNumber": "ZIA BC 010998",
+                "Title": "Identification of Novel Mutations In Pediatric Cancers"
+            },
+            {
+                "NedId": "0010013942",
+                "ZNumber": "ZIA BC 010999",
+                "Title": "Targeting FGFR4,  RAS, and  PAX3-FOXO1 gene in Rhabdomyosarcoma"
+            },
+            {
+                "NedId": "0010013942",
+                "ZNumber": "ZIA BC 011002",
+                "Title": "Bioinformatics: Systems Biology of Pediatric Cancers"
+            },
+            {
+                "NedId": "0010151173",
+                "ZNumber": "ZIA BC 011006",
+                "Title": "Molecular diagnosis and outcome prediction in lymphoma"
+            },
+            {
+                "NedId": "0010151173",
+                "ZNumber": "ZIA BC 011007",
+                "Title": "RNA interference-based screens for molecular targets in cancer"
+            },
+            {
+                "NedId": "0010151173",
+                "ZNumber": "ZIA BC 011008",
+                "Title": "Oncogenic mechanisms and molecular targets in lymphoma"
+            },
+            {
+                "NedId": "0010151173",
+                "ZNumber": "ZIA BC 011010",
+                "Title": "Oncogenic mechanisms and molecular targets in myeloma"
+            },
+            {
+                "NedId": "0010145873",
+                "ZNumber": "ZIA BC 011011",
+                "Title": "The genome-wide function of supercoiling and alternative DNA conformations"
+            },
+            {
+                "NedId": "0010296516",
+                "ZNumber": "ZIC BC 011016",
+                "Title": "Protein Production"
+            },
+            {
+                "NedId": "0010014025",
+                "ZNumber": "ZIC BC 011021",
+                "Title": "Basic Research Support for the CCR"
+            },
+            {
+                "NedId": "0010014025",
+                "ZNumber": "ZID BC 011022",
+                "Title": "Clinical Research Support for the CCR"
+            },
+            {
+                "NedId": "0011527009",
+                "ZNumber": "ZIE BC 011023",
+                "Title": "Clinical Fellowship Training Program"
+            },
+            {
+                "NedId": "0010157856",
+                "ZNumber": "ZIA BC 011028",
+                "Title": "Clinical Studies of the Molecular Genetic Basis of Kidney Cancer"
+            },
+            {
+                "NedId": "0011089289",
+                "ZNumber": "ZIC BC 011029",
+                "Title": "Preclinical development and clinical monitoring of adoptive immune therapy"
+            },
+            {
+                "NedId": "0010189738",
+                "ZNumber": "ZIC BC 011030",
+                "Title": "The Antigen Targeting Core"
+            },
+            {
+                "NedId": "0010035257",
+                "ZNumber": "ZIA BC 011032",
+                "Title": "Post-translational modifications of Hsp90"
+            },
+            {
+                "NedId": "0010072515",
+                "ZNumber": "ZIA BC 011033",
+                "Title": "Mechanisms of MHC Class II Association with Plasma Membrane Microdomains"
+            },
+            {
+                "NedId": "0010072515",
+                "ZNumber": "ZIA BC 011035",
+                "Title": "Regulation of Exocytosis from Immune Cells"
+            },
+            {
+                "NedId": "0010157856",
+                "ZNumber": "ZIA BC 011038",
+                "Title": "Molecular Therapeutics of Kidney Cancer: VHL Gene and Fumarate Hydratase Gene"
+            },
+            {
+                "NedId": "0013288635",
+                "ZNumber": "ZIC BC 011040",
+                "Title": "Molecular Profiling of Clinical Specimens"
+            },
+            {
+                "NedId": "0013288635",
+                "ZNumber": "ZIC BC 011041",
+                "Title": "Technical Development of Molecular Profiling Technologies"
+            },
+            {
+                "NedId": "0010157856",
+                "ZNumber": "ZIA BC 011043",
+                "Title": "Molecular Therapeutics of Kidney Cancer:  MET Gene and BHD Gene"
+            },
+            {
+                "NedId": "0010043933",
+                "ZNumber": "ZIC BC 011044",
+                "Title": "Tissue Processing-Sequencing Facility"
+            },
+            {
+                "NedId": "0010068060",
+                "ZNumber": "ZIC BC 011047",
+                "Title": "Animal Model and Genotyping Core Support Facility"
+            },
+            {
+                "NedId": "0010124590",
+                "ZNumber": "ZIC BC 011052",
+                "Title": "Cytopathology Core"
+            },
+            {
+                "NedId": "0010171465",
+                "ZNumber": "ZIA BC 011053",
+                "Title": "TMPRSS2-ERG chromosomal translocations and prostate cancer"
+            },
+            {
+                "NedId": "0011314159",
+                "ZNumber": "ZIA BC 011054",
+                "Title": "Nuclear Factor-kappaB in Ovarian Cancer"
+            },
+            {
+                "NedId": "0011512195",
+                "ZNumber": "ZIA BC 011055",
+                "Title": "Serum Antibody Profiling with a Carbohydrate Microarray"
+            },
+            {
+                "NedId": "0010653124",
+                "ZNumber": "ZIA BC 011056",
+                "Title": "Promoting tumor cell apoptosis by death ligands"
+            },
+            {
+                "NedId": "0010054143",
+                "ZNumber": "ZIA BC 011058",
+                "Title": "Development of a Vaccine for HIV-AIDS: Humoral Immunity"
+            },
+            {
+                "NedId": "0010051851",
+                "ZNumber": "ZIA BC 011061",
+                "Title": "Computational and Experimental RNA Nanobiology"
+            },
+            {
+                "NedId": "0010054143",
+                "ZNumber": "ZIA BC 011062",
+                "Title": "Development of a Vaccine for HIV-AIDS: Cellular Immunity"
+            },
+            {
+                "NedId": "0010054143",
+                "ZNumber": "ZIA BC 011063",
+                "Title": "Development of a Vaccine for HIV-AIDS: Translation to the Clinic"
+            },
+            {
+                "NedId": "0010153427",
+                "ZNumber": "ZIA BC 011064",
+                "Title": "A Modifier of Plasmacytoma Susceptibility Maps to Mouse Chr 1"
+            },
+            {
+                "NedId": "0010153427",
+                "ZNumber": "ZIA BC 011065",
+                "Title": "Preclinical Testing of Drug Combinations (HDAC, mTOR, CDK and MYC Inhibitors)"
+            },
+            {
+                "NedId": "0010052379",
+                "ZNumber": "ZIA BC 011070",
+                "Title": "Hematopathology Diagnosis"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIC BC 011075",
+                "Title": "Molecular Modeling of the Human P-glycoprotein Transporter Protein"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIC BC 011077",
+                "Title": "Molecular Modeling of Interactions Regulating the Activity of the p53 Protein"
+            },
+            {
+                "NedId": "0011690479",
+                "ZNumber": "ZIA BC 011078",
+                "Title": "Phase 0-1 Clinical Trials"
+            },
+            {
+                "NedId": "0010146114",
+                "ZNumber": "ZIC BC 011079",
+                "Title": "Molecular Diagnostics Core Laboratory"
+            },
+            {
+                "NedId": "0011527009",
+                "ZNumber": "ZIA BC 011081",
+                "Title": "Prostate Section"
+            },
+            {
+                "NedId": "0010157856",
+                "ZNumber": "ZID BC 011089",
+                "Title": "Clinical Nursing and Data Management Core"
+            },
+            {
+                "NedId": "0011076898",
+                "ZNumber": "ZIA BC 011090",
+                "Title": "Molecular biology of human polyomaviruses"
+            },
+            {
+                "NedId": "0010145865",
+                "ZNumber": "ZIA BC 011091",
+                "Title": "Cancer Genomics Technology Development"
+            },
+            {
+                "NedId": "0010157856",
+                "ZNumber": "ZID BC 011092",
+                "Title": "Urologic Oncology Branch Consult Core"
+            },
+            {
+                "NedId": "0010059704",
+                "ZNumber": "ZIC BC 011093",
+                "Title": "Flow Cytometric Detection of Malignant Cells in Body Fluids"
+            },
+            {
+                "NedId": "0010040099",
+                "ZNumber": "ZIA BC 011095",
+                "Title": "Hypoxia and Tyrosine Kinase Signaling Integration in Urologic Cancers"
+            },
+            {
+                "NedId": "0010059704",
+                "ZNumber": "ZIC BC 011104",
+                "Title": "Flow Cytometric Evaluation of Biomarkers"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011106",
+                "Title": "Specification of T cell function during development"
+            },
+            {
+                "NedId": "0010382709",
+                "ZNumber": "ZIA BC 011107",
+                "Title": "Role of Protein Scaffolds in RTK-Ras-dependent Signal Transduction"
+            },
+            {
+                "NedId": "0010684773",
+                "ZNumber": "ZIA BC 011109",
+                "Title": "Study of Structures of CCR5 and Its Interactions with CCR5 Inhibitors"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011111",
+                "Title": "Cytokine signaling in developing thymocytes and T cells"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011112",
+                "Title": "Development and function of regulatory T cells"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011113",
+                "Title": "T cell survival"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011114",
+                "Title": "Role of microRNAs in T cell development"
+            },
+            {
+                "NedId": "0010041501",
+                "ZNumber": "ZIA BC 011115",
+                "Title": "Epigenetic Mechanisms of Gene Expression in Thoracic Malignancies"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011116",
+                "Title": "MHC-independent T cells"
+            },
+            {
+                "NedId": "0010057828",
+                "ZNumber": "ZIA BC 011117",
+                "Title": "T cell receptor regulation of cytokine signaling"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011118",
+                "Title": "Role of Shh in developmental patterning and growth of digit skeleton"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011119",
+                "Title": "Hoxd and Gli3-Hoxd interaction roles in Hedgehog regulated digit morphogenesis"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011120",
+                "Title": "Genome-wide target analysis of Shh-activated transcription network in limb bud"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011121",
+                "Title": "Role of Brachyury in regulating notochord development and neoplasia"
+            },
+            {
+                "NedId": "0010040099",
+                "ZNumber": "ZIA BC 011124",
+                "Title": "Oncogenic Met Signaling in Urologic Malignancies"
+            },
+            {
+                "NedId": "0010196408",
+                "ZNumber": "ZIA BC 011126",
+                "Title": "Preventive Vaccines for HIV"
+            },
+            {
+                "NedId": "0010301397",
+                "ZNumber": "ZIA BC 011131",
+                "Title": "Investigation of Protein-Protein Interactions in the ERAD Ubiquitylation Pathway"
+            },
+            {
+                "NedId": "0010301397",
+                "ZNumber": "ZIA BC 011132",
+                "Title": "Methods Development"
+            },
+            {
+                "NedId": "0011098400",
+                "ZNumber": "ZIJ BC 011133",
+                "Title": "CCR Office of Training and Education"
+            },
+            {
+                "NedId": "0010041544",
+                "ZNumber": "ZIC BC 011138",
+                "Title": "ETIB FACS Core Facility"
+            },
+            {
+                "NedId": "0010041544",
+                "ZNumber": "ZIC BC 011139",
+                "Title": "Application of novel laser technology for flow cytometric analysis"
+            },
+            {
+                "NedId": "0010120998",
+                "ZNumber": "ZIA BC 011150",
+                "Title": "Chronic Inflammation and Carcinogenesis"
+            },
+            {
+                "NedId": "0012018433",
+                "ZNumber": "ZIA BC 011152",
+                "Title": "Regulation of human dendritic cell activation"
+            },
+            {
+                "NedId": "0012018433",
+                "ZNumber": "ZIA BC 011153",
+                "Title": "Role of mouse microbiome in cancer and inflammation"
+            },
+            {
+                "NedId": "0010167098",
+                "ZNumber": "ZIA BC 011154",
+                "Title": "Biological Functions of Chromosomal Proteins"
+            },
+            {
+                "NedId": "0014094133",
+                "ZNumber": "ZIA BC 011158",
+                "Title": "The roles of p53 in embryonic stem cells"
+            },
+            {
+                "NedId": "0010113675",
+                "ZNumber": "ZIA BC 011162",
+                "Title": "Integrative Molecular Profiling of Human Pancreatic Cancer"
+            },
+            {
+                "NedId": "0014241759",
+                "ZNumber": "ZIA BC 011163",
+                "Title": "Host immature myeloid cells in tumor suppressor or promoter roles of TGFbeta"
+            },
+            {
+                "NedId": "0014241759",
+                "ZNumber": "ZIA BC 011165",
+                "Title": "Role of inflammation in epigenetic alterations of metastatic cancer cells"
+            },
+            {
+                "NedId": "0010051499",
+                "ZNumber": "ZIA BC 011167",
+                "Title": "Preclinical Mouse Models for Studying Immune Checkpoint Inhibitor Response"
+            },
+            {
+                "NedId": "0010388355",
+                "ZNumber": "ZIA BC 011168",
+                "Title": "Physiological and pathological functions of E3 ubiquitin ligases Smurfs"
+            },
+            {
+                "NedId": "0014245350",
+                "ZNumber": "ZIA BC 011176",
+                "Title": "Functions of KSHV microRNAs"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011181",
+                "Title": "Functional Analysis of Human Breast Cancer Susceptibility Gene Variants"
+            },
+            {
+                "NedId": "0010113675",
+                "ZNumber": "ZIA BC 011185",
+                "Title": "Role of Immune and Inflammation Mediators in Progression of Pancreatic Cancer"
+            },
+            {
+                "NedId": "0010199351",
+                "ZNumber": "ZIA BC 011187",
+                "Title": "Sphingolipid Signaling in Mammals"
+            },
+            {
+                "NedId": "0010053062",
+                "ZNumber": "ZIA BC 011190",
+                "Title": "Chemical Biology of Nitroxyl (HNO)"
+            },
+            {
+                "NedId": "0010173354",
+                "ZNumber": "ZIA BC 011191",
+                "Title": "Preclinical Mouse Models of Thyroid Cancer"
+            },
+            {
+                "NedId": "0010079170",
+                "ZNumber": "ZIA BC 011197",
+                "Title": "Regulation and Function of WIP1 Phosphatase and its Role in Tumor Cells"
+            },
+            {
+                "NedId": "0010297228",
+                "ZNumber": "ZIA BC 011202",
+                "Title": "Mechanism of transcription-coupled DNA repair and transcription mutagenesis"
+            },
+            {
+                "NedId": "0010048534",
+                "ZNumber": "ZIA BC 011203",
+                "Title": "Proteolysis and Regulation of Bacterial Cell Growth Control"
+            },
+            {
+                "NedId": "0010061765",
+                "ZNumber": "ZIA BC 011204",
+                "Title": "Development of TIMP-2 derivatives or strategies as biologic therapies for cancer"
+            },
+            {
+                "NedId": "0014021183",
+                "ZNumber": "ZIA BC 011206",
+                "Title": "Genome wide profiling of histone variants in tumors"
+            },
+            {
+                "NedId": "0014021183",
+                "ZNumber": "ZIA BC 011207",
+                "Title": "Analysis of centromere identity and structure in human cells"
+            },
+            {
+                "NedId": "0011426459",
+                "ZNumber": "ZIA BC 011208",
+                "Title": "Roles of Chromatin-modifying Factors in Epigenetic Control of the Genome"
+            },
+            {
+                "NedId": "0014021183",
+                "ZNumber": "ZIA BC 011209",
+                "Title": "Formation of Centromeres in vivo"
+            },
+            {
+                "NedId": "0014330261",
+                "ZNumber": "ZIA BC 011211",
+                "Title": "Subcellular protein localization in B. subtilis"
+            },
+            {
+                "NedId": "0014049524",
+                "ZNumber": "ZIA BC 011212",
+                "Title": "Functions of IKK alpha in Skin Homeostasis and Skin Tumorigenesis"
+            },
+            {
+                "NedId": "0011072458",
+                "ZNumber": "ZIA BC 011214",
+                "Title": "Post-Transcriptional Regulation of Interleukin-7 Receptor Expression"
+            },
+            {
+                "NedId": "0011072458",
+                "ZNumber": "ZIA BC 011215",
+                "Title": "Immune Regulatory Roles of Suppressor Of Cytokine Signaling (SOCS) Molecules"
+            },
+            {
+                "NedId": "0011505376",
+                "ZNumber": "ZIA BC 011222",
+                "Title": "CNS sirtuins in radiation-induced vascular permeability and neurodegeneration"
+            },
+            {
+                "NedId": "0010059987",
+                "ZNumber": "ZIA BC 011232",
+                "Title": "A Glycopeptide from Interstitial Cystitis Patients as a Novel Anticancer Lead"
+            },
+            {
+                "NedId": "0010088159",
+                "ZNumber": "ZII BC 011234",
+                "Title": "CCR New Space Activation"
+            },
+            {
+                "NedId": "0012783808",
+                "ZNumber": "ZIH BC 011235",
+                "Title": "Support of NCI CCR Clinical Research and Bioinformatics"
+            },
+            {
+                "NedId": "0010716358",
+                "ZNumber": "ZIC BC 011236",
+                "Title": "CCR-Frederick Flow Cytometry Core"
+            },
+            {
+                "NedId": "0011084488",
+                "ZNumber": "ZIC BC 011237",
+                "Title": "CIP Microbiome and Genetics Core"
+            },
+            {
+                "NedId": "0010052379",
+                "ZNumber": "ZIE BC 011241",
+                "Title": "Hematopathology Fellowship"
+            },
+            {
+                "NedId": "0010126778",
+                "ZNumber": "ZID BC 011242",
+                "Title": "Center for Interventional Oncology"
+            },
+            {
+                "NedId": "0010100010",
+                "ZNumber": "ZIA BC 011264",
+                "Title": "Glucocorticoids and T cell development and function"
+            },
+            {
+                "NedId": "0010298591",
+                "ZNumber": "ZIC BC 011265",
+                "Title": "Gene Targeting Facility"
+            },
+            {
+                "NedId": "0014356518",
+                "ZNumber": "ZIA BC 011267",
+                "Title": "Preclinical drug development in pancreatic cancer"
+            },
+            {
+                "NedId": "0014354276",
+                "ZNumber": "ZIA BC 011275",
+                "Title": "Genomic and genetic studies of endocrine cancers"
+            },
+            {
+                "NedId": "0014390650",
+                "ZNumber": "ZIA BC 011283",
+                "Title": "Investigating the link between DNA damage, chromatin and nuclear dysfunction"
+            },
+            {
+                "NedId": "0010122073",
+                "ZNumber": "ZIJ BC 011285",
+                "Title": "CCR Education and Outreach"
+            },
+            {
+                "NedId": "0014354276",
+                "ZNumber": "ZIA BC 011286",
+                "Title": "Therapeutic targets and novel anticancer agents for endocrine cancers"
+            },
+            {
+                "NedId": "0014354276",
+                "ZNumber": "ZIA BC 011287",
+                "Title": "Clinical and genetic studies in familial nonmedullary thyroid cancer (FNMTC)"
+            },
+            {
+                "NedId": "2000683993",
+                "ZNumber": "ZID BC 011291",
+                "Title": "General Surgical Pathology"
+            },
+            {
+                "NedId": "0014397661",
+                "ZNumber": "ZIA BC 011293",
+                "Title": "Cytidine modifications in mRNA processing and function"
+            },
+            {
+                "NedId": "0010140417",
+                "ZNumber": "ZIA BC 011295",
+                "Title": "ALL immunobiology and the bone marrow niche"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011298",
+                "Title": "Phase I Trial of Radiation and Lenalidomide in Pediatric Malignant Glioma"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011299",
+                "Title": "Noninvasive Evaluation of Pediatric CNS Tumors/RAPNO"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011303",
+                "Title": "Role of the protein SUMOylation pathway in Ras-driven oncogenesis"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011304",
+                "Title": "Methods for mammalian genetic analysis"
+            },
+            {
+                "NedId": "0010299414",
+                "ZNumber": "ZIA BC 011306",
+                "Title": "Inhibitors of protein-protein interactions"
+            },
+            {
+                "NedId": "0010299414",
+                "ZNumber": "ZIA BC 011307",
+                "Title": "Self-assembling protoviral nanoparticles"
+            },
+            {
+                "NedId": "0010046926",
+                "ZNumber": "ZIC BC 011309",
+                "Title": "DNA Extraction Service"
+            },
+            {
+                "NedId": "0010046926",
+                "ZNumber": "ZIC BC 011310",
+                "Title": "Hollow Fiber Production of Monoclonal Antibodies"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011311",
+                "Title": "Identification of genetic interactors of Brca2"
+            },
+            {
+                "NedId": "0014389900",
+                "ZNumber": "ZIA BC 011313",
+                "Title": "Design and Utility of Novel Proteinaceous Biomaterials"
+            },
+            {
+                "NedId": "0014389900",
+                "ZNumber": "ZIA BC 011314",
+                "Title": "Development of antibacterial agents and materials"
+            },
+            {
+                "NedId": "0011274547",
+                "ZNumber": "ZID BC 011317",
+                "Title": "Dermatology Consultation Service"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011319",
+                "Title": "Role of FIR in limb morphogenesis"
+            },
+            {
+                "NedId": "0010062670",
+                "ZNumber": "ZIA BC 011321",
+                "Title": "Identification and characterization of FGF target genes"
+            },
+            {
+                "NedId": "0010011065",
+                "ZNumber": "ZIA BC 011324",
+                "Title": "Polo-like kinase 1 (Plk1)-dependent centrosome maturation and spindle bipolarity"
+            },
+            {
+                "NedId": "0010384022",
+                "ZNumber": "ZIA BC 011325",
+                "Title": "Retrovirus Biology"
+            },
+            {
+                "NedId": "0010145865",
+                "ZNumber": "ZIA BC 011328",
+                "Title": "Characterization of the Osteosarcoma Genome"
+            },
+            {
+                "NedId": "0010041034",
+                "ZNumber": "ZIC BC 011331",
+                "Title": "CCR Sequencing Facility"
+            },
+            {
+                "NedId": "2000541370",
+                "ZNumber": "ZIA BC 011332",
+                "Title": "Tumor Microenvironment in Cancer Progression"
+            },
+            {
+                "NedId": "0011505376",
+                "ZNumber": "ZIA BC 011333",
+                "Title": "Neuropsychological outcome measures in patients receiving whole brain radiation"
+            },
+            {
+                "NedId": "2000541370",
+                "ZNumber": "ZIA BC 011334",
+                "Title": "Biomarkers and Therapeutic Targets in Angiogenesis and Metastasis"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIA BC 011336",
+                "Title": "Tools for Prediction of ADME/Tox Properties"
+            },
+            {
+                "NedId": "0010095539",
+                "ZNumber": "ZIA BC 011337",
+                "Title": "Generation of T-cell receptors recognizing antigens on non-melanoma tumors"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011340",
+                "Title": "Preclinical evaluation of novel therapeutics for CNS tumor therapy"
+            },
+            {
+                "NedId": "0014414750",
+                "ZNumber": "ZIA BC 011343",
+                "Title": "Clinical protocols for the treatment of gastrointestinal cancer"
+            },
+            {
+                "NedId": "0014414750",
+                "ZNumber": "ZIA BC 011344",
+                "Title": "Immune suppressor mechanisms in patients with GI cancer"
+            },
+            {
+                "NedId": "0014414750",
+                "ZNumber": "ZIA BC 011345",
+                "Title": "Analysis of cancer-related immune suppressor mechanisms in mice"
+            },
+            {
+                "NedId": "0014418663",
+                "ZNumber": "ZIA BC 011351",
+                "Title": "Bladder Cancer Program"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA BC 011354",
+                "Title": "BCR Signaling in ABC DLBCL"
+            },
+            {
+                "NedId": "0010162840",
+                "ZNumber": "ZIJ BC 011365",
+                "Title": "Cancer, Genetics, and Signaling Training Program"
+            },
+            {
+                "NedId": "0011067469",
+                "ZNumber": "ZIA BC 011372",
+                "Title": "Microenvironmental regulation of glioblastoma radiosensitivity"
+            },
+            {
+                "NedId": "0011067469",
+                "ZNumber": "ZIA BC 011373",
+                "Title": "Radiation-induced translational control of gene expression"
+            },
+            {
+                "NedId": "0011018671",
+                "ZNumber": "ZIA BC 011374",
+                "Title": "Allotransplant for DOCK8 deficiency"
+            },
+            {
+                "NedId": "2000687559",
+                "ZNumber": "ZIA BC 011378",
+                "Title": "Studies of amplification in rhabdomyosarcoma"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIA BC 011379",
+                "Title": "Inhibitor Development Against the Wip1 Phosphatase"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIC BC 011380",
+                "Title": "HIV NCp7 inhibitors and Multivalent Inhibition of Membrane Receptors"
+            },
+            {
+                "NedId": "0010171939",
+                "ZNumber": "ZIA BC 011381",
+                "Title": "Brd4 is an atypical kinase that regulates transcription"
+            },
+            {
+                "NedId": "2000715009",
+                "ZNumber": "ZIA BC 011382",
+                "Title": "Systems-level analysis of the regulation and function of p53 dynamics"
+            },
+            {
+                "NedId": "2000613083",
+                "ZNumber": "ZIA BC 011383",
+                "Title": "Transcription and Splicing Dynamics in Single Cells"
+            },
+            {
+                "NedId": "2000687559",
+                "ZNumber": "ZIE BC 011384",
+                "Title": "Anatomic Pathology Residency Program"
+            },
+            {
+                "NedId": "2000687559",
+                "ZNumber": "ZIA BC 011387",
+                "Title": "Studies of gene fusions in rhabdomyosarcoma"
+            },
+            {
+                "NedId": "2000516631",
+                "ZNumber": "ZIA BC 011390",
+                "Title": "Vascular Biology Section"
+            },
+            {
+                "NedId": "0014049524",
+                "ZNumber": "ZIA BC 011391",
+                "Title": "Role of IKK alpha in lung cancer development"
+            },
+            {
+                "NedId": "2000604195",
+                "ZNumber": "ZIA BC 011393",
+                "Title": "Development and regulation of stem cell lineages in skin"
+            },
+            {
+                "NedId": "2000604195",
+                "ZNumber": "ZIA BC 011394",
+                "Title": "Molecular pathogenesis and therapy innovation for Merkel cell carcinoma"
+            },
+            {
+                "NedId": "2000607110",
+                "ZNumber": "ZIA BC 011398",
+                "Title": "Regulation of Ciliogenesis and Ciliary-related signaling"
+            },
+            {
+                "NedId": "0010040146",
+                "ZNumber": "ZIA BC 011405",
+                "Title": "microRNA Profiling in the Spectrum of Kidney Tumors"
+            },
+            {
+                "NedId": "0010040146",
+                "ZNumber": "ZIA BC 011406",
+                "Title": "miRNA profiling  of prostate cancer in young and older male patients"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011407",
+                "Title": "The International DIPG Registry"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011408",
+                "Title": "Comparison of substrate specificities of wild type and mutant EGFR kinases"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011410",
+                "Title": "Protein phosphorylation downstream of mutant EGFR kinases"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011412",
+                "Title": "Role of MIG6 in mutant EGFR-driven lung tumorigenesis"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011414",
+                "Title": "Identification of potentially active tyrosine kinases in lung cancer"
+            },
+            {
+                "NedId": "0011300455",
+                "ZNumber": "ZIA BC 011415",
+                "Title": "Allogeneic T cells Transduced with an Anti-CD19 Chimeric Antigen Receptor"
+            },
+            {
+                "NedId": "0011300455",
+                "ZNumber": "ZIA BC 011417",
+                "Title": "Improved Chimeric Antigen Receptor Therapies B-cell Malignancies"
+            },
+            {
+                "NedId": "0010041501",
+                "ZNumber": "ZIA BC 011418",
+                "Title": "Modulating Cancer Stem Cell Signaling in Thoracic Malignancies"
+            },
+            {
+                "NedId": "0010301397",
+                "ZNumber": "ZIA BC 011419",
+                "Title": "Structural Biology of GTPase Activating Proteins"
+            },
+            {
+                "NedId": "0014049524",
+                "ZNumber": "ZIA BC 011422",
+                "Title": "Role of IKK alpha in lymphoid organ development"
+            },
+            {
+                "NedId": "2000687559",
+                "ZNumber": "ZIA BC 011423",
+                "Title": "Epigenetic studies in rhabdomyosarcoma"
+            },
+            {
+                "NedId": "0010383255",
+                "ZNumber": "ZIA BC 011426",
+                "Title": "HIV-1 Integrase"
+            },
+            {
+                "NedId": "2000683993",
+                "ZNumber": "ZIA BC 011427",
+                "Title": "Immunohistochemical analysis of tumors"
+            },
+            {
+                "NedId": "2001960223",
+                "ZNumber": "ZIC BC 011428",
+                "Title": "CCR, LGI, Flow Cytometry Core"
+            },
+            {
+                "NedId": "0012115469",
+                "ZNumber": "ZIC BC 011430",
+                "Title": "CPTR - Mass Spectrometry Unit"
+            },
+            {
+                "NedId": "2000788580",
+                "ZNumber": "ZIA BC 011431",
+                "Title": "Role of T-bet in the pathogenesis of experimental autoimmune encephalomyelitis"
+            },
+            {
+                "NedId": "2001021329",
+                "ZNumber": "ZIA BC 011433",
+                "Title": "The role of coherent angular motion in adult tissue remodeling"
+            },
+            {
+                "NedId": "0014316924",
+                "ZNumber": "ZIC BC 011434",
+                "Title": "Nano-scale proteomic analysis: development, implementation, and applications"
+            },
+            {
+                "NedId": "0010383958",
+                "ZNumber": "ZIA BC 011436",
+                "Title": "Retroviral Replication and Interactions with Host Factors"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011437",
+                "Title": "Combinatorial genetic analysis using validated siRNA libraries"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011438",
+                "Title": "Genetic screens for target discovery in cancer"
+            },
+            {
+                "NedId": "0011300455",
+                "ZNumber": "ZIA BC 011439",
+                "Title": "Development of Chimeric Antigen Receptors Targeting Multiple Myeloma"
+            },
+            {
+                "NedId": "2000552549",
+                "ZNumber": "ZIA BC 011441",
+                "Title": "Cell density effects on therapeutic sensitivity"
+            },
+            {
+                "NedId": "0010035538",
+                "ZNumber": "ZIA BC 011443",
+                "Title": "Single-Molecule Spectroscopy of HIV-1 Replication Complexes"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIH BC 011445",
+                "Title": "Mathematical Modeling of cell colony growth and DNA Replication."
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011447",
+                "Title": "Early Clinical Trials for Children with CNS Tumors"
+            },
+            {
+                "NedId": "2000744325",
+                "ZNumber": "ZIA BC 011449",
+                "Title": "Identification of Inhibitors of Protein Sumoylation"
+            },
+            {
+                "NedId": "2000604195",
+                "ZNumber": "ZIA BC 011450",
+                "Title": "Clinical treatment of advanced Merkel cell carcinoma"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIA BC 011458",
+                "Title": "Molecular Targeted Photoimmunotherapy for Bladder Cancer"
+            },
+            {
+                "NedId": "2000776158",
+                "ZNumber": "ZIA BC 011459",
+                "Title": "Control of centrosome biogenesis"
+            },
+            {
+                "NedId": "0011076898",
+                "ZNumber": "ZIA BC 011460",
+                "Title": "BKV and JCV vaccine development"
+            },
+            {
+                "NedId": "0010152586",
+                "ZNumber": "ZIA BC 011461",
+                "Title": "HIV-1 evasion of cytosolic factors"
+            },
+            {
+                "NedId": "0010051337",
+                "ZNumber": "ZIA BC 011464",
+                "Title": "Clinical Interventional Studies of HIV Reservoirs"
+            },
+            {
+                "NedId": "0010145873",
+                "ZNumber": "ZIA BC 011465",
+                "Title": "c-Myc Function"
+            },
+            {
+                "NedId": "0010051337",
+                "ZNumber": "ZIA BC 011466",
+                "Title": "HIV Persistence During Suppressive Antiretroviral Therapy"
+            },
+            {
+                "NedId": "0011061550",
+                "ZNumber": "ZIA BC 011469",
+                "Title": "Building Libraries with Chemical Diversity for Screening"
+            },
+            {
+                "NedId": "0011061550",
+                "ZNumber": "ZIA BC 011470",
+                "Title": "Development of Natural Product Leads as Anticancer Therapeutics"
+            },
+            {
+                "NedId": "0010149475",
+                "ZNumber": "ZIA BC 011471",
+                "Title": "Cell-free assay technologies for the identification of active compounds"
+            },
+            {
+                "NedId": "0010149475",
+                "ZNumber": "ZIA BC 011472",
+                "Title": "Isolation of bioactive proteins from natural product extracts"
+            },
+            {
+                "NedId": "0010081655",
+                "ZNumber": "ZIC BC 011475",
+                "Title": "Genomics and Bioinformatics Group web site development and maintenance"
+            },
+            {
+                "NedId": "0011520728",
+                "ZNumber": "ZIA BC 011479",
+                "Title": "T-cell receptor gene therapy for cancer"
+            },
+            {
+                "NedId": "0011481242",
+                "ZNumber": "ZIA BC 011480",
+                "Title": "Programming T Cell Fates for Therapeutic Use"
+            },
+            {
+                "NedId": "0010684773",
+                "ZNumber": "ZIA BC 011486",
+                "Title": "Development of Novel Agents Active against Hepatitis B Virus"
+            },
+            {
+                "NedId": "2000715009",
+                "ZNumber": "ZIA BC 011487",
+                "Title": "Systems-level analysis of the regulation and function of MYC"
+            },
+            {
+                "NedId": "2001145901",
+                "ZNumber": "ZIA BC 011488",
+                "Title": "Defining and Manipulating Epigenomic Regulators in Endogenous Systems"
+            },
+            {
+                "NedId": "2001282434",
+                "ZNumber": "ZIA BC 011490",
+                "Title": "Ubiquitin signaling for protein degradation"
+            },
+            {
+                "NedId": "2001138191",
+                "ZNumber": "ZIA BC 011491",
+                "Title": "Role of kinetochore proteins in chromosome segregation"
+            },
+            {
+                "NedId": "0010738780",
+                "ZNumber": "ZIA BC 011492",
+                "Title": "Biomarkers in Cancer Diagnosis, Prognosis and Therapeutic Outcome"
+            },
+            {
+                "NedId": "0010738780",
+                "ZNumber": "ZIA BC 011495",
+                "Title": "Integrative Molecular Epidemiology of Human Cancer"
+            },
+            {
+                "NedId": "0010738780",
+                "ZNumber": "ZIA BC 011496",
+                "Title": "p53, Aging, and Cancer"
+            },
+            {
+                "NedId": "0010081655",
+                "ZNumber": "ZIC BC 011497",
+                "Title": "RNA sequencing (RNA-Seq) of the NCI-60"
+            },
+            {
+                "NedId": "2001096310",
+                "ZNumber": "ZIA BC 011501",
+                "Title": "Regulation and functional effects of localized RNAs"
+            },
+            {
+                "NedId": "2001128249",
+                "ZNumber": "ZIA BC 011502",
+                "Title": "Characterization of Biological Nanoparticle Subsets"
+            },
+            {
+                "NedId": "2001128249",
+                "ZNumber": "ZIA BC 011503",
+                "Title": "Novel Combinations of Radiation and Immunotherapy"
+            },
+            {
+                "NedId": "0014094133",
+                "ZNumber": "ZIA BC 011504",
+                "Title": "Study the roles of p53 and p53 mutants in mesenchymal stem cells"
+            },
+            {
+                "NedId": "2001100875",
+                "ZNumber": "ZIA BC 011506",
+                "Title": "New Synthetic Approaches to Small Molecules for Imaging"
+            },
+            {
+                "NedId": "0010081655",
+                "ZNumber": "ZIC BC 011509",
+                "Title": "Comparison of molecular factors to drug activities"
+            },
+            {
+                "NedId": "2000473880",
+                "ZNumber": "ZIA BC 011511",
+                "Title": "Chemical Targeting of Multi-Protein Complexes"
+            },
+            {
+                "NedId": "0011062227",
+                "ZNumber": "ZIA BC 011512",
+                "Title": "Activatable molecular cancer imaging probe"
+            },
+            {
+                "NedId": "0011062227",
+                "ZNumber": "ZIA BC 011513",
+                "Title": "Cancer-cell specific therapy: photo-immunotherapy"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011514",
+                "Title": "Investigating Pediatric CNS tumor biology"
+            },
+            {
+                "NedId": "0014389900",
+                "ZNumber": "ZIC BC 011515",
+                "Title": "Chemical Synthesis Core"
+            },
+            {
+                "NedId": "2001339142",
+                "ZNumber": "ZIE BC 011516",
+                "Title": "Pediatric Oncology Branch Clinical Care and Education"
+            },
+            {
+                "NedId": "2001339142",
+                "ZNumber": "ZID BC 011517",
+                "Title": "Pediatric Oncology Branch Behavioral Science Core"
+            },
+            {
+                "NedId": "0010011065",
+                "ZNumber": "ZIA BC 011518",
+                "Title": "Molecular basis of centriole duplication"
+            },
+            {
+                "NedId": "2001240353",
+                "ZNumber": "ZIA BC 011519",
+                "Title": "Telomere Biology"
+            },
+            {
+                "NedId": "2001021329",
+                "ZNumber": "ZIA BC 011524",
+                "Title": "Mechanical regulation of the microenvironmental niche in skin tumorigenesis"
+            },
+            {
+                "NedId": "0013724471",
+                "ZNumber": "ZIA BC 011525",
+                "Title": "Leveraging DNA damage repair pathways as therapeutic targets in women's cancers"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIA BC 011528",
+                "Title": "A Randomized, Prospective, Phase II Study to Determine the Efficacy of Bacillus"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011529",
+                "Title": "In-patient hospice and rapid autopsy to interrogate tumor heterogeneity"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIC BC 011531",
+                "Title": "High Throughput Screening of Agents in Bladder Cancer Cell Lines"
+            },
+            {
+                "NedId": "0010041034",
+                "ZNumber": "ZIC BC 011532",
+                "Title": "CCR Collaborative Bioinformatics Resource"
+            },
+            {
+                "NedId": "0014354276",
+                "ZNumber": "ZID BC 011534",
+                "Title": "EOB Clinical Core"
+            },
+            {
+                "NedId": "0010383732",
+                "ZNumber": "ZIC BC 011535",
+                "Title": "SAXS Core"
+            },
+            {
+                "NedId": "0011350074",
+                "ZNumber": "ZID BC 011540",
+                "Title": "Thoracic and Gastrointestinal Malignancies Branch Clinical Core"
+            },
+            {
+                "NedId": "0010041501",
+                "ZNumber": "ZID BC 011541",
+                "Title": "Surgical Consultative Services in the Thoracic and Oncologic Surgery Branch"
+            },
+            {
+                "NedId": "0010041501",
+                "ZNumber": "ZIE BC 011542",
+                "Title": "TOSB Surgical Oncology Fellowship Program"
+            },
+            {
+                "NedId": "0010154712",
+                "ZNumber": "ZID BC 011543",
+                "Title": "Medical Oncology Service Clinical Core"
+            },
+            {
+                "NedId": "2001285357",
+                "ZNumber": "ZIA BC 011547",
+                "Title": "Cancer Immunotherapy Clinical Trials"
+            },
+            {
+                "NedId": "0011274547",
+                "ZNumber": "ZIA BC 011549",
+                "Title": "Chronic graft-versus-host disease"
+            },
+            {
+                "NedId": "0011274547",
+                "ZNumber": "ZIA BC 011550",
+                "Title": "Anakinra for neutrophilic pustular skin disease"
+            },
+            {
+                "NedId": "0010296268",
+                "ZNumber": "ZIA BC 011551",
+                "Title": "Structural studies of molecular targets for drug development"
+            },
+            {
+                "NedId": "0010892153",
+                "ZNumber": "ZIA BC 011552",
+                "Title": "Targeting mechanisms of radiation resistance"
+            },
+            {
+                "NedId": "0013326423",
+                "ZNumber": "ZIA BC 011554",
+                "Title": "Lung Cancer Health Disparities"
+            },
+            {
+                "NedId": "0013326423",
+                "ZNumber": "ZIA BC 011555",
+                "Title": "Gene-Environment Interactions in Lung Cancer"
+            },
+            {
+                "NedId": "0012239004",
+                "ZNumber": "ZIA BC 011558",
+                "Title": "Effects of systemic and topical perturbations on human microbes"
+            },
+            {
+                "NedId": "2001021329",
+                "ZNumber": "ZIA BC 011559",
+                "Title": "The role of the tumor biofilm in determining tissue tropism"
+            },
+            {
+                "NedId": "0012237390",
+                "ZNumber": "ZIA BC 011561",
+                "Title": "Exploring mechanisms that govern immune homeostasis in skin"
+            },
+            {
+                "NedId": "2001100875",
+                "ZNumber": "ZIA BC 011564",
+                "Title": "Near-IR Photorelease Chemistry: Discovery and Applications"
+            },
+            {
+                "NedId": "0010140417",
+                "ZNumber": "ZIA BC 011565",
+                "Title": "Adoptive T cell Therapy for Pediatric Leukemia"
+            },
+            {
+                "NedId": "2001375166",
+                "ZNumber": "ZIA BC 011566",
+                "Title": "Mechanism, Regulation and Application of miRNA pathway in cancer"
+            },
+            {
+                "NedId": "0012700000",
+                "ZNumber": "ZIC BC 011567",
+                "Title": "HiTIF Microscopy Core Facility"
+            },
+            {
+                "NedId": "0010101463",
+                "ZNumber": "ZIA BC 011568",
+                "Title": "Natural Products Discovery and Characterization Through Network Collaborations"
+            },
+            {
+                "NedId": "0014394520",
+                "ZNumber": "ZIC BC 011569",
+                "Title": "Cell Production Core Facility"
+            },
+            {
+                "NedId": "0010163027",
+                "ZNumber": "ZIC BC 011571",
+                "Title": "Transcription factor mobility"
+            },
+            {
+                "NedId": "0010163027",
+                "ZNumber": "ZIC BC 011574",
+                "Title": "LRBGE Optical Microscopy Core"
+            },
+            {
+                "NedId": "0014361644",
+                "ZNumber": "ZIA BC 011575",
+                "Title": "Modulation of Radiation Response and Metabolism"
+            },
+            {
+                "NedId": "0014361644",
+                "ZNumber": "ZIA BC 011577",
+                "Title": "Novel Imaging Approaches to Solid Tumors"
+            },
+            {
+                "NedId": "0011314159",
+                "ZNumber": "ZIA BC 011584",
+                "Title": "Clinical trials in women's cancers"
+            },
+            {
+                "NedId": "2000744325",
+                "ZNumber": "ZIA BC 011585",
+                "Title": "Identification of Nucleic Acid Binding Small Molecules"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIA BC 011593",
+                "Title": "Investigation of Epigenetic Modifiers in Bladder Cancer"
+            },
+            {
+                "NedId": "0014418663",
+                "ZNumber": "ZIA BC 011594",
+                "Title": "Targeting the MET pathway in urothelial carcinoma\""
+            },
+            {
+                "NedId": "0010162840",
+                "ZNumber": "ZIC BC 011596",
+                "Title": "CCR Dedicated Cores at the ATRF"
+            },
+            {
+                "NedId": "0010081655",
+                "ZNumber": "ZIC BC 011622",
+                "Title": "Development of novel molecular or phenotypic databases"
+            },
+            {
+                "NedId": "0010800993",
+                "ZNumber": "ZIC BC 011623",
+                "Title": "CCR Genomics Core"
+            },
+            {
+                "NedId": "2001282434",
+                "ZNumber": "ZIA BC 011627",
+                "Title": "Myosin VI: a new ubiquitin receptor"
+            },
+            {
+                "NedId": "0013348973",
+                "ZNumber": "ZIA BC 011630",
+                "Title": "Metabolomic Profiling of Esophageal Cancers"
+            },
+            {
+                "NedId": "0013348973",
+                "ZNumber": "ZIA BC 011631",
+                "Title": "Synergy of Bile Acid and Cigarette Smoke on Esophageal Cancer Progression"
+            },
+            {
+                "NedId": "0013348973",
+                "ZNumber": "ZIA BC 011632",
+                "Title": "Metabolic and p53 Targets of Cellular Respiration of Esophageal Cancer"
+            },
+            {
+                "NedId": "0010009259",
+                "ZNumber": "ZIA BC 011633",
+                "Title": "T cell Development and Regeneration"
+            },
+            {
+                "NedId": "0010171939",
+                "ZNumber": "ZIA BC 011637",
+                "Title": "BRD4 is a HAT"
+            },
+            {
+                "NedId": "0010159119",
+                "ZNumber": "ZIC BC 011638",
+                "Title": "Experimental Pathology Laboratory (EPL)"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011640",
+                "Title": "Exploring the Therapeutic Potential of Stem Cell Biology in Gliomas"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIC BC 011641",
+                "Title": "Pre-clinical Translational Research Facility"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZID BC 011642",
+                "Title": "Brain Tumor Clinical and Clinical Research Program"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011643",
+                "Title": "Rare Central Nervous System Cancers Initiative"
+            },
+            {
+                "NedId": "0011488558",
+                "ZNumber": "ZIA BC 011646",
+                "Title": "Role of long non-coding RNAs in p53 signaling"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011647",
+                "Title": "Identifying New Glioma-Associated Tumor Suppressors & Oncogenes"
+            },
+            {
+                "NedId": "0010199530",
+                "ZNumber": "ZIA BC 011648",
+                "Title": "Targeting Genetic and Metabolic Alterations in Distinct Subtypes of RCC"
+            },
+            {
+                "NedId": "2000552549",
+                "ZNumber": "ZIA BC 011649",
+                "Title": "The Hippo Pathway in Human Gliomas"
+            },
+            {
+                "NedId": "0010046098",
+                "ZNumber": "ZIA BC 011650",
+                "Title": "Genomic characterization of breast cancer in high risk subsets of breast cancer"
+            },
+            {
+                "NedId": "0010095539",
+                "ZNumber": "ZIA BC 011651",
+                "Title": "Laboratory and Clinical studies on T-cells recognizing NSCLC"
+            },
+            {
+                "NedId": "2000719464",
+                "ZNumber": "ZIA BC 011652",
+                "Title": "Mesothelin-targeted immunotoxins in Pancreatic Cancer"
+            },
+            {
+                "NedId": "2000719464",
+                "ZNumber": "ZIE BC 011653",
+                "Title": "Clinical Support"
+            },
+            {
+                "NedId": "0010170536",
+                "ZNumber": "ZIA BC 011654",
+                "Title": "TEDDI-R in PCNSL"
+            },
+            {
+                "NedId": "2000473880",
+                "ZNumber": "ZIA BC 011655",
+                "Title": "Targeting protein-DNA interactions in prokaryotic systems"
+            },
+            {
+                "NedId": "0014354276",
+                "ZNumber": "ZIE BC 011656",
+                "Title": "EOB Clinical and Research Fellowship Training Program"
+            },
+            {
+                "NedId": "2001586429",
+                "ZNumber": "ZIA BC 011657",
+                "Title": "microRNA regulatory networks in thoracic cancers"
+            },
+            {
+                "NedId": "0012231059",
+                "ZNumber": "ZIA BC 011659",
+                "Title": "Deciphering the efficacy of posttransplant cyclophosphamide in haplo transplant"
+            },
+            {
+                "NedId": "0011300455",
+                "ZNumber": "ZIA BC 011660",
+                "Title": "Development of fully-human anti-CD30 chimeric antigen receptors"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIA BC 011666",
+                "Title": "Synthetically Accessible Virtual Inventory (SAVI)"
+            },
+            {
+                "NedId": "0010383732",
+                "ZNumber": "ZIA BC 011669",
+                "Title": "NCI X-ray free electron laser (XFEL) initiative"
+            },
+            {
+                "NedId": "0011684541",
+                "ZNumber": "ZIA BC 011670",
+                "Title": "Role of the microbiota in regulating the mononuclear phagocyte system"
+            },
+            {
+                "NedId": "2000644876",
+                "ZNumber": "ZIA BC 011672",
+                "Title": "Clinical Protocols in the Cancer Signaling Networks Section"
+            },
+            {
+                "NedId": "2001844380",
+                "ZNumber": "ZIA BC 011679",
+                "Title": "Molecular alterations driving the development of primary prostate cancers"
+            },
+            {
+                "NedId": "2001844380",
+                "ZNumber": "ZIA BC 011680",
+                "Title": "Detection of prostate cancer using circulating tumor DNA"
+            },
+            {
+                "NedId": "0010818579",
+                "ZNumber": "ZIA BC 011681",
+                "Title": "Dynamics and Genetics of HIV Proviruses before and during Antiretroviral Therapy"
+            },
+            {
+                "NedId": "0011063762",
+                "ZNumber": "ZIA BC 011682",
+                "Title": "Molecular mechanisms of membrane remodeling"
+            },
+            {
+                "NedId": "0010154712",
+                "ZNumber": "ZID BC 011683",
+                "Title": "Medical Oncology HIV-AIDS Clinical Research"
+            },
+            {
+                "NedId": "0014381655",
+                "ZNumber": "ZIA BC 011684",
+                "Title": "Investigation on the biology of IDH mutant glioma"
+            },
+            {
+                "NedId": "0012765609",
+                "ZNumber": "ZIA BC 011685",
+                "Title": "Brain Interstitium Temozolomide Concentration Pre and Post Regadenoson"
+            },
+            {
+                "NedId": "0012765609",
+                "ZNumber": "ZIA BC 011686",
+                "Title": "Modulating BBB Permeability in Malignant Glioma"
+            },
+            {
+                "NedId": "0010072515",
+                "ZNumber": "ZIA BC 011687",
+                "Title": "Dysregulation of Antigen Presenting Cell Function in Cancer"
+            },
+            {
+                "NedId": "0010171939",
+                "ZNumber": "ZIA BC 011688",
+                "Title": "In vivo function of BRD4"
+            },
+            {
+                "NedId": "2001397112",
+                "ZNumber": "ZIG BC 011689",
+                "Title": "Comparative Oncology Trials Consortium"
+            },
+            {
+                "NedId": "0010076938",
+                "ZNumber": "ZIA BC 011690",
+                "Title": "Novel Tumor Suppressing Kinases in Cancer"
+            },
+            {
+                "NedId": "0010076938",
+                "ZNumber": "ZIA BC 011691",
+                "Title": "Oncogenic Kinases in Cancer"
+            },
+            {
+                "NedId": "2001397112",
+                "ZNumber": "ZIA BC 011692",
+                "Title": "Comparative Oncology Program Laboratory"
+            },
+            {
+                "NedId": "2001397112",
+                "ZNumber": "ZIA BC 011696",
+                "Title": "Comparative Brain Tumor Consortium"
+            },
+            {
+                "NedId": "0010818579",
+                "ZNumber": "ZIA BC 011697",
+                "Title": "Effects of Antiretroviral Therapy on Transcriptional Activity of HIV Proviruses"
+            },
+            {
+                "NedId": "0010818579",
+                "ZNumber": "ZIA BC 011698",
+                "Title": "Impact of Interventions on Clonally Expanded Proviruses and Their RNA Expression"
+            },
+            {
+                "NedId": "0010818579",
+                "ZNumber": "ZIA BC 011699",
+                "Title": "Ultrasensitive Single-Genome Sequencing to Study HIV Transmission and Evolution"
+            },
+            {
+                "NedId": "2001129563",
+                "ZNumber": "ZIA BC 011701",
+                "Title": "Metabolic characterization of FH- and SDH-deficient RCC cell lines"
+            },
+            {
+                "NedId": "0010687786",
+                "ZNumber": "ZIH BC 011703",
+                "Title": "Integrated analyses of genetics, epigenetics, and gene expression"
+            },
+            {
+                "NedId": "0010391999",
+                "ZNumber": "ZIA BC 011704",
+                "Title": "Discovery of genes required for expression or activity of fusion oncogenes"
+            },
+            {
+                "NedId": "2001897117",
+                "ZNumber": "ZIA BC 011707",
+                "Title": "The effect of therapeutics on mutated IDH1 cell lines and mice tumor models"
+            },
+            {
+                "NedId": "2001897117",
+                "ZNumber": "ZIA BC 011708",
+                "Title": "Targeted and untargeted metabolomics in IDH1 mutated xenografts in mice"
+            },
+            {
+                "NedId": "2001897117",
+                "ZNumber": "ZIA BC 011709",
+                "Title": "Metabolite profiling of patients blood, urine, cerebrospinal fluid and tissue"
+            },
+            {
+                "NedId": "2001897117",
+                "ZNumber": "ZIA BC 011710",
+                "Title": "In vivo and in vitro metabolic flux analysis in preclinical mouse models"
+            },
+            {
+                "NedId": "2001897117",
+                "ZNumber": "ZIA BC 011711",
+                "Title": "Develop RAMAN imaging to visualize metabolism in cell lines and tissue"
+            },
+            {
+                "NedId": "2001816167",
+                "ZNumber": "ZIA BC 011713",
+                "Title": "Mechanisms of resistance to Androgen Receptor inhibition in prostate cancer"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011714",
+                "Title": "Brain Tumor Immunotherapy"
+            },
+            {
+                "NedId": "0010100010",
+                "ZNumber": "ZIA BC 011715",
+                "Title": "T cell receptor proximal signaling"
+            },
+            {
+                "NedId": "0011064860",
+                "ZNumber": "ZID BC 011716",
+                "Title": "CCR Research Nursing"
+            },
+            {
+                "NedId": "0010081786",
+                "ZNumber": "ZIA BC 011718",
+                "Title": "Breast cancer aggressiveness in young patients"
+            },
+            {
+                "NedId": "2001816167",
+                "ZNumber": "ZIA BC 011719",
+                "Title": "Multiregion sequencing of localized prostate cancer"
+            },
+            {
+                "NedId": "0010064743",
+                "ZNumber": "ZIA BC 011720",
+                "Title": "Gag Trafficking, Assembly, and Release"
+            },
+            {
+                "NedId": "0010064743",
+                "ZNumber": "ZIA BC 011721",
+                "Title": "Envelope Glycoprotein Incorporation"
+            },
+            {
+                "NedId": "0011804544",
+                "ZNumber": "ZIA BC 011722",
+                "Title": "Genomic characterization and development of therapies for Rhabdomyosarcoma"
+            },
+            {
+                "NedId": "0010057096",
+                "ZNumber": "ZIC BC 011724",
+                "Title": "Effects of Cytosine Modifications on Transcription Factor Binding"
+            },
+            {
+                "NedId": "0011308919",
+                "ZNumber": "ZIA BC 011725",
+                "Title": "Metabolic basis of chronic graft-versus-host disease"
+            },
+            {
+                "NedId": "0011059782",
+                "ZNumber": "ZIA BC 011726",
+                "Title": "Phenotypic variability within isogenic population of lymphocytes"
+            },
+            {
+                "NedId": "0011308919",
+                "ZNumber": "ZIA BC 011727",
+                "Title": "In vivo cell kinetics and imaging of chronic graft-versus-host-disease"
+            },
+            {
+                "NedId": "0011059782",
+                "ZNumber": "ZIA BC 011728",
+                "Title": "Cell-cell communications create robust collective immunological responses"
+            },
+            {
+                "NedId": "0011308919",
+                "ZNumber": "ZID BC 011729",
+                "Title": "Chronic graft-versus-host disease in children and young adults"
+            },
+            {
+                "NedId": "0010048930",
+                "ZNumber": "ZIA BC 011730",
+                "Title": "Studies on drug resistance in HIV-related Kaposi's sarcoma"
+            },
+            {
+                "NedId": "0013304212",
+                "ZNumber": "ZIC BC 011731",
+                "Title": "Tissue Procurement & Processing Facility and Biorepository"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011732",
+                "Title": "Discovery of combination therapy for KRAS mutant cancer"
+            },
+            {
+                "NedId": "0014409943",
+                "ZNumber": "ZIA BC 011733",
+                "Title": "Mechanism of anchorage independent growth driven by the KRAS oncogene"
+            },
+            {
+                "NedId": "0011804544",
+                "ZNumber": "ZIA BC 011734",
+                "Title": "Genomic dissection of tumor heterogeneity and progression"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIG BC 011735",
+                "Title": "Development of Novel Informative Preclinical Animal Models - CAPR Infrastructure"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011736",
+                "Title": "Preclinical Development of Therapeutics in Murine Models of Lung Cancer"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011737",
+                "Title": "Therapeutic evaluation in ovarian and breast cancer GEM/GDA models"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011738",
+                "Title": "Preclinical GEM and GDA Models of Primary and Metastatic Melanoma"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011739",
+                "Title": "Development and Preclinical Applications of Pancreatic Adenocarcinoma Models"
+            },
+            {
+                "NedId": "2000473880",
+                "ZNumber": "ZIA BC 011740",
+                "Title": "Inhibitors of Viral Membrane Fusion"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIA BC 011741",
+                "Title": "Targeting Metabolic Pathways in Bladder Cancer"
+            },
+            {
+                "NedId": "0011359037",
+                "ZNumber": "ZIA BC 011743",
+                "Title": "NIH Chronic GVHD Study Group"
+            },
+            {
+                "NedId": "2000738128",
+                "ZNumber": "ZIA BC 011745",
+                "Title": "Development of biologic based therapies for rhabdomyosarcoma"
+            },
+            {
+                "NedId": "2002039832",
+                "ZNumber": "ZIA BC 011744",
+                "Title": "Oncogenic Kinase complexes"
+            },
+            {
+                "NedId": "0014262002",
+                "ZNumber": "ZIA BC 011476",
+                "Title": "Studies of the fate of environmental contaminants in humans and animals"
+            },
+            {
+                "NedId": "0011246586",
+                "ZNumber": "ZIA BC 011754",
+                "Title": "Molecular, Cellular and Genetic Analyses of Malignancies Associated with NF1"
+            },
+            {
+                "NedId": "2002191518",
+                "ZNumber": "ZIA BC 011755",
+                "Title": "The role of Foxo1 for intestinal epithelial cells during mucosal immune response"
+            },
+            {
+                "NedId": "0012773288",
+                "ZNumber": "ZIA BC 011756",
+                "Title": "The Intersection between Cell-Intrinsic Innate Immunity and Metabolic Sensing"
+            },
+            {
+                "NedId": "2002073747",
+                "ZNumber": "ZIA BC 011757",
+                "Title": "Biogenesis, Function and Turnover of Noncoding RNAs"
+            },
+            {
+                "NedId": "2000554204",
+                "ZNumber": "ZIA BC 011758",
+                "Title": "Computational Modeling Aggressive Brain Cancer"
+            },
+            {
+                "NedId": "2002134023",
+                "ZNumber": "ZIA BC 011759",
+                "Title": "Interrogating the molecular underpinnings of metastatic colonization"
+            },
+            {
+                "NedId": "0014381655",
+                "ZNumber": "ZIA BC 011761",
+                "Title": "Develop novel therapeutic strategy for brain tumor"
+            },
+            {
+                "NedId": "0010892153",
+                "ZNumber": "ZIA BC 011762",
+                "Title": "Screening to identify protectors and mitigators of Radiation GI Syndrome"
+            },
+            {
+                "NedId": "0014384235",
+                "ZNumber": "ZIA BC 011763",
+                "Title": "Signaling pathways regulating stem cell fate decisions"
+            },
+            {
+                "NedId": "0014384235",
+                "ZNumber": "ZIA BC 011764",
+                "Title": "G-protein-coupled receptor signaling in cancer development and treatment"
+            },
+            {
+                "NedId": "2000788580",
+                "ZNumber": "ZIA BC 011765",
+                "Title": "Transcriptional regulation of inflammatory and autoimmune responses"
+            },
+            {
+                "NedId": "2002137388",
+                "ZNumber": "ZIA BC 011766",
+                "Title": "Regulation of RNA biogenesis and function by RNA modifications"
+            },
+            {
+                "NedId": "2002030421",
+                "ZNumber": "ZIA BC 011767",
+                "Title": "Preservation of Proteomic Stability and Promotion of Protein Lipidation by HSF1"
+            },
+            {
+                "NedId": "2001736409",
+                "ZNumber": "ZIA BC 011768",
+                "Title": "Natural History and Specimen Banking for Patients with CNS Tumors"
+            },
+            {
+                "NedId": "2001816167",
+                "ZNumber": "ZIA BC 011771",
+                "Title": "Development of therapy for aggressive variant prostate cancer"
+            },
+            {
+                "NedId": "0011095122",
+                "ZNumber": "ZIA BC 011772",
+                "Title": "The role of Galpha13 signaling in suppression of lymphoma"
+            },
+            {
+                "NedId": "0010150121",
+                "ZNumber": "ZIA BC 011773",
+                "Title": "Hypoxia signaling in cancer development"
+            },
+            {
+                "NedId": "2000738128",
+                "ZNumber": "ZIA BC 011774",
+                "Title": "Development and translation of novel therapies for pediatric sarcoma"
+            },
+            {
+                "NedId": "0011314159",
+                "ZNumber": "ZIA BC 011775",
+                "Title": "Immune cell control of ovarian cancer"
+            },
+            {
+                "NedId": "0011308919",
+                "ZNumber": "ZIA BC 011777",
+                "Title": "Stable Water Isotope Labeling for Imaging of Rapidly Proliferating Cells"
+            },
+            {
+                "NedId": "0012773288",
+                "ZNumber": "ZIA BC 011778",
+                "Title": "Quantitative Single-Cell Assessment of Lentivirus Susceptibility Determinants"
+            },
+            {
+                "NedId": "0012773288",
+                "ZNumber": "ZIA BC 011779",
+                "Title": "Antiviral Mechanism of IFITM Proteins during HIV and Other Retrovirus Infections"
+            },
+            {
+                "NedId": "0010151173",
+                "ZNumber": "ZIA BC 011780",
+                "Title": "Clinical development of mechanism-based lymphoma therapies"
+            },
+            {
+                "NedId": "0011059782",
+                "ZNumber": "ZIA BC 011781",
+                "Title": "Dynamics of hematopoietic differentiation"
+            },
+            {
+                "NedId": "0010171465",
+                "ZNumber": "ZIA BC 011782",
+                "Title": "Mechanisms of pathogenesis in patient derived organoid models of prostate cancer"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011784",
+                "Title": "Bioinformatics:  Characterizing Brain Tumor Data"
+            },
+            {
+                "NedId": "0010098566",
+                "ZNumber": "ZIA BC 011785",
+                "Title": "Better understanding and handling of tautomerism"
+            },
+            {
+                "NedId": "2000933707",
+                "ZNumber": "ZIA BC 011786",
+                "Title": "A Phase I Combination Study of Durvalumab and Vicinium in BCG refractory NMIBC"
+            },
+            {
+                "NedId": "2001285365",
+                "ZNumber": "ZIA BC 011787",
+                "Title": "Predictive biomarker of BET bromodomain inhibitor in Small cell lung cancer"
+            },
+            {
+                "NedId": "2000544573",
+                "ZNumber": "ZIA BC 011789",
+                "Title": "Phase 2 study of Lu-177-DOTATATE in inoperable paraganglioma / pheochromocytoa"
+            },
+            {
+                "NedId": "0011505376",
+                "ZNumber": "ZIA BC 011790",
+                "Title": "Metabolic imaging of the effects of brain radiotherapy"
+            },
+            {
+                "NedId": "0010010626",
+                "ZNumber": "ZID BC 011792",
+                "Title": "Development of FISH Molecular Diagnostics to support Clinical Trials at NCI"
+            },
+            {
+                "NedId": "2000495859",
+                "ZNumber": "ZIA BC 011793",
+                "Title": "Exploiting DNA Replicative Stress for Novel Small Cell Lung Cancer Therapies"
+            },
+            {
+                "NedId": "2002169796",
+                "ZNumber": "ZIA BC 011798",
+                "Title": "Identification of genomic regulatory elements in pancreas cells"
+            },
+            {
+                "NedId": "0011280922",
+                "ZNumber": "ZIA BC 011800",
+                "Title": "Engineering HCC-selective PET agent"
+            },
+            {
+                "NedId": "2002191518",
+                "ZNumber": "ZIA BC 011801",
+                "Title": "CD101 controls intraepithelial cells (IELs) for intestinal barrier integrity"
+            },
+            {
+                "NedId": "2002465696",
+                "ZNumber": "ZIA BC 011802",
+                "Title": "Discovery of genetic interactions in cancer"
+            },
+            {
+                "NedId": "2002465696",
+                "ZNumber": "ZIA BC 011803",
+                "Title": "Cancer immunotherapy"
+            },
+            {
+                "NedId": "2001027852",
+                "ZNumber": "ZIA BC 011804",
+                "Title": "Dual Blockade of IGF1R and MEK synergistically inhibits RMS cell growth"
+            },
+            {
+                "NedId": "2001027852",
+                "ZNumber": "ZIA BC 011805",
+                "Title": "Defining the Mechanism of Action of Rigosertib in Pediatric Cancers"
+            },
+            {
+                "NedId": "2002198812",
+                "ZNumber": "ZIA BC 011806",
+                "Title": "Thymus biology"
+            },
+            {
+                "NedId": "0011059782",
+                "ZNumber": "ZIA BC 011807",
+                "Title": "Immunophenotyping by CyTOF and machine learning"
+            },
+            {
+                "NedId": "2002480321",
+                "ZNumber": "ZIA BC 011808",
+                "Title": "Role of ETS-Transcription Factors in Regulating Cell Fate"
+            },
+            {
+                "NedId": "2002480321",
+                "ZNumber": "ZIA BC 011809",
+                "Title": "Identification of molecular pathways regulating quiescence in pluripotent cells"
+            },
+            {
+                "NedId": "2002544087",
+                "ZNumber": "ZIA BC 011810",
+                "Title": "Canonical and non-canonical roles of Argonaute proteins in mammals"
+            },
+            {
+                "NedId": "2002544087",
+                "ZNumber": "ZIA BC 011811",
+                "Title": "CRISPR tools to dissect the coding and non-coding genome"
+            },
+            {
+                "NedId": "2002544087",
+                "ZNumber": "ZIA BC 011812",
+                "Title": "Dissecting the roles of Vault RNAs in mammals"
+            },
+            {
+                "NedId": "2002480321",
+                "ZNumber": "ZIA BC 011813",
+                "Title": "Molecular Determinants of Totipotency"
+            },
+            {
+                "NedId": "0014390650",
+                "ZNumber": "ZIA BC 011814",
+                "Title": "RNA methylation as a modulator of cancer genome instability"
+            },
+            {
+                "NedId": "2002506066",
+                "ZNumber": "ZIA BC 011815",
+                "Title": "Investigate the mechanism of action of the novel telomere length regulator TZAP"
+            },
+            {
+                "NedId": "2002506066",
+                "ZNumber": "ZIA BC 011816",
+                "Title": "Determine how telomere dysfunction impacts neuronal function"
+            },
+            {
+                "NedId": "2001816167",
+                "ZNumber": "ZIA BC 011818",
+                "Title": "Molecular characteristics of aggressive prostate cancer subtypes"
+            },
+            {
+                "NedId": "2002360349",
+                "ZNumber": "ZIA BC 011819",
+                "Title": "Mechanisms of multi-species bacterial interactions"
+            },
+            {
+                "NedId": "0010081655",
+                "ZNumber": "ZIC BC 011820",
+                "Title": "DNA methylation data development and for small cell lung cancer"
+            },
+            {
+                "NedId": "2002360349",
+                "ZNumber": "ZIA BC 011821",
+                "Title": "Genetic determinants of antibiotic persistence"
+            },
+            {
+                "NedId": "0010035538",
+                "ZNumber": "ZIA BC 011824",
+                "Title": "Structural studies with regulatory RNAs"
+            },
+            {
+                "NedId": "2000544573",
+                "ZNumber": "ZIA BC 011825",
+                "Title": "Th227-mesothelin antibody conjugate in mesothelioma"
+            },
+            {
+                "NedId": "2000544573",
+                "ZNumber": "ZIA BC 011826",
+                "Title": "Protection of Salivary Gland in PSMA-targeted radioligand therapy"
+            },
+            {
+                "NedId": "2000544573",
+                "ZNumber": "ZIA BC 011827",
+                "Title": "Phase 1/2 study of Lu177-DOTATATE and olaparib in neuroendocrine tumors"
+            },
+            {
+                "NedId": "0012343507",
+                "ZNumber": "ZIA BC 011828",
+                "Title": "Mitochondrial metabolism in normal and transformed cells"
+            },
+            {
+                "NedId": "2002343488",
+                "ZNumber": "ZIA BC 011830",
+                "Title": "Control of cell cycle commitment by APC/C-Cdh1"
+            },
+            {
+                "NedId": "2002292600",
+                "ZNumber": "ZIA BC 011831",
+                "Title": "The Role of WHSC1L1 in Squamous Cell Carcinoma of the Head and Neck"
+            },
+            {
+                "NedId": "2002343488",
+                "ZNumber": "ZIA BC 011832",
+                "Title": "Study cell cycle regulation in dormant tumor cells"
+            },
+            {
+                "NedId": "0010035361",
+                "ZNumber": "ZIA BC 011833",
+                "Title": "The DIPG All-In Initiative"
+            },
+            {
+                "NedId": "0010164511",
+                "ZNumber": "ZIA BC 011835",
+                "Title": "Minimal Myc functional threshold for tumorigenesis"
+            },
+            {
+                "NedId": "2001736409",
+                "ZNumber": "ZIG BC 011836",
+                "Title": "NOB-018  Mouse Model of CNS Radiation-Induced Hypersomnia"
+            },
+            {
+                "NedId": "2001736409",
+                "ZNumber": "ZIA BC 011837",
+                "Title": "Outcomes and Risk of Rare Tumors"
+            },
+            {
+                "NedId": "2001844380",
+                "ZNumber": "ZIA BC 011838",
+                "Title": "Mechanisms of resistance to treatment in aggressive prostate cancers"
+            },
+            {
+                "NedId": "2001285365",
+                "ZNumber": "ZIA BC 011839",
+                "Title": "Developing an Effective BET bromodomain inhibitor Drug Combo to Target SCLC"
+            },
+            {
+                "NedId": "2001767675",
+                "ZNumber": "ZIA BC 011840",
+                "Title": "Discovering novel therapies for glioma patients"
+            },
+            {
+                "NedId": "2001767675",
+                "ZNumber": "ZIA BC 011841",
+                "Title": "Understanding IDH mutant gliomas"
+            },
+            {
+                "NedId": "0010010626",
+                "ZNumber": "ZIC BC 011842",
+                "Title": "Molecular Mechanisms of Cancer Development"
+            },
+            {
+                "NedId": "0010095539",
+                "ZNumber": "ZIA BC 011843",
+                "Title": "Identification and use of T-cell receptors recognizing common tumor mutations"
+            },
+            {
+                "NedId": "2002424542",
+                "ZNumber": "ZIA BC 011846",
+                "Title": "Single-cell DNA methylation analysis of human cancer"
+            },
+            {
+                "NedId": "2002424542",
+                "ZNumber": "ZIA BC 011847",
+                "Title": "Development and validation of a predictor of meningioma recurrence"
+            },
+            {
+                "NedId": "0010302092",
+                "ZNumber": "ZIA BC 011848",
+                "Title": "Preclinical Modelling and Therapeutic Development for Other Cancer Indications"
+            },
+            {
+                "NedId": "2001319371",
+                "ZNumber": "ZIC BC 011849",
+                "Title": "Structural studies of biomolecules related to cancer and HIV-AIDS"
+            },
+            {
+                "NedId": "0010011362",
+                "ZNumber": "ZIA BC 011852",
+                "Title": "MyPART: My Pediatric and Adult Rare Tumor Network - Cures"
+            },
+            {
+                "NedId": "2001583057",
+                "ZNumber": "ZIA BC 011853",
+                "Title": "CONNECT: Comprehensive Oncology Network Evaluating Rare CNS Tumors - Cures"
+            },
+            {
+                "NedId": "0010149475",
+                "ZNumber": "ZIA BC 011854",
+                "Title": "NCI Program for Natural Products Discovery - Cures"
+            },
+            {
+                "NedId": "0010139353",
+                "ZNumber": "ZIA BC 011855",
+                "Title": "Center for Cell-based Therapy - Cures"
+            },
+            {
+                "NedId": "0010106299",
+                "ZNumber": "ZID BC 011856",
+                "Title": "Rare Tumor Patient Engagement Network - Cures"
+            }
+        ];
+  
+      
+   for( var i = 0; i < zList.length; i++){
+      var gr = new GlideRecord('u_ccr_gds_z_list_table');
+      gr.initialize();
+      gr.u_ned_id = zList[i].NedId;
+      gr.u_z_number = zList[i].ZNumber;
+      gr.u_title = zList[i].Title;
+      gr.insert(); 
+   }
+   gs.info('Completed');
+
+
