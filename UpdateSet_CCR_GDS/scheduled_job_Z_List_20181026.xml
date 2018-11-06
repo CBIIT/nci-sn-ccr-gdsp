@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-10-26 15:40:42">
+<sysauto_script action="INSERT_OR_UPDATE">
+<active>true</active>
+<condition/>
+<conditional>false</conditional>
+<name>Z List Retrival</name>
+<run_as display_value="Jim Zhou">7acff4a96f6f2100e04fd15eae3ee451</run_as>
+<run_as_tz/>
+<run_dayofmonth>1</run_dayofmonth>
+<run_dayofweek>1</run_dayofweek>
+<run_period>1970-06-30 00:00:00</run_period>
+<run_start>2018-12-01 05:01:01</run_start>
+<run_time>1970-01-01 05:00:00</run_time>
+<run_type>periodically</run_type>
+<script><![CDATA[ try { 
+	 var response = (new sn_ws.RESTMessageV2('Z List retrieval', 'getZlist')).execute();
+	 var content = response.getBody();
+         if(content != null && content.length > 10){
+              //clean up table, u_ccr_gds_z_list_table
+              var del = new GlideRecord('u_ccr_gds_z_list_table');
+              del.query();
+              del.deleteMultiple();
+              //insert new record into table
+              var obj = JSON.parse(content);
+              for(var i = 0; i < obj.length; i++){
+                  var gr = new GlideRecord('u_ccr_gds_z_list_table');
+                  gr.initialize();
+                  gr.u_ned_id = obj[i].NedId;
+                  gr.u_z_number = obj[i].ZNumber;
+                  gr.u_title = obj[i].Title;
+                  gr.insert();     
+              } 
+         }
+ }catch(ex) {
+	 var message = ex.getMessage();
+ }]]></script>
+<sys_class_name>sysauto_script</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-10-24 21:20:44</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>45b44da6db51a70054d8ff621f9619e6</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>Z List Retrival</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sysauto_script_45b44da6db51a70054d8ff621f9619e6</sys_update_name>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-10-25 14:37:07</sys_updated_on>
+<upgrade_safe>false</upgrade_safe>
+</sysauto_script>
+</unload>

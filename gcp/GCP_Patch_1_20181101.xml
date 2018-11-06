@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-11-01 19:09:32">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<application_name>gcp</application_name>
+<application_scope>x_naci_gcp</application_scope>
+<application_version>1.0.4</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>GCP_patch_1</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d861f545dba92f0054d8ff621f9619d6</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-01 19:09:32</sys_created_on>
+<sys_id>6da37dc5dba92f0054d8ff621f96199b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-01 19:09:32</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_c4d3dafedbc0a300b86770c08c96190f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;x_naci_gcp_gcp_task&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;x_naci_gcp.gcp_past_due_reminder&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;true&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Dear ${employee_name},&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Our records show that your Good Clinical Practice training has expired and you have not yet completed the required renewal training. As you know, you are required to complete a Good Clinical Practice training course at a minimum of every 3 years.&amp;nbsp;&amp;nbsp; Your training was to be completed by ${certificate_renew_date}&lt;br /&gt;.&lt;/p&gt;
+&lt;p&gt;This training &lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;must&lt;/strong&gt;&lt;/span&gt;&amp;nbsp;be completed &lt;span style="text-decoration: underline;"&gt;&lt;strong&gt;immediately&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;You may register to complete one of the following NCI recommended free GCP courses online by selecting one of the links below.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://gcp.nihtraining.com/"&gt;National Institute on Drug Abuse (NIDA) course titled "National Drug Abuse Treatment Clinical Trials Network Good Clinical Practice"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://ohsr.od.nih.gov/nih/citi.php"&gt;Collaborative Institutional Training Initiative Program (CITI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://gcplearningcenter.niaid.nih.gov/"&gt;National Institute of Allergy and Infectious Diseases (NIAID) GCP Learning Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://lms.learning.hhs.gov/"&gt;NIH Good Clinical Practice for Behavioral and Social Sciences Training (00162946)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;General questions or concerns about this training should be directed to your supervisor / Project Officer,&amp;nbsp; ${manager}.&amp;nbsp; If you need technical assistance or have questions regarding the training, please contact the appropriate help desk associated with the training you have selected to complete.&amp;nbsp; If you need technical assistance with uploading your document(s), please contact:&amp;nbsp;&lt;a title="NCI GCP Web Admin" href="mailto:NCIGCPWebAdmin@mail.nih.gov"&gt;NCI GCP Web Admin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Once you have completed your training, please&amp;nbsp;go to &lt;a title="Training Certificate Repository" href="https://service.cancer.gov/gcp" target="_blank"&gt;Training Certificate Repository&lt;/a&gt;&amp;nbsp;to upload your&amp;nbsp;completed certificate(s).&amp;nbsp; For best results, please use "Print to PDF" when completing training to output a pdf to upload to this site or you may scan the printed certificate and save as a pdf to upload.&lt;/p&gt;
+&lt;div&gt;&amp;nbsp;&amp;nbsp;${mail_script:GCPSupervisorAOEmail}&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;GCP Employee training past due&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Action Required: Your GCP training renewal date is past due&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 18:26:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;c4d3dafedbc0a300b86770c08c96190f&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;GCP Employee training past due&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="gcp" source="x_naci_gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_c4d3dafedbc0a300b86770c08c96190f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-11-01 19:06:04&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>50707862</payload_hash>
+<remote_update_set display_value="GCP_patch_1">6da37dc5dba92f0054d8ff621f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-01 19:09:32</sys_created_on>
+<sys_id>29a37dc5dba92f0054d8ff621f96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166d0ab119c0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-01 19:09:32</sys_updated_on>
+<table>x_naci_gcp_gcp_task</table>
+<target_name>GCP Employee training past due</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>7ad2b1c536a92f00fff5b28337ee5dd8</update_guid>
+<update_guid_history>7ad2b1c536a92f00fff5b28337ee5dd8:50707862,852fe080e449e340d74fff14605e07be:0,98ae64405349e34081490b1620f3252c:1483291147,ba6f9ec25df46f00d9c4f57af1e22bc9:-474103785,f61639bd28f46f00d42225f700962357:-660318423,6c637179caf46f005ddd9172e7a3ea0a:626938280,624521f567b46f0078a3690e2066cb27:-1017343730,bd13653561b46f007f08ace37a7a3919:-1480001612,606e5dbdc5746f009995a7d1dd037ee6:1794774351,c7159e5ffc1c6f00cb319e96050951c7:690049386,76b92d93cbd86f008d819d1f9f47ad8b:-1167854015,a4dd690b8a506f00f6dd367a3bbbe11a:-1452802903,5b7ce5c7bf506f0032538052ebf164f1:-2115139394,2c507872d3182f007bdc438034a692ad:982595596,5f21eafb564c27008060f613795e0313:-935616998,a34062bba74c2700f89dc63800ee13f9:-539433076,6c7f563b244c2700843c7a4a8cf106f7:-1411902795,1ebbde374c4c270026ce5ef49de0c5a7:-848084772,a64ade37e64c2700378fc606ad5991a0:1421873103,adc9da37cb4c2700d74a416bedb84e98:-2142095564,2d59de73c14c2700a8171e7f36cf0c6f:737017930,33d94ab7f40c2700e896ad22f8fbf31f:1421873103,292936f6f044a3000d7b393b5779f1ff:1001915328,0b7756b2c504a3004e77e8aa1c0e98cb:1751654776,15b49efef1c0a3003dee0ab2508c1253:-1593980714,52249232bf04a30074c8cec22052ac0a:1762803330,4414d6fee2c0a30008386d2f4d1ee339:-1066262083</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_6c52debedbc0a300b86770c08c96197e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;x_naci_gcp_gcp_task&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;x_naci_gcp.send_Expired_Reminder&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;true&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Dear ${employee_name},&lt;/p&gt;
+&lt;p&gt;As you may be aware, NIH employees are required to complete a Good Clinical Practice (GCP) training course at a minimum of every three years.&lt;/p&gt;
+&lt;p&gt;You are receiving this email because your current GCP training is expiring and you need to renew &lt;strong&gt;no later than &lt;/strong&gt;${certificate_renew_date}&lt;/p&gt;
+&lt;p&gt;You may register to complete &lt;strong&gt;&lt;u&gt;one&lt;/u&gt;&lt;/strong&gt; of the following NCI recommended free GCP courses online by selecting one of the links below.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;
+&lt;li&gt;&lt;a href="https://gcp.nihtraining.com/"&gt;National Institute on Drug Abuse (NIDA) course titled "National Drug Abuse Treatment Clinical Trials Network Good Clinical Practice"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ohsr.od.nih.gov/nih/citi.php"&gt;Collaborative Institutional Training Initiative Program (CITI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gcplearningcenter.niaid.nih.gov/"&gt;National Institute of Allergy and Infectious Diseases (NIAID) GCP Learning Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lms.learning.hhs.gov/"&gt;NIH Good Clinical Practice for Behavioral and Social Sciences Training (00162946)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;nbsp;General questions or concerns about this training should be directed to your supervisor / Project officer, ${manager}.&amp;nbsp;&amp;nbsp; If you need technical assistance or have questions regarding the training, please contact the appropriate help desk associated with the training you have selected to complete.&amp;nbsp; If you need technical assistance with uploading your document(s), please contact:&amp;nbsp;&lt;a title="NCI GCP Web Admin" href="mailto:NCIGCPWebAdmin@mail.nih.gov"&gt;NCI GCP Web Admin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;Once you have completed your training, please&amp;nbsp;go to &lt;a title="Training Certificate Repository" href="https://service.cancer.gov/gcp" target="_blank"&gt;Training Certificate Repository&lt;/a&gt;&amp;nbsp;to upload your&amp;nbsp;completed certificate(s).&amp;nbsp; For best results, please use "Print to PDF" when completing training to output a pdf to upload to this site or you may scan the printed certificate and save as a pdf to upload.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;em&gt;Note:&amp;nbsp; If you have more than one certificate (i.e. the course provides individual certificates for each section of their course), you must combine those into one pdf document prior to uploading. A pdf Adobe Portfolio is not permitted for this upload.&lt;/em&gt;&lt;/p&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;GCP Employee Training expired&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Your GCP training renewal date is approaching&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-24 18:19:46&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;6c52debedbc0a300b86770c08c96197e&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;GCP Employee Training expired&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="gcp" source="x_naci_gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_6c52debedbc0a300b86770c08c96197e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-11-01 19:05:29&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>83219082</payload_hash>
+<remote_update_set display_value="GCP_patch_1">6da37dc5dba92f0054d8ff621f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-01 19:09:32</sys_created_on>
+<sys_id>65a37dc5dba92f0054d8ff621f96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166d0aa8b3c0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-01 19:09:32</sys_updated_on>
+<table>x_naci_gcp_gcp_task</table>
+<target_name>GCP Employee Training expired</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>d2b235c5c4a92f00c47783661d79c1c4</update_guid>
+<update_guid_history>d2b235c5c4a92f00c47783661d79c1c4:83219082,092fe080c849e340f296c984a6ea2abc:0,1b5eec00ab49e3409f5a2fbd99b88adc:-422567907,e6b425b512b46f0010b0c06617c64313:-1117341399,bddc55317cb46f006c6bca36138f4ef8:119229926,e5e45e5ff81c6f00744c1b56fd5a1716:453302683,7879ed5372d86f00c9eb61bf7a3cf516:-212999462,729da50b6e506f00f4edee7604304d7f:-1097797966,a72c250789506f00e26a99c261902000:883294429,5e10bc7205182f00aa446e30d3a7edf1:-1852019413,d869728037586700e3dc5415d045f67f:-405304514,a029b680185867009edea43fe9f1b005:1519178536,4ee87280bd58670048aa9b525c466479:762590699,deb4f2cc99186700797717183803bd2c:-405304514,c6747e44f91867002e054d1cf0d61760:-1126738194,d8734208dd946700fdaa45d4b0d4726e:-1920696039,a433028805946700a5f8524b70235384:601479929,d61c1a76ed04a300f84cafa3ad930821:-1938921720,e64492fefbc0a30032b5438fc585e1c5:1427181554,9dc3dafe7ac0a300ac7682298fa9080d:-1145356156,656356fec7c0a300a46721dcd37eeaba:-1992867551,82e256fee8c0a300254bf9748c61ada7:-400120997,bf825abedfc0a30041ce49674c26724a:713635587</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_010ab2c0db58670054d8ff621f9619ae</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;x_naci_gcp_gcp_task&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;x_naci_gcp.send_Expired_reminder_Month&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;true&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Dear ${employee_name},&lt;/p&gt;
+&lt;p&gt;As you may be aware, NIH employees are required to complete a Good Clinical Practice (GCP) training course at a minimum of every three years.&lt;/p&gt;
+&lt;p&gt;You are receiving this email because your current GCP training is expiring and you need to renew&amp;nbsp;&lt;strong&gt;no later than&amp;nbsp;&lt;/strong&gt;${certificate_renew_date}&lt;/p&gt;
+&lt;p&gt;You may register to complete&amp;nbsp;&lt;strong&gt;&lt;span style="text-decoration: underline;"&gt;one&lt;/span&gt;&lt;/strong&gt;&amp;nbsp;of the following NCI recommended free GCP courses online by selecting one of the links below.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;
+&lt;li&gt;&lt;a href="https://gcp.nihtraining.com/"&gt;National Institute on Drug Abuse (NIDA) course titled "National Drug Abuse Treatment Clinical Trials Network Good Clinical Practice"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ohsr.od.nih.gov/nih/citi.php"&gt;Collaborative Institutional Training Initiative Program (CITI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gcplearningcenter.niaid.nih.gov/"&gt;National Institute of Allergy and Infectious Diseases (NIAID) GCP Learning Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lms.learning.hhs.gov/"&gt;NIH Good Clinical Practice for Behavioral and Social Sciences Training (00162946)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;nbsp;General questions or concerns about this training should be directed to your supervisor / Project officer, ${manager}.&amp;nbsp;&amp;nbsp; If you need technical assistance or have questions regarding the training, please contact the appropriate help desk associated with the training you have selected to complete.&amp;nbsp; If you need technical assistance with uploading your document(s), please contact:&amp;nbsp;&lt;a title="NCI GCP Web Admin" href="mailto:NCIGCPWebAdmin@mail.nih.gov"&gt;NCI GCP Web Admin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;Once you have completed your training, please&amp;nbsp;go to &lt;a title="Training Certificate Repository" href="https://service.cancer.gov/gcp" target="_blank"&gt;Training Certificate Repository&lt;/a&gt;&amp;nbsp;to upload your&amp;nbsp;completed certificate(s).&amp;nbsp; For best results, please use "Print to PDF" when completing training to output a pdf to upload to this site or you may scan the printed certificate and save as a pdf to upload.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;em&gt;Note:&amp;nbsp; If you have more than one certificate (i.e. the course provides individual certificates for each section of their course), you must combine those into one pdf document prior to uploading. A pdf Adobe Portfolio is not permitted for this upload.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&amp;nbsp;${mail_script:GCPSupervisorEmail}&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;GCP Employee Training expired in a Month&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Your GCP training renewal date is approaching&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-28 18:25:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;010ab2c0db58670054d8ff621f9619ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;GCP Employee Training expired in a Month&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="gcp" source="x_naci_gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_010ab2c0db58670054d8ff621f9619ae&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-11-01 19:04:13&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-935322333</payload_hash>
+<remote_update_set display_value="GCP_patch_1">6da37dc5dba92f0054d8ff621f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-01 19:09:32</sys_created_on>
+<sys_id>a1a37dc5dba92f0054d8ff621f96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166d0a961310000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-01 19:09:32</sys_updated_on>
+<table>x_naci_gcp_gcp_task</table>
+<target_name>GCP Employee Training expired in a Month</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>6362f18532a92f00089cf35864dcd4d5</update_guid>
+<update_guid_history>6362f18532a92f00089cf35864dcd4d5:-935322333,892fe0803849e3402c8726b20fc084ba:0,5f0e68009149e34071ebc967d3c29421:1705092592,91f571fdf0f46f00ab6219af771fc1c4:-1440659356,f333fd3986f46f00f16f2f3eaf380159:1045270613,a29569f5fab46f00c95cd56310d13d47:-2119506104,ac0521f5b8b46f0018b4d0f59fb7871f:1474679583,203d1571ceb46f00c7a319ed55682880:1113487424,4d05da5fab1c6f0061ce5aeb460c1cec:1323240262,1d99e593efd86f006bc566221d3653c0:-1944820570,5dbdadc745506f0005e4e856aa95fbde:1188847197,764c6d87f3506f00c24d03c502bc5716:1922731434,5f20f47213182f00013a471900a82f79:-952068824,8f890f14da90a7000103420f6953101b:606094773,2488cf14cc90a700b4d156480c3e9d2a:-578920715,001107c48f586700ae54f918c869c093:606094773,876ff684565867005a3ba0d43089f0e6:822328556,3e6e3a8422586700a1dbb2cea48b7702:-867665793,76ddbe046258670082c538410e6d432a:822328556,c9db72044a586700b28048d2f9e9ce6b:1426492606,649a36c0bb5867008f0af9302ef0b623:799370913,674a76c02d586700cea6c55bb4a5c68c:659619054</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_ca67e802db771740b86770c08c961926</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;x_naci_gcp_gcp_task&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;x_naci_gcp.sending_training_request&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;true&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;Hello ${event.parm1},&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;As you may be aware, NIH employees involved in the design, conduct, oversight and management of NIH-funded clinical trials are required to complete a GCP training course at a minimum of every three years. &amp;nbsp;&amp;nbsp;&amp;nbsp;Your new position includes clinical trials related responsibilities and you are required to complete GCP training within 30 days of employment.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;You may register to complete &lt;strong&gt;&lt;u&gt;one&lt;/u&gt;&lt;/strong&gt; of the following NCI recommended free GCP courses online by selecting one of the links below.&lt;/p&gt;
+&lt;ul style="list-style-position: inside;"&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://gcp.nihtraining.com/"&gt;National Institute on Drug Abuse (NIDA) course titled "National Drug Abuse Treatment Clinical Trials Network Good Clinical Practice"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://ohsr.od.nih.gov/nih/citi.php"&gt;Collaborative Institutional Training Initiative Program (CITI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://gcplearningcenter.niaid.nih.gov/"&gt;National Institute of Allergy and Infectious Diseases (NIAID) GCP Learning Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;nbsp;&lt;a href="https://lms.learning.hhs.gov/"&gt;NIH Good Clinical Practice for Behavioral and Social Sciences Training (00162946)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;nbsp;If you experience technical issues when logging into one of these online courses, please contact the help desk associated with that training.&amp;nbsp; &amp;nbsp;Please contact&amp;nbsp;&lt;a title="NCI GCP Web Admin" href="mailto:NCIGCPWebAdmin@mail.nih.gov"&gt;NCI GCP Web Admin&lt;/a&gt;&amp;nbsp;for all other inquiries regarding this email.&lt;/p&gt;
+&lt;p&gt;Once you have completed your training, please&amp;nbsp;go to &lt;a title="Training Certificate Repository" href="https://service.cancer.gov/gcp" target="_blank"&gt;Training Certificate Repository&lt;/a&gt;&amp;nbsp;to upload your&amp;nbsp;completed certificate(s).&amp;nbsp; For best results, please use "Print to PDF" when completing training to output a pdf to upload to this site or you may scan the printed certificate and save as a pdf to upload.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&amp;nbsp; If you have more than one certificate (i.e. the course provides individual certificates for each section of their course), you must combine those into one pdf document prior to uploading. A pdf Adobe Portfolio is not permitted for this upload.&lt;/em&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;${mail_script:GCPRequestTrainingCCSupervisor}&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Employee Training Notification&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Please take the following GCP training class&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-09 16:22:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;ca67e802db771740b86770c08c961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;Employee Training Notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="gcp" source="x_naci_gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="gcp"&gt;609215f9dbe35b00b86770c08c9619e2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_ca67e802db771740b86770c08c961926&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-11-01 19:06:40&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>436150867</payload_hash>
+<remote_update_set display_value="GCP_patch_1">6da37dc5dba92f0054d8ff621f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-01 19:09:32</sys_created_on>
+<sys_id>e9a37dc5dba92f0054d8ff621f96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166d0aba0250000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-01 19:09:32</sys_updated_on>
+<table>x_naci_gcp_gcp_task</table>
+<target_name>Employee Training Notification</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>6ff2b1c534a92f005f634903c2e0b0dc</update_guid>
+<update_guid_history>6ff2b1c534a92f005f634903c2e0b0dc:436150867,052fe0808149e340f77e4434115a87c0:0,89ae64401749e340d63401a7cb8abd56:1493165768,cc75757df2f46f00c3e8e995fbc975b9:1632311764,914471f9f9f46f00bde6cac2825653f8:-507781422,266235b5adf46f007e99ad1537dbf7e9:1662966012,8b6175b1baf46f003a2045cb44422854:-1035104131,47007131baf46f00f6ce32a5cdaad38b:-1298749870,765b293da5b46f001001ec17a6a70f9a:1804613263,10d8e9b961b46f00660fbcb6e4d5ae04:-1188605527,3ed56df5dbb46f005b1e5e4864f0cd9f:-1691421202,c181a5b1f7b46f00811cb90d9209b1a2:671340981,6f9bd9fdd7746f006a8558400a8c0b00:-706861365,8d7b1dfd97746f0037b46a7f8fbb96aa:88419882,d427d13d64746f0068bb3f9208db7c48:-1492625962,05c4da5ffe1c6f00c04655f76cbf92e8:-13891739,304965535dd86f003526e0c2871e4b45:-1994108873,bd6dedc786506f00da815ec134516adb:-704853857,0b0ca1c779506f0038b146132af22480:374183284,a94b9236c704a300ca82f7da71fe732f:936286626,532a1af2e404a30019cc3135c7054c22:108964417,f5491af20604a300b24d5b7d1117d71d:-76947094,4b34d2323d04a300e41778a276115e1a:-240855767,22739afeebc0a300f1bce1daaeeddfbc:982227080,554d446299806300ee5392feb9cd47f0:0,6a1d0c22968063004661101b783a8aac:920727325,b5c4f6d6073b57407e5c1519ff2b9bde:-240855767,07aa169ac5bfd340897961253e37176a:773123840,be88561aa5bfd340579830378119d327:-892413305,58afc9c6a7f717402b3addb7d862f968:2081022600,96f7680e91371740d403e25e7ae6ebb2:129261384</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

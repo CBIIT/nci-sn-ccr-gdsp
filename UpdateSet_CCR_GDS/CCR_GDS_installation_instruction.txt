@@ -2,10 +2,14 @@ Application:
 1. load update_set_CCR_GDS_20180405.xml
 2. load update_set_CCR_GDS_patch_1_latest.xml
 3. load update_set_CCR_GDS_patch_2_latest.xml
-
+4. load update_set_CCR_GDS_patch_3_20181025.xml
+5. load ccr_gds_z_list_data.xml
+6. load scheduled_job_Z_list_20181026,xml
+6. change ccr_gds_ic_uri to right server in sys_properties table.
  
 MID server:
+
 1. load update_set_CCRGDS_Scoped_PDF_20180706.xml
 2. remove CCRGDSJAR from mid server jar file.
-3. upload CCRGDS.jar file
+3. upload itextsign2.jar file
 4. restart MID server - CBITTBizMidServer
