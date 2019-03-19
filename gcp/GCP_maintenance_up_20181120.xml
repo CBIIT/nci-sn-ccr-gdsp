@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-11-20 19:42:41">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<application_name>gcp</application_name>
+<application_scope>x_naci_gcp</application_scope>
+<application_version>1.0.4</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>GCP_Maintenance_Page_up_updateset </name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d721b30fdbb5e300b86770c08c961953</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-20 19:42:41</sys_created_on>
+<sys_id>94717bcbdbb5e300b86770c08c9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-20 19:42:41</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="gcp">609215f9dbe35b00b86770c08c9619e2</application>
+<category>customer</category>
+<comments/>
+<name>sp_portal_e1c2957ddbe35b00b86770c08c9619cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables/><default>false</default><homepage display_value="gcp_home_page">cfb311fddbe35b00b86770c08c9619f9</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page display_value="nci_landing">d656f227dba25f00f59974131f961902</login_page><logo/><notfound_page/><quick_start_config/><sc_catalog/><sc_catalog_page/><sc_category_page/><sp_chat_queue/><sp_rectangle_menu/><sqanda_knowledge_base/><sys_class_name>sp_portal</sys_class_name><sys_created_by>zhoujim@nih.gov</sys_created_by><sys_created_on>2018-07-27 14:36:29</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e1c2957ddbe35b00b86770c08c9619cb</sys_id><sys_mod_count>9</sys_mod_count><sys_name>DCTD GCP</sys_name><sys_package display_value="gcp" source="x_naci_gcp">609215f9dbe35b00b86770c08c9619e2</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="gcp">609215f9dbe35b00b86770c08c9619e2</sys_scope><sys_update_name>sp_portal_e1c2957ddbe35b00b86770c08c9619cb</sys_update_name><sys_updated_by>zhoujim@nih.gov</sys_updated_by><sys_updated_on>2018-11-20 19:42:14</sys_updated_on><theme display_value="GCP theme">54c51131db275b00b86770c08c96193b</theme><title>DCTD GCP</title><url_suffix>gcp</url_suffix></sp_portal></record_update>]]></payload>
+<payload_hash>-2039573342</payload_hash>
+<remote_update_set display_value="GCP_Maintenance_Page_up_updateset ">94717bcbdbb5e300b86770c08c9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-11-20 19:42:41</sys_created_on>
+<sys_id>d8717bcbdbb5e300b86770c08c9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16732a5020f0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-11-20 19:42:41</sys_updated_on>
+<table/>
+<target_name>DCTD GCP</target_name>
+<type>Service Portal</type>
+<update_domain>global</update_domain>
+<update_guid>f551f30fa0b5e300a38298339a1b4b83</update_guid>
+<update_guid_history>f551f30fa0b5e300a38298339a1b4b83:-2039573342,66ef23cbf9b5e30063954f2f0ef24049:60320886,b69f23cbc8b5e300a16615110049ba45:-2039573342,242eaf4b7fb5e3007f8a25b681bcdfc3:60320886,a28d674b38b5e300889f6806bf37ca88:-2039573342,610d2f0b55b5e30001d68f7b7f139264:-1376813367,08eeac405849e340a769e54faa92a29d:0,0fbee4405c49e34021ca47de8fb4cfb1:571451560,cdae6440a249e340715d8dfbdc3d2ba0:0,0e4eac009549e340f6afb91fa3845910:0,d04d0462cd806300cb1ac704804358e3:0,f82d4c22bb8063003e889adeba540e90:571451560,e61d0c2235806300b4f15404dae7e1f1:0,2c0d4822d4806300f0996b038228ef63:0,f8e59171fc275b0063df2a7cd391fd93:-2039573342,f3a5113165275b00d7fa0b0cec464e2a:-1047767312,383499fdfce35b005c95d325f74818a2:572053039,84f2953d04e35b00e7ddf0bc13711059:-1972299669</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
