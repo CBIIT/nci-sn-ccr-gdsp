@@ -1,0 +1,4792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-02-21 16:46:50">
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>Yes</advisory>
+<advisory_specify>Not sure what this means but I'm not aware of any "follow-up actions".
+We worked with DEA to publish two PARs from one SPL approved concept. We were not told that advisory council clearance was necessary.</advisory_specify>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD OD OCCAM</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001001</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jeffrey White">bbaf7c696f6f2100e04fd15eae3ee422</submit_by>
+<submit_for display_value="Jeffrey White">bbaf7c696f6f2100e04fd15eae3ee422</submit_for>
+<supply_document/>
+<sys_created_by>jeffreyw@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:34:57</sys_created_on>
+<sys_id>32aa96b6db27a78062c772840f961900</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jeffreyw@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:34:57</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CSSI OCCPR</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001003</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Chris Kinsinger">95bffc696f6f2100e04fd15eae3ee445</submit_by>
+<submit_for display_value="Chris Kinsinger">95bffc696f6f2100e04fd15eae3ee445</submit_for>
+<supply_document/>
+<sys_created_by>kinsingc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:42:12</sys_created_on>
+<sys_id>305c1afedba7a780561276708c9619ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>kinsingc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:42:12</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS SRP SRAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001004</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Huann-Sheng Chen">58cff0a96f6f2100e04fd15eae3ee438</submit_by>
+<submit_for display_value="Huann-Sheng Chen">58cff0a96f6f2100e04fd15eae3ee438</submit_for>
+<supply_document/>
+<sys_created_by>chenh6@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:42:33</sys_created_on>
+<sys_id>8e6cd6b6db27a78062c772840f961982</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chenh6@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:42:33</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS BRP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001005</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Linda Nebeling">8cbf7c696f6f2100e04fd15eae3ee42b</submit_by>
+<submit_for display_value="Linda Nebeling">8cbf7c696f6f2100e04fd15eae3ee42b</submit_for>
+<supply_document/>
+<sys_created_by>nebelinl@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:46:12</sys_created_on>
+<sys_id>eb3d16b2db67a78062c772840f9619f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>nebelinl@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:46:12</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CIHEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001006</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Phil Daschner">dfbf70a96f6f2100e04fd15eae3ee4f1</submit_by>
+<submit_for display_value="Phil Daschner">dfbf70a96f6f2100e04fd15eae3ee4f1</submit_for>
+<supply_document/>
+<sys_created_by>daschnep@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:50:23</sys_created_on>
+<sys_id>f43e1afadba7af806a28f9231f961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>daschnep@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:50:23</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DEA ORRPC PCRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001007</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jan Woynarowski">20cf34a96f6f2100e04fd15eae3ee40f</submit_by>
+<submit_for display_value="Jan Woynarowski">20cf34a96f6f2100e04fd15eae3ee40f</submit_for>
+<supply_document/>
+<sys_created_by>woynarowskij@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 18:52:16</sys_created_on>
+<sys_id>98aed6b6db6fa78080203889fc961924</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>woynarowskij@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 18:52:16</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI DCTD CDP DBTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001008</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Miguel Ossandon">31bffc696f6f2100e04fd15eae3ee4bb</submit_by>
+<submit_for display_value="Miguel Ossandon">31bffc696f6f2100e04fd15eae3ee4bb</submit_for>
+<supply_document/>
+<sys_created_by>ossandom@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:01:44</sys_created_on>
+<sys_id>3ec06e36dbe7af806a28f9231f961913</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ossandom@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:01:44</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD OHAM</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001009</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Geraldina Dominguez">c0cfb0a96f6f2100e04fd15eae3ee4ec</submit_by>
+<submit_for display_value="Geraldina Dominguez">c0cfb0a96f6f2100e04fd15eae3ee4ec</submit_for>
+<supply_document/>
+<sys_created_by>domingug@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:09:07</sys_created_on>
+<sys_id>0f722af2db2ba780561276708c961903</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>domingug@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:09:07</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI OD SBIR</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001010</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Andrew Kurtz">e0cff0a96f6f2100e04fd15eae3ee4df</submit_by>
+<submit_for display_value="Andrew Kurtz">e0cff0a96f6f2100e04fd15eae3ee4df</submit_for>
+<supply_document/>
+<sys_created_by>kurtza@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:10:37</sys_created_on>
+<sys_id>19d2aef6dba7a78062c772840f96191e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>kurtza@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:10:37</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB SBMAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001011</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Nas Zahir">d8cff0a96f6f2100e04fd15eae3ee43a</submit_by>
+<submit_for display_value="Nas Zahir">d8cff0a96f6f2100e04fd15eae3ee43a</submit_for>
+<supply_document/>
+<sys_created_by>zahirn@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:10:56</sys_created_on>
+<sys_id>7de2aa76dbafa78080203889fc96197c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zahirn@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:10:56</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CBIIT IIOB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001012</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</submit_by>
+<submit_for display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</submit_for>
+<supply_document/>
+<sys_created_by>shillinj@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:17:38</sys_created_on>
+<sys_id>0474e2fadbafa78080203889fc9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>shillinj@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:17:38</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CBIIT IIOB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001013</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</submit_by>
+<submit_for display_value="Jeff Shilling">13091f9c6fae2100250e6bbeae3ee44b</submit_for>
+<supply_document/>
+<sys_created_by>shillinj@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:18:02</sys_created_on>
+<sys_id>b984627edbafa78080203889fc961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>shillinj@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:18:02</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>Yes</advisory>
+<advisory_specify>“Only PAs and PARs, never RFAs, have been published without obtaining Concept clearance at an open session of an advisory council.  Until now, Concepts for PAs and PARs have only required approval by NCI's Scientific Program Leadership and the NCI Director.  From now forward, all Concepts, including those for PAs, PARs, and RFAs, will also be reviewed and need to be approved by the NCI's Board of Scientific Advisors (BSA) before the corresponding/resulting funding opportunity announcements (FOAs) can be released to the public by publication in the NIH Guide for Grants and Contracts.”</advisory_specify>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DEA ORRPC PCRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001014</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Ananda Gupta">3fbfb0a96f6f2100e04fd15eae3ee474</submit_by>
+<submit_for display_value="Ananda Gupta">3fbfb0a96f6f2100e04fd15eae3ee474</submit_for>
+<supply_document/>
+<sys_created_by>guptaa3@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:25:22</sys_created_on>
+<sys_id>1136e276db2baf806a28f9231f96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>guptaa3@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:25:22</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD OHAM</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001015</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Denise Jenkins">7baf3c696f6f2100e04fd15eae3ee4f2</submit_by>
+<submit_for display_value="Denise Jenkins">7baf3c696f6f2100e04fd15eae3ee4f2</submit_for>
+<supply_document/>
+<sys_created_by>jenkinde@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:27:24</sys_created_on>
+<sys_id>c3a6ae36dbe7a78062c772840f961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jenkinde@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:27:24</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CBIIT IIOB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001016</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Mei Liu">f30592cb6f629240bbff6bbeae3ee456</submit_by>
+<submit_for display_value="Mei Liu">f30592cb6f629240bbff6bbeae3ee456</submit_for>
+<supply_document/>
+<sys_created_by>lium7@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:28:56</sys_created_on>
+<sys_id>2507627edbafa78080203889fc96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>lium7@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:28:56</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CBIIT IIOB</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>No</industry_use>
+<industry_use_specify>gfdsgfd</industry_use_specify>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>true</no_assets>
+<nonprofit_aim>No</nonprofit_aim>
+<nonprofit_aim_specify>gfdgsfd</nonprofit_aim_specify>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001017</number>
+<other_organization>No</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>No</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>No</risk>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design>No</study_design>
+<submit_by display_value="Mei Liu">f30592cb6f629240bbff6bbeae3ee456</submit_by>
+<submit_for display_value="Mei Liu">f30592cb6f629240bbff6bbeae3ee456</submit_for>
+<supply_document>No</supply_document>
+<sys_created_by>lium7@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:29:36</sys_created_on>
+<sys_id>9f276abadbefa78080203889fc961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>lium7@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:29:36</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCP LUACRG</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001018</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Eva Szabo">7bbfb0a96f6f2100e04fd15eae3ee49e</submit_by>
+<submit_for display_value="Eva Szabo">7bbfb0a96f6f2100e04fd15eae3ee49e</submit_for>
+<supply_document/>
+<sys_created_by>szaboe@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:30:24</sys_created_on>
+<sys_id>435762fadbefa78080203889fc96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>szaboe@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:30:24</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI DCP CADRG</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>true</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001019</number>
+<other_organization>No</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Yes</risk>
+<risk_assessed>Yes</risk_assessed>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design>Yes</study_design>
+<submit_by display_value="Shizuko Sei">b4dfb8a96f6f2100e04fd15eae3ee42a</submit_by>
+<submit_for display_value="Shizuko Sei">b4dfb8a96f6f2100e04fd15eae3ee42a</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>seis@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:34:30</sys_created_on>
+<sys_id>0f48a6bedbefa78080203889fc961981</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>seis@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:34:30</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI DCCPS BRP HCIRB</doc>
+<entity>true</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>true</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001020</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Yes</risk>
+<risk_assessed>Yes</risk_assessed>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Unsure</study_design>
+<submit_by display_value="Brad Hesse">c1cf34a96f6f2100e04fd15eae3ee48e</submit_by>
+<submit_for display_value="Brad Hesse">c1cf34a96f6f2100e04fd15eae3ee48e</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>hesseb@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:36:41</sys_created_on>
+<sys_id>4bc8ae72db2ba78062c772840f96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>hesseb@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:36:41</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance>Yes</clearance>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI DCB CIHEB</doc>
+<entity>false</entity>
+<foa>Yes</foa>
+<foa_specify>PAR-18-552</foa_specify>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>true</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001021</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Yes</risk>
+<risk_assessed/>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Kevin Howcroft">48cfb0a96f6f2100e04fd15eae3ee4e9</submit_by>
+<submit_for display_value="Kevin Howcroft">48cfb0a96f6f2100e04fd15eae3ee4e9</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>howcrofk@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:38:57</sys_created_on>
+<sys_id>d859a6bedbefa78080203889fc961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>howcrofk@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:38:57</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CSSI</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001022</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Michelle Berny-Lang">44cfb0a96f6f2100e04fd15eae3ee4f2</submit_by>
+<submit_for display_value="Michelle Berny-Lang">44cfb0a96f6f2100e04fd15eae3ee4f2</submit_for>
+<supply_document/>
+<sys_created_by>bernylangma@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:53:22</sys_created_on>
+<sys_id>9f9ca236dbaba780561276708c9619ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>bernylangma@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:53:22</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CSSI</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001023</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Sean Hanlon">e2bf30a96f6f2100e04fd15eae3ee4aa</submit_by>
+<submit_for display_value="Sean Hanlon">e2bf30a96f6f2100e04fd15eae3ee4aa</submit_for>
+<supply_document/>
+<sys_created_by>hanlonse@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 19:56:16</sys_created_on>
+<sys_id>b94d6ef6db23e78080203889fc96196b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>hanlonse@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 19:56:16</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI DCCPS EGRP MTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001024</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Rao Divi">45cf34a96f6f2100e04fd15eae3ee48a</submit_by>
+<submit_for display_value="Rao Divi">45cf34a96f6f2100e04fd15eae3ee48a</submit_for>
+<supply_document/>
+<sys_created_by>divir@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:08:18</sys_created_on>
+<sys_id>c60072fedbaba780561276708c961949</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>divir@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:08:18</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD CIP NSDB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001025</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Christina Liu">2de6c64c6f3ab1001c857eeeae3ee415</submit_by>
+<submit_for display_value="Christina Liu">2de6c64c6f3ab1001c857eeeae3ee415</submit_for>
+<supply_document/>
+<sys_created_by>liuch2@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:09:44</sys_created_on>
+<sys_id>8350b6fadb6ba78062c772840f961950</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>liuch2@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:09:44</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution>Yes</contribution>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI OD CRCHD INB</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>true</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001026</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>No</risk>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Leeann Bailey">784ea8290fc2ae00e7415a29a1050e73</submit_by>
+<submit_for display_value="Leeann Bailey">784ea8290fc2ae00e7415a29a1050e73</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>baileyl@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:28:27</sys_created_on>
+<sys_id>15a4beb6dbaba78062c772840f9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>baileyl@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:28:27</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution>Yes</contribution>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI OD CRCHD INB</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>true</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001027</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>No</risk>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Leeann Bailey">784ea8290fc2ae00e7415a29a1050e73</submit_by>
+<submit_for display_value="Leeann Bailey">784ea8290fc2ae00e7415a29a1050e73</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>baileyl@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:28:33</sys_created_on>
+<sys_id>76a47eb6dbaba78062c772840f96196a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>baileyl@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:28:33</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP EEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001028</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Gary Ellison">94bf7c696f6f2100e04fd15eae3ee49f</submit_by>
+<submit_for display_value="Gary Ellison">94bf7c696f6f2100e04fd15eae3ee49f</submit_for>
+<supply_document/>
+<sys_created_by>ellisong@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:35:33</sys_created_on>
+<sys_id>d1467a3adbebaf806a28f9231f96191d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ellisong@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:35:33</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CRCHD DTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001029</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Elena Schwartz">cf3417406fa4ae00bbff6bbeae3ee412</submit_by>
+<submit_for display_value="Elena Schwartz">cf3417406fa4ae00bbff6bbeae3ee412</submit_for>
+<supply_document/>
+<sys_created_by>schwaele@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:38:01</sys_created_on>
+<sys_id>e9d63efadbeba780561276708c9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>schwaele@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:38:01</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CRCHD DTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001030</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Elena Schwartz">cf3417406fa4ae00bbff6bbeae3ee412</submit_by>
+<submit_for display_value="Elena Schwartz">cf3417406fa4ae00bbff6bbeae3ee412</submit_for>
+<supply_document/>
+<sys_created_by>schwaele@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 20:38:20</sys_created_on>
+<sys_id>86e63efadbeba780561276708c9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>schwaele@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 20:38:20</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI DCTD CIP IGIB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001031</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Keyvan Farahani">40cfb0a96f6f2100e04fd15eae3ee4ef</submit_by>
+<submit_for display_value="Keyvan Farahani">40cfb0a96f6f2100e04fd15eae3ee4ef</submit_for>
+<supply_document/>
+<sys_created_by>farahank@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 21:50:02</sys_created_on>
+<sys_id>5c578772dbefaf806a28f9231f961968</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>farahank@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 21:50:02</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CCT CTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001032</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Michele McGuirl">8847f1f86f4a31002b0d58622e3ee446</submit_by>
+<submit_for display_value="Michele McGuirl">8847f1f86f4a31002b0d58622e3ee446</submit_for>
+<supply_document/>
+<sys_created_by>mcguirlma@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 22:12:16</sys_created_on>
+<sys_id>8e6ccf76dbefa78062c772840f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>mcguirlma@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 22:12:16</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CRCHD INB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001033</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Anil Wali">b4cf34a96f6f2100e04fd15eae3ee456</submit_by>
+<submit_for display_value="Anil Wali">b4cf34a96f6f2100e04fd15eae3ee456</submit_for>
+<supply_document/>
+<sys_created_by>walia@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 22:58:36</sys_created_on>
+<sys_id>7407d732db23e780561276708c9619bb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>walia@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 22:58:36</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCP CADRG</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>true</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001034</number>
+<other_organization>No</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Yes</risk>
+<risk_assessed>Yes</risk_assessed>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design>No</study_design>
+<submit_by display_value="Robert Shoemaker">4abffc696f6f2100e04fd15eae3ee4fc</submit_by>
+<submit_for display_value="Robert Shoemaker">4abffc696f6f2100e04fd15eae3ee4fc</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>shoemakr@nih.gov</sys_created_by>
+<sys_created_on>2019-02-14 23:00:53</sys_created_on>
+<sys_id>4a871fbadb23ef806a28f9231f96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>shoemakr@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-14 23:00:53</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP RFAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001035</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jill Reedy">b6bf70a96f6f2100e04fd15eae3ee433</submit_by>
+<submit_for display_value="Jill Reedy">b6bf70a96f6f2100e04fd15eae3ee433</submit_for>
+<supply_document/>
+<sys_created_by>reedyj@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 01:28:11</sys_created_on>
+<sys_id>8049bb36db2be78080203889fc96190d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>reedyj@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 01:28:11</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount>&gt;$10M</amount>
+<amount_type>Restricted</amount_type>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CCBB</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>true</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001036</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Unsure</risk>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Unsure</study_design>
+<submit_by display_value="Michael Espey">81cf34a96f6f2100e04fd15eae3ee4cd</submit_by>
+<submit_for display_value="Michael Espey">81cf34a96f6f2100e04fd15eae3ee4cd</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>espeym@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 02:54:32</sys_created_on>
+<sys_id>b80dc407db27e780561276708c961968</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>espeym@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 02:54:32</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CCT</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001037</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Susan Perkins">f5bffc696f6f2100e04fd15eae3ee4b4</submit_by>
+<submit_for display_value="Susan Perkins">f5bffc696f6f2100e04fd15eae3ee4b4</submit_for>
+<supply_document/>
+<sys_created_by>perkinsu@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 03:09:19</sys_created_on>
+<sys_id>e5605843db6be78080203889fc961966</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>perkinsu@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 03:09:19</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP RFAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001038</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Richard Troiano">58bf7c696f6f2100e04fd15eae3ee4a2</submit_by>
+<submit_for display_value="Richard Troiano">58bf7c696f6f2100e04fd15eae3ee4a2</submit_for>
+<supply_document/>
+<sys_created_by>troianor@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 03:24:42</sys_created_on>
+<sys_id>eae35c07db67e78062c772840f961978</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>troianor@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 03:24:42</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CGH</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001039</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Mark Parascandola">85bfbc696f6f2100e04fd15eae3ee490</submit_by>
+<submit_for display_value="Mark Parascandola">85bfbc696f6f2100e04fd15eae3ee490</submit_for>
+<supply_document/>
+<sys_created_by>paramark@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 03:26:32</sys_created_on>
+<sys_id>1154d40bdbe3ef806a28f9231f9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>paramark@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 03:26:32</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD RRP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001040</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jeff Buchsbaum">3dd54ba86f551a00949cd15eae3ee42b</submit_by>
+<submit_for display_value="Jeff Buchsbaum">3dd54ba86f551a00949cd15eae3ee42b</submit_for>
+<supply_document/>
+<sys_created_by>buchsbaumjc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 06:35:09</sys_created_on>
+<sys_id>508f34c3dba7ef806a28f9231f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>buchsbaumjc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 06:35:09</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CCT CTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001041</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Sonia Jakowlew">03bf70a96f6f2100e04fd15eae3ee4a6</submit_by>
+<submit_for display_value="Sonia Jakowlew">03bf70a96f6f2100e04fd15eae3ee4a6</submit_for>
+<supply_document/>
+<sys_created_by>jakowles@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 12:43:28</sys_created_on>
+<sys_id>a7c31e43dbebef806a28f9231f96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jakowles@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 12:43:28</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD RRP RDB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001042</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Pat Prasanna">85bfbc696f6f2100e04fd15eae3ee491</submit_by>
+<submit_for display_value="Pat Prasanna">85bfbc696f6f2100e04fd15eae3ee491</submit_for>
+<supply_document/>
+<sys_created_by>patajeprasanna@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 13:44:32</sys_created_on>
+<sys_id>12c12acbdbafe780561276708c961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>patajeprasanna@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 13:44:32</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount>&gt;$1M</amount>
+<amount_type>Restricted</amount_type>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI DCTD CIP</doc>
+<entity>true</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>true</interventional>
+<involved>No</involved>
+<management/>
+<monetary>true</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001043</number>
+<other_organization>Yes</other_organization>
+<participate>Yes</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>Yes</renewal>
+<renewal_specify>Often pvt sector partners who have participated in partnerships are asked by FNIH to support an extension/or enlargement of the project based on scientific findings/data obtained from the initial partnership agreement.</renewal_specify>
+<risk>Yes</risk>
+<risk_assessed>Yes</risk_assessed>
+<risk_document>Unsure</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Gary Kelloff">80bf7c696f6f2100e04fd15eae3ee427</submit_by>
+<submit_for display_value="Gary Kelloff">80bf7c696f6f2100e04fd15eae3ee427</submit_for>
+<supply_document>Unsure</supply_document>
+<sys_created_by>kelloffg@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 14:09:58</sys_created_on>
+<sys_id>36972e83dbefe780561276708c96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>kelloffg@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 14:09:58</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD DTP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001044</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Connie Sommers">83bf70a96f6f2100e04fd15eae3ee46f</submit_by>
+<submit_for display_value="Connie Sommers">83bf70a96f6f2100e04fd15eae3ee46f</submit_for>
+<supply_document/>
+<sys_created_by>sommersc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 14:39:13</sys_created_on>
+<sys_id>874eaac7dbefef806a28f9231f9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sommersc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 14:39:13</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CIHEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001045</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Susan McCarthy">b8bfbc696f6f2100e04fd15eae3ee453</submit_by>
+<submit_for display_value="Susan McCarthy">b8bfbc696f6f2100e04fd15eae3ee453</submit_for>
+<supply_document/>
+<sys_created_by>mccarths@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 14:48:04</sys_created_on>
+<sys_id>01507acfdba72b8080203889fc961906</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>mccarths@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 14:48:04</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>Yes</complaints>
+<complaints_specify>None to date -- some planned.  Not in my division</complaints_specify>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP RFAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001046</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Amy Subar">f9bffc696f6f2100e04fd15eae3ee488</submit_by>
+<submit_for display_value="Amy Subar">f9bffc696f6f2100e04fd15eae3ee488</submit_for>
+<supply_document/>
+<sys_created_by>subara@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 14:59:11</sys_created_on>
+<sys_id>b3d27e87dbe72b8080203889fc9619d3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>subara@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 14:59:11</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>Yes</complaints>
+<complaints_specify>None to date -- some planned.  Not in my division</complaints_specify>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP RFAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001047</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Amy Subar">f9bffc696f6f2100e04fd15eae3ee488</submit_by>
+<submit_for display_value="Amy Subar">f9bffc696f6f2100e04fd15eae3ee488</submit_for>
+<supply_document/>
+<sys_created_by>subara@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 14:59:25</sys_created_on>
+<sys_id>13e27e43db2b2b8080203889fc961963</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>subara@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 14:59:25</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB SBMAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001048</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jerry Li">bccf34a96f6f2100e04fd15eae3ee482</submit_by>
+<submit_for display_value="Jerry Li">bccf34a96f6f2100e04fd15eae3ee482</submit_for>
+<supply_document/>
+<sys_created_by>jiayinli@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 15:07:36</sys_created_on>
+<sys_id>0bc4fa0bdbe72b8062c772840f961933</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jiayinli@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 15:07:36</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS HDRP HARB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001049</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Paul Doria-Rose">0ccff0a96f6f2100e04fd15eae3ee433</submit_by>
+<submit_for display_value="Paul Doria-Rose">0ccff0a96f6f2100e04fd15eae3ee433</submit_for>
+<supply_document/>
+<sys_created_by>doriarop@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 15:51:31</sys_created_on>
+<sys_id>26deb20fdbe32b80561276708c9619be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>doriarop@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 15:51:31</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS OD</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001050</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Wynne Norton">3a22a0fa6f74ca001c857eeeae3ee4e4</submit_by>
+<submit_for display_value="Wynne Norton">3a22a0fa6f74ca001c857eeeae3ee4e4</submit_for>
+<supply_document/>
+<sys_created_by>nortonwe@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 16:05:13</sys_created_on>
+<sys_id>dbf10f0fdbab2b8080203889fc96191d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>nortonwe@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 16:05:13</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI OD CSSI OCCPR</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001051</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Henry Rodriguez">10bf7c696f6f2100e04fd15eae3ee4a1</submit_by>
+<submit_for display_value="Henry Rodriguez">10bf7c696f6f2100e04fd15eae3ee4a1</submit_for>
+<supply_document/>
+<sys_created_by>rodriguezh@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 16:41:50</sys_created_on>
+<sys_id>1f5a8b83dbaf2b8062c772840f9619e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>rodriguezh@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 16:41:50</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI OD CSSI OCCPR</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001052</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Henry Rodriguez">10bf7c696f6f2100e04fd15eae3ee4a1</submit_by>
+<submit_for display_value="Henry Rodriguez">10bf7c696f6f2100e04fd15eae3ee4a1</submit_for>
+<supply_document/>
+<sys_created_by>rodriguezh@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 16:42:07</sys_created_on>
+<sys_id>2f6a8fc3dbaf2b8062c772840f96197c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>rodriguezh@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 16:42:07</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS SRP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001053</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Kathy Cronin">03bf70a96f6f2100e04fd15eae3ee46d</submit_by>
+<submit_for display_value="Kathy Cronin">03bf70a96f6f2100e04fd15eae3ee46d</submit_for>
+<supply_document/>
+<sys_created_by>cronink@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 16:46:10</sys_created_on>
+<sys_id>cf5bc747db2f2b8080203889fc96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>cronink@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 16:46:10</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>No</disclosure>
+<doc>NCI DCTD CDP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>No</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001054</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Lyndsay Harris">6c5046436f954600949cd15eae3ee4d7</submit_by>
+<submit_for display_value="Lyndsay Harris">6c5046436f954600949cd15eae3ee4d7</submit_for>
+<supply_document/>
+<sys_created_by>harrisln2@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 17:57:58</sys_created_on>
+<sys_id>aacb5347db636b8062c772840f96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>harrisln2@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 17:57:58</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount>&gt;$1M</amount>
+<amount_type>Restricted</amount_type>
+<clearance>Yes</clearance>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document>Yes</design_document>
+<disclosure/>
+<doc>NCI DCB CIHEB</doc>
+<entity>false</entity>
+<foa>Yes</foa>
+<foa_specify>PAR18-552;    For Question #6 there was a gift  fund of  $300,000.  There is no way to report under a million dollars in this survery!</foa_specify>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>true</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001055</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>No</risk>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Chamelli Jhappan">0bbf70a96f6f2100e04fd15eae3ee471</submit_by>
+<submit_for display_value="Chamelli Jhappan">0bbf70a96f6f2100e04fd15eae3ee471</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>jhappanc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 17:58:04</sys_created_on>
+<sys_id>c8db5707db636b8062c772840f961975</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jhappanc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 17:58:04</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CCBB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001056</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Joanna Watson">59bffc696f6f2100e04fd15eae3ee40f</submit_by>
+<submit_for display_value="Joanna Watson">59bffc696f6f2100e04fd15eae3ee40f</submit_for>
+<supply_document/>
+<sys_created_by>watsonjo@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 17:59:15</sys_created_on>
+<sys_id>e11c5b8fdbaf2b8080203889fc9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>watsonjo@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 17:59:15</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD OCC</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001057</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Henry Ciolino">ecbfbc696f6f2100e04fd15eae3ee41b</submit_by>
+<submit_for display_value="Henry Ciolino">ecbfbc696f6f2100e04fd15eae3ee41b</submit_for>
+<supply_document/>
+<sys_created_by>ciolinoh@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 18:00:41</sys_created_on>
+<sys_id>226cdfc3db2f2b80561276708c961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ciolinoh@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 18:00:41</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI DCTD TRP</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001058</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Peter Ujhazy">86bf30a96f6f2100e04fd15eae3ee423</submit_by>
+<submit_for display_value="Peter Ujhazy">86bf30a96f6f2100e04fd15eae3ee423</submit_for>
+<supply_document/>
+<sys_created_by>ujhazyp@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 18:32:19</sys_created_on>
+<sys_id>4ea363cfdb2f2b80561276708c9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>ujhazyp@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 18:32:19</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CIHEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001059</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Betsy Read-Connole">cccfb0a96f6f2100e04fd15eae3ee4eb</submit_by>
+<submit_for display_value="Betsy Read-Connole">cccfb0a96f6f2100e04fd15eae3ee4eb</submit_for>
+<supply_document/>
+<sys_created_by>bconnole@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 18:52:09</sys_created_on>
+<sys_id>10382b4fdb6f23c06a28f9231f9619d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>bconnole@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 18:52:09</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD DTP PTGB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001060</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Suresh Arya">a8bf7c696f6f2100e04fd15eae3ee4df</submit_by>
+<submit_for display_value="Suresh Arya">a8bf7c696f6f2100e04fd15eae3ee4df</submit_for>
+<supply_document/>
+<sys_created_by>aryas@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 19:26:35</sys_created_on>
+<sys_id>f010730bdb276b8062c772840f96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>aryas@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 19:26:35</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS BRP HCIRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001061</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Kelly Blake">00bf7c696f6f2100e04fd15eae3ee428</submit_by>
+<submit_for display_value="Kelly Blake">00bf7c696f6f2100e04fd15eae3ee428</submit_for>
+<supply_document/>
+<sys_created_by>blakek@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 19:39:46</sys_created_on>
+<sys_id>4213f303db276b8080203889fc96198b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>blakek@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 19:39:46</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD CDP BBRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001062</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Ping Guan">bfbfb0a96f6f2100e04fd15eae3ee4a1</submit_by>
+<submit_for display_value="Ping Guan">bfbfb0a96f6f2100e04fd15eae3ee4a1</submit_for>
+<supply_document/>
+<sys_created_by>guanp@nih.gov</sys_created_by>
+<sys_created_on>2019-02-15 21:57:21</sys_created_on>
+<sys_id>1d921cdfdbe763c06a28f9231f961984</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>guanp@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-15 21:57:21</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCP NSRG</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001063</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Sharon Ross">c0cfb0a96f6f2100e04fd15eae3ee4ee</submit_by>
+<submit_for display_value="Sharon Ross">c0cfb0a96f6f2100e04fd15eae3ee4ee</submit_for>
+<supply_document/>
+<sys_created_by>rosssha@nih.gov</sys_created_by>
+<sys_created_on>2019-02-17 18:51:04</sys_created_on>
+<sys_id>802bfd33dbef2300e5b7f50d0f9619bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>rosssha@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-17 18:51:04</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS BRP TCRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001064</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Michele Bloch">00bf7c696f6f2100e04fd15eae3ee470</submit_by>
+<submit_for display_value="Michele Bloch">00bf7c696f6f2100e04fd15eae3ee470</submit_for>
+<supply_document/>
+<sys_created_by>blochm@nih.gov</sys_created_by>
+<sys_created_on>2019-02-17 21:17:51</sys_created_on>
+<sys_id>86bc16fbdbe76300593e76721f9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>blochm@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-17 21:17:51</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS BRP TCRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001065</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Michele Bloch">00bf7c696f6f2100e04fd15eae3ee470</submit_by>
+<submit_for display_value="Michele Bloch">00bf7c696f6f2100e04fd15eae3ee470</submit_for>
+<supply_document/>
+<sys_created_by>blochm@nih.gov</sys_created_by>
+<sys_created_on>2019-02-17 21:18:05</sys_created_on>
+<sys_id>e1cc52fbdbe76300593e76721f96194e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>blochm@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-17 21:18:05</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCP CADRG</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001066</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Marjorie Perloff">e0bfbc696f6f2100e04fd15eae3ee41b</submit_by>
+<submit_for display_value="Marjorie Perloff">e0bfbc696f6f2100e04fd15eae3ee41b</submit_for>
+<supply_document/>
+<sys_created_by>perloffm@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 12:55:06</sys_created_on>
+<sys_id>4ddcb694db37e300593e76721f961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>perloffm@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 12:55:06</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>Yes</advisory>
+<advisory_specify>None. Concept clearance for PAR-19-168  and PAR-19-169 did not require approval by an advisory council (e.g. Board of Scientific Advisors). The concept was presented and approved by the Scientific Program Leadership (SPL) Committee at the NCI</advisory_specify>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB DCAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001067</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Ron Johnson">b4bfbc696f6f2100e04fd15eae3ee453</submit_by>
+<submit_for display_value="Ron Johnson">b4bfbc696f6f2100e04fd15eae3ee453</submit_for>
+<supply_document/>
+<sys_created_by>rjohnso2@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 13:24:10</sys_created_on>
+<sys_id>0773cfd4dbbfe300274df4b40f961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>rjohnso2@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 13:24:10</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS HDRP HARB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001068</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Dolly Penn">5ffac40b6f0c5e00949cd15eae3ee49e</submit_by>
+<submit_for display_value="Dolly Penn">5ffac40b6f0c5e00949cd15eae3ee49e</submit_for>
+<supply_document/>
+<sys_created_by>penndc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 13:47:33</sys_created_on>
+<sys_id>25d8875cdb3ba300e5b7f50d0f9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>penndc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 13:47:33</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB CCBB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001069</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Rihab Yassin">0dcf34a96f6f2100e04fd15eae3ee4ce</submit_by>
+<submit_for display_value="Rihab Yassin">0dcf34a96f6f2100e04fd15eae3ee4ce</submit_for>
+<supply_document/>
+<sys_created_by>yassinr@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 15:34:29</sys_created_on>
+<sys_id>3b41abd8dbffe300593e76721f961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>yassinr@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 15:34:29</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD CTEP CIB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001070</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Malcolm Smith">16bf30a96f6f2100e04fd15eae3ee49f</submit_by>
+<submit_for display_value="Malcolm Smith">16bf30a96f6f2100e04fd15eae3ee49f</submit_for>
+<supply_document/>
+<sys_created_by>smithm@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 15:43:53</sys_created_on>
+<sys_id>a973e318db37e30085b7fd0d0f96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>smithm@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 15:43:53</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS HDRP HSIRB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001071</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Veronica Chollette">0bbf70a96f6f2100e04fd15eae3ee472</submit_by>
+<submit_for display_value="Veronica Chollette">0bbf70a96f6f2100e04fd15eae3ee472</submit_for>
+<supply_document/>
+<sys_created_by>cholletv@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 16:37:40</sys_created_on>
+<sys_id>5dcf2b1cdbf7e30085b7fd0d0f96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>cholletv@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 16:37:40</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP EEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001072</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Tram Lam">0abffc696f6f2100e04fd15eae3ee4f3</submit_by>
+<submit_for display_value="Tram Lam">0abffc696f6f2100e04fd15eae3ee4f3</submit_for>
+<supply_document/>
+<sys_created_by>lamt@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 17:23:16</sys_created_on>
+<sys_id>113afb50dbbbe30085b7fd0d0f961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>lamt@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 17:23:16</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS HDRP HARB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001073</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Pam Marcus">c7bf70a96f6f2100e04fd15eae3ee4a8</submit_by>
+<submit_for display_value="Pam Marcus">c7bf70a96f6f2100e04fd15eae3ee4a8</submit_for>
+<supply_document/>
+<sys_created_by>marcusp@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 18:15:34</sys_created_on>
+<sys_id>932608acdb376700274df4b40f96194c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>marcusp@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 18:15:34</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD CIP CTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001074</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Lori Henderson">50bf7c696f6f2100e04fd15eae3ee49d</submit_by>
+<submit_for display_value="Lori Henderson">50bf7c696f6f2100e04fd15eae3ee49d</submit_for>
+<supply_document/>
+<sys_created_by>hendersonlori@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 19:19:59</sys_created_on>
+<sys_id>4fe450a8dbbbe300e5b7f50d0f9619a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>hendersonlori@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 19:19:59</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCB DCAB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001075</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Paul Okano">2cbf7c696f6f2100e04fd15eae3ee4e2</submit_by>
+<submit_for display_value="Paul Okano">2cbf7c696f6f2100e04fd15eae3ee4e2</submit_for>
+<supply_document/>
+<sys_created_by>okanop@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 19:53:23</sys_created_on>
+<sys_id>149c98a0dbbb6700274df4b40f961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>okanop@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 19:53:23</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI OD SBIR</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001076</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Greg Evans">2dbffc696f6f2100e04fd15eae3ee447</submit_by>
+<submit_for display_value="Greg Evans">2dbffc696f6f2100e04fd15eae3ee447</submit_for>
+<supply_document/>
+<sys_created_by>evansgl@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 21:13:58</sys_created_on>
+<sys_id>a40f60e8db37270085b7fd0d0f9619be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>evansgl@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 21:13:58</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure>Yes</disclosure>
+<doc>NCI OD CGH</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001077</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Paul Pearlman">8eebea686fd3f100bbff6bbeae3ee45a</submit_by>
+<submit_for display_value="Paul Pearlman">8eebea686fd3f100bbff6bbeae3ee45a</submit_for>
+<supply_document/>
+<sys_created_by>pearlmanpc@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 21:22:43</sys_created_on>
+<sys_id>7401786cdb37270085b7fd0d0f9619ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>pearlmanpc@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 21:22:43</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS EGRP EEB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001078</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Gabriel Lai">d1bffc696f6f2100e04fd15eae3ee444</submit_by>
+<submit_for display_value="Gabriel Lai">d1bffc696f6f2100e04fd15eae3ee444</submit_for>
+<supply_document/>
+<sys_created_by>laigy@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 21:40:41</sys_created_on>
+<sys_id>0825702cdbb32700e5b7f50d0f96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>laigy@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 21:40:41</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCTD CTEP CIB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001079</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="William Timmer">7ebf70a96f6f2100e04fd15eae3ee429</submit_by>
+<submit_for display_value="William Timmer">7ebf70a96f6f2100e04fd15eae3ee429</submit_for>
+<supply_document/>
+<sys_created_by>timmerw@nih.gov</sys_created_by>
+<sys_created_on>2019-02-19 23:34:23</sys_created_on>
+<sys_id>292f01e4db772700e5b7f50d0f961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>timmerw@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-19 23:34:23</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution>Yes</contribution>
+<design_document/>
+<disclosure/>
+<doc>NCI DCP NSRG</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>true</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001080</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>Yes</renewal>
+<renewal_specify>We have had previous partnerships with the USDA and the current partnership has evolved into a partnership with its foundation which is lead by Dr. Sally Rocky, previously of the NIH.</renewal_specify>
+<risk>Yes</risk>
+<risk_assessed/>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>No</study_design>
+<submit_by display_value="Nancy Emenaker">80bf7c696f6f2100e04fd15eae3ee424</submit_by>
+<submit_for display_value="Nancy Emenaker">80bf7c696f6f2100e04fd15eae3ee424</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>emenaken@nih.gov</sys_created_by>
+<sys_created_on>2019-02-20 15:34:52</sys_created_on>
+<sys_id>0bfaac74db37670085b7fd0d0f96193b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>emenaken@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-20 15:34:52</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI DCCPS BRP BBPSB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001081</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Todd Horowitz">68cff0a96f6f2100e04fd15eae3ee4db</submit_by>
+<submit_for display_value="Todd Horowitz">68cff0a96f6f2100e04fd15eae3ee4db</submit_for>
+<supply_document/>
+<sys_created_by>horowitzts@nih.gov</sys_created_by>
+<sys_created_on>2019-02-20 18:32:47</sys_created_on>
+<sys_id>d1b3d9b8db772b00274df4b40f9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>horowitzts@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-20 18:32:47</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>Yes</advisory>
+<advisory_specify>The PARs were approved by the NCI Scientific Program Leadership  executive committee that is chaired by the NCI Director.  This is the standard NCI process for consideration and approvals for program announcements that do not have set-asides, even when the funding mechanism is a co-operative agreement award.</advisory_specify>
+<amount/>
+<amount_type/>
+<clearance>No</clearance>
+<clearance_specify>The PARs were approved by the NCI Scientific Program Leadership  executive committee that is chaired by the NCI Director.  This is the standard NCI process for consideration and approvals for program announcements that do not have set-asides, even when the funding mechanism is a co-operative agreement award.</clearance_specify>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution>Yes</contribution>
+<design_document>Yes</design_document>
+<disclosure>Yes</disclosure>
+<doc>NCI DCTD CDP</doc>
+<entity>true</entity>
+<foa>Yes</foa>
+<foa_specify>PAR-15-095, PAR-15-096, PAR-18-310, PAR-18-317</foa_specify>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>true</intellectual>
+<interventional>false</interventional>
+<involved>Yes</involved>
+<management>Yes</management>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001082</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>Yes</renewal>
+<renewal_specify>The ongoing scientific need for high-quality clinical assays in cancer research justified re-issuance of the PAR.</renewal_specify>
+<risk>Yes</risk>
+<risk_assessed/>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Yes</study_design>
+<submit_by display_value="Tracy Lively">dabf30a96f6f2100e04fd15eae3ee42c</submit_by>
+<submit_for display_value="Tracy Lively">dabf30a96f6f2100e04fd15eae3ee42c</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>livelyt@nih.gov</sys_created_by>
+<sys_created_on>2019-02-20 18:44:11</sys_created_on>
+<sys_id>5c56d93cdb7b670085b7fd0d0f96191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>livelyt@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-20 18:44:11</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount>&gt;$1M</amount>
+<amount_type>Unrestricted</amount_type>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution>Yes</contribution>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CBIIT CIB</doc>
+<entity>false</entity>
+<foa>No</foa>
+<foa_specify/>
+<industry_scrutiny>No</industry_scrutiny>
+<industry_use>Yes</industry_use>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>true</intellectual>
+<interventional>true</interventional>
+<involved>No</involved>
+<management/>
+<monetary>true</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim>Yes</nonprofit_aim>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny>No</nonprofit_scrutiny>
+<number>SURVEY0001083</number>
+<other_organization>Yes</other_organization>
+<participate>No</participate>
+<partnership>Yes</partnership>
+<relationship>Yes</relationship>
+<renewal>No</renewal>
+<renewal_specify/>
+<risk>Yes</risk>
+<risk_assessed>Yes</risk_assessed>
+<risk_document>Yes</risk_document>
+<solicitation>No</solicitation>
+<specifics>Yes</specifics>
+<study_design>Unsure</study_design>
+<submit_by display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</submit_by>
+<submit_for display_value="Emily Greenspan">44cff0a96f6f2100e04fd15eae3ee437</submit_for>
+<supply_document>Yes</supply_document>
+<sys_created_by>greenspanej@nih.gov</sys_created_by>
+<sys_created_on>2019-02-20 19:15:33</sys_created_on>
+<sys_id>377d9178dbbb670085b7fd0d0f9619ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>greenspanej@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-20 19:15:33</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate>No</communicate>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CCT</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment>No</inequitable_treatment>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001084</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Jonathan Wiest">99bffc696f6f2100e04fd15eae3ee40c</submit_by>
+<submit_for display_value="Jonathan Wiest">99bffc696f6f2100e04fd15eae3ee40c</submit_for>
+<supply_document/>
+<sys_created_by>wiestj@nih.gov</sys_created_by>
+<sys_created_on>2019-02-20 20:15:35</sys_created_on>
+<sys_id>cb3b2574db3f670085b7fd0d0f961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>wiestj@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-20 20:15:35</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+<x_naci_survey_partnership_program_survey action="INSERT_OR_UPDATE">
+<advisory>No</advisory>
+<advisory_specify/>
+<amount/>
+<amount_type/>
+<clearance/>
+<clearance_specify/>
+<communicate/>
+<communicate_specify/>
+<complaints>No</complaints>
+<complaints_specify/>
+<confidential_detail>No</confidential_detail>
+<confidential_specify/>
+<contribution/>
+<design_document/>
+<disclosure/>
+<doc>NCI OD CRCHD DTB</doc>
+<entity>false</entity>
+<foa/>
+<foa_specify/>
+<industry_scrutiny/>
+<industry_use/>
+<industry_use_specify/>
+<inequitable_treatment/>
+<inequitable_treatment_specify/>
+<intellectual>false</intellectual>
+<interventional>false</interventional>
+<involved>No</involved>
+<management/>
+<monetary>false</monetary>
+<no_assets>false</no_assets>
+<nonprofit_aim/>
+<nonprofit_aim_specify/>
+<nonprofit_scrutiny/>
+<number>SURVEY0001085</number>
+<other_organization/>
+<participate>No</participate>
+<partnership>No</partnership>
+<relationship/>
+<renewal/>
+<renewal_specify/>
+<risk/>
+<risk_assessed/>
+<risk_document/>
+<solicitation>No</solicitation>
+<specifics/>
+<study_design/>
+<submit_by display_value="Nicole McNeil Ford">70cf34a96f6f2100e04fd15eae3ee487</submit_by>
+<submit_for display_value="Nicole McNeil Ford">70cf34a96f6f2100e04fd15eae3ee487</submit_for>
+<supply_document/>
+<sys_created_by>mcneiln@nih.gov</sys_created_by>
+<sys_created_on>2019-02-21 16:23:51</sys_created_on>
+<sys_id>9ecf3941dbbbe700e5b7f50d0f961962</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>mcneiln@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-21 16:23:51</sys_updated_on>
+</x_naci_survey_partnership_program_survey>
+</unload>
