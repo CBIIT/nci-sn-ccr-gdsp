@@ -1,0 +1,8 @@
+1. import update_set_BD_STEP_20190123.xml 
+2. preview update_set_BD_STEP_20190123.xml
+3. commit update_set_BD_STEP_20190123.xml
+4. import x_naci_bd_step_field_name.xml
+5. import x_naci_bd_step_site_name.xml
+6. import bd-step-admin-group.xml
+7. import bd-step-admin-group-members.xml
+8. import bd-step-local-user.xml

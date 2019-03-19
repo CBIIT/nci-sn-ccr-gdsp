@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-02-21 15:08:47">
+<x_naci_bd_step_site_name action="INSERT_OR_UPDATE">
+<name>Boston, MA</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-03 16:13:53</sys_created_on>
+<sys_id>7c976951db72af40b86770c08c96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-03 16:13:53</sys_updated_on>
+</x_naci_bd_step_site_name>
+<x_naci_bd_step_site_name action="INSERT_OR_UPDATE">
+<name>Durham, NC</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-03 16:14:19</sys_created_on>
+<sys_id>e6a7e551db72af40b86770c08c9619dd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-03 16:14:19</sys_updated_on>
+</x_naci_bd_step_site_name>
+<x_naci_bd_step_site_name action="INSERT_OR_UPDATE">
+<name>Houston, TX</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-03 16:14:32</sys_created_on>
+<sys_id>ceb7ad11db72af40b86770c08c96199e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-03 16:14:32</sys_updated_on>
+</x_naci_bd_step_site_name>
+<x_naci_bd_step_site_name action="INSERT_OR_UPDATE">
+<name>Palo Alto, CA</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-03 16:14:44</sys_created_on>
+<sys_id>bcc72d51db72af40b86770c08c9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-03 16:14:44</sys_updated_on>
+</x_naci_bd_step_site_name>
+</unload>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-01-16 22:08:21">
+<sys_user action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<building display_value=""/>
+<calendar_integration>1</calendar_integration>
+<city/>
+<company display_value=""/>
+<cost_center display_value=""/>
+<country/>
+<date_format/>
+<default_perspective display_value=""/>
+<department display_value=""/>
+<edu_status>faculty</edu_status>
+<email/>
+<employee_number/>
+<enable_multifactor_authn>false</enable_multifactor_authn>
+<failed_attempts>0</failed_attempts>
+<first_name>Jon</first_name>
+<gender/>
+<home_phone/>
+<internal_integration_user>false</internal_integration_user>
+<introduction/>
+<last_login>2019-01-16</last_login>
+<last_login_device>156.40.216.11</last_login_device>
+<last_login_time>2019-01-16 15:29:05</last_login_time>
+<last_name>Doe</last_name>
+<last_password/>
+<ldap_server display_value=""/>
+<location display_value=""/>
+<locked_out>false</locked_out>
+<manager display_value=""/>
+<middle_name/>
+<mobile_phone/>
+<name>Jon Doe</name>
+<notification>2</notification>
+<password_needs_reset>false</password_needs_reset>
+<phone/>
+<photo/>
+<preferred_language/>
+<roles/>
+<schedule display_value=""/>
+<source/>
+<sso_source/>
+<state/>
+<street/>
+<sys_class_name>sys_user</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-15 16:25:15</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>30ac1705dbc3a700b86770c08c9619e1</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_updated_by>system</sys_updated_by>
+<sys_updated_on>2019-01-16 15:29:20</sys_updated_on>
+<time_format/>
+<time_sheet_policy display_value=""/>
+<time_zone/>
+<title/>
+<u_ad_account_authorization>false</u_ad_account_authorization>
+<u_ad_display_name/>
+<u_ad_email/>
+<u_ao display_value=""/>
+<u_approval_group display_value=""/>
+<u_assessment_subscription_lookup display_value="jonDoe@nih.gov">864d9345dbc3a700b86770c08c9619dd</u_assessment_subscription_lookup>
+<u_badge_title/>
+<u_building_name/>
+<u_create_time_stamp/>
+<u_creators_name display_value=""/>
+<u_description/>
+<u_email_account_authorization>false</u_email_account_authorization>
+<u_employee_classification/>
+<u_entry_effective_date/>
+<u_generationqualif/>
+<u_ip_phone/>
+<u_itpro>false</u_itpro>
+<u_length_of_employment>greater</u_length_of_employment>
+<u_long_org_division/>
+<u_modifiers_name display_value=""/>
+<u_modify_time_stamp/>
+<u_ned_deactiviation_date/>
+<u_ned_email/>
+<u_ned_id/>
+<u_ned_status/>
+<u_nihexec>false</u_nihexec>
+<u_nihipd/>
+<u_nihsac/>
+<u_org_/>
+<u_personal_title/>
+<u_poc display_value=""/>
+<u_preferred_firstname/>
+<u_preferred_generationqualif/>
+<u_preferred_last_name/>
+<u_preferred_middle_name/>
+<u_room/>
+<u_site/>
+<u_suffixqualif/>
+<u_summer_status>false</u_summer_status>
+<u_uc_supported_phone_no display_value=""/>
+<u_unit/>
+<u_user_cal_reference display_value=""/>
+<user_name>jonDoe@nih.gov</user_name>
+<user_password>$s$9Jf0JKyjiwIY9Wtu7LOclG1L+f4alAdqph/UwDe/6N8=$V0y75ZxHks9pHhyzNL6YaaukLyVfKpxY9VTrl6JBBGs=</user_password>
+<vip>false</vip>
+<web_service_access_only>false</web_service_access_only>
+<zip/>
+</sys_user>
+</unload>
