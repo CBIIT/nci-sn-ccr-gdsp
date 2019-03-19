@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-03-18 13:47:03">
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Breast</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:40:23</sys_created_on>
+<sys_id>eff7ce23dbcc330054d8ff621f961980</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:40:23</sys_updated_on>
+<type/>
+<value>[Breast] </value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>CNS</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:41:36</sys_created_on>
+<sys_id>16380263dbcc330054d8ff621f9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:41:36</sys_updated_on>
+<type>Glioblastoma</type>
+<value>[CNS] Glioblastoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>CNS</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:40:48</sys_created_on>
+<sys_id>09180263dbcc330054d8ff621f9619a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:40:48</sys_updated_on>
+<type>Glioma</type>
+<value>[CNS] Glioma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>CNS</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>242a8263dbcc330054d8ff621f961963</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Neuroblastoma</type>
+<value>[CNS] Neuroblastoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e42a8263dbcc330054d8ff621f961963</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Anal</type>
+<value>[Gastrointestinal] Anal</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a82a8263dbcc330054d8ff621f961963</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Colorectal</type>
+<value>[Gastrointestinal] Colorectal</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>6c2a8263dbcc330054d8ff621f961963</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Esophageal</type>
+<value>[Gastrointestinal] Esophageal</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>202a8263dbcc330054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Gastric</type>
+<value>[Gastrointestinal] Gastric</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e02a8263dbcc330054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Liver</type>
+<value>[Gastrointestinal] Liver</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Gastrointestinal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a42a8263dbcc330054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Pancreatic</type>
+<value>[Gastrointestinal] Pancreatic</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Genitourinary</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>682a8263dbcc330054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Bladder</type>
+<value>[Genitourinary] Bladder</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Genitourinary</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>2c2a8263dbcc330054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Cervical</type>
+<value>[Genitourinary] Cervical</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Genitourinary</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e42acee3dbcc330054d8ff621f9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Ovarian</type>
+<value>[Genitourinary] Ovarian</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Genitourinary</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a82acee3dbcc330054d8ff621f9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Prostate</type>
+<value>[Genitourinary] Prostate</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Genitourinary</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>6c2acee3dbcc330054d8ff621f9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Testicular</type>
+<value>[Genitourinary] Testicular</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Head and neck</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e02acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Nasal</type>
+<value>[Head and neck] Nasal</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Head and neck</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a42acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Neck</type>
+<value>[Head and neck] Neck</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Head and neck</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>202acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Oral</type>
+<value>[Head and neck] Oral</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>682acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>ALL</type>
+<value>[Hematologic] ALL</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>2c2acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>AML</type>
+<value>[Hematologic] AML</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a02acee3dbcc330054d8ff621f9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>CLL</type>
+<value>[Hematologic] CLL</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>ec2acee3dbcc330054d8ff621f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>CML</type>
+<value>[Hematologic] CML</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>642acee3dbcc330054d8ff621f9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Hodgkin lymphoma</type>
+<value>[Hematologic] Hodgkin lymphoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>282acee3dbcc330054d8ff621f9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Multiple myeloma</type>
+<value>[Hematologic] Multiple myeloma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Hematologic</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e82acee3dbcc330054d8ff621f9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Non-Hodgkin lymphoma</type>
+<value>[Hematologic] Non-Hodgkin lymphoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Kidney</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>ac2acee3dbcc330054d8ff621f9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Renal cell</type>
+<value>[Kidney] Renal cell</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Lung</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e42acee3dbcc330054d8ff621f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Mesothelioma</type>
+<value>[Lung] Mesothelioma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Lung</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>602acee3dbcc330054d8ff621f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Non-small cell</type>
+<value>[Lung] Non-small cell</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Lung</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>242acee3dbcc330054d8ff621f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Small cell</type>
+<value>[Lung] Small cell</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Musculoskeletal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>6c2acee3dbcc330054d8ff621f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Bone</type>
+<value>[Musculoskeletal] Bone</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Musculoskeletal</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a82acee3dbcc330054d8ff621f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Soft tissue</type>
+<value>[Musculoskeletal] Soft tissue</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Skin</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>202acee3dbcc330054d8ff621f9619e2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Kaposi sarcoma</type>
+<value>[Skin] Kaposi sarcoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Skin</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>e02acee3dbcc330054d8ff621f9619e2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type>Melanoma</type>
+<value>[Skin] Melanoma</value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+<x_naci_otr_ccr_dat_tp_site_type_look_up action="INSERT_OR_UPDATE">
+<site>Thyroid</site>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-13 21:49:33</sys_created_on>
+<sys_id>a42acee3dbcc330054d8ff621f9619e2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-13 21:49:33</sys_updated_on>
+<type/>
+<value>[Thyroid] </value>
+</x_naci_otr_ccr_dat_tp_site_type_look_up>
+</unload>

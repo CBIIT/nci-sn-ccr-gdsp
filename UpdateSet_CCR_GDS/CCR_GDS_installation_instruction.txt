@@ -5,7 +5,8 @@ Application:
 4. load update_set_CCR_GDS_patch_3_20181025.xml
 5. load ccr_gds_z_list_data.xml
 6. load scheduled_job_Z_list_20181026,xml
-6. change ccr_gds_ic_uri to right server in sys_properties table.
+7 load gds_tissue_protocols_data.xml
+8. change ccr_gds_ic_uri to right server in sys_properties table.
  
 MID server:
 

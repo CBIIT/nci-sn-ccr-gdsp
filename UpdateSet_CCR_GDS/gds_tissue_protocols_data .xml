@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-12-18 21:55:57">
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:31:14</sys_created_on>
+<sys_id>06b149dedb9e2f0054d8ff621f9619b0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:31:14</sys_updated_on>
+<u_protocol_branch>Lymphoid Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Lymphoid Malignancies and Precursors: Tissue Acquisition Protocol</u_protocol_name>
+<u_protocol_number>12C0192</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:28:52</sys_created_on>
+<sys_id>122189dedb9e2f0054d8ff621f9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:28:52</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Pharmacological Analysis of Human Samples Collected in Clinical Trials Performed Outside of the Intramural National Cancer Institute </u_protocol_name>
+<u_protocol_number>03CN242</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:27:58</sys_created_on>
+<sys_id>25f045dedb9e2f0054d8ff621f9619ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:27:58</sys_updated_on>
+<u_protocol_branch>Radiation Oncology Branch</u_protocol_branch>
+<u_protocol_name>Collection of Peripheral Blood and/or Urine from Patients Undergoing Radiation Therapy </u_protocol_name>
+<u_protocol_number>02C0064</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:31:56</sys_created_on>
+<sys_id>4ee189dedb9e2f0054d8ff621f9619a6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:31:56</sys_updated_on>
+<u_protocol_branch>Thoracic and GI Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Tissue Procurement and Natural History Study of Patients with Malignant Mesothelioma and Other Mesothelin Expressing Cancers </u_protocol_name>
+<u_protocol_number>13C0202</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:28:24</sys_created_on>
+<sys_id>501149dedb9e2f0054d8ff621f9619bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:28:24</sys_updated_on>
+<u_protocol_branch>Surgery Branch</u_protocol_branch>
+<u_protocol_name>Cell Harvest and Preparation for Surgery Branch Adoptive Cell Therapy Protocols</u_protocol_name>
+<u_protocol_number>03C0277</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:29:41</sys_created_on>
+<sys_id>735189dedb9e2f0054d8ff621f96199f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:29:41</sys_updated_on>
+<u_protocol_branch>Thoracic Surgery Branch</u_protocol_branch>
+<u_protocol_name>Prospective Evaluation of Genetic and Epigenetic Alterations in Patients with Thoracic Malignancies </u_protocol_name>
+<u_protocol_number>06C0014</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:30:51</sys_created_on>
+<sys_id>78a1c9dedb9e2f0054d8ff621f9619e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:30:51</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Collection of Blood from Patients with Cancer for Analysis of Genetic Differences in Drug Disposition</u_protocol_name>
+<u_protocol_number>11C0242</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:32:40</sys_created_on>
+<sys_id>87028ddedb9e2f0054d8ff621f961930</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:32:40</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Collection of Pharmacokinetic Samples from Patients with Unanticipated Response or Toxicity </u_protocol_name>
+<u_protocol_number>14C0128</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:27:31</sys_created_on>
+<sys_id>90e0c5dedb9e2f0054d8ff621f961964</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:27:31</sys_updated_on>
+<u_protocol_branch>HIV and AIDS Malignancy Branch</u_protocol_branch>
+<u_protocol_name>Collection of Blood, Bone Marrow, Tumor, or Tissue Samples from Patients with HIV Infection, KSHV Infection, Viral-related Pre-malignant Lesions, and/or Cancer</u_protocol_name>
+<u_protocol_number>01C0038</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:27:08</sys_created_on>
+<sys_id>93b0c5dedb9e2f0054d8ff621f9619b1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:27:08</sys_updated_on>
+<u_protocol_branch>Urologic Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Collection of Serum and Tissue Samples from Patients with Biopsy-Proved or Suspected Malignant Diseases</u_protocol_name>
+<u_protocol_number>97C0147</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:33:45</sys_created_on>
+<sys_id>a7420912dbde2f0054d8ff621f9619da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:33:45</sys_updated_on>
+<u_protocol_branch>Women's Malignancy Branch</u_protocol_branch>
+<u_protocol_name>Tissue Acquisition and Genomics Analysis of Breast and Other Gynecologic Malignancies</u_protocol_name>
+<u_protocol_number>19C0025</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:30:04</sys_created_on>
+<sys_id>c27189dedb9e2f0054d8ff621f9619a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:30:04</sys_updated_on>
+<u_protocol_branch>Pediatric Oncology Branch</u_protocol_branch>
+<u_protocol_name>Comprehensive Omics Analysis of Pediatric Solid Tumors and Establishment of a Repository for Related Biological Studies</u_protocol_name>
+<u_protocol_number>10C0086</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:29:18</sys_created_on>
+<sys_id>c94149dedb9e2f0054d8ff621f9619ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:29:18</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Retrospective Analysis of Drug Disposition and Response-Related Genotypes in Cancer Patients and Correlation with Pharmacokinetics and Pharmacodynamics Data</u_protocol_name>
+<u_protocol_number>04CN279</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:32:16</sys_created_on>
+<sys_id>cef189dedb9e2f0054d8ff621f9619bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:32:16</sys_updated_on>
+<u_protocol_branch>Thoracic and GI Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Tissue Procurement and Natural History Study of Patients with Non-Small Cell Lung Cancer, Small Cell Lung Cancer, Extrapulmonary Small Cell Cancer, Pulmonary Neuroendocrine Tumors, and Thymic Epitheli</u_protocol_name>
+<u_protocol_number>14C0105</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:33:23</sys_created_on>
+<sys_id>e5324d9edb9e2f0054d8ff621f96191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:33:23</sys_updated_on>
+<u_protocol_branch>Neuro-Oncology Branch</u_protocol_branch>
+<u_protocol_name>Evaluation of the Natural History of and Specimen Banking for Patients with Tumors of the Central Nervous System</u_protocol_name>
+<u_protocol_number>16C0151</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:30:29</sys_created_on>
+<sys_id>e681c9dedb9e2f0054d8ff621f9619e3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:30:29</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Collection of Tissue Blocks or Slides from Patients with Cancer </u_protocol_name>
+<u_protocol_number>11C0190</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:31:35</sys_created_on>
+<sys_id>ebc1c9dedb9e2f0054d8ff621f9619e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:31:35</sys_updated_on>
+<u_protocol_branch>Genitourinary Malignancies Branch</u_protocol_branch>
+<u_protocol_name>Long-Term Retention of Prospectively Obtained Biospecimens</u_protocol_name>
+<u_protocol_number>12CN029</u_protocol_number>
+</u_gds_tissue_protocols>
+<u_gds_tissue_protocols action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2018-12-12 19:33:00</sys_created_on>
+<sys_id>ec2289dedb9e2f0054d8ff621f9619a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2018-12-12 19:33:00</sys_updated_on>
+<u_protocol_branch>Experimental Transplantation and Immunology Branch</u_protocol_branch>
+<u_protocol_name>Biospecimen Procurement for Experimental Transplantation and Immunology Branch Immunotherapy Protocols </u_protocol_name>
+<u_protocol_number>16C0061</u_protocol_number>
+</u_gds_tissue_protocols>
+</unload>

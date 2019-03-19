@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-02-13 17:07:46">
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>This is the group for Partnership and Program Process Survey to create a report</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value="Sue Pan">5b091f9c6fae2100250e6bbeae3ee445</manager>
+<name>NCI_Survey_Report_Group</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-02-12 00:22:07</sys_created_on>
+<sys_id>a5fc8806db6f6b00b86770c08c9619a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-02-12 00:22:07</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+</unload>
