@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-01-22 17:18:14">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>CCR_GDSP_change_for_GDS_20190122</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b2ba2717db8b2f00b86770c08c9619ec</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-22 17:18:14</sys_created_on>
+<sys_id>228c6397db8b2f00b86770c08c961953</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-22 17:18:14</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0f1aaea9dbc63a00f59974131f96197f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+	var names=['investigator','email','phone', 'date', 'projectNumber', 'projectName', 'simpleSize','prospective', 'restrospective', 'human', 'nonHuman', 'germLine','somatic', 'dnaType', 'rnaType',  'microbiome', 'mitochrondria', 'otherType', 'specifyOtherType', 'snpArrayData', 'numSNP', 'expressionArray', 'numExpression','methylationArray', 'numMethylation','arrayDerive', 'microarrayData', 'sequenceData', 'somaticSnv', 'arrayCgh', 'wholeGenome', 'wholeExome', 'targetGenome', 'targetExome', 'wholeTranscriptome', 'targetTrabscriptome', 'epigenomicMark', 'sanger', 'rrna', 'association', 'arrayDerivedExpression', 'rnaExpression', 'derivedMethylation', 'otherAnalysis', 'spcifiedOtherAnalysis', 'individual', 'aggregate', 'notApplicableDataForm', 'arrayExpress', 'cancerGenomics', 'clinVar', 'dbGap', 'dbSnp', 'dbVar', 'ena', 'genBank', 'geo', 'mgi', 'sra', 'traceArchive', 'wormbase', 'zfin', 'OtherRepository', 'specifiedRepository','phenotype', 'exposure', 'clinicalData', 'specifiedClinicalData', 'protocol', 'specifiedProtocol', 'instrument', 'specifiedInstrument', 'surveyTool', 'otherCompanion', 'specifiedCompanion', 'dataCheck', 'publication', 'otherSubmission', 'psecifiedOtherSubmission', 'noHumanData', 'noLimitation','limitedOnly', 'limitedPurpose','relateToDisease','orginId', 'version','rat', 'mouse', 'celegans', 'drosophila', 'yeast', 'yeastSpecies', 'bacteria', 'bacteriaSpecies','noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna'];
+	var textFields = ['investigator','email','phone', 'date', 'projectNumber','projectName', 'simpleSize','specifyOtherType','spcifiedOtherAnalysis', 'specifiedRepository', 'specifiedClinicalData', 'specifiedProtocol', 'specifiedInstrument','specifiedCompanion', 'psecifiedOtherSubmission', 'orginId', 'version','numSNP','numExpression','numMethylation', 'yeastSpecies', 'bacteriaSpecies', 'noHumanOther', 'numDerivedGenotype', 'numMicroarrayData', 'numSquenceData', 'numSomaticSnv', 'numArrayCgh','numWholeGenome', 'numWholeExome', 'numTargetGenome', 'numTargetedExome', 'numWholeTranscriptome', 'numTargetedTranscriptome', 'numEpigenomic', 'numSanger', 'numRrna']; 
+ var c = this;
+ $scope.loadModal = function(){
+		clearRequiredFieldBackColor();
+		var $dataEntry = $('#loadedRequests');
+		resetRequestValue();
+		$('#errorMessage').html('');
+		$('#ccr_id').val('');
+    $('#saved_id').val('');
+    $('#regularSubmit').show();
+    $('#resubmit').hide();
+		$dataEntry.modal('show').on('shown.bs.modal', function(){
+			$('#loadedRequests .modal-content').scrollTop(0);
+		});
+	};
+	
+  function resetRequestValue(){
+    var i = 0;
+    for( i = 0; i!= names.length; i++){
+      if(textFields.indexOf(names[i]) != -1 ){ 
+            $('#'+names[i]).val('');
+      }else{
+           $('#'+names[i]).prop('checked', false); 
+		   $('#'+names[i]).removeAttr("disabled");
+      }
+    }
+    $('#withdrawCommentsId').val('');
+    $('#withdrawSubmitId').val('');
+	$('#saved_id').val('');  
+  }		
+
+	function clearRequiredFieldBackColor(){
+		$('#investigator').css("background-color", "");
+		$('#email').css("background-color", "");
+		$('#phone').css("background-color", "");
+		$('#date').css("background-color", "");
+		$('#projectName').css("background-color", "");
+		$('#simpleSize').css("background-color", ""); 
+		$('#collectionTypeId').css("background-color", "");
+		$('#dataId').css("background-color", "");  
+		$('#specifyOtherType').css("background-color", "");
+		$('#data2Id').css("background-color", "");  
+		$('#arrayDataId').css("background-color", ""); 
+		$('#genotypesId').css("background-color", ""); 
+		$('#sequenceId').css("background-color", ""); 
+		$('#analysisId').css("background-color", "");
+		$('#spcifiedOtherAnalysis').css("background-color", "");
+		$('#dataFormId').css("background-color", "");
+		$('#dataRepositoryId').css("background-color", "");
+		$('#specifiedRepository').css("background-color", "");
+		$('#companionInfoId').css("background-color", "");
+		$('#specifiedClinicalData').css("background-color", "");
+		$('#specifiedProtocol').css("background-color", "");
+		$('#specifiedInstrument').css("background-color", "");
+		$('#specifiedCompanion').css("background-color", "");
+		$('#dataSubmissionId').css("background-color", "");
+		$('#psecifiedOtherSubmission').css("background-color", "");
+		$('#dataUseId').css("background-color", "");
+	}	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gdsp-home-content&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;GDSP Home Page Content&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zhoujim@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-10 20:22:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0f1aaea9dbc63a00f59974131f96197f&lt;/sys_id&gt;&lt;sys_mod_count&gt;41&lt;/sys_mod_count&gt;&lt;sys_name&gt;GDSP Home Page Content&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0f1aaea9dbc63a00f59974131f96197f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-22 17:17:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;br/&gt;
+ &lt;div class="col-md-12 tools-owner-title" style="white-space:nowrap; display:inline;"&gt;&lt;font size="4"&gt;CCR Genomic Data Sharing Project&lt;/font&gt; &amp;#160; &amp;#160; &lt;a href="https://ccrod.cancer.gov/confluence/x/DIiyBw" target="_BLANK"&gt;&lt;img src="contextual_help.png" width="20px" height="20px" Alt="Help" Title="Help"/&gt;Help&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="col-md-12"&gt;
+       &lt;br/&gt;
+      &lt;div&gt;The Genomic Data Sharing (GDS) Policy applies to all NIH intramural research that generates large-scale human or non-human genomic data as well as the use of these data for subsequent research. Large-scale data include genome-wide association studies (GWAS), single nucleotide polymorphisms (SNP) arrays, and genome sequence, transcriptomic, metagenomic, epigenomic, and gene expression data. For details about what thresholds require data sharing please refer to the &lt;a href="https://ccrod.cancer.gov/confluence/display/CCRGDS/CCR+Genomic+Data+Sharing+Project+Home" target="_BLANK"&gt;&lt;u&gt;CCR GDS Website&lt;/u&gt;&lt;/a&gt;. &lt;br/&gt; &lt;br/&gt;
+Investigators are required to develop a Genomic Data Sharing Plan if they are proposing research that will generate large-scale human and non-human genomic data for which the GDS policy applies. For clinical trials, investigator is considered the Principal Investigator or the Lead Associate Investigator. For laboratory based studies, investigator is considered the scientist leading the research.     &lt;br/&gt; 
+     &lt;/div&gt;
+    &lt;br/&gt;
+  &lt;/div&gt;
+  &lt;span&gt;&amp;#160; &amp;#160;&amp;#160;&lt;b&gt;A Genomic Data Sharing Plan should be in place PRIOR to starting the research.&lt;/b&gt;&lt;/span&gt;&amp;#160; &amp;#160;&lt;span id="piId"&gt;&lt;a href="/ccrgds"&gt;&lt;input type="button" class="btn btn-primary btn-sm" value="Submit a Plan"/&gt;&lt;/a&gt;&lt;/span&gt; 
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1273987540</payload_hash>
+<remote_update_set display_value="CCR_GDSP_change_for_GDS_20190122">228c6397db8b2f00b86770c08c961953</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-01-22 17:18:14</sys_created_on>
+<sys_id>e68c6397db8b2f00b86770c08c961953</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168769119aa0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-01-22 17:18:14</sys_updated_on>
+<table/>
+<target_name>GDSP Home Page Content</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>035ca717248b2f00ec81f246c92c2d0e</update_guid>
+<update_guid_history>035ca717248b2f00ec81f246c92c2d0e:1273987540,9a3c6b57ac8b2f0043dfbfa6b79495a3:-166768703,479070463:479070463,595768062:595768062</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
