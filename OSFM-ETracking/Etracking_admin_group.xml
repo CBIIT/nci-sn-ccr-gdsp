@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-04-22 20:48:20">
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<average_daily_fte/>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>This is the groups for Equipment Tracking System's admin</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<hourly_rate>0</hourly_rate>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>ETracking_Admin</name>
+<parent display_value=""/>
+<points>0</points>
+<roles/>
+<source/>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-22 14:21:28</sys_created_on>
+<sys_id>28893e12db50b700b86770c08c961928</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-22 14:25:46</sys_updated_on>
+<type/>
+<u_co_manager display_value=""/>
+</sys_user_group>
+</unload>

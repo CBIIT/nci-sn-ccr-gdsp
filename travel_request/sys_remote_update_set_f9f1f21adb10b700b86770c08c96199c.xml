@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-03-22 13:46:52">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Travel and Registration Patch 1 20190321</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>098a78f1db1c730054d8ff621f9619b7</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-22 13:46:52</sys_created_on>
+<sys_id>f9f1f21adb10b700b86770c08c96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-22 13:46:52</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysevent_email_action_f8a8ff566f3162000a09034abb3ee4a9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Requested Item" name="Requested Item"&gt;5d137a6cdb520300e5b7f50d0f961976&lt;/category&gt;&lt;collection&gt;sc_req_item&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;event_name&gt;travel.registration.validation.reminder&lt;/event_name&gt;&lt;event_parm_1&gt;false&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;You are receiving this additional notification because you have not yet validated your registration. You will continue to receive these notifications weekly until you have completed the steps below to validate. If you believe you are receiving these messages in error, please contact&amp;nbsp;&lt;a style="color: blue; text-decoration: underline;" href="mailto:NCICBIITTravel@mail.nih.gov"&gt;NCICBIITTravel@mail.nih.gov&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To validate your registration for this trip:&lt;br /&gt; &lt;br /&gt;1) Log on to service.cancer.gov &amp;gt; My Requested Items &amp;gt; Open ${number}&lt;/p&gt;
+&lt;p&gt;2) Review all information entered in the Registration section and modify as needed. You will not be able to modify any other sections of this travel request. * Be certain to update the dollar amount if this has changed from your initial request.&lt;/p&gt;
+&lt;p&gt;3)Attach snapshots of approved CTPS/ STEPS notification &amp;amp; Registration Form (excluding credit card information)&lt;/p&gt;
+&lt;p&gt;4)Click Registration Validation button&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Click here to view and validate Request: ${URI_REF}&lt;/p&gt;
+&lt;p&gt;Requested for: &amp;nbsp;${u_requested_for}&lt;/p&gt;
+&lt;div&gt;Name of Event: ${variables.meetingName}${variables.meet_name}&lt;/div&gt;
+&lt;p&gt;Opened by: ${opened_by}&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Opened: ${opened_at}&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;For questions please refer to the&amp;nbsp;&lt;a title="CBIIT Travel Hub" href="https://collaborate.nci.nih.gov/display/CC/Travel"&gt;CBIIT Travel Hub&lt;/a&gt; on CBIIT Central.&lt;/p&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt;Travel and M+C - Validate Reminder&lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields&gt;u_requested_for&lt;/recipient_fields&gt;&lt;recipient_groups/&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;Reminder - ${cat_item} ${number}  - Validate Registration Information&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wuye@nih.gov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-09-14 03:34:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;f8a8ff566f3162000a09034abb3ee4a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Travel and M+C - Validate Reminder&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_f8a8ff566f3162000a09034abb3ee4a9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;zhoujim@nih.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-20 15:53:43&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template/&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2126421979</payload_hash>
+<remote_update_set display_value="Travel and Registration Patch 1 20190321">f9f1f21adb10b700b86770c08c96199c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-03-22 13:46:52</sys_created_on>
+<sys_id>71f1f21adb10b700b86770c08c96199d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1699bceed2e0000001</sys_recorded_at>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-03-22 13:46:52</sys_updated_on>
+<table>sc_req_item</table>
+<target_name>Travel and M+C - Validate Reminder</target_name>
+<type>Notification</type>
+<update_domain>global</update_domain>
+<update_guid>acdbf435f81c7300182f97ad79aa9d79</update_guid>
+<update_guid_history>acdbf435f81c7300182f97ad79aa9d79:2126421979,6b9a45fa713a8300433b9de0579c2c6d:-140053609,654308986:654308986</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

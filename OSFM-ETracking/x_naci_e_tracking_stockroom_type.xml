@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-04-22 19:34:03">
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>EMPSB work area/storage cabinets
+</description>
+<name>EMPSB suite 1E200</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:52:42</sys_created_on>
+<sys_id>e82dae43db747300b86770c08c961949</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:52:42</sys_updated_on>
+<value>EMPSB suite 1E200</value>
+</x_naci_e_tracking_stockroom_type>
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>Workspace assigned to a single individual
+</description>
+<name>Individual Work Space</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:53:19</sys_created_on>
+<sys_id>184dae43db747300b86770c08c96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:53:19</sys_updated_on>
+<value>Individual Work Space</value>
+</x_naci_e_tracking_stockroom_type>
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>Administrative Storage closets and staging
+</description>
+<name>Main Storage Closet</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:52:29</sys_created_on>
+<sys_id>e50d2e43db747300b86770c08c96198e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:52:29</sys_updated_on>
+<value>Main Storage Closet</value>
+</x_naci_e_tracking_stockroom_type>
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>Storage closet anywhere other than Gude Dr or Shady Grove
+</description>
+<name>Remote Storage Closet </name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:52:54</sys_created_on>
+<sys_id>d62d6283db747300b86770c08c961932</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:52:54</sys_updated_on>
+<value>Remote Storage Closet </value>
+</x_naci_e_tracking_stockroom_type>
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>Guide Drive location and any actual warehouse
+</description>
+<name>Warehouse</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:52:06</sys_created_on>
+<sys_id>d5dcaa43db747300b86770c08c9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:52:06</sys_updated_on>
+<value>Warehouse</value>
+</x_naci_e_tracking_stockroom_type>
+<x_naci_e_tracking_stockroom_type action="INSERT_OR_UPDATE">
+<description>Shared or common workspace not assigned to one person
+</description>
+<name>Work Area</name>
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-04-18 17:53:06</sys_created_on>
+<sys_id>463dea43db747300b86770c08c9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-04-18 17:53:06</sys_updated_on>
+<value>Work Area</value>
+</x_naci_e_tracking_stockroom_type>
+</unload>
