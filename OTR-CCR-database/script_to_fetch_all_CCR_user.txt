@@ -1,0 +1,17 @@
+//var con = new GlideRecord('x_naci_otr_ccr_dat_contact');
+//    con.query();
+//    con.deleteMultiple();
+
+var user = new GlideRecord('sys_user');
+    user.addQuery('u_long_org_division', 'CONTAINS', 'NCI CCR ');
+    user.addQuery('active', true);
+
+    user.query();
+while(user.next()){
+   var id = user.getUniqueValue();
+   var contact = new GlideRecord('x_naci_otr_ccr_dat_contact');
+       contact.newRecord();
+       contact.name = id;
+       contact.organization = '44821b33db89ff0054d8ff621f961987';
+       contact.insert();
+}
