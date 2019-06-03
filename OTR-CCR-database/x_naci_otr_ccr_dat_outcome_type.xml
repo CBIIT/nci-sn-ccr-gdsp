@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-05-23 15:27:13">
+<x_naci_otr_ccr_dat_outcome_type action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-05-22 20:13:20</sys_created_on>
+<sys_id>3353d646db6db700b86770c08c9619d7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-05-22 20:13:20</sys_updated_on>
+<type>Development</type>
+</x_naci_otr_ccr_dat_outcome_type>
+<x_naci_otr_ccr_dat_outcome_type action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-05-22 20:13:51</sys_created_on>
+<sys_id>3a635246db6db700b86770c08c96194a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-05-22 20:13:51</sys_updated_on>
+<type>Regulatory</type>
+</x_naci_otr_ccr_dat_outcome_type>
+<x_naci_otr_ccr_dat_outcome_type action="INSERT_OR_UPDATE">
+<sys_created_by>zhoujim@nih.gov</sys_created_by>
+<sys_created_on>2019-05-22 21:04:31</sys_created_on>
+<sys_id>811f9a4edb6db700b86770c08c9619dd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>zhoujim@nih.gov</sys_updated_by>
+<sys_updated_on>2019-05-22 21:04:31</sys_updated_on>
+<type>Preclinical</type>
+</x_naci_otr_ccr_dat_outcome_type>
+</unload>
